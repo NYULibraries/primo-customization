@@ -1,0 +1,10 @@
+{
+  "name": "primo-customization",
+  "version": "0.0.1",
+  "description": "NYU Primo Customization",
+  "repository": "https://github.com/NYULibraries/primo-customization",
+  "type": "module",
+  "devDependencies": {
+    "eslint": "^8.40.0"
+  }
+}
