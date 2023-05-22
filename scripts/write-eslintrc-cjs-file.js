@@ -6,9 +6,9 @@ const __dirname = url.fileURLToPath( new URL( '.', import.meta.url ) );
 
 import newSystemConfig from '../eslint.config.js';
 
-// The 1st element in `newSystemConfig` is the official `js.configs.recommended` object
-// The 2nd element in `newSystemConfig` is the custom configuration object
-// We need to merge them manually for the old system, which expects an object
+// The 1st element in `newSystemConfig` is the official `js.configs.recommended` object.
+// The 2nd element in `newSystemConfig` is the custom configuration object.
+// We need to merge them manually for the old system, which expects an object.
 // for CommonJS style importing.
 const config = { ...newSystemConfig[ 0 ], ...newSystemConfig[ 1 ] };
 
