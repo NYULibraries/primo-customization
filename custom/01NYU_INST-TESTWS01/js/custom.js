@@ -23,7 +23,7 @@
                     // be used in domain name for wildcarding.
                     // 'https://cdn*.library.nyu.edu/primo-customization/01NYU_INST-TESTWS01/**',
                     `${ cdnUrl }/**`,
-                ]
+                ],
             );
         } );
 
@@ -90,9 +90,9 @@
             }
 
             return {
-                restrict : 'E',
-                template : '',
-                link     : link,
+                restrict: 'E',
+                template: '',
+                link    : link,
             };
         } );
 
