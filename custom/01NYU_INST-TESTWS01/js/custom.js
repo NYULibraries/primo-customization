@@ -41,7 +41,7 @@
         </md-card-title-text>
     </md-card-title>
     <md-card-content>
-        <p>DOES NOT WORK: CDN-HOSTED TEMPLATE HTML IS ESCAPED AND PRINTED AS NORMAL STRING DATA</p>
+        <p style="color:red">FAIL: CDN-HOSTED TEMPLATE HTML IS ESCAPED AND PRINTED AS NORMAL STRING DATA</p>
         <p></p>
 
         {{ $ctrl.data }}
@@ -122,7 +122,7 @@
         </md-card-title-text>
     </md-card-title>
     <md-card-content>
-        <p>FILLS IN HTML TEMPLATE WITH DATA FETCHED FROM CDN-HOSTED JSON FILE</p>
+        <p style="color:blue">PARTIAL SUCCESS: FILLS IN HTML TEMPLATE WITH DATA FETCHED FROM CDN-HOSTED JSON FILE</p>
         <p></p>
 
         <p>{{ $ctrl.text }}
