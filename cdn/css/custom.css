@@ -1,0 +1,15 @@
+prm-logo {
+  /* Override `prm-topbar prm-logo` from (Chrome Dev Tools link address):
+  https://sandbox02-na.primo.exlibrisgroup.com/discovery/components/search/topbar/_top-bar.scss */
+  max-width: 300px !important;
+}
+
+.logo-image {
+  display: block;
+  margin: auto;
+  width: 207px;
+}
+
+#banner > .md-primoExplore-theme {
+  width: 100%;
+}
