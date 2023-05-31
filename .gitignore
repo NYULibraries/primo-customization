@@ -1,5 +1,8 @@
 # Emacs backup files
 *~
+# Empty temp directory
+tmp/*
+!tmp/.gitkeep
 
 # JetBrains
 .idea/
