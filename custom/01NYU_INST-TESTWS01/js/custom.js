@@ -28,10 +28,12 @@
         } );
 
         // This method uses built-in AngularJS `$http.get` to fetch a CDN-hosted
-        // HTML file and attempts to insert it into the template.  It does not
-        // appear to be possible to fetch HTML from the CDN and have it be rendered
-        // as HTML in the template using this particular method.
-        app.component( 'prmSilentLoginAfter', {
+        // JSON file containing plain text and populates an HTML template that is
+        // fixed in structure.  It does not appear to be possible to fetch HTML
+        // from the CDN and have it be rendered as HTML in the template using this
+        // particular method.  The `prmSilentLoginAfter` method attempts to do this
+        // and fails.
+        app.component( 'prmExploreFooterAfter', {
             template: `<md-card className="default-card _md md-primoExplore-theme">
     <md-card-title>
         <md-card-title-text>
@@ -41,26 +43,26 @@
                     for Primo VE"
                 </a>
             </h2>
-            <h3>Method: [FAIL] \`app.component( 'prmSilentLoginAfter', { template: \`...\`, controller: ...$http.get( [ CDN prm-silent-login-after.html ]'... )\`</h3>
+            <h3>Method: [OK, but limited] \`app.component( 'prmExploreFooterAfter', { template: \`...\`, controller: ...$http.get( [CDN prm-explore-footer-after.json] )\`</h3>
         </md-card-title-text>
     </md-card-title>
     <md-card-content>
-        <p style="color:red">FAIL: CDN-HOSTED TEMPLATE HTML IS ESCAPED AND PRINTED AS NORMAL STRING DATA</p>
+        <p style="color:blue">PARTIAL SUCCESS: FILLS IN HTML TEMPLATE WITH DATA FETCHED FROM CDN-HOSTED JSON FILE</p>
         <p></p>
 
-        {{ $ctrl.data }}
+        <p>{{ $ctrl.text }}
     </md-card-content>
 </md-card>`,
             controller: function( $http ) {
                 const that = this;
-                $http.get( `${ cdnUrl }/html/prm-silent-login-after.html`,
+                $http.get( `${ cdnUrl }/json/prm-silent-login-after.json`,
                     { } )
                     .then(
                         function( response ) {
-                            that.data = response.data;
+                            that.text = response.data.text;
                         },
                         function( response ) {
-                            that.data = response.data;
+                            that.text = response.data;
                         },
                     );
             },
@@ -113,12 +115,10 @@
         } );
 
         // This method uses built-in AngularJS `$http.get` to fetch a CDN-hosted
-        // JSON file containing plain text and populates an HTML template that is
-        // fixed in structure.  It does not appear to be possible to fetch HTML
-        // from the CDN and have it be rendered as HTML in the template using this
-        // particular method.  The `prmSilentLoginAfter` method attempts to do this
-        // and fails.
-        app.component( 'prmExploreFooterAfter', {
+        // HTML file and attempts to insert it into the template.  It does not
+        // appear to be possible to fetch HTML from the CDN and have it be rendered
+        // as HTML in the template using this particular method.
+        app.component( 'prmSilentLoginAfter', {
             template: `<md-card className="default-card _md md-primoExplore-theme">
     <md-card-title>
         <md-card-title-text>
@@ -128,26 +128,26 @@
                     for Primo VE"
                 </a>
             </h2>
-            <h3>Method: [OK, but limited] \`app.component( 'prmExploreFooterAfter', { template: \`...\`, controller: ...$http.get( [CDN prm-explore-footer-after.json] )\`</h3>
+            <h3>Method: [FAIL] \`app.component( 'prmSilentLoginAfter', { template: \`...\`, controller: ...$http.get( [ CDN prm-silent-login-after.html ]'... )\`</h3>
         </md-card-title-text>
     </md-card-title>
     <md-card-content>
-        <p style="color:blue">PARTIAL SUCCESS: FILLS IN HTML TEMPLATE WITH DATA FETCHED FROM CDN-HOSTED JSON FILE</p>
+        <p style="color:red">FAIL: CDN-HOSTED TEMPLATE HTML IS ESCAPED AND PRINTED AS NORMAL STRING DATA</p>
         <p></p>
 
-        <p>{{ $ctrl.text }}
+        {{ $ctrl.data }}
     </md-card-content>
 </md-card>`,
             controller: function( $http ) {
                 const that = this;
-                $http.get( `${ cdnUrl }/json/prm-silent-login-after.json`,
-                    { } )
+                $http.get( `${ cdnUrl }/html/prm-silent-login-after.html`,
+                           { } )
                     .then(
                         function( response ) {
-                            that.text = response.data.text;
+                            that.data = response.data;
                         },
                         function( response ) {
-                            that.text = response.data;
+                            that.data = response.data;
                         },
                     );
             },
