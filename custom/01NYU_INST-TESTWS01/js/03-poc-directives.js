@@ -127,4 +127,3 @@ app.component( 'prmSilentLoginAfter', {
             );
     },
 } );
-
