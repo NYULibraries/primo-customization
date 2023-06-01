@@ -27,6 +27,10 @@
             );
         } );
 
+        // This method uses built-in AngularJS `$http.get` to fetch a CDN-hosted
+        // HTML file and attempts to insert it into the template.  It does not
+        // appear to be possible to fetch HTML from the CDN and have it be rendered
+        // as HTML in the template using this particular method.
         app.component( 'prmSilentLoginAfter', {
             template: `<md-card className="default-card _md md-primoExplore-theme">
     <md-card-title>
@@ -108,6 +112,12 @@
             templateUrl: `${ cdnUrl }/html/prm-search-after.html`,
         } );
 
+        // This method uses built-in AngularJS `$http.get` to fetch a CDN-hosted
+        // JSON file containing plain text and populates an HTML template that is
+        // fixed in structure.  It does not appear to be possible to fetch HTML
+        // from the CDN and have it be rendered as HTML in the template using this
+        // particular method.  The `prmSilentLoginAfter` method attempts to do this
+        // and fails.
         app.component( 'prmExploreFooterAfter', {
             template: `<md-card className="default-card _md md-primoExplore-theme">
     <md-card-title>
