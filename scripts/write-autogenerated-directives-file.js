@@ -15,7 +15,7 @@ const EXCLUDED_IDS = {
     'prm-silent-login-after': true,
 };
 
-const EXLIBRIS_TEMPLATE_CACHE_CODE_FILE = path.join( ROOT, 'custom/01NYU_INST-TESTWS01/js/exlibris-template-cache-code.txt' );
+const EXLIBRIS_TEMPLATE_CACHE_CODE_FILE = path.join( ROOT, 'scripts/exlibris-template-cache-code.txt' );
 const PARENT_CTRL_ATTRIBUTE_REGEXP = new RegExp( /parent-ctrl="\$ctrl"/ );
 
 const lines = fs.readFileSync( EXLIBRIS_TEMPLATE_CACHE_CODE_FILE, { encoding: 'utf8' } )
