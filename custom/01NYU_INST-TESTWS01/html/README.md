@@ -1,14 +1,1 @@
-# The Primo New UI Customization Workflow Development Environment
-
-
-##html documentation
-
- - In this folder you will find static html files in their OTB state
- - You can edit the html to comply with your library requirements
- - Note that you can use Angular Material directives in your html:
- > https://material.angularjs.org/latest/
-
-
-
-
-
+ExLibris documentation: [primo\-explore\-package/VIEW\_CODE/html /README\.md](https://github.com/ExLibrisGroup/primo-explore-package/blob/1b43a8fff46f3fec58bf4ea36bb4ec658e5a3d93/VIEW_CODE/html/README.md)
