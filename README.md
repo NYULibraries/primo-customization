@@ -64,8 +64,6 @@ The code for an alternative approach to fetching the list of CDN HTML files base
 using a Lambda@Edge function can be retrieved through git tag
 [archived_fetch-cdn-html-files-list-via-lambda-at-edge](https://github.com/NYULibraries/primo-customization/releases/tag/archived_fetch-cdn-html-files-list-via-lambda-at-edge)
 
-TODO: Add screenshots of AWS sandbox Lambda and CloudFront configurations
-
 ### Autogenerate every possible custom directive
 
 The script for generating
