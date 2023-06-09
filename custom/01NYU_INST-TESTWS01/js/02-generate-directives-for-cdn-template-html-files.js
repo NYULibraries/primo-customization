@@ -1,12 +1,4 @@
 async function generateCustomDirectivesForCdnTemplateHtmlFiles() {
-    // Already being created by POC code.
-    const EXCLUDED_IDS = {
-        'prm-explore-footer-after': true,
-        'prm-explore-main-after'  : true,
-        'prm-search-after'        : true,
-        'prm-silent-login-after'  : true,
-    };
-
     const listFilesFunctionUrl = `${ cdnUrl }/html/list-files`;
 
     const response = await fetch( listFilesFunctionUrl );
