@@ -66,6 +66,15 @@ scripts/update-cdn.sh cdn-dev
 scripts/update-cdn.sh sandbox [your NetID]
 ```
 
+## Alternative approach to getting the CDN HTML files manifest: call a Lambda@Edge
+function which fetches the list of HTML files in the S3 bucket
+
+The code for an alternative approach to fetching the list of CDN HTML files basenames
+using a Lambda@Edge function can be retrieved through git tag
+[archived_fetch-cdn-html-files-list-via-lambda-at-edge](https://github.com/NYULibraries/primo-customization/releases/tag/archived_fetch-cdn-html-files-list-via-lambda-at-edge)
+
+TODO: Add screenshots of AWS sandbox Lambda and CloudFront configurations
+
 ## Previous experiments in CDN-based customization
 
 The current approach being used for CDN-based customization was one of six that
