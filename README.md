@@ -66,6 +66,13 @@ scripts/update-cdn.sh cdn-dev
 scripts/update-cdn.sh sandbox [your NetID]
 ```
 
+## Previous experiments in CDN-based customization
+
+The current approach being used for CDN-based customization was one of six that
+we experimented with in anticipation of migration to Primo VE.  All the POCs in
+their final form can be retrieved through git tag
+[archived_customization-approaches-proofs-of-concept](https://github.com/NYULibraries/primo-customization/releases/tag/archived_customization-approaches-proofs-of-concept).
+
 ## References
 
 * ExLibrisGroup/primo-explore-package: [The Primo New UI Customization Workflow Development Environment](https://github.com/ExLibrisGroup/primo-explore-package)
