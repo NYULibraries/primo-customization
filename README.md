@@ -62,7 +62,7 @@ scripts/update-cdn.sh sandbox [your NetID]
 
 The code for an alternative approach to fetching the list of CDN HTML files basenames
 using a Lambda@Edge function can be retrieved through git tag
-[archived_fetch-cdn-html-files-list-via-lambda-at-edge](https://github.com/NYULibraries/primo-customization/releases/tag/archived_fetch-cdn-html-files-list-via-lambda-at-edge)
+[archived_fetch-cdn-html-files-list-via-lambda-at-edge](https://github.com/NYULibraries/primo-customization/releases/tag/archived_fetch-cdn-html-files-list-via-lambda-at-edge).
 
 ### Autogenerate every possible custom directive
 
