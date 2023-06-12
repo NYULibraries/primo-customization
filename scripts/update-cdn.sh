@@ -67,6 +67,6 @@ fi
 # and do a brand new `sync` (`cp` would work too).  See GitHub issue:
 #     "s3 sync --exact-timestamps flag ignored for uploads #4460"
 #     https://github.com/aws/aws-cli/issues/4460
-aws s3 rm --recursive --profile $AWS_PROFILE s3://$CDN_HOST/primo-customization/01NYU_INST-TESTWS01/
-aws s3 sync --profile $AWS_PROFILE --exclude '*/.gitkeep' $ROOT/cdn/ s3://$CDN_HOST/primo-customization/01NYU_INST-TESTWS01/
+aws s3 rm --recursive --profile $AWS_PROFILE s3://$CDN_HOST/primo-customization/
+aws s3 sync --profile $AWS_PROFILE --exclude '*/.gitkeep' $ROOT/cdn/primo-customization/ s3://$CDN_HOST/primo-customization/
 

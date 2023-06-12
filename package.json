@@ -2,9 +2,15 @@
   "name": "primo-customization",
   "version": "0.0.1",
   "description": "NYU Primo Customization",
+  "engines" : {
+      "node" : ">=16.17.0"
+  },
   "repository": "https://github.com/NYULibraries/primo-customization",
   "type": "module",
   "devDependencies": {
     "eslint": "^8.40.0"
+  },
+  "scripts": {
+      "cdn-server": "node tools/cdn-server/server.mjs",
   }
 }
