@@ -9,5 +9,8 @@
   "type": "module",
   "devDependencies": {
     "eslint": "^8.40.0"
+  },
+  "scripts": {
+      "cdn-server": "node tools/cdn-server/server.mjs",
   }
 }
