@@ -12,7 +12,7 @@ const CUSTOM_PACKAGE_JS_FILE = path.join( ROOT, 'custom/01NYU_INST-TESTWS01/js/0
 const EXLIBRIS_TEMPLATE_CACHE_CODE_FILE = path.join( ROOT, 'scripts/exlibris-template-cache-code.txt' );
 const PARENT_CTRL_ATTRIBUTE_REGEXP = new RegExp( /parent-ctrl="\$ctrl"/ );
 
-const lines = fs.readFileSync( EXLIBRIS_TEMPLATE_CACHE_CODE_FILE, { encoding : 'utf8' } )
+const lines = fs.readFileSync( EXLIBRIS_TEMPLATE_CACHE_CODE_FILE, { encoding: 'utf8' } )
     .toString()
     .split( EOL );
 
@@ -105,5 +105,5 @@ ${ componentJs }
 
     js += '}' + EOL;
 
-    fs.writeFileSync( customPackageJsFile, js, { encoding : 'utf8' } );
+    fs.writeFileSync( customPackageJsFile, js, { encoding: 'utf8' } );
 }
