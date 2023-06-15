@@ -86,12 +86,61 @@ function generateAllPossibleCustomDirectives() {
 `;
 
     ids.forEach( id => {
+        const camelCaseId = convertKebabCaseToCamelCase( id );
+
+        // Updating and re-deploying customization packages is a laborious process
+        // that can't be fully automated (which is why we are using this particular
+        // customization system).  We don't want to have to go through that process
+        // every time we edit code comments, so we keep the comments for the generated
+        // code here in the script.  Notes:
+        //
+        // - It is a common convention to use `vm` alias for `this` in the
+        //   controller constructor.  The aliasing is necessary for avoid `this`
+        //   problems when defining behaviors.  In templates, `$ctrl` is a
+        //   commonly used alias as it is the default when using AngularJS
+        //   "controller as" syntax.
+        //
+        // - `parentCtrl` is added to `vm` after the constructor function creates
+        //   the new controller instance for the component, and thus us referenced
+        //   as `$ctrl.parentCtrl` in the template.
+        //
+        // - We inject `$scope` and `$rootScope` are in case we ever need them in
+        //   the templates.  While it is considered good practice to avoid using
+        //   them, and in fact we don't yet have a known use case which requires
+        //   them, because we are prioritizing keeping editing and re-deployment
+        //   of customization packages to an absolute minimum, we proactively
+        //   inject them on the off chance we might need them later.  Note that
+        //   currently `$rootScope == $scope.$root`, but we provide both `$scope`
+        //   and `$rootScope` separately for both convenience, and again,
+        //   "just in case" (the `$root` pointer disappears, or changes from a
+        //   reference to a copy, etc.).
+        //
+        // - Templates can access `pnx` through `$ctrl.parentCtrl.item.pnx`,
+        //   but we provide `getPnx` anyway for convenience.  Note that we do not
+        //   know whether `item` and `item.pnx` are defined for all custom
+        //   components, so we use try/catch to prevent access errors from potentially
+        //   breaking customization, and we also log the error for easy identification
+        //   of components where `pnx` read errors occur.
+
         const componentJs =
-            `    app.component( '${ convertKebabCaseToCamelCase( id ) }', {
-        bindings   : { parentCtrl: '<' },
-        controller : function( $scope ) {
+            `    app.component( '${ camelCaseId }', {
+        bindings  : { parentCtrl: '<' },
+        controller: function( $scope, $rootScope ) {
             const vm = this;
-        
+
+            vm.getPnx = () => {
+                try {
+                    const pnx = vm.parentCtrl.item.pnx;
+
+                    return pnx;
+                } catch ( err ) {
+                    console.log( '${ camelCaseId }: error accessing \`vm.parentCtrl.item.pnx\`' );
+
+                    return null;
+                }
+            };
+
+            vm.rootScope = $rootScope;
             vm.scope = $scope;
         },
         templateUrl: \`\${ cdnUrl }/html/${ id }.html\`,
