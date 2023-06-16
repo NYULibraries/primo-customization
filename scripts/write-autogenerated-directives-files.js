@@ -116,12 +116,11 @@ function generateAllPossibleCustomDirectives() {
         //   reference to a copy, etc.).
         //
         // - Templates can access `pnx` through `$ctrl.parentCtrl.item.pnx`,
-        //   but we provide `getPnx` anyway for convenience.  Note that we do not
-        //   know whether `item` and `item.pnx` are defined for all custom
-        //   components, so we use try/catch to prevent access errors from potentially
-        //   breaking customization, and we also log the error for easy identification
-        //   of components where `pnx` read errors occur.
-
+        //   but we provide `getPnx` anyway for convenience.  Note that `item.pnx`
+        //   is not defined for all custom components, so we use try/catch to
+        //   prevent access errors from potentially breaking customization, and
+        //   we for now we also log the error for easy identification of components
+        //   where `pnx` read errors occur.
         const componentJs =
             `    app.component( '${ camelCaseId }', {
         bindings  : { parentCtrl: '<' },
