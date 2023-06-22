@@ -28,6 +28,8 @@ and the latter uses ESM.  Moreover, the _eslint.config.js_ spec specifies return
 an array and not an object, making import by CommonJS module _.eslintrc.cjs_ not
 feasible.
 
+---
+
 ## CDNs
 
 To update CDN content, run `scripts/update-cdn.sh`:
@@ -59,6 +61,8 @@ local instance.
 set at creation time.
   * Domain name: see "Distribution domain name" under the General tab in the console
 
+---
+
 ## Archived code
 
 ### Only generate components for HTML files listed in manifest
@@ -85,6 +89,8 @@ The current approach being used for CDN-based customization was one of six that
 we experimented with in anticipation of migration to Primo VE.  All the POCs in
 their final form can be retrieved through git tag
 [archived_customization-approaches-proofs-of-concept](https://github.com/NYULibraries/primo-customization/releases/tag/archived_customization-approaches-proofs-of-concept).
+
+---
 
 ## References
 
