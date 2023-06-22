@@ -14,9 +14,7 @@ tmp/*
 # Mac junk
 .DS_Store
 
-# `primo-explore-devenv` subdirectory created by scripts/set-up-primo-explore-devenv.sh
-primo-explore-devenv/
-
+# Rules below are copied from:
 # https://github.com/github/gitignore/blob/1d4e709db80b4481888076b1f256a7e87eb84105/Node.gitignore
 
 # Logs
