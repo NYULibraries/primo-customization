@@ -82,18 +82,17 @@ set at creation time.
 
 ## Archived code
 
-### Only generate components for HTML files listed in manifest
+### Only generate components for HTML files listed in a manifest
 
 We originally thought we could limit the generation of customizable AngularJS
-components to only those which had corresponding template files in _cdn/primo-customization/01NYU_INST-TESTWS01/html_,
-but unfortunately this proved to not be viable due to a race condition which causes
-the fetching of the manifest to occur after the AngularJS application had already
-been bootstrapped.  Browser cache status seemed to influence probabilities to some
-degree, but regardless there seemed to be no way to guarantee a proper execution sequence.
-Both fetching a static file from the CDN and making a request to a Lambda@Edge function
-that provided a realtime manifest were prone to the timing bug.  It's possible
-that any async calls made in the customization package create race conditions,
- even when using `async/await`. 
+components to only those which had corresponding template files in _cdn/primo-customization/01NYU_INST-TESTWS01/html/_,
+but unfortunately this proved to not be viable due to a race condition which
+sometimes led to the fetching of the manifest to occur after the AngularJS
+application had already been bootstrapped.  There seemed to be no way to guarantee
+a proper execution sequence.  Both fetching a static file from the CDN and making
+a request to a Lambda@Edge function that provided a realtime manifest were prone
+to the timing bug.  It's possible that any async calls made in the customization
+package create race conditions, even when using `async/await`.
 
 * Fetch list of HTML files from static file _cdn/primo-customization/01NYU_INST-TESTWS01/manifest.json_:
 [archived_fetch-cdn-html-files-list-via-manifest-json-file](https://github.com/NYULibraries/primo-customization/releases/tag/archived_fetch-cdn-html-files-list-via-manifest-json-file).
