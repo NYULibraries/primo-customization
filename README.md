@@ -1,5 +1,10 @@
 # Primo Customization for NYU
 
+## Prerequisites
+
+* Node 16.17.0 or higher ([nvm](https://github.com/nvm-sh/nvm) recommended)
+* yarn
+
 ## Install
 
 ```shell
