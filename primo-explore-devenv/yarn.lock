@@ -1730,14 +1730,14 @@ caniuse-api@^1.5.2:
     lodash.uniq "^4.5.0"
 
 caniuse-db@^1.0.30000529, caniuse-db@^1.0.30000634, caniuse-db@^1.0.30000639:
-  version "1.0.30001506"
-  resolved "https://registry.yarnpkg.com/caniuse-db/-/caniuse-db-1.0.30001506.tgz#66d3adccd9e19ff7b15d647036eb655011f7020f"
-  integrity sha512-eGSpflaSYD3kwkFP7nx0s5h0dWZbqJ+6FLAISFb9BOPHwmDsQmj+Sb0DeiWg9BkM30BnUGXqOxXig6OaYgMmfQ==
+  version "1.0.30001507"
+  resolved "https://registry.yarnpkg.com/caniuse-db/-/caniuse-db-1.0.30001507.tgz#1db16c9d947410312fc19452ad813d173cffe292"
+  integrity sha512-6Wkqmx8dttOrTu3V+ufSe1tdSvgdraHRIbK+hav5CQsJaXtCafi8XR2ukkN4tatgiYxzRXNgDE8AiOqtPRqZrA==
 
 caniuse-lite@^1.0.30000844, caniuse-lite@^1.0.30001109, caniuse-lite@^1.0.30001503:
-  version "1.0.30001506"
-  resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30001506.tgz#35bd814b310a487970c585430e9e80ee23faf14b"
-  integrity sha512-6XNEcpygZMCKaufIcgpQNZNf00GEqc7VQON+9Rd0K1bMYo8xhMZRAo5zpbnbMNizi4YNgIDAFrdykWsvY3H4Hw==
+  version "1.0.30001507"
+  resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30001507.tgz#fae53f6286e7564783eadea9b447819410a59534"
+  integrity sha512-SFpUDoSLCaE5XYL2jfqe9ova/pbQHEmbheDf5r4diNwbAgR3qxM9NQtfsiSscjqoya5K7kFcHPUQ+VsUkIJR4A==
 
 canvas@^2.4.1:
   version "2.11.2"
@@ -2655,9 +2655,9 @@ ee-first@1.1.1:
   integrity sha512-WMwm9LhRUo+WUaRN+vRuETqG89IgZphVSNkdFgeb6sS/E4OrDIN7t48CAewSHXc6C8lefD8KKfr5vY61brQlow==
 
 electron-to-chromium@^1.2.7, electron-to-chromium@^1.3.47, electron-to-chromium@^1.4.431:
-  version "1.4.438"
-  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.4.438.tgz#425f0d51862d36f90817d6dfb7fa2a53ff6a0a73"
-  integrity sha512-x94U0FhphEsHsOloCvlsujHCvoir0ZQ73ZAs/QN4PLx98uNvyEU79F75rq1db75Bx/atvuh7KPeuxelh+xfYJw==
+  version "1.4.439"
+  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.4.439.tgz#d0748e8128c18f92354d3412dfb2104c3fb90e8f"
+  integrity sha512-BHpErPSNhb9FB25+OwQP6mCAf3ZXfGbmuvc4LzBNVJwpCcXQJm++LerimocYRG9FRxUVRKZqaB7d0+pImSTPSg==
 
 elliptic@^6.5.3:
   version "6.5.4"
