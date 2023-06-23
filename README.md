@@ -5,6 +5,8 @@
 * Node 16.17.0 or higher ([nvm](https://github.com/nvm-sh/nvm) recommended)
 * yarn
 
+---
+
 ## Install
 
 ```shell
@@ -16,13 +18,22 @@
  yarn
 ```
 
-## Start local Primo in _primo-explore-devenv/_
+---
+
+## Start local CDN server
+
+```shell
+yarn cdn-server
+```
+
+---
+
+## Start local Primo (_primo-explore-devenv/_)
 
 ```shell
 yarn primo-explore-devenv:run
 ```
-
------
+---
 
 ### Where does _primo-explore-devenv/_ come from?
 _primo-explore-devenv/_ is a customized snapshot of ExLibris's [primo\-explore\-devenv](https://github.com/ExLibrisGroup/primo-explore-devenv)
