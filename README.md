@@ -1,7 +1,25 @@
 # Primo Customization for NYU
 
-## Local Primo: `primo-explore-devenv/`
+## Install
 
+```shell
+ git clone git@github.com:NYULibraries/primo-customization.git
+ cd primo-customization/
+ yarn
+ # See section "Where does primo-explore-devenv/ come from?"
+ cd primo-explore-devenv/
+ yarn
+```
+
+## Start local Primo in _primo-explore-devenv/_
+
+```shell
+yarn primo-explore-devenv:run
+```
+
+-----
+
+### Where does _primo-explore-devenv/_ come from?
 _primo-explore-devenv/_ is a customized snapshot of ExLibris's [primo\-explore\-devenv](https://github.com/ExLibrisGroup/primo-explore-devenv)
 ("The Primo New UI Customization Workflow Development Environment").
 
@@ -15,7 +33,9 @@ nvm use 16.17.0
 This is an updated version of the convenience script that was written during
 our prototyping phase for setting up _primo-explore-devenv/_ as an external
 dependency, before we decided to simply have it be a part of this repo.  It can
-serve as a reference when/if we need to update _primo-explore-devenv/_.
+serve as a reference when/if we need to update _primo-explore-devenv/_.  Depending
+on what changed in the upstream, it could with some minor updates be used to
+refresh the directory.
 
 ## ESLint configuration
 
