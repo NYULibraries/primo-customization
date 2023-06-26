@@ -1,7 +1,7 @@
 const cdnUrls = {
     'localhost'                           : 'http://localhost:8080/primo-customization/01NYU_INST-TESTWS01',
     'nyu.primo.exlibrisgroup.com'         : 'https://cdn-dev.library.nyu.edu/primo-customization/01NYU_INST-TESTWS01',
-    'sandbox02-na.primo.exlibrisgroup.com': 'https://cdn-dev.library.nyu.edu/primo-customization/01NYU_INST-TESTWS01',
+    'sandbox02-na.primo.exlibrisgroup.com': 'https://d290kawcj1dea9.cloudfront.net/primo-customization/01NYU_INST-TESTWS01',
 }
 
 const cdnUrl = cdnUrls[ window.location.hostname ] || 'http://localhost:8080/primo-customization/01NYU_INST-TESTWS01';

@@ -135,18 +135,15 @@ scripts/update-cdn.sh sandbox [your NetID]
 * CloudFront: [EVU6BD0HLH9MH](https://us-east-1.console.aws.amazon.com/cloudfront/v3/home?region=us-east-1#/distributions/EVU6BD0HLH9MH)
   * Domain name: cdn-dev.library.nyu.edu
   
-### Sandbox      
+### Sandbox
 
-The update script assumes there exists a S3 bucket + CloudFront distribution pair
-for each developer identified by their NetID.  These sandbox CDNs are not currently
-being used by this project (they were in an earlier iteration of the code during
-the prototyping phase), but they could prove useful for experimentation with one's
-local instance.
+* S3: [cdn\-sandbox\.library\.nyu\.edu > primo\-customization](https://s3.console.aws.amazon.com/s3/buckets/cdn-sandbox.library.nyu.edu?region=us-east-1&prefix=primo-customization/)
+* CloudFront: [EAMNC3TE74MCS](https://us-east-1.console.aws.amazon.com/cloudfront/v3/home?region=us-east-1#/distributions/EAMNC3TE74MCS)
+  * Domain name: https://d290kawcj1dea9.cloudfront.net
 
-* S3 bucket for individual developer: cdn-local-[NetID].library.nyu.edu 
-* CloudFront distribution: CloudFront distribution names are arbitrary and are
-set at creation time.
-  * Domain name: see "Distribution domain name" under the General tab in the console
+### Local
+
+See [Start local CDN server](https://github.com/NYULibraries/primo-customization#start-local-cdn-server).
 
 ---
 
