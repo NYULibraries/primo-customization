@@ -38,17 +38,33 @@
 
 ## Start local CDN server
 
+To run the CDN server in the foreground, printing log messages to the screen:
+
 ```shell
 # http://localhost:3000/
 yarn cdn-server
+```
+
+Using Docker Compose (automatically started by `primo-explore-devenv` service):
+
+```shell
+docker compose up cdn-server
 ```
 
 ---
 
 ## Start local Primo (_primo-explore-devenv/_)
 
+Local Primo: http://localhost:8003/discovery/search?vid=[VIEW]
+
 ```shell
 yarn primo-explore-devenv:run
+```
+
+Using Docker Compose (starts `cdn-server` service automatically):
+
+```shell
+docker compose up primo-explore-devenv
 ```
 ---
 
