@@ -177,4 +177,11 @@ their final form can be retrieved through git tag
 
 ## References
 
-* ExLibrisGroup/primo-explore-package: [The Primo New UI Customization Workflow Development Environment](https://github.com/ExLibrisGroup/primo-explore-package)
+* [AngularJS](https://angularjs.org/)
+  * Books
+    * [AngularJS in Action](https://learning-oreilly-com.proxy.library.nyu.edu/library/view/angularjs-in-action/9781617291333/)
+    * [Pro AngularJS](https://learning-oreilly-com.proxy.library.nyu.edu/library/view/pro-angularjs/9781430264484/)
+  * Documentation: templates
+    * [Developer Guide: Templates](https://docs.angularjs.org/guide)
+    * [Tutorial: AngularJS Templates](https://docs.angularjs.org/tutorial/step_02)
+* [ExLibrisGroup/primo-explore-package](https://github.com/ExLibrisGroup/primo-explore-package): The Primo New UI Customization Workflow Development Environment
