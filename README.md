@@ -29,6 +29,7 @@
  cd primo-customization/
  yarn
  # See section "Where does primo-explore-devenv/ come from?"
+ # https://github.com/NYULibraries/primo-customization#where-does-primo-explore-devenv-come-from
  cd primo-explore-devenv/
  yarn
 ```
