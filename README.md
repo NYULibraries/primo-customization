@@ -7,6 +7,21 @@
 
 ---
 
+## Getting started
+
+* [Install](https://github.com/NYULibraries/primo-customization#install)
+* [Start local CDN server](https://github.com/NYULibraries/primo-customization#start-local-cdn-server)
+* [Start local Primo (primo-explore-devenv)](https://github.com/NYULibraries/primo-customization#start-local-primo-primo-explore-devenv)
+* Open new browser tab to http://localhost:8003/discovery/search?vid=[VIEW] 
+* Edit files in _cdn/primo-customization/[VIEW]/_
+* Reload browser tab to see the changes
+* If necessary, edit files in _custom/[VIEW]/_, and reload browser tab to see changes
+* Deploy changes
+  * CDN: follow instructions in [CDNs](https://github.com/NYULibraries/primo-customization#cdns) 
+  * Primo customization package: follow instructions in [Primo customization package](https://github.com/NYULibraries/primo-customization#primo-customization-package) 
+
+---
+
 ## Install
 
 ```shell
@@ -52,6 +67,25 @@ dependency, before we decided to simply have it be a part of this repo.  It can
 serve as a reference when/if we need to update _primo-explore-devenv/_.  Depending
 on what changed in the upstream, it could with some minor updates be used to
 refresh the directory.
+
+---
+
+## Primo customization package
+
+### Create new Primo customization package
+
+This command will create a new package in _primo-explore-devenv/packages/_:
+
+```shell
+yarn primo-explore-devenv:create-package
+```
+
+### Deploy new Primo customization package
+
+* For Primo VE sandbox, upload to https://sandbox02-na.primo.exlibrisgroup.com/
+* For https://nyu.primo.exlibrisgroup.com/, ask Mike to upload the package
+
+---
 
 ## ESLint configuration
 
