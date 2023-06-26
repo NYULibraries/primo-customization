@@ -39,6 +39,7 @@
 ## Start local CDN server
 
 ```shell
+# http://localhost:3000/
 yarn cdn-server
 ```
 
