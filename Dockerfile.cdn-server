@@ -1,0 +1,11 @@
+FROM node:16.17.0-bullseye
+
+WORKDIR /app
+
+# cdn/ volume will be mounted by Docker Compose
+COPY package.json .
+COPY tools/cdn-server/server.mjs ./tools/cdn-server/server.mjs
+
+EXPOSE 3000
+
+CMD ["yarn", "cdn-server"]

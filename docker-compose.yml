@@ -1,0 +1,37 @@
+version: "3.8"
+
+x-cdn-volume: &x-cdn-volume
+  volumes:
+    - ./cdn:/app/cdn
+
+x-primo-customization-package-volume: &x-primo-customization-package-volume
+  volumes:
+    - ./primo-explore-devenv/primo-explore/custom:/app/primo-explore-devenv/primo-explore/custom
+
+x-build-cdn-server: &x-build-cdn-server
+  image: primo-customizations-cdn-server
+  build:
+    context: ./
+    cache_from:
+      - primo-customizations-cdn-server
+    dockerfile: Dockerfile.cdn-server
+
+x-build-primo-customization: &x-build-primo-customization
+  image: primo-explore-devenv
+  build:
+    context: ./
+    cache_from:
+      - primo-explore-devenv
+    dockerfile: Dockerfile
+
+services:
+  cdn-server:
+    <<: [*x-build-cdn-server, *x-cdn-volume]
+    ports:
+      - "3000:3000"
+  primo-explore-devenv:
+    <<: [*x-build-primo-customization, *x-primo-customization-package-volume]
+    depends_on:
+      - cdn-server
+    ports:
+      - "8003:8003"
