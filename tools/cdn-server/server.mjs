@@ -9,7 +9,7 @@ const ROOT = path.join( __dirname, '..', '..' );
 
 const cdnPath = path.join( ROOT, 'cdn' );
 
-const listenOn = 'http://localhost:8080';
+const listenOn = 'http://localhost:3000';
 
 const server = http.createServer();
 
