@@ -27,6 +27,12 @@ services:
       - "3000:3000"
     # volumes:
     #  - ./primo-explore-devenv/primo-explore/cdn:/app/primo-explore-devenv/primo-explore/cdn
+  create-package:
+    <<: [*x-build-primo-customization]
+    command: yarn primo-explore-devenv:create-package
+    # volumes:
+    #  - ./primo-explore-devenv/primo-explore/custom:/app/primo-explore-devenv/primo-explore/custom
+    #  - ./primo-explore-devenv/packages/:/app/primo-explore-devenv/packages
   primo-explore-devenv:
     <<: [*x-build-primo-customization]
     depends_on:
