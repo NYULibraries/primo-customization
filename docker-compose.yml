@@ -4,10 +4,6 @@ x-cdn-volume: &x-cdn-volume
   volumes:
     - ./cdn:/app/cdn
 
-x-primo-customization-package-volume: &x-primo-customization-package-volume
-  volumes:
-    - ./primo-explore-devenv/primo-explore/custom:/app/primo-explore-devenv/primo-explore/custom
-
 x-build-cdn-server: &x-build-cdn-server
   image: primo-customizations-cdn-server
   build:
@@ -29,9 +25,19 @@ services:
     <<: [*x-build-cdn-server, *x-cdn-volume]
     ports:
       - "3000:3000"
+    # volumes:
+    #  - ./primo-explore-devenv/primo-explore/cdn:/app/primo-explore-devenv/primo-explore/cdn
+  create-package:
+    <<: [*x-build-primo-customization]
+    command: yarn primo-explore-devenv:create-package
+    # volumes:
+    #  - ./primo-explore-devenv/primo-explore/custom:/app/primo-explore-devenv/primo-explore/custom
+    #  - ./primo-explore-devenv/packages/:/app/primo-explore-devenv/packages
   primo-explore-devenv:
-    <<: [*x-build-primo-customization, *x-primo-customization-package-volume]
+    <<: [*x-build-primo-customization]
     depends_on:
       - cdn-server
     ports:
       - "8003:8003"
+    # volumes:
+    #  - ./primo-explore-devenv/primo-explore/custom:/app/primo-explore-devenv/primo-explore/custom

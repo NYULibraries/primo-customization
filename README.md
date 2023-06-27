@@ -98,6 +98,12 @@ This command will create a new package in _primo-explore-devenv/packages/_:
 yarn primo-explore-devenv:create-package
 ```
 
+Using Docker Compose:
+
+```shell
+docker compose primo-explore-devenv:create-package
+```
+
 ### Deploy new Primo customization package
 
 * For Primo VE sandbox, upload to https://sandbox02-na.primo.exlibrisgroup.com/

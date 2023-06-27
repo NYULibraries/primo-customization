@@ -4,6 +4,7 @@ ENV NODE_MODULES_PATH /app/primo-explore-devenv/
 
 WORKDIR /app
 
+COPY custom ./custom
 COPY package.json .
 
 COPY primo-explore-devenv/package.json primo-explore-devenv/yarn.lock /tmp/
