@@ -2,7 +2,7 @@ FROM node:16.17.0-bullseye
 
 WORKDIR /app
 
-# cdn/ volume will be mounted by Docker Compose
+COPY cdn ./cdn
 COPY package.json .
 COPY tools/cdn-server/server.mjs ./tools/cdn-server/server.mjs
 
