@@ -4,7 +4,7 @@ WORKDIR /app
 
 COPY cdn ./cdn
 COPY package.json .
-COPY tools/cdn-server/server.mjs ./tools/cdn-server/server.mjs
+COPY tools/cdn-server ./tools/cdn-server
 
 EXPOSE 3000
 
