@@ -13,9 +13,8 @@
 * [Start local CDN server](https://github.com/NYULibraries/primo-customization#start-local-cdn-server)
 * [Start local Primo (primo-explore-devenv)](https://github.com/NYULibraries/primo-customization#start-local-primo-primo-explore-devenv)
 * Open new browser tab to http://localhost:8003/discovery/search?vid=[VIEW] 
-* Edit files in _cdn/primo-customization/[VIEW]/_
+* Edit files in _cdn/primo-customization/[VIEW]/_ and/or (more rarely) _custom/[VIEW]/_
 * Reload browser tab to see the changes
-* If necessary, edit files in _custom/[VIEW]/_, and reload browser tab to see changes
 * Deploy changes
   * CDN: follow instructions in [CDNs](https://github.com/NYULibraries/primo-customization#cdns) 
   * Primo customization package: follow instructions in [Primo customization package](https://github.com/NYULibraries/primo-customization#primo-customization-package) 
