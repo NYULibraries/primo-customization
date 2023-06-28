@@ -2,134 +2,134 @@
 // SEE README.MD FOR INSTRUCTIONS ON HOW TO REGENERATE THIS FILE.
 
 module.exports = {
-    "parserOptions": {
-        "ecmaVersion": "latest"
+    'parserOptions': {
+        'ecmaVersion': 'latest',
     },
-    "rules": {
-        "indent": [
-            "error",
-            4
+    'rules': {
+        'indent': [
+            'error',
+            4,
         ],
-        "quotes": [
-            "error",
-            "single"
+        'quotes': [
+            'error',
+            'single',
         ],
-        "array-bracket-newline": [
-            "error",
-            "consistent"
+        'array-bracket-newline': [
+            'error',
+            'consistent',
         ],
-        "array-bracket-spacing": [
-            "error",
-            "always"
+        'array-bracket-spacing': [
+            'error',
+            'always',
         ],
-        "array-element-newline": [
-            "error",
-            "consistent"
+        'array-element-newline': [
+            'error',
+            'consistent',
         ],
-        "arrow-spacing": [
-            "error",
+        'arrow-spacing': [
+            'error',
             {
-                "before": true,
-                "after": true
-            }
+                'before': true,
+                'after' : true,
+            },
         ],
-        "block-spacing": [
-            "error",
-            "always"
+        'block-spacing': [
+            'error',
+            'always',
         ],
-        "brace-style": [
-            "error",
-            "1tbs"
+        'brace-style': [
+            'error',
+            '1tbs',
         ],
-        "comma-dangle": [
-            "error",
-            "always-multiline"
+        'comma-dangle': [
+            'error',
+            'always-multiline',
         ],
-        "comma-spacing": [
-            "error",
+        'comma-spacing': [
+            'error',
             {
-                "before": false,
-                "after": true
-            }
+                'before': false,
+                'after' : true,
+            },
         ],
-        "comma-style": [
-            "error",
-            "last"
+        'comma-style': [
+            'error',
+            'last',
         ],
-        "dot-location": [
-            "error",
-            "property"
+        'dot-location': [
+            'error',
+            'property',
         ],
-        "func-call-spacing": [
-            "error",
-            "never"
+        'func-call-spacing': [
+            'error',
+            'never',
         ],
-        "key-spacing": [
-            "error",
+        'key-spacing': [
+            'error',
             {
-                "align": "colon"
-            }
+                'align': 'colon',
+            },
         ],
-        "keyword-spacing": [
-            "error",
+        'keyword-spacing': [
+            'error',
             {
-                "before": true
-            }
+                'before': true,
+            },
         ],
-        "max-len": [
-            "warn",
+        'max-len': [
+            'warn',
             {
-                "code": 80,
-                "tabWidth": 4
-            }
+                'code'    : 80,
+                'tabWidth': 4,
+            },
         ],
-        "multiline-ternary": [
-            "error",
-            "always-multiline"
+        'multiline-ternary': [
+            'error',
+            'always-multiline',
         ],
-        "no-extra-parens": [
-            "error",
-            "all"
+        'no-extra-parens': [
+            'error',
+            'all',
         ],
-        "object-curly-newline": [
-            "error",
+        'object-curly-newline': [
+            'error',
             {
-                "multiline": true,
-                "consistent": true
-            }
+                'multiline' : true,
+                'consistent': true,
+            },
         ],
-        "object-curly-spacing": [
-            "error",
-            "always"
+        'object-curly-spacing': [
+            'error',
+            'always',
         ],
-        "object-property-newline": [
-            "error",
+        'object-property-newline': [
+            'error',
             {
-                "allowAllPropertiesOnSameLine": true
-            }
+                'allowAllPropertiesOnSameLine': true,
+            },
         ],
-        "operator-linebreak": [
-            "error",
-            "after"
+        'operator-linebreak': [
+            'error',
+            'after',
         ],
-        "space-in-parens": [
-            "error",
-            "always"
+        'space-in-parens': [
+            'error',
+            'always',
         ],
-        "space-infix-ops": [
-            "error"
+        'space-infix-ops': [
+            'error',
         ],
-        "space-unary-ops": [
-            "error",
+        'space-unary-ops': [
+            'error',
             {
-                "words": true,
-                "nonwords": false
-            }
+                'words'   : true,
+                'nonwords': false,
+            },
         ],
-        "template-curly-spacing": [
-            "error",
-            "always"
-        ]
-    }
+        'template-curly-spacing': [
+            'error',
+            'always',
+        ],
+    },
 }
 ;

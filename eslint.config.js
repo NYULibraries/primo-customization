@@ -1,4 +1,4 @@
-import js from "@eslint/js";
+import js from '@eslint/js';
 
 export default [
     js.configs.recommended,
@@ -37,5 +37,5 @@ export default [
             'space-unary-ops'        : [ 'error', { words: true, nonwords: false } ],
             'template-curly-spacing' : [ 'error', 'always' ],
         },
-    }
+    },
 ];

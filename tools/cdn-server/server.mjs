@@ -17,14 +17,14 @@ function getContentType( pathname ) {
     const fileExtension = pathname.split( '.' ).pop();
 
     switch ( fileExtension ) {
-        case 'css':
-            return 'text/css; charset=UTF-8';
-        case 'html':
-            return 'text/html';
-        case 'js':
-            return 'application/javascript';
-        default:
-            return '';
+    case 'css':
+        return 'text/css; charset=UTF-8';
+    case 'html':
+        return 'text/html';
+    case 'js':
+        return 'application/javascript';
+    default:
+        return '';
     }
 }
 
