@@ -1,17 +1,33 @@
 FROM node:16.17.0-bullseye
 
-ENV NODE_MODULES_PATH /app/primo-explore-devenv/
+ENV TOP_LEVEL_NODE_MODULES_PATH /app/
+ENV PRIMO_EXPLORE_DEVENV_NODE_MODULES_PATH /app/primo-explore-devenv/
 
 WORKDIR /app
 
+COPY bookmarklets ./bookmarklets
+COPY cdn ./cdn
 COPY custom ./custom
+COPY scripts ./scripts
+COPY tools ./tools
+COPY tmp ./tmp
+
+COPY .eslintrc.cjs .
+COPY eslint.config.js .
 COPY package.json .
+
+COPY package.json yarn.lock /tmp/
+RUN cd /tmp/ && yarn install --frozen-lockfile \
+  && mkdir -p ${TOP_LEVEL_NODE_MODULES_PATH} \
+  && cd ${TOP_LEVEL_NODE_MODULES_PATH} \
+  && cp -R /tmp/node_modules ${TOP_LEVEL_NODE_MODULES_PATH} \
+  && rm -r /tmp/* && yarn cache clean
 
 COPY primo-explore-devenv/package.json primo-explore-devenv/yarn.lock /tmp/
 RUN cd /tmp/ && yarn install --frozen-lockfile \
-  && mkdir -p ${NODE_MODULES_PATH} \
-  && cd ${NODE_MODULES_PATH} \
-  && cp -R /tmp/node_modules ${NODE_MODULES_PATH} \
+  && mkdir -p ${PRIMO_EXPLORE_DEVENV_NODE_MODULES_PATH} \
+  && cd ${PRIMO_EXPLORE_DEVENV_NODE_MODULES_PATH} \
+  && cp -R /tmp/node_modules ${PRIMO_EXPLORE_DEVENV_NODE_MODULES_PATH} \
   && rm -r /tmp/* && yarn cache clean
 
 COPY primo-explore-devenv/addons ./primo-explore-devenv/addons

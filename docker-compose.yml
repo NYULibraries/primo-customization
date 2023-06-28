@@ -1,9 +1,5 @@
 version: "3.8"
 
-x-cdn-volume: &x-cdn-volume
-  volumes:
-    - ./cdn:/app/cdn
-
 x-build-cdn-server: &x-build-cdn-server
   image: primo-customizations-cdn-server
   build:
@@ -21,18 +17,41 @@ x-build-primo-customization: &x-build-primo-customization
     dockerfile: Dockerfile
 
 services:
+  bookmarklet:
+    <<: [ *x-build-primo-customization ]
+    command: yarn bookmarklet
+    volumes:
+      - ./tmp:/app/tmp
   cdn-server:
-    <<: [*x-build-cdn-server, *x-cdn-volume]
+    <<: [*x-build-cdn-server]
     ports:
       - "3000:3000"
     # volumes:
-    #  - ./primo-explore-devenv/primo-explore/cdn:/app/primo-explore-devenv/primo-explore/cdn
+    #   - ./cdn:/app/cdn
   create-package:
     <<: [*x-build-primo-customization]
     command: yarn primo-explore-devenv:create-package
     # volumes:
-    #  - ./primo-explore-devenv/primo-explore/custom:/app/primo-explore-devenv/primo-explore/custom
-    #  - ./primo-explore-devenv/packages/:/app/primo-explore-devenv/packages
+    #   - ./custom:/app/custom
+    #   - ./primo-explore-devenv/packages/:/app/primo-explore-devenv/packages
+  # TODO: What's the best way to get the file out of the container?
+  eslint-cjs-file:
+    <<: [ *x-build-primo-customization ]
+    command: yarn eslint:cjs-file
+  # TODO: What's the best way to get the files at the root of project out of the container?
+  eslint-fix:
+      <<: [ *x-build-primo-customization ]
+      command: yarn eslint:fix
+      volumes:
+        - ./cdn:/app/cdn
+        - ./custom:/app/custom
+        - ./scripts:/app/scripts
+        - ./tools:/app/tools
+  generate-custom-directives:
+    <<: [ *x-build-primo-customization ]
+    command: yarn generate-custom-directives
+    volumes:
+      - ./custom:/app/custom
   primo-explore-devenv:
     <<: [*x-build-primo-customization]
     depends_on:
@@ -40,4 +59,4 @@ services:
     ports:
       - "8003:8003"
     # volumes:
-    #  - ./primo-explore-devenv/primo-explore/custom:/app/primo-explore-devenv/primo-explore/custom
+    #   - ./custom:/app/custom
