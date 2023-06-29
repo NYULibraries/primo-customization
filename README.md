@@ -110,7 +110,41 @@ docker compose primo-explore-devenv:create-package
 
 ---
 
-## ESLint configuration
+## Customized version of ExLibris "showDirectives" bookmarklet
+
+To generate our custom version of the ExLibris
+"showDirectives" bookmarklet [primo\-explore\-package/VIEW\_CODE /showDirectives\.txt](https://github.com/ExLibrisGroup/primo-explore-package/blob/1b43a8fff46f3fec58bf4ea36bb4ec658e5a3d93/VIEW_CODE/showDirectives.txt):
+in _tmp/show-directives.txt_:
+
+```shell
+yarn bookmarklet
+```
+
+Using Docker Compose:
+
+```shell
+docker compose bookmarklet
+```
+
+---
+
+## ESLint
+
+### Fix ESLint errors
+
+To fix all ESLint errors in files for which we enforce ESLint rules:
+
+```shell
+yarn eslint:fix
+```
+
+Using Docker Compose:
+
+```shell
+docker compose eslint-fix
+```
+
+### New configuration system
 
 ESLint is transitioning to a new configuration system:
 [Configuration Files](https://eslint.org/docs/latest/use/configure/configuration-files)
@@ -129,7 +163,17 @@ be automatically detected by the JetBrain IDEs.
 To regenerate _.eslintc.cjs_:
 
 ```shell
-node scripts/write-eslintrc-cjs-file.js
+yarn eslint:cjs-file
+# The script currently does not generate an ESLint-compliant file, so we need to fix it.
+yarn eslint:fix
+```
+
+Using Docker Compose:
+
+```shell
+docker compose eslint-cjs-file
+# The script currently does not generate an ESLint-compliant file, so we need to fix it.
+yarn eslint-fix
 ```
 
 Note that it is not really possible to have _.eslintrc.cjs_ import the rules directly
