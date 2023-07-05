@@ -7,21 +7,11 @@
 
 ROOT=$( cd "$(dirname "$0")" ; cd ..; pwd -P )
 
-ESLINT_CJS_FILE_CMD='yarn eslint:cjs-file'
-KEEP_RUNNING_CMD='tail -f /dev/null'
+DOCKER_CONTAINER='primo-customization-eslint-cjs-file-1'
 
+ESLINT_CJS_DOCKER_COMPOSE_CMD='eslint-cjs-file'
 ESLINT_CJS_FILE=.eslintrc.cjs
 
-DOCKER_IMAGE='primo-explore-devenv'
-DOCKER_CONTAINER='eslint-cjs-file'
-
-docker run --detach \
-           --name $DOCKER_CONTAINER \
-           --rm \
-       $DOCKER_IMAGE $KEEP_RUNNING_CMD
-
-docker exec $DOCKER_CONTAINER $ESLINT_CJS_FILE_CMD
+docker compose up $ESLINT_CJS_DOCKER_COMPOSE_CMD
 
 docker cp $DOCKER_CONTAINER:/app/$ESLINT_CJS_FILE $ROOT/
-
-docker stop $DOCKER_CONTAINER
