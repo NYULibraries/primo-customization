@@ -35,20 +35,20 @@ function requestListener( request, response ) {
     const contentType = getContentType( requestUrl.pathname );
     const file = path.join( CDN_PATH, requestUrl.pathname );
 
+    response.setHeader( 'Access-Control-Allow-Origin', '*' );
+    response.setHeader( 'Content-Type', contentType );
+    response.writeHead( 200 );
+
     fs.readFile( file )
         .then( contents => {
-            response.setHeader( 'Access-Control-Allow-Origin', '*' );
-            response.setHeader( 'Content-Type', contentType );
-            response.writeHead( 200 );
             response.end( contents );
 
             console.log( `[ RESPONSE ] ${ file }` );
         } )
         .catch( err => {
-            response.writeHead( 404 );
-            response.end( `${ request.pathname } not found` );
+            response.end( '' );
 
-            console.error( `[ ERROR ] ${ err.message }` );
+            console.log( `[ RESPONSE ] [ NO TEMPLATE FILE FOUND ]` );
         } );
 }
 
