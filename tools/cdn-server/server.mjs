@@ -7,7 +7,7 @@ const __dirname = url.fileURLToPath( new URL( '.', import.meta.url ) );
 
 const ROOT = path.join( __dirname, '..', '..' );
 
-const cdnPath = path.join( ROOT, 'cdn' );
+const CDN_PATH = path.join( ROOT, 'cdn' );
 
 const listenOn = 'http://localhost:3000';
 
@@ -33,7 +33,7 @@ function requestListener( request, response ) {
 
     const requestUrl = new URL( request.url, listenOn );
     const contentType = getContentType( requestUrl.pathname );
-    const file = path.join( cdnPath, requestUrl.pathname );
+    const file = path.join( CDN_PATH, requestUrl.pathname );
 
     fs.readFile( file )
         .then( contents => {
