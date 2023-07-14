@@ -7,7 +7,7 @@ const __dirname = url.fileURLToPath( new URL( '.', import.meta.url ) );
 
 const ROOT = path.join( __dirname, '..', '..' );
 
-const cdnPath = path.join( ROOT, 'cdn' );
+const CDN_PATH = path.join( ROOT, 'cdn' );
 
 const listenOn = 'http://localhost:3000';
 
@@ -33,22 +33,22 @@ function requestListener( request, response ) {
 
     const requestUrl = new URL( request.url, listenOn );
     const contentType = getContentType( requestUrl.pathname );
-    const file = path.join( cdnPath, requestUrl.pathname );
+    const file = path.join( CDN_PATH, requestUrl.pathname );
+
+    response.setHeader( 'Access-Control-Allow-Origin', '*' );
+    response.setHeader( 'Content-Type', contentType );
+    response.writeHead( 200 );
 
     fs.readFile( file )
         .then( contents => {
-            response.setHeader( 'Access-Control-Allow-Origin', '*' );
-            response.setHeader( 'Content-Type', contentType );
-            response.writeHead( 200 );
             response.end( contents );
 
             console.log( `[ RESPONSE ] ${ file }` );
         } )
         .catch( err => {
-            response.writeHead( 404 );
-            response.end( `${ request.pathname } not found` );
+            response.end( '' );
 
-            console.error( `[ ERROR ] ${ err.message }` );
+            console.log( `[ RESPONSE ] [ NO TEMPLATE FILE FOUND ]` );
         } );
 }
 
