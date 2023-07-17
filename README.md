@@ -57,8 +57,16 @@ docker compose up cdn-server
 Local Primo: http://localhost:8003/discovery/search?vid=[VIEW]
 
 ```shell
-yarn primo-explore-devenv:run
+# http://localhost:8003/discovery/search?vid=01NYU_INST:NYU_DEV
+yarn primo-explore-devenv:run:dev
+# http://localhost:8003/discovery/search?vid=01NYU_INST:NYU
+yarn primo-explore-devenv:run:prod
+# http://localhost:8003/discovery/search?vid=01NYU_INST:TESTWS01
+yarn primo-explore-devenv:run:testws01
 ```
+
+**WARNING: The `docker compose` commands have not yet been updated for dev/prod/testws01 views.
+The command below will not work.  We will be implementing the new `docker compose` commands soon.** 
 
 Using Docker Compose (starts `cdn-server` service automatically):
 
@@ -94,13 +102,21 @@ refresh the directory.
 This command will create a new package in _primo-explore-devenv/packages/_:
 
 ```shell
-yarn primo-explore-devenv:create-package
+# Creates ./primo-explore-devenv/packages/01NYU_INST-NYU_DEV.zip
+yarn primo-explore-devenv:create-package:dev
+# Creates ./primo-explore-devenv/packages/01NYU_INST-NYU.zip
+yarn primo-explore-devenv:create-package:prod
+# Creates ./primo-explore-devenv/packages/01NYU_INST-TESTWS01.zip
+yarn primo-explore-devenv:create-package:testws01
 ```
+
+**WARNING: The `docker compose` commands have not yet been updated for dev/prod/testws01 views.
+The command below will not work.  We will be implementing the new `docker compose` commands soon.**
 
 Using Docker Compose:
 
 ```shell
-docker compose primo-explore-devenv:create-package
+docker compose create-package
 ```
 
 ### Deploy new Primo customization package
@@ -215,6 +231,20 @@ See [Start local CDN server](https://github.com/NYULibraries/primo-customization
 ---
 
 ## Archived code
+
+### Have CloudFront server a custom empty 403 error page when a non-existent templateUrl file is requested
+
+Ideally, we would not want to be generating empty `templateUrl` files in S3 for
+all custom directives that haven't been customized.  We set up our S3 bucket and
+CloudFront instance in AWS `nyulibraries-webservices` to serve and empty HTML
+page whenever S3 returned a 403 error to CloudFront for a request for a non-existing
+file, then deleted all HTML files that had no customization content.  It works
+well, but we can't necessarily make the same changes in `nyulibraries` and
+`nyulits` dev and prod S3/CloudFront setups right away.  We would first have to
+create separate S3 buckets and CloudFront distributions because the CloudFront
+custom error page feature is global, and CDN and dev CDN are shared with other
+websites and applications.
+[archived\_use\-custom\-403\-response\-html\-file\-for\-empty\-custom\-directives](https://github.com/NYULibraries/primo-customization/releases/tag/archived_use-custom-403-response-html-file-for-empty-custom-directives)
 
 ### Only generate components for HTML files listed in a manifest
 

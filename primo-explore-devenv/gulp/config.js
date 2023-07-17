@@ -166,7 +166,7 @@ var SERVERS = {
  *   var PROXY_SERVER = 'http://abc-primo.hosted.exlibrisgroup.com'
  *   var PROXY_SERVER = 'https://abc-primo.hosted.exlibrisgroup.com:443'
  */
-var PROXY_SERVER = 'https://sandbox02-na.primo.exlibrisgroup.com:443';
+var PROXY_SERVER = 'https://nyu.primo.exlibrisgroup.com:443';
 
 
 let buildParams = {
