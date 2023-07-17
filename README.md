@@ -65,6 +65,9 @@ yarn primo-explore-devenv:run:prod
 yarn primo-explore-devenv:run:testws01
 ```
 
+**WARNING: The `docker compose` commands have not yet been updated for dev/prod/testws01 views.
+The command below will not work.  We will be implementing the new `docker compose` commands soon.** 
+
 Using Docker Compose (starts `cdn-server` service automatically):
 
 ```shell
@@ -106,6 +109,9 @@ yarn primo-explore-devenv:create-package:prod
 # Creates ./primo-explore-devenv/packages/01NYU_INST-TESTWS01.zip
 yarn primo-explore-devenv:create-package:testws01
 ```
+
+**WARNING: The `docker compose` commands have not yet been updated for dev/prod/testws01 views.
+The command below will not work.  We will be implementing the new `docker compose` commands soon.**
 
 Using Docker Compose:
 
