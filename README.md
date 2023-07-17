@@ -61,6 +61,8 @@ Local Primo: http://localhost:8003/discovery/search?vid=[VIEW]
 yarn primo-explore-devenv:run:dev
 # http://localhost:8003/discovery/search?vid=01NYU_INST:NYU
 yarn primo-explore-devenv:run:prod
+# http://localhost:8003/discovery/search?vid=01NYU_INST:TESTWS01
+yarn primo-explore-devenv:run:testws01
 ```
 
 Using Docker Compose (starts `cdn-server` service automatically):
@@ -101,6 +103,8 @@ This command will create a new package in _primo-explore-devenv/packages/_:
 yarn primo-explore-devenv:create-package:dev
 # Creates ./primo-explore-devenv/packages/01NYU_INST-NYU.zip
 yarn primo-explore-devenv:create-package:prod
+# Creates ./primo-explore-devenv/packages/01NYU_INST-TESTWS01.zip
+yarn primo-explore-devenv:create-package:testws01
 ```
 
 Using Docker Compose:
