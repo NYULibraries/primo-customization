@@ -57,7 +57,10 @@ docker compose up cdn-server
 Local Primo: http://localhost:8003/discovery/search?vid=[VIEW]
 
 ```shell
-yarn primo-explore-devenv:run
+# http://localhost:8003/discovery/search?vid=01NYU_INST:NYU_DEV
+yarn primo-explore-devenv:run:dev
+# http://localhost:8003/discovery/search?vid=01NYU_INST:NYU
+yarn primo-explore-devenv:run:prod
 ```
 
 Using Docker Compose (starts `cdn-server` service automatically):
@@ -94,7 +97,10 @@ refresh the directory.
 This command will create a new package in _primo-explore-devenv/packages/_:
 
 ```shell
-yarn primo-explore-devenv:create-package
+# Creates ./primo-explore-devenv/packages/01NYU_INST-NYU_DEV.zip
+yarn primo-explore-devenv:create-package:dev
+# Creates ./primo-explore-devenv/packages/01NYU_INST-NYU.zip
+yarn primo-explore-devenv:create-package:prod
 ```
 
 Using Docker Compose:
