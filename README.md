@@ -216,6 +216,20 @@ See [Start local CDN server](https://github.com/NYULibraries/primo-customization
 
 ## Archived code
 
+### Have CloudFront server a custom empty 403 error page when a non-existent templateUrl file is requested
+
+Ideally, we would not want to be generating empty `templateUrl` files in S3 for
+all custom directives that haven't been customized.  We set up our S3 bucket and
+CloudFront instance in AWS `nyulibraries-webservices` to serve and empty HTML
+page whenever S3 returned a 403 error to CloudFront for a request for a non-existing
+file, then deleted all HTML files that had no customization content.  It works
+well, but we can't necessarily make the same changes in `nyulibraries` and
+`nyulits` dev and prod S3/CloudFront setups right away.  We would first have to
+create separate S3 buckets and CloudFront distributions because the CloudFront
+custom error page feature is global, and CDN and dev CDN are shared with other
+websites and applications.
+[archived\_use\-custom\-403\-response\-html\-file\-for\-empty\-custom\-directives](https://github.com/NYULibraries/primo-customization/releases/tag/archived_use-custom-403-response-html-file-for-empty-custom-directives)
+
 ### Only generate components for HTML files listed in a manifest
 
 We originally thought we could limit the generation of customizable AngularJS
