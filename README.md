@@ -100,7 +100,7 @@ yarn primo-explore-devenv:create-package
 Using Docker Compose:
 
 ```shell
-docker compose primo-explore-devenv:create-package
+docker compose create-package
 ```
 
 ### Deploy new Primo customization package
