@@ -5018,30 +5018,6 @@ function generateAllPossibleCustomDirectives() {
         templateUrl: `${ cdnUrl }/html/prm-search-result-add-to-favorites-menu-after.html`,
     } );
     
-    // PRM-SEARCH-RESULT-AVAILABILITY-LINE-AFTER
-    app.component( 'prmSearchResultAvailabilityLineAfter', {
-        bindings  : { parentCtrl: '<' },
-        controller: function( $scope, $rootScope ) {
-            const vm = this;
-
-            vm.getPnx = () => {
-                try {
-                    const pnx = vm.parentCtrl.item.pnx;
-
-                    return pnx;
-                } catch ( err ) {
-                    console.log( 'prmSearchResultAvailabilityLineAfter: error accessing `vm.parentCtrl.item.pnx`' );
-
-                    return null;
-                }
-            };
-
-            vm.rootScope = $rootScope;
-            vm.scope = $scope;
-        },
-        templateUrl: `${ cdnUrl }/html/prm-search-result-availability-line-after.html`,
-    } );
-    
     // PRM-SEARCH-RESULT-FRBR-LINE-AFTER
     app.component( 'prmSearchResultFrbrLineAfter', {
         bindings  : { parentCtrl: '<' },
