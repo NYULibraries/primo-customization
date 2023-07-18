@@ -1,4 +1,4 @@
-#!/bin/env bash
+#!/usr/bin/env bash
 
 # ~/.aws/credentials should have the following profiles:
 #
@@ -40,5 +40,11 @@ fi
 
 # Note that `aws s3 sync ... --exact-timestamps` only works for downloads from S3,
 # not uploads: https://github.com/aws/aws-cli/issues/4460.  The only safe way
-# to update is to upload absolutely everything.
+# to update is to upload absolutely everything using `cp` and then deleting
+# removed files using `sync --delete`.
+# There is anecdotal evidence of this issue having been fixed or partially fixed,
+# with `sync` now uploading files even if the size hasn't changed, but
+# https://github.com/aws/aws-cli/issues/4460 is still open, so for safety we
+# continue to use this workaround.
+aws s3 cp --profile $AWS_PROFILE $ROOT/cdn/primo-customization/ s3://$CDN_HOST/primo-customization/ --exclude '*/.gitkeep' --recursive
 aws s3 sync --profile $AWS_PROFILE --delete --exclude '*/.gitkeep' $ROOT/cdn/primo-customization/ s3://$CDN_HOST/primo-customization/
