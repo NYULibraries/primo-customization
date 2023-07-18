@@ -1,4 +1,4 @@
-#!/bin/env bash
+#!/usr/bin/env bash
 
 # ~/.aws/credentials should have the following profiles:
 #
