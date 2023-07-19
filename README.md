@@ -63,15 +63,14 @@ yarn primo-explore-devenv:run:dev
 yarn primo-explore-devenv:run:prod
 # http://localhost:8003/discovery/search?vid=01NYU_INST:TESTWS01
 yarn primo-explore-devenv:run:testws01
+# http://localhost:8003/discovery/search?vid=[VID]
+yarn primo-explore-devenv:run [VIEW]
 ```
-
-**WARNING: The `docker compose` commands have not yet been updated for dev/prod/testws01 views.
-The command below will not work.  We will be implementing the new `docker compose` commands soon.** 
 
 Using Docker Compose (starts `cdn-server` service automatically):
 
 ```shell
-docker compose up primo-explore-devenv
+VIEW=[VIEW] docker compose up primo-explore-devenv
 ```
 ---
 
@@ -108,15 +107,14 @@ yarn primo-explore-devenv:create-package:dev
 yarn primo-explore-devenv:create-package:prod
 # Creates ./primo-explore-devenv/packages/01NYU_INST-TESTWS01.zip
 yarn primo-explore-devenv:create-package:testws01
+# Creates ./primo-explore-devenv/packages/[VIEW].zip
+yarn primo-explore-devenv:create-package [VIEW]
 ```
-
-**WARNING: The `docker compose` commands have not yet been updated for dev/prod/testws01 views.
-The command below will not work.  We will be implementing the new `docker compose` commands soon.**
 
 Using Docker Compose:
 
 ```shell
-docker compose up create-package
+VIEW=[VIEW] docker compose up create-package
 ```
 
 ### Deploy new Primo customization package
