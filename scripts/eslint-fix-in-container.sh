@@ -1,4 +1,4 @@
-#!/bin/env bash
+#!/usr/bin/env bash
 
 # This is script only intended for use by developers who do not have Node installed
 # on their machines or are for some reason unable to build all packages (for
