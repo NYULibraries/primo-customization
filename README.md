@@ -116,7 +116,7 @@ The command below will not work.  We will be implementing the new `docker compos
 Using Docker Compose:
 
 ```shell
-docker compose create-package
+docker compose up create-package
 ```
 
 ### Deploy new Primo customization package
@@ -139,7 +139,7 @@ yarn bookmarklet
 Using Docker Compose:
 
 ```shell
-docker compose bookmarklet
+docker compose up bookmarklet
 ```
 
 ---
@@ -157,7 +157,7 @@ yarn eslint:fix
 Using Docker Compose:
 
 ```shell
-docker compose eslint-fix
+docker compose up eslint-fix
 ```
 
 ### New configuration system
@@ -187,7 +187,7 @@ yarn eslint:fix
 Using Docker Compose:
 
 ```shell
-docker compose eslint-cjs-file
+docker compose up eslint-cjs-file
 # The script currently does not generate an ESLint-compliant file, so we need to fix it.
 yarn eslint-fix
 ```
