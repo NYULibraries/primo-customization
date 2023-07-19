@@ -45,4 +45,7 @@ COPY primo-explore-devenv/tests ./primo-explore-devenv/tests
 
 EXPOSE 8003
 
-CMD ["yarn", "primo-explore-devenv:run"]
+# This should be overridden by `command` in the Docker Compose service definitions
+# in all cases, so in theory this CMD should never be run, but let's provide a
+# sensible default anyway just in case.
+CMD ["yarn", "primo-explore-devenv:run:dev"]
