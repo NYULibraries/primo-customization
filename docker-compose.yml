@@ -8,6 +8,9 @@ x-build-cdn-server: &x-build-cdn-server
       - primo-customizations-cdn-server
     dockerfile: Dockerfile.cdn-server
 
+x-environment: &x-environment
+  VIEW: ${VIEW}
+
 x-build-primo-customization: &x-build-primo-customization
   image: primo-explore-devenv
   build:
@@ -30,7 +33,9 @@ services:
     #   - ./cdn:/app/cdn
   create-package:
     <<: [*x-build-primo-customization]
-    command: yarn primo-explore-devenv:create-package
+    command: yarn primo-explore-devenv:create-package $VIEW
+    environment:
+      <<: *x-environment
     # volumes:
     #   - ./custom:/app/custom
     #   - ./primo-explore-devenv/packages/:/app/primo-explore-devenv/packages
@@ -54,8 +59,11 @@ services:
       - ./custom:/app/custom
   primo-explore-devenv:
     <<: [*x-build-primo-customization]
+    command: yarn primo-explore-devenv:run $VIEW
     depends_on:
       - cdn-server
+    environment:
+      <<: *x-environment
     ports:
       - "8003:8003"
     # volumes:
