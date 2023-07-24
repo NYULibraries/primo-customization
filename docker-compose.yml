@@ -29,6 +29,8 @@ services:
       - ./tmp:/app/tmp
   cdn-server:
     <<: [*x-build-cdn-server]
+    networks:
+      - primo-customization-net
     ports:
       - "3000:3000"
     # volumes:
