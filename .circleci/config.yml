@@ -20,6 +20,10 @@ jobs:
           name: Build docker
           command: |
             docker compose build
+      - run:
+          name: Sanity check: do devenv and cdn start?
+          command: |
+            scripts/sanity-check-test.sh
       - <<: *auth_quay
       - run:
           name: Setup custom environment variables
