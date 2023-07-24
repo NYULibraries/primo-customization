@@ -20,6 +20,11 @@ jobs:
           name: Build docker
           command: |
             docker compose build
+      - <<: *auth_quay
+      - run:
+          name: Push images to quay
+          command: |
+            scripts/push-images-to-quay.sh
 
 workflows:
   version: 2

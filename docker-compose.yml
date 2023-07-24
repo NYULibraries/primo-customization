@@ -1,22 +1,22 @@
 version: "3.8"
 
 x-build-cdn-server: &x-build-cdn-server
-  image: primo-customizations-cdn-server
+  image: primo-customization-cdn-server
   build:
     context: ./
     cache_from:
-      - primo-customizations-cdn-server
+      - primo-customization-cdn-server
     dockerfile: Dockerfile.cdn-server
 
 x-environment: &x-environment
   VIEW: ${VIEW}
 
 x-build-primo-customization: &x-build-primo-customization
-  image: primo-explore-devenv
+  image: primo-customization-devenv
   build:
     context: ./
     cache_from:
-      - primo-explore-devenv
+      - primo-customization-devenv
     dockerfile: Dockerfile
 
 services:
