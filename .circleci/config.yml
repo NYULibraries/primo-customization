@@ -22,6 +22,9 @@ jobs:
             docker compose build
       - <<: *auth_quay
       - run:
+          name: Setup custom environment variables
+          command: echo 'export BRANCH_NO_SLASH="${CIRCLE_BRANCH//\//_}"' >> $BASH_ENV
+      - run:
           name: Push images to quay
           command: |
             scripts/push-images-to-quay.sh
