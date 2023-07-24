@@ -1,5 +1,3 @@
-injectCDNResourceTags();
-
 function injectCDNResourceTags() {
     injectLinkTagForCDNCustomCSS()
     injectScriptTagForCDNCustomJS();
