@@ -1,3 +1,8 @@
+docker-defaults: &docker-defaults
+  docker:
+    - image: quay.io/nyulibraries/circleci_docker:20.10.6-dc-1.29.1-0
+  working_directory: ~/app
+
 auth_quay: &auth_quay
   run:
     name: Authenticate Quay
