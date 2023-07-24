@@ -1,7 +1,4 @@
-generateAllPossibleCustomDirectives();
-
-// Append <script src='[OUR CUSTOMIZATION SCRIPT]'> tag to the end of <body>.
-app.run( injectCDNResourceTags );
+injectCDNResourceTags();
 
 function injectCDNResourceTags() {
     injectLinkTagForCDNCustomCSS()
