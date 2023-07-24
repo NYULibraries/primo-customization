@@ -72,6 +72,15 @@ Using Docker Compose (starts `cdn-server` service automatically):
 ```shell
 VIEW=[VIEW] docker compose up primo-explore-devenv
 ```
+
+For example:
+
+```shell
+# http://localhost:8003/discovery/search?vid=01NYU_INST:NYU
+VIEW=01NYU_INST-NYU_DEV dc up primo-explore-devenv
+```
+
+
 ---
 
 ### Where does _primo-explore-devenv/_ come from?
