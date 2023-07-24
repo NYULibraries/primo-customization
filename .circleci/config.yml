@@ -21,7 +21,7 @@ jobs:
           command: |
             docker compose build
       - run:
-          name: Sanity check: do devenv and cdn start?
+          name: "Sanity check: do devenv and cdn start?"
           command: |
             scripts/sanity-check-test.sh
       - <<: *auth_quay
