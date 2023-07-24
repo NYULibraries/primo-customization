@@ -1,0 +1,23 @@
+auth_quay: &auth_quay
+  run:
+    name: Authenticate Quay
+    command: |
+      docker login -u "$QUAY_USERNAME" -p "$QUAY_PASSWORD" quay.io
+
+version: 2
+jobs:
+  build:
+    <<: *docker-defaults
+    steps:
+      - checkout
+      - setup_remote_docker
+      - run:
+          name: Build docker
+          command: |
+            docker compose build
+
+workflows:
+  version: 2
+  build:
+    jobs:
+    - build
