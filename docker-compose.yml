@@ -23,6 +23,8 @@ services:
   bookmarklet:
     <<: [ *x-build-primo-customization ]
     command: yarn bookmarklet
+    networks:
+      - primo-customization-net
     volumes:
       - ./tmp:/app/tmp
   cdn-server:
@@ -60,6 +62,8 @@ services:
   primo-explore-devenv:
     <<: [*x-build-primo-customization]
     command: yarn primo-explore-devenv:run $VIEW
+    networks:
+      - primo-customization-net
     depends_on:
       - cdn-server
     environment:
@@ -68,3 +72,11 @@ services:
       - "8003:8003"
     # volumes:
     #   - ./custom:/app/custom
+  curl:
+    image: appropriate/curl
+    networks:
+      - primo-customization-net
+
+networks:
+  primo-customization-net:
+    driver: bridge
