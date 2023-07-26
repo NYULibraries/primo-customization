@@ -28,10 +28,7 @@ function getCdnUrl( vid ) {
             '01NYU_INST:TESTWS01': 'http://localhost:3000/primo-customization',
         },
         'nyu.primo.exlibrisgroup.com': {
-            // We don't have prod CDN set up yet for Primo VE customization prototyping.
-            // For now, use dev CDN.
-            // '01NYU_INST:NYU'     : 'https://cdn.library.nyu.edu/primo-customization',
-            '01NYU_INST:NYU'     : 'https://cdn-dev.library.nyu.edu/primo-customization',
+            '01NYU_INST:NYU'     : 'https://cdn.library.nyu.edu/primo-customization',
             '01NYU_INST:NYU_DEV' : 'https://cdn-dev.library.nyu.edu/primo-customization',
             '01NYU_INST:TESTWS01': 'https://cdn-dev.library.nyu.edu/primo-customization',
         },
