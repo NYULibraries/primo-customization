@@ -6266,4 +6266,7 @@ function generateAllPossibleCustomDirectives() {
         templateUrl: `${ cdnUrl }/html/prm-voice-search-toast-after.html`,
     } );
     
+
 }
+
+generateAllPossibleCustomDirectives();
