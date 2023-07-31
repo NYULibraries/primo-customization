@@ -2,7 +2,9 @@
 *~
 
 # Built by `gulp`
+custom/*/css/app-colors.css
 custom/*/js/custom.js
+custom/*/scss/
 
 # Empty temp directory
 tmp/*
