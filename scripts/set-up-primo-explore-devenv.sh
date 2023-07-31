@@ -33,7 +33,7 @@ rm -fr .git/
 # Set PROXY_SERVER.
 # This inline replace sed command is written for execution on a Mac.  It might
 # require a slight adjustment to the -i option in a Linux environment.
-sed -i '' 's@http://your-server:your-port@https://sandbox02-na.primo.exlibrisgroup.com:443@g' ./gulp/config.js
+sed -i '' 's@http://your-server:your-port@https://nyu.primo.exlibrisgroup.com:443@g' ./gulp/config.js
 
 # ExLibris .gitignore has bugs in it: https://github.com/NYULibraries/primo-customization/blob/4bd6850cd4a603c31f5c0ef6b6d4e080bc52a28a/primo-explore-devenv/.gitignore#L1-L2
 # ...should be "primo-explore/custom/*" and "primo-explore/custom/*".
