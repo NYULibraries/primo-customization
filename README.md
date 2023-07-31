@@ -132,6 +132,10 @@ This command will create from _custom/[VIEW]/colors.json_:
 * _custom/[VIEW]/css/app-colors.css_
 * _custom/[VIEW]/scss/_
 
+Note that currently we use CDN CSS files to customize colors.
+These yarn scripts are only for generating the _app-colors.css_ file that is to
+copied/moved to the CDN.
+
 ```shell
 yarn primo-explore-devenv:app-css:dev
 yarn primo-explore-devenv:app-css:prod
