@@ -1,5 +1,5 @@
 function injectCDNResourceTags() {
-    injectLinkTagForCDNCustomCSS()
+    injectLinkTagsForCDNCustomCSS()
     injectScriptTagForCDNCustomJS();
 }
 
@@ -9,12 +9,14 @@ function injectScriptTagForCDNCustomJS() {
     document.body.appendChild( script );
 }
 
-function injectLinkTagForCDNCustomCSS() {
-    const link = document.createElement( 'link' );
-    link.type = 'text/css';
-    link.rel = 'stylesheet';
+function injectLinkTagsForCDNCustomCSS() {
+    [ 'app-colors.css', 'custom.css' ].forEach( file => {
+        const link = document.createElement( 'link' );
+        link.type = 'text/css';
+        link.rel = 'stylesheet';
 
-    document.head.appendChild( link );
+        document.head.appendChild( link );
 
-    link.href = `${ cdnUrl }/css/custom.css`;
+        link.href = `${ cdnUrl }/css/${ file }`;
+    } );
 }
