@@ -56,6 +56,13 @@ sed -i '' 's@    "prompt": "1.0.0",@    "node-sass": "9.0.0",\
     "prompt": "1.0.0",@g' ./package.json
 sed -i '' "s@let sass = require('gulp-sass');@let sass = require('gulp-sass')(require('node-sass'));@g" ./gulp/tasks/03-scss.js
 
+# Babel error when running gulp `custom-js` task should end `run` task and prevent
+# local Primo server from starting/continuing to run.
+sed -i '' "s@buildByConcatination().on('end', cb);@buildByConcatination(cb).on('end', cb);@g" ./gulp/tasks/02-custom-js.js
+sed -i '' "s@function buildByConcatination() {@function buildByConcatination(cb) {@g" ./gulp/tasks/02-custom-js.js
+sed -i '' 's@this.emit("end");@cb(err);@g' ./gulp/tasks/02-custom-js.js
+sed -i '' "s@gulp.task('run', gulp.series('select-view', 'connect:primo_explore','reinstall-primo-node-modules','setup_watchers','custom-js','custom-scss','custom-css')); //watch@gulp.task('run', gulp.series('select-view','custom-js','custom-scss','custom-css','connect:primo_explore','reinstall-primo-node-modules','setup_watchers')); //watch@g" ./gulp/tasks//08-servers.js
+
 # ExLibris .gitignore has bugs in it: https://github.com/NYULibraries/primo-customization/blob/4bd6850cd4a603c31f5c0ef6b6d4e080bc52a28a/primo-explore-devenv/.gitignore#L1-L2
 # ...should be "primo-explore/custom/*" and "primo-explore/custom/*".
 # Also, we need to remove the rule for custom/ as we actually do want to check in

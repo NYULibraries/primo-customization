@@ -28,7 +28,7 @@ gulp.task('custom-js', gulp.series('select-view', 'custom-html-templates',(cb) =
         buildByBrowserify().on('end', cb);
     }
     else {
-        buildByConcatination().on('end', cb);
+        buildByConcatination(cb).on('end', cb);
     }
 }));
 
@@ -54,7 +54,7 @@ const getBabelConfig = () => {
     });
 }
 
-function buildByConcatination() {
+function buildByConcatination(cb) {
     return gulp.src([buildParams.customModulePath(),buildParams.mainPath(),buildParams.customNpmJsPath(),buildParams.customNpmDistPath(),'!'+buildParams.customPath(),'!'+buildParams.customNpmJsModulePath(),'!'+buildParams.customNpmJsCustomPath()],{allowEmpty:true})
         .pipe(concat(buildParams.customFile))
         .pipe(babel(getBabelConfig()))
@@ -68,7 +68,7 @@ function buildByConcatination() {
             else {
                 gutil.log(err);
             }
-            this.emit("end");
+            cb(err);
         })
         .pipe(wrap('(function(){\n"use strict";\n<%= contents %>\n})();'))
         .pipe(gulp.dest(buildParams.viewJsDir()));
