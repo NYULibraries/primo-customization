@@ -20,6 +20,13 @@ x-build-primo-customization: &x-build-primo-customization
     dockerfile: Dockerfile
 
 services:
+  app-css:
+    <<: [ *x-build-primo-customization ]
+    command: yarn primo-explore-devenv:app-css $VIEW
+    environment:
+      <<: *x-environment
+    # volumes:
+    #   - ./custom:/app/custom
   bookmarklet:
     <<: [ *x-build-primo-customization ]
     command: yarn bookmarklet

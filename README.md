@@ -133,6 +133,37 @@ VIEW=[VIEW] docker compose up create-package
 
 ---
 
+## Primo customization: "css Recipe 1 - Color Scheme (Starting from August 2016 Release)"
+
+See [primo-explore-package/VIEW_CODE/css/README.md](https://github.com/ExLibrisGroup/primo-explore-package/blob/436df785f0d683785660d23488539bcdc2e37ead/VIEW_CODE/css/README.md)
+
+This command will create from _custom/[VIEW]/colors.json_:
+* _custom/[VIEW]/css/app-colors.css_
+* _custom/[VIEW]/scss/_
+
+Note that currently we use CDN CSS files to customize colors.  The generated
+_app-colors.css_ files should be moved from the customization package to the
+appropriate paths in the CDN.  The _scss/_ directories can simply be deleted.
+
+```shell
+yarn primo-explore-devenv:app-css:dev
+yarn primo-explore-devenv:app-css:prod
+yarn primo-explore-devenv:app-css:testws01
+```
+
+Using Docker Compose:
+
+```shell
+VIEW=[VIEW] docker compose up app-css
+```
+
+### Deploy new Primo customization package
+
+* For Primo VE sandbox, upload to https://sandbox02-na.primo.exlibrisgroup.com/
+* For https://nyu.primo.exlibrisgroup.com/, ask Mike to upload the package
+
+---
+
 ## Customized version of ExLibris "showDirectives" bookmarklet
 
 To generate our custom version of the ExLibris

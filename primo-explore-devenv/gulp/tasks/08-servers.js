@@ -123,4 +123,4 @@ gulp.task('connect:primo_explore', gulp.series('select-view', function(cb) {
 }));
 
 
-gulp.task('run', gulp.series('select-view', 'connect:primo_explore','reinstall-primo-node-modules','setup_watchers','custom-js','custom-scss','custom-css')); //watch
+gulp.task('run', gulp.series('select-view','custom-js','custom-scss','custom-css','connect:primo_explore','reinstall-primo-node-modules','setup_watchers')); //watch

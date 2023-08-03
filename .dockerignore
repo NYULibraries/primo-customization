@@ -7,7 +7,7 @@
 custom/01NYU_INST-NYU/js/custom.js
 custom/01NYU_INST-NYU_DEV/js/custom.js
 custom/01NYU_INST-TESTWS01/js/custom.js
-custom/01NYU_NETWORK-CENTRAL_PACKAGE/js/custom.js
+custom/00_common/js/custom.js
 
 # Empty temp directory
 tmp/*

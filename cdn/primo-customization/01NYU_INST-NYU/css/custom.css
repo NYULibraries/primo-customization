@@ -13,3 +13,9 @@ prm-logo {
 #banner > .md-primoExplore-theme {
   width: 100%;
 }
+
+/* Unhide facet checkboxes by default */
+.multiselect-facet-group.multiselect-inactive .md-chip md-checkbox {
+  transform: none;
+  transition: none;
+}
