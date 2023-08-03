@@ -310,4 +310,11 @@ their final form can be retrieved through git tag
   * Documentation: templates
     * [Developer Guide: Templates](https://docs.angularjs.org/guide)
     * [Tutorial: AngularJS Templates](https://docs.angularjs.org/tutorial/step_02)
-* [ExLibrisGroup/primo-explore-package](https://github.com/ExLibrisGroup/primo-explore-package): The Primo New UI Customization Workflow Development Environment
+* Primo VE customization
+  * [ExLibrisGroup/primo-explore-package](https://github.com/ExLibrisGroup/primo-explore-package): The Primo New UI Customization Workflow Development Environment
+  * [Primo VE Customization \- Best Practices](https://knowledge.exlibrisgroup.com/Primo/Product_Documentation/020Primo_VE/Primo_VE_(English)/030Primo_VE_User_Interface/010Primo_VE_Customization_-_Best_Practices): links copied from the documentation:
+      * Learn how to use js directives: https://github.com/ExLibrisGroup/primo-explore-package/tree/master/VIEW_CODE/js
+      * All source code used for existing customer widgets: https://github.com/search?utf8=%E2%9C%93&q=primo-explore
+      * All feature packages that customers have created: https://www.npmjs.com/search?q=primo-explore&page=2&ranking=optimal
+  * [Central Management in Collaborative Networks](https://knowledge.exlibrisgroup.com/Primo/Product_Documentation/020Primo_VE/Primo_VE_(English)/Collaborative_Networks/0400Central_Management_in_Collaborative_Networks)
+  * Bookmarklet: [primo\-explore\-package/VIEW\_CODE /showDirectives\.txt](https://github.com/ExLibrisGroup/primo-explore-package/blob/master/VIEW_CODE/showDirectives.txt)
