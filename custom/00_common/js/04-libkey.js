@@ -5,7 +5,7 @@ function configureAndInjectLibKey() {
 // Begin BrowZine - Primo Integration...
     window.browzine = {
         api   : 'https://public-api.thirdiron.com/public/v1/libraries/177',
-        apiKey: 'c469b814-c1ab-44f8-bd3b-437ca92df6ff',
+        apiKey: '4997c984-6148-41db-a3d4-f1dc44c5602a',
 
         journalCoverImagesEnabled: true,
 
