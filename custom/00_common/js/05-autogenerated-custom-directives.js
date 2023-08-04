@@ -10,9 +10,7 @@ function generateAllPossibleCustomDirectives() {
 
             vm.getPnx = () => {
                 try {
-                    const pnx = vm.parentCtrl.item.pnx;
-
-                    return pnx;
+                    return vm.parentCtrl.item.pnx;
                 } catch ( err ) {
                     console.log( 'almaHowovpAfter: error accessing `vm.parentCtrl.item.pnx`' );
 
@@ -34,9 +32,7 @@ function generateAllPossibleCustomDirectives() {
 
             vm.getPnx = () => {
                 try {
-                    const pnx = vm.parentCtrl.item.pnx;
-
-                    return pnx;
+                    return vm.parentCtrl.item.pnx;
                 } catch ( err ) {
                     console.log( 'almaHtgiBackButtonAfter: error accessing `vm.parentCtrl.item.pnx`' );
 
@@ -58,9 +54,7 @@ function generateAllPossibleCustomDirectives() {
 
             vm.getPnx = () => {
                 try {
-                    const pnx = vm.parentCtrl.item.pnx;
-
-                    return pnx;
+                    return vm.parentCtrl.item.pnx;
                 } catch ( err ) {
                     console.log( 'almaHtgiSvcAfter: error accessing `vm.parentCtrl.item.pnx`' );
 
@@ -82,9 +76,7 @@ function generateAllPossibleCustomDirectives() {
 
             vm.getPnx = () => {
                 try {
-                    const pnx = vm.parentCtrl.item.pnx;
-
-                    return pnx;
+                    return vm.parentCtrl.item.pnx;
                 } catch ( err ) {
                     console.log( 'almaHtgiTabsAfter: error accessing `vm.parentCtrl.item.pnx`' );
 
@@ -106,9 +98,7 @@ function generateAllPossibleCustomDirectives() {
 
             vm.getPnx = () => {
                 try {
-                    const pnx = vm.parentCtrl.item.pnx;
-
-                    return pnx;
+                    return vm.parentCtrl.item.pnx;
                 } catch ( err ) {
                     console.log( 'hlsVideoAfter: error accessing `vm.parentCtrl.item.pnx`' );
 
@@ -130,9 +120,7 @@ function generateAllPossibleCustomDirectives() {
 
             vm.getPnx = () => {
                 try {
-                    const pnx = vm.parentCtrl.item.pnx;
-
-                    return pnx;
+                    return vm.parentCtrl.item.pnx;
                 } catch ( err ) {
                     console.log( 'ngForwardHackAfter: error accessing `vm.parentCtrl.item.pnx`' );
 
@@ -154,9 +142,7 @@ function generateAllPossibleCustomDirectives() {
 
             vm.getPnx = () => {
                 try {
-                    const pnx = vm.parentCtrl.item.pnx;
-
-                    return pnx;
+                    return vm.parentCtrl.item.pnx;
                 } catch ( err ) {
                     console.log( 'pickupAnywhereFormAfter: error accessing `vm.parentCtrl.item.pnx`' );
 
@@ -178,9 +164,7 @@ function generateAllPossibleCustomDirectives() {
 
             vm.getPnx = () => {
                 try {
-                    const pnx = vm.parentCtrl.item.pnx;
-
-                    return pnx;
+                    return vm.parentCtrl.item.pnx;
                 } catch ( err ) {
                     console.log( 'prmAccountAfter: error accessing `vm.parentCtrl.item.pnx`' );
 
@@ -202,9 +186,7 @@ function generateAllPossibleCustomDirectives() {
 
             vm.getPnx = () => {
                 try {
-                    const pnx = vm.parentCtrl.item.pnx;
-
-                    return pnx;
+                    return vm.parentCtrl.item.pnx;
                 } catch ( err ) {
                     console.log( 'prmAccountLinksAfter: error accessing `vm.parentCtrl.item.pnx`' );
 
@@ -226,9 +208,7 @@ function generateAllPossibleCustomDirectives() {
 
             vm.getPnx = () => {
                 try {
-                    const pnx = vm.parentCtrl.item.pnx;
-
-                    return pnx;
+                    return vm.parentCtrl.item.pnx;
                 } catch ( err ) {
                     console.log( 'prmAccountOverviewAfter: error accessing `vm.parentCtrl.item.pnx`' );
 
@@ -250,9 +230,7 @@ function generateAllPossibleCustomDirectives() {
 
             vm.getPnx = () => {
                 try {
-                    const pnx = vm.parentCtrl.item.pnx;
-
-                    return pnx;
+                    return vm.parentCtrl.item.pnx;
                 } catch ( err ) {
                     console.log( 'prmActionContainerAfter: error accessing `vm.parentCtrl.item.pnx`' );
 
@@ -274,9 +252,7 @@ function generateAllPossibleCustomDirectives() {
 
             vm.getPnx = () => {
                 try {
-                    const pnx = vm.parentCtrl.item.pnx;
-
-                    return pnx;
+                    return vm.parentCtrl.item.pnx;
                 } catch ( err ) {
                     console.log( 'prmActionListAfter: error accessing `vm.parentCtrl.item.pnx`' );
 
@@ -298,9 +274,7 @@ function generateAllPossibleCustomDirectives() {
 
             vm.getPnx = () => {
                 try {
-                    const pnx = vm.parentCtrl.item.pnx;
-
-                    return pnx;
+                    return vm.parentCtrl.item.pnx;
                 } catch ( err ) {
                     console.log( 'prmAddAlertToastAfter: error accessing `vm.parentCtrl.item.pnx`' );
 
@@ -322,9 +296,7 @@ function generateAllPossibleCustomDirectives() {
 
             vm.getPnx = () => {
                 try {
-                    const pnx = vm.parentCtrl.item.pnx;
-
-                    return pnx;
+                    return vm.parentCtrl.item.pnx;
                 } catch ( err ) {
                     console.log( 'prmAddQueryToSavedSearchesAfter: error accessing `vm.parentCtrl.item.pnx`' );
 
@@ -346,9 +318,7 @@ function generateAllPossibleCustomDirectives() {
 
             vm.getPnx = () => {
                 try {
-                    const pnx = vm.parentCtrl.item.pnx;
-
-                    return pnx;
+                    return vm.parentCtrl.item.pnx;
                 } catch ( err ) {
                     console.log( 'prmAdditionalServicesAfter: error accessing `vm.parentCtrl.item.pnx`' );
 
@@ -370,9 +340,7 @@ function generateAllPossibleCustomDirectives() {
 
             vm.getPnx = () => {
                 try {
-                    const pnx = vm.parentCtrl.item.pnx;
-
-                    return pnx;
+                    return vm.parentCtrl.item.pnx;
                 } catch ( err ) {
                     console.log( 'prmAdvancedSearchAfter: error accessing `vm.parentCtrl.item.pnx`' );
 
@@ -394,9 +362,7 @@ function generateAllPossibleCustomDirectives() {
 
             vm.getPnx = () => {
                 try {
-                    const pnx = vm.parentCtrl.item.pnx;
-
-                    return pnx;
+                    return vm.parentCtrl.item.pnx;
                 } catch ( err ) {
                     console.log( 'prmAlmaMashupAfter: error accessing `vm.parentCtrl.item.pnx`' );
 
@@ -418,9 +384,7 @@ function generateAllPossibleCustomDirectives() {
 
             vm.getPnx = () => {
                 try {
-                    const pnx = vm.parentCtrl.item.pnx;
-
-                    return pnx;
+                    return vm.parentCtrl.item.pnx;
                 } catch ( err ) {
                     console.log( 'prmAlmaMoreInstAfter: error accessing `vm.parentCtrl.item.pnx`' );
 
@@ -442,9 +406,7 @@ function generateAllPossibleCustomDirectives() {
 
             vm.getPnx = () => {
                 try {
-                    const pnx = vm.parentCtrl.item.pnx;
-
-                    return pnx;
+                    return vm.parentCtrl.item.pnx;
                 } catch ( err ) {
                     console.log( 'prmAlmaOtherMembersAfter: error accessing `vm.parentCtrl.item.pnx`' );
 
@@ -466,9 +428,7 @@ function generateAllPossibleCustomDirectives() {
 
             vm.getPnx = () => {
                 try {
-                    const pnx = vm.parentCtrl.item.pnx;
-
-                    return pnx;
+                    return vm.parentCtrl.item.pnx;
                 } catch ( err ) {
                     console.log( 'prmAlmaOtherUnitsAfter: error accessing `vm.parentCtrl.item.pnx`' );
 
@@ -490,9 +450,7 @@ function generateAllPossibleCustomDirectives() {
 
             vm.getPnx = () => {
                 try {
-                    const pnx = vm.parentCtrl.item.pnx;
-
-                    return pnx;
+                    return vm.parentCtrl.item.pnx;
                 } catch ( err ) {
                     console.log( 'prmAlmaRepresentationsFilterAfter: error accessing `vm.parentCtrl.item.pnx`' );
 
@@ -514,9 +472,7 @@ function generateAllPossibleCustomDirectives() {
 
             vm.getPnx = () => {
                 try {
-                    const pnx = vm.parentCtrl.item.pnx;
-
-                    return pnx;
+                    return vm.parentCtrl.item.pnx;
                 } catch ( err ) {
                     console.log( 'prmAlmaViewerAfter: error accessing `vm.parentCtrl.item.pnx`' );
 
@@ -538,9 +494,7 @@ function generateAllPossibleCustomDirectives() {
 
             vm.getPnx = () => {
                 try {
-                    const pnx = vm.parentCtrl.item.pnx;
-
-                    return pnx;
+                    return vm.parentCtrl.item.pnx;
                 } catch ( err ) {
                     console.log( 'prmAlmaViewitAfter: error accessing `vm.parentCtrl.item.pnx`' );
 
@@ -562,9 +516,7 @@ function generateAllPossibleCustomDirectives() {
 
             vm.getPnx = () => {
                 try {
-                    const pnx = vm.parentCtrl.item.pnx;
-
-                    return pnx;
+                    return vm.parentCtrl.item.pnx;
                 } catch ( err ) {
                     console.log( 'prmAlmaViewitItemsAfter: error accessing `vm.parentCtrl.item.pnx`' );
 
@@ -586,9 +538,7 @@ function generateAllPossibleCustomDirectives() {
 
             vm.getPnx = () => {
                 try {
-                    const pnx = vm.parentCtrl.item.pnx;
-
-                    return pnx;
+                    return vm.parentCtrl.item.pnx;
                 } catch ( err ) {
                     console.log( 'prmAlphabetToolbarAfter: error accessing `vm.parentCtrl.item.pnx`' );
 
@@ -610,9 +560,7 @@ function generateAllPossibleCustomDirectives() {
 
             vm.getPnx = () => {
                 try {
-                    const pnx = vm.parentCtrl.item.pnx;
-
-                    return pnx;
+                    return vm.parentCtrl.item.pnx;
                 } catch ( err ) {
                     console.log( 'prmAtozSearchBarAfter: error accessing `vm.parentCtrl.item.pnx`' );
 
@@ -634,9 +582,7 @@ function generateAllPossibleCustomDirectives() {
 
             vm.getPnx = () => {
                 try {
-                    const pnx = vm.parentCtrl.item.pnx;
-
-                    return pnx;
+                    return vm.parentCtrl.item.pnx;
                 } catch ( err ) {
                     console.log( 'prmAuthenticationAfter: error accessing `vm.parentCtrl.item.pnx`' );
 
@@ -658,9 +604,7 @@ function generateAllPossibleCustomDirectives() {
 
             vm.getPnx = () => {
                 try {
-                    const pnx = vm.parentCtrl.item.pnx;
-
-                    return pnx;
+                    return vm.parentCtrl.item.pnx;
                 } catch ( err ) {
                     console.log( 'prmBackToLibrarySearchAfter: error accessing `vm.parentCtrl.item.pnx`' );
 
@@ -682,9 +626,7 @@ function generateAllPossibleCustomDirectives() {
 
             vm.getPnx = () => {
                 try {
-                    const pnx = vm.parentCtrl.item.pnx;
-
-                    return pnx;
+                    return vm.parentCtrl.item.pnx;
                 } catch ( err ) {
                     console.log( 'prmBackToLibrarySearchButtonAfter: error accessing `vm.parentCtrl.item.pnx`' );
 
@@ -706,9 +648,7 @@ function generateAllPossibleCustomDirectives() {
 
             vm.getPnx = () => {
                 try {
-                    const pnx = vm.parentCtrl.item.pnx;
-
-                    return pnx;
+                    return vm.parentCtrl.item.pnx;
                 } catch ( err ) {
                     console.log( 'prmBackToSearchResultsButtonAfter: error accessing `vm.parentCtrl.item.pnx`' );
 
@@ -730,9 +670,7 @@ function generateAllPossibleCustomDirectives() {
 
             vm.getPnx = () => {
                 try {
-                    const pnx = vm.parentCtrl.item.pnx;
-
-                    return pnx;
+                    return vm.parentCtrl.item.pnx;
                 } catch ( err ) {
                     console.log( 'prmBannerCardContentAfter: error accessing `vm.parentCtrl.item.pnx`' );
 
@@ -754,9 +692,7 @@ function generateAllPossibleCustomDirectives() {
 
             vm.getPnx = () => {
                 try {
-                    const pnx = vm.parentCtrl.item.pnx;
-
-                    return pnx;
+                    return vm.parentCtrl.item.pnx;
                 } catch ( err ) {
                     console.log( 'prmBarcodeSearchAfter: error accessing `vm.parentCtrl.item.pnx`' );
 
@@ -778,9 +714,7 @@ function generateAllPossibleCustomDirectives() {
 
             vm.getPnx = () => {
                 try {
-                    const pnx = vm.parentCtrl.item.pnx;
-
-                    return pnx;
+                    return vm.parentCtrl.item.pnx;
                 } catch ( err ) {
                     console.log( 'prmBlankIllAfter: error accessing `vm.parentCtrl.item.pnx`' );
 
@@ -802,9 +736,7 @@ function generateAllPossibleCustomDirectives() {
 
             vm.getPnx = () => {
                 try {
-                    const pnx = vm.parentCtrl.item.pnx;
-
-                    return pnx;
+                    return vm.parentCtrl.item.pnx;
                 } catch ( err ) {
                     console.log( 'prmBlankPurchaseRequestAfter: error accessing `vm.parentCtrl.item.pnx`' );
 
@@ -826,9 +758,7 @@ function generateAllPossibleCustomDirectives() {
 
             vm.getPnx = () => {
                 try {
-                    const pnx = vm.parentCtrl.item.pnx;
-
-                    return pnx;
+                    return vm.parentCtrl.item.pnx;
                 } catch ( err ) {
                     console.log( 'prmBreadcrumbsAfter: error accessing `vm.parentCtrl.item.pnx`' );
 
@@ -850,9 +780,7 @@ function generateAllPossibleCustomDirectives() {
 
             vm.getPnx = () => {
                 try {
-                    const pnx = vm.parentCtrl.item.pnx;
-
-                    return pnx;
+                    return vm.parentCtrl.item.pnx;
                 } catch ( err ) {
                     console.log( 'prmBriefResultAfter: error accessing `vm.parentCtrl.item.pnx`' );
 
@@ -874,9 +802,7 @@ function generateAllPossibleCustomDirectives() {
 
             vm.getPnx = () => {
                 try {
-                    const pnx = vm.parentCtrl.item.pnx;
-
-                    return pnx;
+                    return vm.parentCtrl.item.pnx;
                 } catch ( err ) {
                     console.log( 'prmBriefResultContainerAfter: error accessing `vm.parentCtrl.item.pnx`' );
 
@@ -898,9 +824,7 @@ function generateAllPossibleCustomDirectives() {
 
             vm.getPnx = () => {
                 try {
-                    const pnx = vm.parentCtrl.item.pnx;
-
-                    return pnx;
+                    return vm.parentCtrl.item.pnx;
                 } catch ( err ) {
                     console.log( 'prmBriefResultDeliveryOptionLinkAfter: error accessing `vm.parentCtrl.item.pnx`' );
 
@@ -922,9 +846,7 @@ function generateAllPossibleCustomDirectives() {
 
             vm.getPnx = () => {
                 try {
-                    const pnx = vm.parentCtrl.item.pnx;
-
-                    return pnx;
+                    return vm.parentCtrl.item.pnx;
                 } catch ( err ) {
                     console.log( 'prmBriefResultDigitalBestOfferAfter: error accessing `vm.parentCtrl.item.pnx`' );
 
@@ -946,9 +868,7 @@ function generateAllPossibleCustomDirectives() {
 
             vm.getPnx = () => {
                 try {
-                    const pnx = vm.parentCtrl.item.pnx;
-
-                    return pnx;
+                    return vm.parentCtrl.item.pnx;
                 } catch ( err ) {
                     console.log( 'prmBriefResultPhysicalBestOfferAfter: error accessing `vm.parentCtrl.item.pnx`' );
 
@@ -970,9 +890,7 @@ function generateAllPossibleCustomDirectives() {
 
             vm.getPnx = () => {
                 try {
-                    const pnx = vm.parentCtrl.item.pnx;
-
-                    return pnx;
+                    return vm.parentCtrl.item.pnx;
                 } catch ( err ) {
                     console.log( 'prmBrowseResultAfter: error accessing `vm.parentCtrl.item.pnx`' );
 
@@ -994,9 +912,7 @@ function generateAllPossibleCustomDirectives() {
 
             vm.getPnx = () => {
                 try {
-                    const pnx = vm.parentCtrl.item.pnx;
-
-                    return pnx;
+                    return vm.parentCtrl.item.pnx;
                 } catch ( err ) {
                     console.log( 'prmBrowseSearchAfter: error accessing `vm.parentCtrl.item.pnx`' );
 
@@ -1018,9 +934,7 @@ function generateAllPossibleCustomDirectives() {
 
             vm.getPnx = () => {
                 try {
-                    const pnx = vm.parentCtrl.item.pnx;
-
-                    return pnx;
+                    return vm.parentCtrl.item.pnx;
                 } catch ( err ) {
                     console.log( 'prmBrowseSearchBarAfter: error accessing `vm.parentCtrl.item.pnx`' );
 
@@ -1042,9 +956,7 @@ function generateAllPossibleCustomDirectives() {
 
             vm.getPnx = () => {
                 try {
-                    const pnx = vm.parentCtrl.item.pnx;
-
-                    return pnx;
+                    return vm.parentCtrl.item.pnx;
                 } catch ( err ) {
                     console.log( 'prmChaptersAndReviewsItemAfter: error accessing `vm.parentCtrl.item.pnx`' );
 
@@ -1066,9 +978,7 @@ function generateAllPossibleCustomDirectives() {
 
             vm.getPnx = () => {
                 try {
-                    const pnx = vm.parentCtrl.item.pnx;
-
-                    return pnx;
+                    return vm.parentCtrl.item.pnx;
                 } catch ( err ) {
                     console.log( 'prmChaptersAndReviewsAfter: error accessing `vm.parentCtrl.item.pnx`' );
 
@@ -1090,9 +1000,7 @@ function generateAllPossibleCustomDirectives() {
 
             vm.getPnx = () => {
                 try {
-                    const pnx = vm.parentCtrl.item.pnx;
-
-                    return pnx;
+                    return vm.parentCtrl.item.pnx;
                 } catch ( err ) {
                     console.log( 'prmChaptersResultsLineAfter: error accessing `vm.parentCtrl.item.pnx`' );
 
@@ -1114,9 +1022,7 @@ function generateAllPossibleCustomDirectives() {
 
             vm.getPnx = () => {
                 try {
-                    const pnx = vm.parentCtrl.item.pnx;
-
-                    return pnx;
+                    return vm.parentCtrl.item.pnx;
                 } catch ( err ) {
                     console.log( 'prmCitationAfter: error accessing `vm.parentCtrl.item.pnx`' );
 
@@ -1138,9 +1044,7 @@ function generateAllPossibleCustomDirectives() {
 
             vm.getPnx = () => {
                 try {
-                    const pnx = vm.parentCtrl.item.pnx;
-
-                    return pnx;
+                    return vm.parentCtrl.item.pnx;
                 } catch ( err ) {
                     console.log( 'prmCitationLinkerAfter: error accessing `vm.parentCtrl.item.pnx`' );
 
@@ -1162,9 +1066,7 @@ function generateAllPossibleCustomDirectives() {
 
             vm.getPnx = () => {
                 try {
-                    const pnx = vm.parentCtrl.item.pnx;
-
-                    return pnx;
+                    return vm.parentCtrl.item.pnx;
                 } catch ( err ) {
                     console.log( 'prmCitationTrailsBreadcrumbsAfter: error accessing `vm.parentCtrl.item.pnx`' );
 
@@ -1186,9 +1088,7 @@ function generateAllPossibleCustomDirectives() {
 
             vm.getPnx = () => {
                 try {
-                    const pnx = vm.parentCtrl.item.pnx;
-
-                    return pnx;
+                    return vm.parentCtrl.item.pnx;
                 } catch ( err ) {
                     console.log( 'prmCitationTrailsFullviewLinkAfter: error accessing `vm.parentCtrl.item.pnx`' );
 
@@ -1210,9 +1110,7 @@ function generateAllPossibleCustomDirectives() {
 
             vm.getPnx = () => {
                 try {
-                    const pnx = vm.parentCtrl.item.pnx;
-
-                    return pnx;
+                    return vm.parentCtrl.item.pnx;
                 } catch ( err ) {
                     console.log( 'prmCitationTrailsIndicationAfter: error accessing `vm.parentCtrl.item.pnx`' );
 
@@ -1234,9 +1132,7 @@ function generateAllPossibleCustomDirectives() {
 
             vm.getPnx = () => {
                 try {
-                    const pnx = vm.parentCtrl.item.pnx;
-
-                    return pnx;
+                    return vm.parentCtrl.item.pnx;
                 } catch ( err ) {
                     console.log( 'prmCitationTrailsIndicationContainerAfter: error accessing `vm.parentCtrl.item.pnx`' );
 
@@ -1258,9 +1154,7 @@ function generateAllPossibleCustomDirectives() {
 
             vm.getPnx = () => {
                 try {
-                    const pnx = vm.parentCtrl.item.pnx;
-
-                    return pnx;
+                    return vm.parentCtrl.item.pnx;
                 } catch ( err ) {
                     console.log( 'prmCitationTrailsItemAfter: error accessing `vm.parentCtrl.item.pnx`' );
 
@@ -1282,9 +1176,7 @@ function generateAllPossibleCustomDirectives() {
 
             vm.getPnx = () => {
                 try {
-                    const pnx = vm.parentCtrl.item.pnx;
-
-                    return pnx;
+                    return vm.parentCtrl.item.pnx;
                 } catch ( err ) {
                     console.log( 'prmCollectionAfter: error accessing `vm.parentCtrl.item.pnx`' );
 
@@ -1306,9 +1198,7 @@ function generateAllPossibleCustomDirectives() {
 
             vm.getPnx = () => {
                 try {
-                    const pnx = vm.parentCtrl.item.pnx;
-
-                    return pnx;
+                    return vm.parentCtrl.item.pnx;
                 } catch ( err ) {
                     console.log( 'prmCollectionBreadcrumbsAfter: error accessing `vm.parentCtrl.item.pnx`' );
 
@@ -1330,9 +1220,7 @@ function generateAllPossibleCustomDirectives() {
 
             vm.getPnx = () => {
                 try {
-                    const pnx = vm.parentCtrl.item.pnx;
-
-                    return pnx;
+                    return vm.parentCtrl.item.pnx;
                 } catch ( err ) {
                     console.log( 'prmCollectionDiscoveryAfter: error accessing `vm.parentCtrl.item.pnx`' );
 
@@ -1354,9 +1242,7 @@ function generateAllPossibleCustomDirectives() {
 
             vm.getPnx = () => {
                 try {
-                    const pnx = vm.parentCtrl.item.pnx;
-
-                    return pnx;
+                    return vm.parentCtrl.item.pnx;
                 } catch ( err ) {
                     console.log( 'prmCollectionDiscoveryViewSwitcherAfter: error accessing `vm.parentCtrl.item.pnx`' );
 
@@ -1378,9 +1264,7 @@ function generateAllPossibleCustomDirectives() {
 
             vm.getPnx = () => {
                 try {
-                    const pnx = vm.parentCtrl.item.pnx;
-
-                    return pnx;
+                    return vm.parentCtrl.item.pnx;
                 } catch ( err ) {
                     console.log( 'prmCollectionGalleryAfter: error accessing `vm.parentCtrl.item.pnx`' );
 
@@ -1402,9 +1286,7 @@ function generateAllPossibleCustomDirectives() {
 
             vm.getPnx = () => {
                 try {
-                    const pnx = vm.parentCtrl.item.pnx;
-
-                    return pnx;
+                    return vm.parentCtrl.item.pnx;
                 } catch ( err ) {
                     console.log( 'prmCollectionGalleryHeaderAfter: error accessing `vm.parentCtrl.item.pnx`' );
 
@@ -1426,9 +1308,7 @@ function generateAllPossibleCustomDirectives() {
 
             vm.getPnx = () => {
                 try {
-                    const pnx = vm.parentCtrl.item.pnx;
-
-                    return pnx;
+                    return vm.parentCtrl.item.pnx;
                 } catch ( err ) {
                     console.log( 'prmCollectionNavigationBreadcrumbsAfter: error accessing `vm.parentCtrl.item.pnx`' );
 
@@ -1450,9 +1330,7 @@ function generateAllPossibleCustomDirectives() {
 
             vm.getPnx = () => {
                 try {
-                    const pnx = vm.parentCtrl.item.pnx;
-
-                    return pnx;
+                    return vm.parentCtrl.item.pnx;
                 } catch ( err ) {
                     console.log( 'prmCollectionNavigationBreadcrumbsItemAfter: error accessing `vm.parentCtrl.item.pnx`' );
 
@@ -1474,9 +1352,7 @@ function generateAllPossibleCustomDirectives() {
 
             vm.getPnx = () => {
                 try {
-                    const pnx = vm.parentCtrl.item.pnx;
-
-                    return pnx;
+                    return vm.parentCtrl.item.pnx;
                 } catch ( err ) {
                     console.log( 'prmCollectionSearchAfter: error accessing `vm.parentCtrl.item.pnx`' );
 
@@ -1498,9 +1374,7 @@ function generateAllPossibleCustomDirectives() {
 
             vm.getPnx = () => {
                 try {
-                    const pnx = vm.parentCtrl.item.pnx;
-
-                    return pnx;
+                    return vm.parentCtrl.item.pnx;
                 } catch ( err ) {
                     console.log( 'prmControlledVocabularyAfter: error accessing `vm.parentCtrl.item.pnx`' );
 
@@ -1522,9 +1396,7 @@ function generateAllPossibleCustomDirectives() {
 
             vm.getPnx = () => {
                 try {
-                    const pnx = vm.parentCtrl.item.pnx;
-
-                    return pnx;
+                    return vm.parentCtrl.item.pnx;
                 } catch ( err ) {
                     console.log( 'prmCopyClipboardBtnAfter: error accessing `vm.parentCtrl.item.pnx`' );
 
@@ -1546,9 +1418,7 @@ function generateAllPossibleCustomDirectives() {
 
             vm.getPnx = () => {
                 try {
-                    const pnx = vm.parentCtrl.item.pnx;
-
-                    return pnx;
+                    return vm.parentCtrl.item.pnx;
                 } catch ( err ) {
                     console.log( 'prmCopyrightsAfter: error accessing `vm.parentCtrl.item.pnx`' );
 
@@ -1570,9 +1440,7 @@ function generateAllPossibleCustomDirectives() {
 
             vm.getPnx = () => {
                 try {
-                    const pnx = vm.parentCtrl.item.pnx;
-
-                    return pnx;
+                    return vm.parentCtrl.item.pnx;
                 } catch ( err ) {
                     console.log( 'prmDatabasesAfter: error accessing `vm.parentCtrl.item.pnx`' );
 
@@ -1594,9 +1462,7 @@ function generateAllPossibleCustomDirectives() {
 
             vm.getPnx = () => {
                 try {
-                    const pnx = vm.parentCtrl.item.pnx;
-
-                    return pnx;
+                    return vm.parentCtrl.item.pnx;
                 } catch ( err ) {
                     console.log( 'prmDatabasesCategorizeAfter: error accessing `vm.parentCtrl.item.pnx`' );
 
@@ -1618,9 +1484,7 @@ function generateAllPossibleCustomDirectives() {
 
             vm.getPnx = () => {
                 try {
-                    const pnx = vm.parentCtrl.item.pnx;
-
-                    return pnx;
+                    return vm.parentCtrl.item.pnx;
                 } catch ( err ) {
                     console.log( 'prmDatabasesFullViewAfter: error accessing `vm.parentCtrl.item.pnx`' );
 
@@ -1642,9 +1506,7 @@ function generateAllPossibleCustomDirectives() {
 
             vm.getPnx = () => {
                 try {
-                    const pnx = vm.parentCtrl.item.pnx;
-
-                    return pnx;
+                    return vm.parentCtrl.item.pnx;
                 } catch ( err ) {
                     console.log( 'prmDatabasesResultsAfter: error accessing `vm.parentCtrl.item.pnx`' );
 
@@ -1666,9 +1528,7 @@ function generateAllPossibleCustomDirectives() {
 
             vm.getPnx = () => {
                 try {
-                    const pnx = vm.parentCtrl.item.pnx;
-
-                    return pnx;
+                    return vm.parentCtrl.item.pnx;
                 } catch ( err ) {
                     console.log( 'prmDeliveryRegistrationAfter: error accessing `vm.parentCtrl.item.pnx`' );
 
@@ -1690,9 +1550,7 @@ function generateAllPossibleCustomDirectives() {
 
             vm.getPnx = () => {
                 try {
-                    const pnx = vm.parentCtrl.item.pnx;
-
-                    return pnx;
+                    return vm.parentCtrl.item.pnx;
                 } catch ( err ) {
                     console.log( 'prmDeliverySessionExpiryNotificationAfter: error accessing `vm.parentCtrl.item.pnx`' );
 
@@ -1714,9 +1572,7 @@ function generateAllPossibleCustomDirectives() {
 
             vm.getPnx = () => {
                 try {
-                    const pnx = vm.parentCtrl.item.pnx;
-
-                    return pnx;
+                    return vm.parentCtrl.item.pnx;
                 } catch ( err ) {
                     console.log( 'prmDeniedAccessAfter: error accessing `vm.parentCtrl.item.pnx`' );
 
@@ -1738,9 +1594,7 @@ function generateAllPossibleCustomDirectives() {
 
             vm.getPnx = () => {
                 try {
-                    const pnx = vm.parentCtrl.item.pnx;
-
-                    return pnx;
+                    return vm.parentCtrl.item.pnx;
                 } catch ( err ) {
                     console.log( 'prmDepositsAfter: error accessing `vm.parentCtrl.item.pnx`' );
 
@@ -1762,9 +1616,7 @@ function generateAllPossibleCustomDirectives() {
 
             vm.getPnx = () => {
                 try {
-                    const pnx = vm.parentCtrl.item.pnx;
-
-                    return pnx;
+                    return vm.parentCtrl.item.pnx;
                 } catch ( err ) {
                     console.log( 'prmDepositsLinkAfter: error accessing `vm.parentCtrl.item.pnx`' );
 
@@ -1786,9 +1638,7 @@ function generateAllPossibleCustomDirectives() {
 
             vm.getPnx = () => {
                 try {
-                    const pnx = vm.parentCtrl.item.pnx;
-
-                    return pnx;
+                    return vm.parentCtrl.item.pnx;
                 } catch ( err ) {
                     console.log( 'prmDepositsOverviewAfter: error accessing `vm.parentCtrl.item.pnx`' );
 
@@ -1810,9 +1660,7 @@ function generateAllPossibleCustomDirectives() {
 
             vm.getPnx = () => {
                 try {
-                    const pnx = vm.parentCtrl.item.pnx;
-
-                    return pnx;
+                    return vm.parentCtrl.item.pnx;
                 } catch ( err ) {
                     console.log( 'prmDidUMeanAfter: error accessing `vm.parentCtrl.item.pnx`' );
 
@@ -1834,9 +1682,7 @@ function generateAllPossibleCustomDirectives() {
 
             vm.getPnx = () => {
                 try {
-                    const pnx = vm.parentCtrl.item.pnx;
-
-                    return pnx;
+                    return vm.parentCtrl.item.pnx;
                 } catch ( err ) {
                     console.log( 'prmEasybibAfter: error accessing `vm.parentCtrl.item.pnx`' );
 
@@ -1858,9 +1704,7 @@ function generateAllPossibleCustomDirectives() {
 
             vm.getPnx = () => {
                 try {
-                    const pnx = vm.parentCtrl.item.pnx;
-
-                    return pnx;
+                    return vm.parentCtrl.item.pnx;
                 } catch ( err ) {
                     console.log( 'prmEditNotificationSettingsAfter: error accessing `vm.parentCtrl.item.pnx`' );
 
@@ -1882,9 +1726,7 @@ function generateAllPossibleCustomDirectives() {
 
             vm.getPnx = () => {
                 try {
-                    const pnx = vm.parentCtrl.item.pnx;
-
-                    return pnx;
+                    return vm.parentCtrl.item.pnx;
                 } catch ( err ) {
                     console.log( 'prmEndnoteAfter: error accessing `vm.parentCtrl.item.pnx`' );
 
@@ -1906,9 +1748,7 @@ function generateAllPossibleCustomDirectives() {
 
             vm.getPnx = () => {
                 try {
-                    const pnx = vm.parentCtrl.item.pnx;
-
-                    return pnx;
+                    return vm.parentCtrl.item.pnx;
                 } catch ( err ) {
                     console.log( 'prmExploreFooterAfter: error accessing `vm.parentCtrl.item.pnx`' );
 
@@ -1930,9 +1770,7 @@ function generateAllPossibleCustomDirectives() {
 
             vm.getPnx = () => {
                 try {
-                    const pnx = vm.parentCtrl.item.pnx;
-
-                    return pnx;
+                    return vm.parentCtrl.item.pnx;
                 } catch ( err ) {
                     console.log( 'prmExploreMainAfter: error accessing `vm.parentCtrl.item.pnx`' );
 
@@ -1954,9 +1792,7 @@ function generateAllPossibleCustomDirectives() {
 
             vm.getPnx = () => {
                 try {
-                    const pnx = vm.parentCtrl.item.pnx;
-
-                    return pnx;
+                    return vm.parentCtrl.item.pnx;
                 } catch ( err ) {
                     console.log( 'prmExportBibtexAfter: error accessing `vm.parentCtrl.item.pnx`' );
 
@@ -1978,9 +1814,7 @@ function generateAllPossibleCustomDirectives() {
 
             vm.getPnx = () => {
                 try {
-                    const pnx = vm.parentCtrl.item.pnx;
-
-                    return pnx;
+                    return vm.parentCtrl.item.pnx;
                 } catch ( err ) {
                     console.log( 'prmExportExcelAfter: error accessing `vm.parentCtrl.item.pnx`' );
 
@@ -2002,9 +1836,7 @@ function generateAllPossibleCustomDirectives() {
 
             vm.getPnx = () => {
                 try {
-                    const pnx = vm.parentCtrl.item.pnx;
-
-                    return pnx;
+                    return vm.parentCtrl.item.pnx;
                 } catch ( err ) {
                     console.log( 'prmExportRisAfter: error accessing `vm.parentCtrl.item.pnx`' );
 
@@ -2026,9 +1858,7 @@ function generateAllPossibleCustomDirectives() {
 
             vm.getPnx = () => {
                 try {
-                    const pnx = vm.parentCtrl.item.pnx;
-
-                    return pnx;
+                    return vm.parentCtrl.item.pnx;
                 } catch ( err ) {
                     console.log( 'prmFacetAfter: error accessing `vm.parentCtrl.item.pnx`' );
 
@@ -2050,9 +1880,7 @@ function generateAllPossibleCustomDirectives() {
 
             vm.getPnx = () => {
                 try {
-                    const pnx = vm.parentCtrl.item.pnx;
-
-                    return pnx;
+                    return vm.parentCtrl.item.pnx;
                 } catch ( err ) {
                     console.log( 'prmFacetExactAfter: error accessing `vm.parentCtrl.item.pnx`' );
 
@@ -2074,9 +1902,7 @@ function generateAllPossibleCustomDirectives() {
 
             vm.getPnx = () => {
                 try {
-                    const pnx = vm.parentCtrl.item.pnx;
-
-                    return pnx;
+                    return vm.parentCtrl.item.pnx;
                 } catch ( err ) {
                     console.log( 'prmFacetRangeAfter: error accessing `vm.parentCtrl.item.pnx`' );
 
@@ -2098,9 +1924,7 @@ function generateAllPossibleCustomDirectives() {
 
             vm.getPnx = () => {
                 try {
-                    const pnx = vm.parentCtrl.item.pnx;
-
-                    return pnx;
+                    return vm.parentCtrl.item.pnx;
                 } catch ( err ) {
                     console.log( 'prmFavoritesAfter: error accessing `vm.parentCtrl.item.pnx`' );
 
@@ -2122,9 +1946,7 @@ function generateAllPossibleCustomDirectives() {
 
             vm.getPnx = () => {
                 try {
-                    const pnx = vm.parentCtrl.item.pnx;
-
-                    return pnx;
+                    return vm.parentCtrl.item.pnx;
                 } catch ( err ) {
                     console.log( 'prmFavoritesEditLabelsMenuAfter: error accessing `vm.parentCtrl.item.pnx`' );
 
@@ -2146,9 +1968,7 @@ function generateAllPossibleCustomDirectives() {
 
             vm.getPnx = () => {
                 try {
-                    const pnx = vm.parentCtrl.item.pnx;
-
-                    return pnx;
+                    return vm.parentCtrl.item.pnx;
                 } catch ( err ) {
                     console.log( 'prmFavoritesLabelsAfter: error accessing `vm.parentCtrl.item.pnx`' );
 
@@ -2170,9 +1990,7 @@ function generateAllPossibleCustomDirectives() {
 
             vm.getPnx = () => {
                 try {
-                    const pnx = vm.parentCtrl.item.pnx;
-
-                    return pnx;
+                    return vm.parentCtrl.item.pnx;
                 } catch ( err ) {
                     console.log( 'prmFavoritesRecordLabelsAfter: error accessing `vm.parentCtrl.item.pnx`' );
 
@@ -2194,9 +2012,7 @@ function generateAllPossibleCustomDirectives() {
 
             vm.getPnx = () => {
                 try {
-                    const pnx = vm.parentCtrl.item.pnx;
-
-                    return pnx;
+                    return vm.parentCtrl.item.pnx;
                 } catch ( err ) {
                     console.log( 'prmFavoritesToolBarAfter: error accessing `vm.parentCtrl.item.pnx`' );
 
@@ -2218,9 +2034,7 @@ function generateAllPossibleCustomDirectives() {
 
             vm.getPnx = () => {
                 try {
-                    const pnx = vm.parentCtrl.item.pnx;
-
-                    return pnx;
+                    return vm.parentCtrl.item.pnx;
                 } catch ( err ) {
                     console.log( 'prmFavoritesWarningMessageAfter: error accessing `vm.parentCtrl.item.pnx`' );
 
@@ -2242,9 +2056,7 @@ function generateAllPossibleCustomDirectives() {
 
             vm.getPnx = () => {
                 try {
-                    const pnx = vm.parentCtrl.item.pnx;
-
-                    return pnx;
+                    return vm.parentCtrl.item.pnx;
                 } catch ( err ) {
                     console.log( 'prmFeaturedResultItemAfter: error accessing `vm.parentCtrl.item.pnx`' );
 
@@ -2266,9 +2078,7 @@ function generateAllPossibleCustomDirectives() {
 
             vm.getPnx = () => {
                 try {
-                    const pnx = vm.parentCtrl.item.pnx;
-
-                    return pnx;
+                    return vm.parentCtrl.item.pnx;
                 } catch ( err ) {
                     console.log( 'prmFeaturedResultsAfter: error accessing `vm.parentCtrl.item.pnx`' );
 
@@ -2290,9 +2100,7 @@ function generateAllPossibleCustomDirectives() {
 
             vm.getPnx = () => {
                 try {
-                    const pnx = vm.parentCtrl.item.pnx;
-
-                    return pnx;
+                    return vm.parentCtrl.item.pnx;
                 } catch ( err ) {
                     console.log( 'prmFinesAfter: error accessing `vm.parentCtrl.item.pnx`' );
 
@@ -2314,9 +2122,7 @@ function generateAllPossibleCustomDirectives() {
 
             vm.getPnx = () => {
                 try {
-                    const pnx = vm.parentCtrl.item.pnx;
-
-                    return pnx;
+                    return vm.parentCtrl.item.pnx;
                 } catch ( err ) {
                     console.log( 'prmFinesOverviewAfter: error accessing `vm.parentCtrl.item.pnx`' );
 
@@ -2338,9 +2144,7 @@ function generateAllPossibleCustomDirectives() {
 
             vm.getPnx = () => {
                 try {
-                    const pnx = vm.parentCtrl.item.pnx;
-
-                    return pnx;
+                    return vm.parentCtrl.item.pnx;
                 } catch ( err ) {
                     console.log( 'prmFullViewAfter: error accessing `vm.parentCtrl.item.pnx`' );
 
@@ -2362,9 +2166,7 @@ function generateAllPossibleCustomDirectives() {
 
             vm.getPnx = () => {
                 try {
-                    const pnx = vm.parentCtrl.item.pnx;
-
-                    return pnx;
+                    return vm.parentCtrl.item.pnx;
                 } catch ( err ) {
                     console.log( 'prmFullViewContAfter: error accessing `vm.parentCtrl.item.pnx`' );
 
@@ -2386,9 +2188,7 @@ function generateAllPossibleCustomDirectives() {
 
             vm.getPnx = () => {
                 try {
-                    const pnx = vm.parentCtrl.item.pnx;
-
-                    return pnx;
+                    return vm.parentCtrl.item.pnx;
                 } catch ( err ) {
                     console.log( 'prmFullViewPageAfter: error accessing `vm.parentCtrl.item.pnx`' );
 
@@ -2410,9 +2210,7 @@ function generateAllPossibleCustomDirectives() {
 
             vm.getPnx = () => {
                 try {
-                    const pnx = vm.parentCtrl.item.pnx;
-
-                    return pnx;
+                    return vm.parentCtrl.item.pnx;
                 } catch ( err ) {
                     console.log( 'prmFullViewServiceContainerAfter: error accessing `vm.parentCtrl.item.pnx`' );
 
@@ -2434,9 +2232,7 @@ function generateAllPossibleCustomDirectives() {
 
             vm.getPnx = () => {
                 try {
-                    const pnx = vm.parentCtrl.item.pnx;
-
-                    return pnx;
+                    return vm.parentCtrl.item.pnx;
                 } catch ( err ) {
                     console.log( 'prmGalleryCollectionAfter: error accessing `vm.parentCtrl.item.pnx`' );
 
@@ -2458,9 +2254,7 @@ function generateAllPossibleCustomDirectives() {
 
             vm.getPnx = () => {
                 try {
-                    const pnx = vm.parentCtrl.item.pnx;
-
-                    return pnx;
+                    return vm.parentCtrl.item.pnx;
                 } catch ( err ) {
                     console.log( 'prmGalleryCollectionsListAfter: error accessing `vm.parentCtrl.item.pnx`' );
 
@@ -2482,9 +2276,7 @@ function generateAllPossibleCustomDirectives() {
 
             vm.getPnx = () => {
                 try {
-                    const pnx = vm.parentCtrl.item.pnx;
-
-                    return pnx;
+                    return vm.parentCtrl.item.pnx;
                 } catch ( err ) {
                     console.log( 'prmGalleryItemAfter: error accessing `vm.parentCtrl.item.pnx`' );
 
@@ -2506,9 +2298,7 @@ function generateAllPossibleCustomDirectives() {
 
             vm.getPnx = () => {
                 try {
-                    const pnx = vm.parentCtrl.item.pnx;
-
-                    return pnx;
+                    return vm.parentCtrl.item.pnx;
                 } catch ( err ) {
                     console.log( 'prmGalleryItemsListAfter: error accessing `vm.parentCtrl.item.pnx`' );
 
@@ -2530,9 +2320,7 @@ function generateAllPossibleCustomDirectives() {
 
             vm.getPnx = () => {
                 try {
-                    const pnx = vm.parentCtrl.item.pnx;
-
-                    return pnx;
+                    return vm.parentCtrl.item.pnx;
                 } catch ( err ) {
                     console.log( 'prmGetItRequestAfter: error accessing `vm.parentCtrl.item.pnx`' );
 
@@ -2554,9 +2342,7 @@ function generateAllPossibleCustomDirectives() {
 
             vm.getPnx = () => {
                 try {
-                    const pnx = vm.parentCtrl.item.pnx;
-
-                    return pnx;
+                    return vm.parentCtrl.item.pnx;
                 } catch ( err ) {
                     console.log( 'prmIconAfter: error accessing `vm.parentCtrl.item.pnx`' );
 
@@ -2578,9 +2364,7 @@ function generateAllPossibleCustomDirectives() {
 
             vm.getPnx = () => {
                 try {
-                    const pnx = vm.parentCtrl.item.pnx;
-
-                    return pnx;
+                    return vm.parentCtrl.item.pnx;
                 } catch ( err ) {
                     console.log( 'prmIcpLicenseFooterAfter: error accessing `vm.parentCtrl.item.pnx`' );
 
@@ -2602,9 +2386,7 @@ function generateAllPossibleCustomDirectives() {
 
             vm.getPnx = () => {
                 try {
-                    const pnx = vm.parentCtrl.item.pnx;
-
-                    return pnx;
+                    return vm.parentCtrl.item.pnx;
                 } catch ( err ) {
                     console.log( 'prmJournalsAfter: error accessing `vm.parentCtrl.item.pnx`' );
 
@@ -2626,9 +2408,7 @@ function generateAllPossibleCustomDirectives() {
 
             vm.getPnx = () => {
                 try {
-                    const pnx = vm.parentCtrl.item.pnx;
-
-                    return pnx;
+                    return vm.parentCtrl.item.pnx;
                 } catch ( err ) {
                     console.log( 'prmJournalsFullViewAfter: error accessing `vm.parentCtrl.item.pnx`' );
 
@@ -2650,9 +2430,7 @@ function generateAllPossibleCustomDirectives() {
 
             vm.getPnx = () => {
                 try {
-                    const pnx = vm.parentCtrl.item.pnx;
-
-                    return pnx;
+                    return vm.parentCtrl.item.pnx;
                 } catch ( err ) {
                     console.log( 'prmLanguageSelectionAfter: error accessing `vm.parentCtrl.item.pnx`' );
 
@@ -2674,9 +2452,7 @@ function generateAllPossibleCustomDirectives() {
 
             vm.getPnx = () => {
                 try {
-                    const pnx = vm.parentCtrl.item.pnx;
-
-                    return pnx;
+                    return vm.parentCtrl.item.pnx;
                 } catch ( err ) {
                     console.log( 'prmLegantoAfter: error accessing `vm.parentCtrl.item.pnx`' );
 
@@ -2698,9 +2474,7 @@ function generateAllPossibleCustomDirectives() {
 
             vm.getPnx = () => {
                 try {
-                    const pnx = vm.parentCtrl.item.pnx;
-
-                    return pnx;
+                    return vm.parentCtrl.item.pnx;
                 } catch ( err ) {
                     console.log( 'prmLegantoGetitAfter: error accessing `vm.parentCtrl.item.pnx`' );
 
@@ -2722,9 +2496,7 @@ function generateAllPossibleCustomDirectives() {
 
             vm.getPnx = () => {
                 try {
-                    const pnx = vm.parentCtrl.item.pnx;
-
-                    return pnx;
+                    return vm.parentCtrl.item.pnx;
                 } catch ( err ) {
                     console.log( 'prmLibrariesAroundBarAfter: error accessing `vm.parentCtrl.item.pnx`' );
 
@@ -2746,9 +2518,7 @@ function generateAllPossibleCustomDirectives() {
 
             vm.getPnx = () => {
                 try {
-                    const pnx = vm.parentCtrl.item.pnx;
-
-                    return pnx;
+                    return vm.parentCtrl.item.pnx;
                 } catch ( err ) {
                     console.log( 'prmLibraryAfter: error accessing `vm.parentCtrl.item.pnx`' );
 
@@ -2770,9 +2540,7 @@ function generateAllPossibleCustomDirectives() {
 
             vm.getPnx = () => {
                 try {
-                    const pnx = vm.parentCtrl.item.pnx;
-
-                    return pnx;
+                    return vm.parentCtrl.item.pnx;
                 } catch ( err ) {
                     console.log( 'prmLibraryCardMenuAfter: error accessing `vm.parentCtrl.item.pnx`' );
 
@@ -2794,9 +2562,7 @@ function generateAllPossibleCustomDirectives() {
 
             vm.getPnx = () => {
                 try {
-                    const pnx = vm.parentCtrl.item.pnx;
-
-                    return pnx;
+                    return vm.parentCtrl.item.pnx;
                 } catch ( err ) {
                     console.log( 'prmLinkedDataAfter: error accessing `vm.parentCtrl.item.pnx`' );
 
@@ -2818,9 +2584,7 @@ function generateAllPossibleCustomDirectives() {
 
             vm.getPnx = () => {
                 try {
-                    const pnx = vm.parentCtrl.item.pnx;
-
-                    return pnx;
+                    return vm.parentCtrl.item.pnx;
                 } catch ( err ) {
                     console.log( 'prmLinkedDataCardAfter: error accessing `vm.parentCtrl.item.pnx`' );
 
@@ -2842,9 +2606,7 @@ function generateAllPossibleCustomDirectives() {
 
             vm.getPnx = () => {
                 try {
-                    const pnx = vm.parentCtrl.item.pnx;
-
-                    return pnx;
+                    return vm.parentCtrl.item.pnx;
                 } catch ( err ) {
                     console.log( 'prmLinkedUserSelectorAfter: error accessing `vm.parentCtrl.item.pnx`' );
 
@@ -2866,9 +2628,7 @@ function generateAllPossibleCustomDirectives() {
 
             vm.getPnx = () => {
                 try {
-                    const pnx = vm.parentCtrl.item.pnx;
-
-                    return pnx;
+                    return vm.parentCtrl.item.pnx;
                 } catch ( err ) {
                     console.log( 'prmLoanAfter: error accessing `vm.parentCtrl.item.pnx`' );
 
@@ -2890,9 +2650,7 @@ function generateAllPossibleCustomDirectives() {
 
             vm.getPnx = () => {
                 try {
-                    const pnx = vm.parentCtrl.item.pnx;
-
-                    return pnx;
+                    return vm.parentCtrl.item.pnx;
                 } catch ( err ) {
                     console.log( 'prmLoansAfter: error accessing `vm.parentCtrl.item.pnx`' );
 
@@ -2914,9 +2672,7 @@ function generateAllPossibleCustomDirectives() {
 
             vm.getPnx = () => {
                 try {
-                    const pnx = vm.parentCtrl.item.pnx;
-
-                    return pnx;
+                    return vm.parentCtrl.item.pnx;
                 } catch ( err ) {
                     console.log( 'prmLoansOverviewAfter: error accessing `vm.parentCtrl.item.pnx`' );
 
@@ -2938,9 +2694,7 @@ function generateAllPossibleCustomDirectives() {
 
             vm.getPnx = () => {
                 try {
-                    const pnx = vm.parentCtrl.item.pnx;
-
-                    return pnx;
+                    return vm.parentCtrl.item.pnx;
                 } catch ( err ) {
                     console.log( 'prmLocationAfter: error accessing `vm.parentCtrl.item.pnx`' );
 
@@ -2962,9 +2716,7 @@ function generateAllPossibleCustomDirectives() {
 
             vm.getPnx = () => {
                 try {
-                    const pnx = vm.parentCtrl.item.pnx;
-
-                    return pnx;
+                    return vm.parentCtrl.item.pnx;
                 } catch ( err ) {
                     console.log( 'prmLocationHoldingsAfter: error accessing `vm.parentCtrl.item.pnx`' );
 
@@ -2986,9 +2738,7 @@ function generateAllPossibleCustomDirectives() {
 
             vm.getPnx = () => {
                 try {
-                    const pnx = vm.parentCtrl.item.pnx;
-
-                    return pnx;
+                    return vm.parentCtrl.item.pnx;
                 } catch ( err ) {
                     console.log( 'prmLocationItemAfter: error accessing `vm.parentCtrl.item.pnx`' );
 
@@ -3010,9 +2760,7 @@ function generateAllPossibleCustomDirectives() {
 
             vm.getPnx = () => {
                 try {
-                    const pnx = vm.parentCtrl.item.pnx;
-
-                    return pnx;
+                    return vm.parentCtrl.item.pnx;
                 } catch ( err ) {
                     console.log( 'prmLocationItemsAfter: error accessing `vm.parentCtrl.item.pnx`' );
 
@@ -3034,9 +2782,7 @@ function generateAllPossibleCustomDirectives() {
 
             vm.getPnx = () => {
                 try {
-                    const pnx = vm.parentCtrl.item.pnx;
-
-                    return pnx;
+                    return vm.parentCtrl.item.pnx;
                 } catch ( err ) {
                     console.log( 'prmLocationsAfter: error accessing `vm.parentCtrl.item.pnx`' );
 
@@ -3058,9 +2804,7 @@ function generateAllPossibleCustomDirectives() {
 
             vm.getPnx = () => {
                 try {
-                    const pnx = vm.parentCtrl.item.pnx;
-
-                    return pnx;
+                    return vm.parentCtrl.item.pnx;
                 } catch ( err ) {
                     console.log( 'prmLoginAfter: error accessing `vm.parentCtrl.item.pnx`' );
 
@@ -3082,9 +2826,7 @@ function generateAllPossibleCustomDirectives() {
 
             vm.getPnx = () => {
                 try {
-                    const pnx = vm.parentCtrl.item.pnx;
-
-                    return pnx;
+                    return vm.parentCtrl.item.pnx;
                 } catch ( err ) {
                     console.log( 'prmLoginAlmaMashupAfter: error accessing `vm.parentCtrl.item.pnx`' );
 
@@ -3106,9 +2848,7 @@ function generateAllPossibleCustomDirectives() {
 
             vm.getPnx = () => {
                 try {
-                    const pnx = vm.parentCtrl.item.pnx;
-
-                    return pnx;
+                    return vm.parentCtrl.item.pnx;
                 } catch ( err ) {
                     console.log( 'prmLoginHelpAfter: error accessing `vm.parentCtrl.item.pnx`' );
 
@@ -3130,9 +2870,7 @@ function generateAllPossibleCustomDirectives() {
 
             vm.getPnx = () => {
                 try {
-                    const pnx = vm.parentCtrl.item.pnx;
-
-                    return pnx;
+                    return vm.parentCtrl.item.pnx;
                 } catch ( err ) {
                     console.log( 'prmLoginIframeAfter: error accessing `vm.parentCtrl.item.pnx`' );
 
@@ -3154,9 +2892,7 @@ function generateAllPossibleCustomDirectives() {
 
             vm.getPnx = () => {
                 try {
-                    const pnx = vm.parentCtrl.item.pnx;
-
-                    return pnx;
+                    return vm.parentCtrl.item.pnx;
                 } catch ( err ) {
                     console.log( 'prmLoginItemAfter: error accessing `vm.parentCtrl.item.pnx`' );
 
@@ -3178,9 +2914,7 @@ function generateAllPossibleCustomDirectives() {
 
             vm.getPnx = () => {
                 try {
-                    const pnx = vm.parentCtrl.item.pnx;
-
-                    return pnx;
+                    return vm.parentCtrl.item.pnx;
                 } catch ( err ) {
                     console.log( 'prmLogoAfter: error accessing `vm.parentCtrl.item.pnx`' );
 
@@ -3202,9 +2936,7 @@ function generateAllPossibleCustomDirectives() {
 
             vm.getPnx = () => {
                 try {
-                    const pnx = vm.parentCtrl.item.pnx;
-
-                    return pnx;
+                    return vm.parentCtrl.item.pnx;
                 } catch ( err ) {
                     console.log( 'prmMainMenuAfter: error accessing `vm.parentCtrl.item.pnx`' );
 
@@ -3226,9 +2958,7 @@ function generateAllPossibleCustomDirectives() {
 
             vm.getPnx = () => {
                 try {
-                    const pnx = vm.parentCtrl.item.pnx;
-
-                    return pnx;
+                    return vm.parentCtrl.item.pnx;
                 } catch ( err ) {
                     console.log( 'prmMendeleyAfter: error accessing `vm.parentCtrl.item.pnx`' );
 
@@ -3250,9 +2980,7 @@ function generateAllPossibleCustomDirectives() {
 
             vm.getPnx = () => {
                 try {
-                    const pnx = vm.parentCtrl.item.pnx;
-
-                    return pnx;
+                    return vm.parentCtrl.item.pnx;
                 } catch ( err ) {
                     console.log( 'prmMendeleyToastAfter: error accessing `vm.parentCtrl.item.pnx`' );
 
@@ -3274,9 +3002,7 @@ function generateAllPossibleCustomDirectives() {
 
             vm.getPnx = () => {
                 try {
-                    const pnx = vm.parentCtrl.item.pnx;
-
-                    return pnx;
+                    return vm.parentCtrl.item.pnx;
                 } catch ( err ) {
                     console.log( 'prmMessagesAndBlocksAfter: error accessing `vm.parentCtrl.item.pnx`' );
 
@@ -3298,9 +3024,7 @@ function generateAllPossibleCustomDirectives() {
 
             vm.getPnx = () => {
                 try {
-                    const pnx = vm.parentCtrl.item.pnx;
-
-                    return pnx;
+                    return vm.parentCtrl.item.pnx;
                 } catch ( err ) {
                     console.log( 'prmMessagesAndBlocksOverviewAfter: error accessing `vm.parentCtrl.item.pnx`' );
 
@@ -3322,9 +3046,7 @@ function generateAllPossibleCustomDirectives() {
 
             vm.getPnx = () => {
                 try {
-                    const pnx = vm.parentCtrl.item.pnx;
-
-                    return pnx;
+                    return vm.parentCtrl.item.pnx;
                 } catch ( err ) {
                     console.log( 'prmMoreLikeThisAfter: error accessing `vm.parentCtrl.item.pnx`' );
 
@@ -3346,9 +3068,7 @@ function generateAllPossibleCustomDirectives() {
 
             vm.getPnx = () => {
                 try {
-                    const pnx = vm.parentCtrl.item.pnx;
-
-                    return pnx;
+                    return vm.parentCtrl.item.pnx;
                 } catch ( err ) {
                     console.log( 'prmMoreLikeThisItemAfter: error accessing `vm.parentCtrl.item.pnx`' );
 
@@ -3370,9 +3090,7 @@ function generateAllPossibleCustomDirectives() {
 
             vm.getPnx = () => {
                 try {
-                    const pnx = vm.parentCtrl.item.pnx;
-
-                    return pnx;
+                    return vm.parentCtrl.item.pnx;
                 } catch ( err ) {
                     console.log( 'prmMoreLikeThisItemInfoAfter: error accessing `vm.parentCtrl.item.pnx`' );
 
@@ -3394,9 +3112,7 @@ function generateAllPossibleCustomDirectives() {
 
             vm.getPnx = () => {
                 try {
-                    const pnx = vm.parentCtrl.item.pnx;
-
-                    return pnx;
+                    return vm.parentCtrl.item.pnx;
                 } catch ( err ) {
                     console.log( 'prmMultiSelectFilterAfter: error accessing `vm.parentCtrl.item.pnx`' );
 
@@ -3418,9 +3134,7 @@ function generateAllPossibleCustomDirectives() {
 
             vm.getPnx = () => {
                 try {
-                    const pnx = vm.parentCtrl.item.pnx;
-
-                    return pnx;
+                    return vm.parentCtrl.item.pnx;
                 } catch ( err ) {
                     console.log( 'prmNewspapersFacetAfter: error accessing `vm.parentCtrl.item.pnx`' );
 
@@ -3442,9 +3156,7 @@ function generateAllPossibleCustomDirectives() {
 
             vm.getPnx = () => {
                 try {
-                    const pnx = vm.parentCtrl.item.pnx;
-
-                    return pnx;
+                    return vm.parentCtrl.item.pnx;
                 } catch ( err ) {
                     console.log( 'prmNewspapersFullViewAfter: error accessing `vm.parentCtrl.item.pnx`' );
 
@@ -3466,9 +3178,7 @@ function generateAllPossibleCustomDirectives() {
 
             vm.getPnx = () => {
                 try {
-                    const pnx = vm.parentCtrl.item.pnx;
-
-                    return pnx;
+                    return vm.parentCtrl.item.pnx;
                 } catch ( err ) {
                     console.log( 'prmNewspapersHomeAfter: error accessing `vm.parentCtrl.item.pnx`' );
 
@@ -3490,9 +3200,7 @@ function generateAllPossibleCustomDirectives() {
 
             vm.getPnx = () => {
                 try {
-                    const pnx = vm.parentCtrl.item.pnx;
-
-                    return pnx;
+                    return vm.parentCtrl.item.pnx;
                 } catch ( err ) {
                     console.log( 'prmNewspapersSearchBarAfter: error accessing `vm.parentCtrl.item.pnx`' );
 
@@ -3514,9 +3222,7 @@ function generateAllPossibleCustomDirectives() {
 
             vm.getPnx = () => {
                 try {
-                    const pnx = vm.parentCtrl.item.pnx;
-
-                    return pnx;
+                    return vm.parentCtrl.item.pnx;
                 } catch ( err ) {
                     console.log( 'prmNewspapersSpotlightAfter: error accessing `vm.parentCtrl.item.pnx`' );
 
@@ -3538,9 +3244,7 @@ function generateAllPossibleCustomDirectives() {
 
             vm.getPnx = () => {
                 try {
-                    const pnx = vm.parentCtrl.item.pnx;
-
-                    return pnx;
+                    return vm.parentCtrl.item.pnx;
                 } catch ( err ) {
                     console.log( 'prmNgrsBriefResultLineAfter: error accessing `vm.parentCtrl.item.pnx`' );
 
@@ -3562,9 +3266,7 @@ function generateAllPossibleCustomDirectives() {
 
             vm.getPnx = () => {
                 try {
-                    const pnx = vm.parentCtrl.item.pnx;
-
-                    return pnx;
+                    return vm.parentCtrl.item.pnx;
                 } catch ( err ) {
                     console.log( 'prmNgrsResultsButtonAfter: error accessing `vm.parentCtrl.item.pnx`' );
 
@@ -3586,9 +3288,7 @@ function generateAllPossibleCustomDirectives() {
 
             vm.getPnx = () => {
                 try {
-                    const pnx = vm.parentCtrl.item.pnx;
-
-                    return pnx;
+                    return vm.parentCtrl.item.pnx;
                 } catch ( err ) {
                     console.log( 'prmNoSearchResultAfter: error accessing `vm.parentCtrl.item.pnx`' );
 
@@ -3610,9 +3310,7 @@ function generateAllPossibleCustomDirectives() {
 
             vm.getPnx = () => {
                 try {
-                    const pnx = vm.parentCtrl.item.pnx;
-
-                    return pnx;
+                    return vm.parentCtrl.item.pnx;
                 } catch ( err ) {
                     console.log( 'prmOfferDetailsTileAfter: error accessing `vm.parentCtrl.item.pnx`' );
 
@@ -3634,9 +3332,7 @@ function generateAllPossibleCustomDirectives() {
 
             vm.getPnx = () => {
                 try {
-                    const pnx = vm.parentCtrl.item.pnx;
-
-                    return pnx;
+                    return vm.parentCtrl.item.pnx;
                 } catch ( err ) {
                     console.log( 'prmOpacAfter: error accessing `vm.parentCtrl.item.pnx`' );
 
@@ -3658,9 +3354,7 @@ function generateAllPossibleCustomDirectives() {
 
             vm.getPnx = () => {
                 try {
-                    const pnx = vm.parentCtrl.item.pnx;
-
-                    return pnx;
+                    return vm.parentCtrl.item.pnx;
                 } catch ( err ) {
                     console.log( 'prmOpacBackButtonAfter: error accessing `vm.parentCtrl.item.pnx`' );
 
@@ -3682,9 +3376,7 @@ function generateAllPossibleCustomDirectives() {
 
             vm.getPnx = () => {
                 try {
-                    const pnx = vm.parentCtrl.item.pnx;
-
-                    return pnx;
+                    return vm.parentCtrl.item.pnx;
                 } catch ( err ) {
                     console.log( 'prmOrganizationOrFacetToggleAfter: error accessing `vm.parentCtrl.item.pnx`' );
 
@@ -3706,9 +3398,7 @@ function generateAllPossibleCustomDirectives() {
 
             vm.getPnx = () => {
                 try {
-                    const pnx = vm.parentCtrl.item.pnx;
-
-                    return pnx;
+                    return vm.parentCtrl.item.pnx;
                 } catch ( err ) {
                     console.log( 'prmOrganizationsAfter: error accessing `vm.parentCtrl.item.pnx`' );
 
@@ -3730,9 +3420,7 @@ function generateAllPossibleCustomDirectives() {
 
             vm.getPnx = () => {
                 try {
-                    const pnx = vm.parentCtrl.item.pnx;
-
-                    return pnx;
+                    return vm.parentCtrl.item.pnx;
                 } catch ( err ) {
                     console.log( 'prmOrglistCategorizeAfter: error accessing `vm.parentCtrl.item.pnx`' );
 
@@ -3754,9 +3442,7 @@ function generateAllPossibleCustomDirectives() {
 
             vm.getPnx = () => {
                 try {
-                    const pnx = vm.parentCtrl.item.pnx;
-
-                    return pnx;
+                    return vm.parentCtrl.item.pnx;
                 } catch ( err ) {
                     console.log( 'prmPageNavMenuAfter: error accessing `vm.parentCtrl.item.pnx`' );
 
@@ -3778,9 +3464,7 @@ function generateAllPossibleCustomDirectives() {
 
             vm.getPnx = () => {
                 try {
-                    const pnx = vm.parentCtrl.item.pnx;
-
-                    return pnx;
+                    return vm.parentCtrl.item.pnx;
                 } catch ( err ) {
                     console.log( 'prmPagingBarAfter: error accessing `vm.parentCtrl.item.pnx`' );
 
@@ -3802,9 +3486,7 @@ function generateAllPossibleCustomDirectives() {
 
             vm.getPnx = () => {
                 try {
-                    const pnx = vm.parentCtrl.item.pnx;
-
-                    return pnx;
+                    return vm.parentCtrl.item.pnx;
                 } catch ( err ) {
                     console.log( 'prmPdfViewerAfter: error accessing `vm.parentCtrl.item.pnx`' );
 
@@ -3826,9 +3508,7 @@ function generateAllPossibleCustomDirectives() {
 
             vm.getPnx = () => {
                 try {
-                    const pnx = vm.parentCtrl.item.pnx;
-
-                    return pnx;
+                    return vm.parentCtrl.item.pnx;
                 } catch ( err ) {
                     console.log( 'prmPerformanceMonitorAfter: error accessing `vm.parentCtrl.item.pnx`' );
 
@@ -3850,9 +3530,7 @@ function generateAllPossibleCustomDirectives() {
 
             vm.getPnx = () => {
                 try {
-                    const pnx = vm.parentCtrl.item.pnx;
-
-                    return pnx;
+                    return vm.parentCtrl.item.pnx;
                 } catch ( err ) {
                     console.log( 'prmPermalinkAfter: error accessing `vm.parentCtrl.item.pnx`' );
 
@@ -3874,9 +3552,7 @@ function generateAllPossibleCustomDirectives() {
 
             vm.getPnx = () => {
                 try {
-                    const pnx = vm.parentCtrl.item.pnx;
-
-                    return pnx;
+                    return vm.parentCtrl.item.pnx;
                 } catch ( err ) {
                     console.log( 'prmPersonalInfoAfter: error accessing `vm.parentCtrl.item.pnx`' );
 
@@ -3898,9 +3574,7 @@ function generateAllPossibleCustomDirectives() {
 
             vm.getPnx = () => {
                 try {
-                    const pnx = vm.parentCtrl.item.pnx;
-
-                    return pnx;
+                    return vm.parentCtrl.item.pnx;
                 } catch ( err ) {
                     console.log( 'prmPersonalSettingsAfter: error accessing `vm.parentCtrl.item.pnx`' );
 
@@ -3922,9 +3596,7 @@ function generateAllPossibleCustomDirectives() {
 
             vm.getPnx = () => {
                 try {
-                    const pnx = vm.parentCtrl.item.pnx;
-
-                    return pnx;
+                    return vm.parentCtrl.item.pnx;
                 } catch ( err ) {
                     console.log( 'prmPersonalizationDialogAfter: error accessing `vm.parentCtrl.item.pnx`' );
 
@@ -3946,9 +3618,7 @@ function generateAllPossibleCustomDirectives() {
 
             vm.getPnx = () => {
                 try {
-                    const pnx = vm.parentCtrl.item.pnx;
-
-                    return pnx;
+                    return vm.parentCtrl.item.pnx;
                 } catch ( err ) {
                     console.log( 'prmPersonalizeResultsButtonAfter: error accessing `vm.parentCtrl.item.pnx`' );
 
@@ -3970,9 +3640,7 @@ function generateAllPossibleCustomDirectives() {
 
             vm.getPnx = () => {
                 try {
-                    const pnx = vm.parentCtrl.item.pnx;
-
-                    return pnx;
+                    return vm.parentCtrl.item.pnx;
                 } catch ( err ) {
                     console.log( 'prmPhysicalDeliveryMoreOptionRowAfter: error accessing `vm.parentCtrl.item.pnx`' );
 
@@ -3994,9 +3662,7 @@ function generateAllPossibleCustomDirectives() {
 
             vm.getPnx = () => {
                 try {
-                    const pnx = vm.parentCtrl.item.pnx;
-
-                    return pnx;
+                    return vm.parentCtrl.item.pnx;
                 } catch ( err ) {
                     console.log( 'prmPhysicalDeliveryOptionsAfter: error accessing `vm.parentCtrl.item.pnx`' );
 
@@ -4018,9 +3684,7 @@ function generateAllPossibleCustomDirectives() {
 
             vm.getPnx = () => {
                 try {
-                    const pnx = vm.parentCtrl.item.pnx;
-
-                    return pnx;
+                    return vm.parentCtrl.item.pnx;
                 } catch ( err ) {
                     console.log( 'prmPhysicalDeliveryOptionsTableAfter: error accessing `vm.parentCtrl.item.pnx`' );
 
@@ -4042,9 +3706,7 @@ function generateAllPossibleCustomDirectives() {
 
             vm.getPnx = () => {
                 try {
-                    const pnx = vm.parentCtrl.item.pnx;
-
-                    return pnx;
+                    return vm.parentCtrl.item.pnx;
                 } catch ( err ) {
                     console.log( 'prmPopupMessageAfter: error accessing `vm.parentCtrl.item.pnx`' );
 
@@ -4066,9 +3728,7 @@ function generateAllPossibleCustomDirectives() {
 
             vm.getPnx = () => {
                 try {
-                    const pnx = vm.parentCtrl.item.pnx;
-
-                    return pnx;
+                    return vm.parentCtrl.item.pnx;
                 } catch ( err ) {
                     console.log( 'prmPreFiltersAfter: error accessing `vm.parentCtrl.item.pnx`' );
 
@@ -4090,9 +3750,7 @@ function generateAllPossibleCustomDirectives() {
 
             vm.getPnx = () => {
                 try {
-                    const pnx = vm.parentCtrl.item.pnx;
-
-                    return pnx;
+                    return vm.parentCtrl.item.pnx;
                 } catch ( err ) {
                     console.log( 'prmPrintItemAfter: error accessing `vm.parentCtrl.item.pnx`' );
 
@@ -4114,9 +3772,7 @@ function generateAllPossibleCustomDirectives() {
 
             vm.getPnx = () => {
                 try {
-                    const pnx = vm.parentCtrl.item.pnx;
-
-                    return pnx;
+                    return vm.parentCtrl.item.pnx;
                 } catch ( err ) {
                     console.log( 'prmProgressBarAfter: error accessing `vm.parentCtrl.item.pnx`' );
 
@@ -4138,9 +3794,7 @@ function generateAllPossibleCustomDirectives() {
 
             vm.getPnx = () => {
                 try {
-                    const pnx = vm.parentCtrl.item.pnx;
-
-                    return pnx;
+                    return vm.parentCtrl.item.pnx;
                 } catch ( err ) {
                     console.log( 'prmProgressCheckboxAfter: error accessing `vm.parentCtrl.item.pnx`' );
 
@@ -4162,9 +3816,7 @@ function generateAllPossibleCustomDirectives() {
 
             vm.getPnx = () => {
                 try {
-                    const pnx = vm.parentCtrl.item.pnx;
-
-                    return pnx;
+                    return vm.parentCtrl.item.pnx;
                 } catch ( err ) {
                     console.log( 'prmQrCodeAfter: error accessing `vm.parentCtrl.item.pnx`' );
 
@@ -4186,9 +3838,7 @@ function generateAllPossibleCustomDirectives() {
 
             vm.getPnx = () => {
                 try {
-                    const pnx = vm.parentCtrl.item.pnx;
-
-                    return pnx;
+                    return vm.parentCtrl.item.pnx;
                 } catch ( err ) {
                     console.log( 'prmQuickAccessAfter: error accessing `vm.parentCtrl.item.pnx`' );
 
@@ -4210,9 +3860,7 @@ function generateAllPossibleCustomDirectives() {
 
             vm.getPnx = () => {
                 try {
-                    const pnx = vm.parentCtrl.item.pnx;
-
-                    return pnx;
+                    return vm.parentCtrl.item.pnx;
                 } catch ( err ) {
                     console.log( 'prmQuickLinkAfter: error accessing `vm.parentCtrl.item.pnx`' );
 
@@ -4234,9 +3882,7 @@ function generateAllPossibleCustomDirectives() {
 
             vm.getPnx = () => {
                 try {
-                    const pnx = vm.parentCtrl.item.pnx;
-
-                    return pnx;
+                    return vm.parentCtrl.item.pnx;
                 } catch ( err ) {
                     console.log( 'prmRapidoMessageBarAfter: error accessing `vm.parentCtrl.item.pnx`' );
 
@@ -4258,9 +3904,7 @@ function generateAllPossibleCustomDirectives() {
 
             vm.getPnx = () => {
                 try {
-                    const pnx = vm.parentCtrl.item.pnx;
-
-                    return pnx;
+                    return vm.parentCtrl.item.pnx;
                 } catch ( err ) {
                     console.log( 'prmRapidoNoOfferMessageAfter: error accessing `vm.parentCtrl.item.pnx`' );
 
@@ -4282,9 +3926,7 @@ function generateAllPossibleCustomDirectives() {
 
             vm.getPnx = () => {
                 try {
-                    const pnx = vm.parentCtrl.item.pnx;
-
-                    return pnx;
+                    return vm.parentCtrl.item.pnx;
                 } catch ( err ) {
                     console.log( 'prmRecomendationItemAfter: error accessing `vm.parentCtrl.item.pnx`' );
 
@@ -4306,9 +3948,7 @@ function generateAllPossibleCustomDirectives() {
 
             vm.getPnx = () => {
                 try {
-                    const pnx = vm.parentCtrl.item.pnx;
-
-                    return pnx;
+                    return vm.parentCtrl.item.pnx;
                 } catch ( err ) {
                     console.log( 'prmRecomendationsAfter: error accessing `vm.parentCtrl.item.pnx`' );
 
@@ -4330,9 +3970,7 @@ function generateAllPossibleCustomDirectives() {
 
             vm.getPnx = () => {
                 try {
-                    const pnx = vm.parentCtrl.item.pnx;
-
-                    return pnx;
+                    return vm.parentCtrl.item.pnx;
                 } catch ( err ) {
                     console.log( 'prmRecordCollectionPathsAfter: error accessing `vm.parentCtrl.item.pnx`' );
 
@@ -4354,9 +3992,7 @@ function generateAllPossibleCustomDirectives() {
 
             vm.getPnx = () => {
                 try {
-                    const pnx = vm.parentCtrl.item.pnx;
-
-                    return pnx;
+                    return vm.parentCtrl.item.pnx;
                 } catch ( err ) {
                     console.log( 'prmReferenceEntryItemAfter: error accessing `vm.parentCtrl.item.pnx`' );
 
@@ -4378,9 +4014,7 @@ function generateAllPossibleCustomDirectives() {
 
             vm.getPnx = () => {
                 try {
-                    const pnx = vm.parentCtrl.item.pnx;
-
-                    return pnx;
+                    return vm.parentCtrl.item.pnx;
                 } catch ( err ) {
                     console.log( 'prmRefworksAfter: error accessing `vm.parentCtrl.item.pnx`' );
 
@@ -4402,9 +4036,7 @@ function generateAllPossibleCustomDirectives() {
 
             vm.getPnx = () => {
                 try {
-                    const pnx = vm.parentCtrl.item.pnx;
-
-                    return pnx;
+                    return vm.parentCtrl.item.pnx;
                 } catch ( err ) {
                     console.log( 'prmReportProblemAfter: error accessing `vm.parentCtrl.item.pnx`' );
 
@@ -4426,9 +4058,7 @@ function generateAllPossibleCustomDirectives() {
 
             vm.getPnx = () => {
                 try {
-                    const pnx = vm.parentCtrl.item.pnx;
-
-                    return pnx;
+                    return vm.parentCtrl.item.pnx;
                 } catch ( err ) {
                     console.log( 'prmRequestAfter: error accessing `vm.parentCtrl.item.pnx`' );
 
@@ -4450,9 +4080,7 @@ function generateAllPossibleCustomDirectives() {
 
             vm.getPnx = () => {
                 try {
-                    const pnx = vm.parentCtrl.item.pnx;
-
-                    return pnx;
+                    return vm.parentCtrl.item.pnx;
                 } catch ( err ) {
                     console.log( 'prmRequestApprovalAfter: error accessing `vm.parentCtrl.item.pnx`' );
 
@@ -4474,9 +4102,7 @@ function generateAllPossibleCustomDirectives() {
 
             vm.getPnx = () => {
                 try {
-                    const pnx = vm.parentCtrl.item.pnx;
-
-                    return pnx;
+                    return vm.parentCtrl.item.pnx;
                 } catch ( err ) {
                     console.log( 'prmRequestServicesAfter: error accessing `vm.parentCtrl.item.pnx`' );
 
@@ -4498,9 +4124,7 @@ function generateAllPossibleCustomDirectives() {
 
             vm.getPnx = () => {
                 try {
-                    const pnx = vm.parentCtrl.item.pnx;
-
-                    return pnx;
+                    return vm.parentCtrl.item.pnx;
                 } catch ( err ) {
                     console.log( 'prmRequestsAfter: error accessing `vm.parentCtrl.item.pnx`' );
 
@@ -4522,9 +4146,7 @@ function generateAllPossibleCustomDirectives() {
 
             vm.getPnx = () => {
                 try {
-                    const pnx = vm.parentCtrl.item.pnx;
-
-                    return pnx;
+                    return vm.parentCtrl.item.pnx;
                 } catch ( err ) {
                     console.log( 'prmRequestsOverviewAfter: error accessing `vm.parentCtrl.item.pnx`' );
 
@@ -4546,9 +4168,7 @@ function generateAllPossibleCustomDirectives() {
 
             vm.getPnx = () => {
                 try {
-                    const pnx = vm.parentCtrl.item.pnx;
-
-                    return pnx;
+                    return vm.parentCtrl.item.pnx;
                 } catch ( err ) {
                     console.log( 'prmRequestsServicesOvlAfter: error accessing `vm.parentCtrl.item.pnx`' );
 
@@ -4570,9 +4190,7 @@ function generateAllPossibleCustomDirectives() {
 
             vm.getPnx = () => {
                 try {
-                    const pnx = vm.parentCtrl.item.pnx;
-
-                    return pnx;
+                    return vm.parentCtrl.item.pnx;
                 } catch ( err ) {
                     console.log( 'prmResourceRecommenderAfter: error accessing `vm.parentCtrl.item.pnx`' );
 
@@ -4594,9 +4212,7 @@ function generateAllPossibleCustomDirectives() {
 
             vm.getPnx = () => {
                 try {
-                    const pnx = vm.parentCtrl.item.pnx;
-
-                    return pnx;
+                    return vm.parentCtrl.item.pnx;
                 } catch ( err ) {
                     console.log( 'prmResourceRecommenderCardContentAfter: error accessing `vm.parentCtrl.item.pnx`' );
 
@@ -4618,9 +4234,7 @@ function generateAllPossibleCustomDirectives() {
 
             vm.getPnx = () => {
                 try {
-                    const pnx = vm.parentCtrl.item.pnx;
-
-                    return pnx;
+                    return vm.parentCtrl.item.pnx;
                 } catch ( err ) {
                     console.log( 'prmResourceRecommenderFullViewAfter: error accessing `vm.parentCtrl.item.pnx`' );
 
@@ -4642,9 +4256,7 @@ function generateAllPossibleCustomDirectives() {
 
             vm.getPnx = () => {
                 try {
-                    const pnx = vm.parentCtrl.item.pnx;
-
-                    return pnx;
+                    return vm.parentCtrl.item.pnx;
                 } catch ( err ) {
                     console.log( 'prmResourceTypeFilterBarAfter: error accessing `vm.parentCtrl.item.pnx`' );
 
@@ -4666,9 +4278,7 @@ function generateAllPossibleCustomDirectives() {
 
             vm.getPnx = () => {
                 try {
-                    const pnx = vm.parentCtrl.item.pnx;
-
-                    return pnx;
+                    return vm.parentCtrl.item.pnx;
                 } catch ( err ) {
                     console.log( 'prmReviewsResultsLineAfter: error accessing `vm.parentCtrl.item.pnx`' );
 
@@ -4690,9 +4300,7 @@ function generateAllPossibleCustomDirectives() {
 
             vm.getPnx = () => {
                 try {
-                    const pnx = vm.parentCtrl.item.pnx;
-
-                    return pnx;
+                    return vm.parentCtrl.item.pnx;
                 } catch ( err ) {
                     console.log( 'prmSaveToFavoritesButtonAfter: error accessing `vm.parentCtrl.item.pnx`' );
 
@@ -4714,9 +4322,7 @@ function generateAllPossibleCustomDirectives() {
 
             vm.getPnx = () => {
                 try {
-                    const pnx = vm.parentCtrl.item.pnx;
-
-                    return pnx;
+                    return vm.parentCtrl.item.pnx;
                 } catch ( err ) {
                     console.log( 'prmSavedQueriesAfter: error accessing `vm.parentCtrl.item.pnx`' );
 
@@ -4738,9 +4344,7 @@ function generateAllPossibleCustomDirectives() {
 
             vm.getPnx = () => {
                 try {
-                    const pnx = vm.parentCtrl.item.pnx;
-
-                    return pnx;
+                    return vm.parentCtrl.item.pnx;
                 } catch ( err ) {
                     console.log( 'prmSavedQueriesListAfter: error accessing `vm.parentCtrl.item.pnx`' );
 
@@ -4762,9 +4366,7 @@ function generateAllPossibleCustomDirectives() {
 
             vm.getPnx = () => {
                 try {
-                    const pnx = vm.parentCtrl.item.pnx;
-
-                    return pnx;
+                    return vm.parentCtrl.item.pnx;
                 } catch ( err ) {
                     console.log( 'prmSavedQueryFilterAfter: error accessing `vm.parentCtrl.item.pnx`' );
 
@@ -4786,9 +4388,7 @@ function generateAllPossibleCustomDirectives() {
 
             vm.getPnx = () => {
                 try {
-                    const pnx = vm.parentCtrl.item.pnx;
-
-                    return pnx;
+                    return vm.parentCtrl.item.pnx;
                 } catch ( err ) {
                     console.log( 'prmSavedSearchesGroupActionsAfter: error accessing `vm.parentCtrl.item.pnx`' );
 
@@ -4810,9 +4410,7 @@ function generateAllPossibleCustomDirectives() {
 
             vm.getPnx = () => {
                 try {
-                    const pnx = vm.parentCtrl.item.pnx;
-
-                    return pnx;
+                    return vm.parentCtrl.item.pnx;
                 } catch ( err ) {
                     console.log( 'prmScrollAfter: error accessing `vm.parentCtrl.item.pnx`' );
 
@@ -4834,9 +4432,7 @@ function generateAllPossibleCustomDirectives() {
 
             vm.getPnx = () => {
                 try {
-                    const pnx = vm.parentCtrl.item.pnx;
-
-                    return pnx;
+                    return vm.parentCtrl.item.pnx;
                 } catch ( err ) {
                     console.log( 'prmSeadragonViewerAfter: error accessing `vm.parentCtrl.item.pnx`' );
 
@@ -4858,9 +4454,7 @@ function generateAllPossibleCustomDirectives() {
 
             vm.getPnx = () => {
                 try {
-                    const pnx = vm.parentCtrl.item.pnx;
-
-                    return pnx;
+                    return vm.parentCtrl.item.pnx;
                 } catch ( err ) {
                     console.log( 'prmSearchAfter: error accessing `vm.parentCtrl.item.pnx`' );
 
@@ -4882,9 +4476,7 @@ function generateAllPossibleCustomDirectives() {
 
             vm.getPnx = () => {
                 try {
-                    const pnx = vm.parentCtrl.item.pnx;
-
-                    return pnx;
+                    return vm.parentCtrl.item.pnx;
                 } catch ( err ) {
                     console.log( 'prmSearchBarAfter: error accessing `vm.parentCtrl.item.pnx`' );
 
@@ -4906,9 +4498,7 @@ function generateAllPossibleCustomDirectives() {
 
             vm.getPnx = () => {
                 try {
-                    const pnx = vm.parentCtrl.item.pnx;
-
-                    return pnx;
+                    return vm.parentCtrl.item.pnx;
                 } catch ( err ) {
                     console.log( 'prmSearchBookmarkFilterAfter: error accessing `vm.parentCtrl.item.pnx`' );
 
@@ -4930,9 +4520,7 @@ function generateAllPossibleCustomDirectives() {
 
             vm.getPnx = () => {
                 try {
-                    const pnx = vm.parentCtrl.item.pnx;
-
-                    return pnx;
+                    return vm.parentCtrl.item.pnx;
                 } catch ( err ) {
                     console.log( 'prmSearchErrorMessageAfter: error accessing `vm.parentCtrl.item.pnx`' );
 
@@ -4954,9 +4542,7 @@ function generateAllPossibleCustomDirectives() {
 
             vm.getPnx = () => {
                 try {
-                    const pnx = vm.parentCtrl.item.pnx;
-
-                    return pnx;
+                    return vm.parentCtrl.item.pnx;
                 } catch ( err ) {
                     console.log( 'prmSearchExplainAfter: error accessing `vm.parentCtrl.item.pnx`' );
 
@@ -4978,9 +4564,7 @@ function generateAllPossibleCustomDirectives() {
 
             vm.getPnx = () => {
                 try {
-                    const pnx = vm.parentCtrl.item.pnx;
-
-                    return pnx;
+                    return vm.parentCtrl.item.pnx;
                 } catch ( err ) {
                     console.log( 'prmSearchHistoryAfter: error accessing `vm.parentCtrl.item.pnx`' );
 
@@ -5002,9 +4586,7 @@ function generateAllPossibleCustomDirectives() {
 
             vm.getPnx = () => {
                 try {
-                    const pnx = vm.parentCtrl.item.pnx;
-
-                    return pnx;
+                    return vm.parentCtrl.item.pnx;
                 } catch ( err ) {
                     console.log( 'prmSearchResultAddToFavoritesMenuAfter: error accessing `vm.parentCtrl.item.pnx`' );
 
@@ -5026,9 +4608,7 @@ function generateAllPossibleCustomDirectives() {
 
             vm.getPnx = () => {
                 try {
-                    const pnx = vm.parentCtrl.item.pnx;
-
-                    return pnx;
+                    return vm.parentCtrl.item.pnx;
                 } catch ( err ) {
                     console.log( 'prmSearchResultFrbrLineAfter: error accessing `vm.parentCtrl.item.pnx`' );
 
@@ -5050,9 +4630,7 @@ function generateAllPossibleCustomDirectives() {
 
             vm.getPnx = () => {
                 try {
-                    const pnx = vm.parentCtrl.item.pnx;
-
-                    return pnx;
+                    return vm.parentCtrl.item.pnx;
                 } catch ( err ) {
                     console.log( 'prmSearchResultJournalIndicationLineAfter: error accessing `vm.parentCtrl.item.pnx`' );
 
@@ -5074,9 +4652,7 @@ function generateAllPossibleCustomDirectives() {
 
             vm.getPnx = () => {
                 try {
-                    const pnx = vm.parentCtrl.item.pnx;
-
-                    return pnx;
+                    return vm.parentCtrl.item.pnx;
                 } catch ( err ) {
                     console.log( 'prmSearchResultListAfter: error accessing `vm.parentCtrl.item.pnx`' );
 
@@ -5098,9 +4674,7 @@ function generateAllPossibleCustomDirectives() {
 
             vm.getPnx = () => {
                 try {
-                    const pnx = vm.parentCtrl.item.pnx;
-
-                    return pnx;
+                    return vm.parentCtrl.item.pnx;
                 } catch ( err ) {
                     console.log( 'prmSearchResultSortByAfter: error accessing `vm.parentCtrl.item.pnx`' );
 
@@ -5122,9 +4696,7 @@ function generateAllPossibleCustomDirectives() {
 
             vm.getPnx = () => {
                 try {
-                    const pnx = vm.parentCtrl.item.pnx;
-
-                    return pnx;
+                    return vm.parentCtrl.item.pnx;
                 } catch ( err ) {
                     console.log( 'prmSearchResultThumbnailContainerAfter: error accessing `vm.parentCtrl.item.pnx`' );
 
@@ -5146,9 +4718,7 @@ function generateAllPossibleCustomDirectives() {
 
             vm.getPnx = () => {
                 try {
-                    const pnx = vm.parentCtrl.item.pnx;
-
-                    return pnx;
+                    return vm.parentCtrl.item.pnx;
                 } catch ( err ) {
                     console.log( 'prmSearchResultTitleAfter: error accessing `vm.parentCtrl.item.pnx`' );
 
@@ -5170,9 +4740,7 @@ function generateAllPossibleCustomDirectives() {
 
             vm.getPnx = () => {
                 try {
-                    const pnx = vm.parentCtrl.item.pnx;
-
-                    return pnx;
+                    return vm.parentCtrl.item.pnx;
                 } catch ( err ) {
                     console.log( 'prmSearchResultToolBarAfter: error accessing `vm.parentCtrl.item.pnx`' );
 
@@ -5194,9 +4762,7 @@ function generateAllPossibleCustomDirectives() {
 
             vm.getPnx = () => {
                 try {
-                    const pnx = vm.parentCtrl.item.pnx;
-
-                    return pnx;
+                    return vm.parentCtrl.item.pnx;
                 } catch ( err ) {
                     console.log( 'prmSearchWithinJournalAfter: error accessing `vm.parentCtrl.item.pnx`' );
 
@@ -5218,9 +4784,7 @@ function generateAllPossibleCustomDirectives() {
 
             vm.getPnx = () => {
                 try {
-                    const pnx = vm.parentCtrl.item.pnx;
-
-                    return pnx;
+                    return vm.parentCtrl.item.pnx;
                 } catch ( err ) {
                     console.log( 'prmSendEmailAfter: error accessing `vm.parentCtrl.item.pnx`' );
 
@@ -5242,9 +4806,7 @@ function generateAllPossibleCustomDirectives() {
 
             vm.getPnx = () => {
                 try {
-                    const pnx = vm.parentCtrl.item.pnx;
-
-                    return pnx;
+                    return vm.parentCtrl.item.pnx;
                 } catch ( err ) {
                     console.log( 'prmServiceButtonAfter: error accessing `vm.parentCtrl.item.pnx`' );
 
@@ -5266,9 +4828,7 @@ function generateAllPossibleCustomDirectives() {
 
             vm.getPnx = () => {
                 try {
-                    const pnx = vm.parentCtrl.item.pnx;
-
-                    return pnx;
+                    return vm.parentCtrl.item.pnx;
                 } catch ( err ) {
                     console.log( 'prmServiceDetailsAfter: error accessing `vm.parentCtrl.item.pnx`' );
 
@@ -5290,9 +4850,7 @@ function generateAllPossibleCustomDirectives() {
 
             vm.getPnx = () => {
                 try {
-                    const pnx = vm.parentCtrl.item.pnx;
-
-                    return pnx;
+                    return vm.parentCtrl.item.pnx;
                 } catch ( err ) {
                     console.log( 'prmServiceHeaderAfter: error accessing `vm.parentCtrl.item.pnx`' );
 
@@ -5314,9 +4872,7 @@ function generateAllPossibleCustomDirectives() {
 
             vm.getPnx = () => {
                 try {
-                    const pnx = vm.parentCtrl.item.pnx;
-
-                    return pnx;
+                    return vm.parentCtrl.item.pnx;
                 } catch ( err ) {
                     console.log( 'prmServiceLinksAfter: error accessing `vm.parentCtrl.item.pnx`' );
 
@@ -5338,9 +4894,7 @@ function generateAllPossibleCustomDirectives() {
 
             vm.getPnx = () => {
                 try {
-                    const pnx = vm.parentCtrl.item.pnx;
-
-                    return pnx;
+                    return vm.parentCtrl.item.pnx;
                 } catch ( err ) {
                     console.log( 'prmServiceNgrsAfter: error accessing `vm.parentCtrl.item.pnx`' );
 
@@ -5362,9 +4916,7 @@ function generateAllPossibleCustomDirectives() {
 
             vm.getPnx = () => {
                 try {
-                    const pnx = vm.parentCtrl.item.pnx;
-
-                    return pnx;
+                    return vm.parentCtrl.item.pnx;
                 } catch ( err ) {
                     console.log( 'prmServiceNoOfferFoundAfter: error accessing `vm.parentCtrl.item.pnx`' );
 
@@ -5386,9 +4938,7 @@ function generateAllPossibleCustomDirectives() {
 
             vm.getPnx = () => {
                 try {
-                    const pnx = vm.parentCtrl.item.pnx;
-
-                    return pnx;
+                    return vm.parentCtrl.item.pnx;
                 } catch ( err ) {
                     console.log( 'prmServicePhysicalBestOfferAfter: error accessing `vm.parentCtrl.item.pnx`' );
 
@@ -5410,9 +4960,7 @@ function generateAllPossibleCustomDirectives() {
 
             vm.getPnx = () => {
                 try {
-                    const pnx = vm.parentCtrl.item.pnx;
-
-                    return pnx;
+                    return vm.parentCtrl.item.pnx;
                 } catch ( err ) {
                     console.log( 'prmServicesPageAfter: error accessing `vm.parentCtrl.item.pnx`' );
 
@@ -5434,9 +4982,7 @@ function generateAllPossibleCustomDirectives() {
 
             vm.getPnx = () => {
                 try {
-                    const pnx = vm.parentCtrl.item.pnx;
-
-                    return pnx;
+                    return vm.parentCtrl.item.pnx;
                 } catch ( err ) {
                     console.log( 'prmShareAfter: error accessing `vm.parentCtrl.item.pnx`' );
 
@@ -5458,9 +5004,7 @@ function generateAllPossibleCustomDirectives() {
 
             vm.getPnx = () => {
                 try {
-                    const pnx = vm.parentCtrl.item.pnx;
-
-                    return pnx;
+                    return vm.parentCtrl.item.pnx;
                 } catch ( err ) {
                     console.log( 'prmSignInToViewAfter: error accessing `vm.parentCtrl.item.pnx`' );
 
@@ -5482,9 +5026,7 @@ function generateAllPossibleCustomDirectives() {
 
             vm.getPnx = () => {
                 try {
-                    const pnx = vm.parentCtrl.item.pnx;
-
-                    return pnx;
+                    return vm.parentCtrl.item.pnx;
                 } catch ( err ) {
                     console.log( 'prmSilentLoginAfter: error accessing `vm.parentCtrl.item.pnx`' );
 
@@ -5506,9 +5048,7 @@ function generateAllPossibleCustomDirectives() {
 
             vm.getPnx = () => {
                 try {
-                    const pnx = vm.parentCtrl.item.pnx;
-
-                    return pnx;
+                    return vm.parentCtrl.item.pnx;
                 } catch ( err ) {
                     console.log( 'prmSilentLoginAlertToastAfter: error accessing `vm.parentCtrl.item.pnx`' );
 
@@ -5530,9 +5070,7 @@ function generateAllPossibleCustomDirectives() {
 
             vm.getPnx = () => {
                 try {
-                    const pnx = vm.parentCtrl.item.pnx;
-
-                    return pnx;
+                    return vm.parentCtrl.item.pnx;
                 } catch ( err ) {
                     console.log( 'prmSkipToAfter: error accessing `vm.parentCtrl.item.pnx`' );
 
@@ -5554,9 +5092,7 @@ function generateAllPossibleCustomDirectives() {
 
             vm.getPnx = () => {
                 try {
-                    const pnx = vm.parentCtrl.item.pnx;
-
-                    return pnx;
+                    return vm.parentCtrl.item.pnx;
                 } catch ( err ) {
                     console.log( 'prmSliderFieldAfter: error accessing `vm.parentCtrl.item.pnx`' );
 
@@ -5578,9 +5114,7 @@ function generateAllPossibleCustomDirectives() {
 
             vm.getPnx = () => {
                 try {
-                    const pnx = vm.parentCtrl.item.pnx;
-
-                    return pnx;
+                    return vm.parentCtrl.item.pnx;
                 } catch ( err ) {
                     console.log( 'prmSnippetAfter: error accessing `vm.parentCtrl.item.pnx`' );
 
@@ -5602,9 +5136,7 @@ function generateAllPossibleCustomDirectives() {
 
             vm.getPnx = () => {
                 try {
-                    const pnx = vm.parentCtrl.item.pnx;
-
-                    return pnx;
+                    return vm.parentCtrl.item.pnx;
                 } catch ( err ) {
                     console.log( 'prmSocialMenuAfter: error accessing `vm.parentCtrl.item.pnx`' );
 
@@ -5626,9 +5158,7 @@ function generateAllPossibleCustomDirectives() {
 
             vm.getPnx = () => {
                 try {
-                    const pnx = vm.parentCtrl.item.pnx;
-
-                    return pnx;
+                    return vm.parentCtrl.item.pnx;
                 } catch ( err ) {
                     console.log( 'prmSourceRecordAfter: error accessing `vm.parentCtrl.item.pnx`' );
 
@@ -5650,9 +5180,7 @@ function generateAllPossibleCustomDirectives() {
 
             vm.getPnx = () => {
                 try {
-                    const pnx = vm.parentCtrl.item.pnx;
-
-                    return pnx;
+                    return vm.parentCtrl.item.pnx;
                 } catch ( err ) {
                     console.log( 'prmStackMapAfter: error accessing `vm.parentCtrl.item.pnx`' );
 
@@ -5674,9 +5202,7 @@ function generateAllPossibleCustomDirectives() {
 
             vm.getPnx = () => {
                 try {
-                    const pnx = vm.parentCtrl.item.pnx;
-
-                    return pnx;
+                    return vm.parentCtrl.item.pnx;
                 } catch ( err ) {
                     console.log( 'prmStandAloneLoginAfter: error accessing `vm.parentCtrl.item.pnx`' );
 
@@ -5698,9 +5224,7 @@ function generateAllPossibleCustomDirectives() {
 
             vm.getPnx = () => {
                 try {
-                    const pnx = vm.parentCtrl.item.pnx;
-
-                    return pnx;
+                    return vm.parentCtrl.item.pnx;
                 } catch ( err ) {
                     console.log( 'prmSyndeticUnboundAfter: error accessing `vm.parentCtrl.item.pnx`' );
 
@@ -5722,9 +5246,7 @@ function generateAllPossibleCustomDirectives() {
 
             vm.getPnx = () => {
                 try {
-                    const pnx = vm.parentCtrl.item.pnx;
-
-                    return pnx;
+                    return vm.parentCtrl.item.pnx;
                 } catch ( err ) {
                     console.log( 'prmTabsAndScopesSelectorAfter: error accessing `vm.parentCtrl.item.pnx`' );
 
@@ -5746,9 +5268,7 @@ function generateAllPossibleCustomDirectives() {
 
             vm.getPnx = () => {
                 try {
-                    const pnx = vm.parentCtrl.item.pnx;
-
-                    return pnx;
+                    return vm.parentCtrl.item.pnx;
                 } catch ( err ) {
                     console.log( 'prmTagsAfter: error accessing `vm.parentCtrl.item.pnx`' );
 
@@ -5770,9 +5290,7 @@ function generateAllPossibleCustomDirectives() {
 
             vm.getPnx = () => {
                 try {
-                    const pnx = vm.parentCtrl.item.pnx;
-
-                    return pnx;
+                    return vm.parentCtrl.item.pnx;
                 } catch ( err ) {
                     console.log( 'prmTagsListAfter: error accessing `vm.parentCtrl.item.pnx`' );
 
@@ -5794,9 +5312,7 @@ function generateAllPossibleCustomDirectives() {
 
             vm.getPnx = () => {
                 try {
-                    const pnx = vm.parentCtrl.item.pnx;
-
-                    return pnx;
+                    return vm.parentCtrl.item.pnx;
                 } catch ( err ) {
                     console.log( 'prmTagsResultsAfter: error accessing `vm.parentCtrl.item.pnx`' );
 
@@ -5818,9 +5334,7 @@ function generateAllPossibleCustomDirectives() {
 
             vm.getPnx = () => {
                 try {
-                    const pnx = vm.parentCtrl.item.pnx;
-
-                    return pnx;
+                    return vm.parentCtrl.item.pnx;
                 } catch ( err ) {
                     console.log( 'prmTagsSearchBarAfter: error accessing `vm.parentCtrl.item.pnx`' );
 
@@ -5842,9 +5356,7 @@ function generateAllPossibleCustomDirectives() {
 
             vm.getPnx = () => {
                 try {
-                    const pnx = vm.parentCtrl.item.pnx;
-
-                    return pnx;
+                    return vm.parentCtrl.item.pnx;
                 } catch ( err ) {
                     console.log( 'prmThumbnailListAfter: error accessing `vm.parentCtrl.item.pnx`' );
 
@@ -5866,9 +5378,7 @@ function generateAllPossibleCustomDirectives() {
 
             vm.getPnx = () => {
                 try {
-                    const pnx = vm.parentCtrl.item.pnx;
-
-                    return pnx;
+                    return vm.parentCtrl.item.pnx;
                 } catch ( err ) {
                     console.log( 'prmTimeoutToastAfter: error accessing `vm.parentCtrl.item.pnx`' );
 
@@ -5890,9 +5400,7 @@ function generateAllPossibleCustomDirectives() {
 
             vm.getPnx = () => {
                 try {
-                    const pnx = vm.parentCtrl.item.pnx;
-
-                    return pnx;
+                    return vm.parentCtrl.item.pnx;
                 } catch ( err ) {
                     console.log( 'prmTimesCitedAfter: error accessing `vm.parentCtrl.item.pnx`' );
 
@@ -5914,9 +5422,7 @@ function generateAllPossibleCustomDirectives() {
 
             vm.getPnx = () => {
                 try {
-                    const pnx = vm.parentCtrl.item.pnx;
-
-                    return pnx;
+                    return vm.parentCtrl.item.pnx;
                 } catch ( err ) {
                     console.log( 'prmTopBarBefore: error accessing `vm.parentCtrl.item.pnx`' );
 
@@ -5938,9 +5444,7 @@ function generateAllPossibleCustomDirectives() {
 
             vm.getPnx = () => {
                 try {
-                    const pnx = vm.parentCtrl.item.pnx;
-
-                    return pnx;
+                    return vm.parentCtrl.item.pnx;
                 } catch ( err ) {
                     console.log( 'prmTopNavBarLinksAfter: error accessing `vm.parentCtrl.item.pnx`' );
 
@@ -5962,9 +5466,7 @@ function generateAllPossibleCustomDirectives() {
 
             vm.getPnx = () => {
                 try {
-                    const pnx = vm.parentCtrl.item.pnx;
-
-                    return pnx;
+                    return vm.parentCtrl.item.pnx;
                 } catch ( err ) {
                     console.log( 'prmTopbarAfter: error accessing `vm.parentCtrl.item.pnx`' );
 
@@ -5986,9 +5488,7 @@ function generateAllPossibleCustomDirectives() {
 
             vm.getPnx = () => {
                 try {
-                    const pnx = vm.parentCtrl.item.pnx;
-
-                    return pnx;
+                    return vm.parentCtrl.item.pnx;
                 } catch ( err ) {
                     console.log( 'prmTreeNavAfter: error accessing `vm.parentCtrl.item.pnx`' );
 
@@ -6010,9 +5510,7 @@ function generateAllPossibleCustomDirectives() {
 
             vm.getPnx = () => {
                 try {
-                    const pnx = vm.parentCtrl.item.pnx;
-
-                    return pnx;
+                    return vm.parentCtrl.item.pnx;
                 } catch ( err ) {
                     console.log( 'prmUnionCatalogLoginAfter: error accessing `vm.parentCtrl.item.pnx`' );
 
@@ -6034,9 +5532,7 @@ function generateAllPossibleCustomDirectives() {
 
             vm.getPnx = () => {
                 try {
-                    const pnx = vm.parentCtrl.item.pnx;
-
-                    return pnx;
+                    return vm.parentCtrl.item.pnx;
                 } catch ( err ) {
                     console.log( 'prmUnionCatalogLoginInstitutionItemAfter: error accessing `vm.parentCtrl.item.pnx`' );
 
@@ -6058,9 +5554,7 @@ function generateAllPossibleCustomDirectives() {
 
             vm.getPnx = () => {
                 try {
-                    const pnx = vm.parentCtrl.item.pnx;
-
-                    return pnx;
+                    return vm.parentCtrl.item.pnx;
                 } catch ( err ) {
                     console.log( 'prmUsageMetricsAfter: error accessing `vm.parentCtrl.item.pnx`' );
 
@@ -6082,9 +5576,7 @@ function generateAllPossibleCustomDirectives() {
 
             vm.getPnx = () => {
                 try {
-                    const pnx = vm.parentCtrl.item.pnx;
-
-                    return pnx;
+                    return vm.parentCtrl.item.pnx;
                 } catch ( err ) {
                     console.log( 'prmUserAreaAfter: error accessing `vm.parentCtrl.item.pnx`' );
 
@@ -6106,9 +5598,7 @@ function generateAllPossibleCustomDirectives() {
 
             vm.getPnx = () => {
                 try {
-                    const pnx = vm.parentCtrl.item.pnx;
-
-                    return pnx;
+                    return vm.parentCtrl.item.pnx;
                 } catch ( err ) {
                     console.log( 'prmUserAreaExpandableAfter: error accessing `vm.parentCtrl.item.pnx`' );
 
@@ -6130,9 +5620,7 @@ function generateAllPossibleCustomDirectives() {
 
             vm.getPnx = () => {
                 try {
-                    const pnx = vm.parentCtrl.item.pnx;
-
-                    return pnx;
+                    return vm.parentCtrl.item.pnx;
                 } catch ( err ) {
                     console.log( 'prmUsernamePasswordLoginAfter: error accessing `vm.parentCtrl.item.pnx`' );
 
@@ -6154,9 +5642,7 @@ function generateAllPossibleCustomDirectives() {
 
             vm.getPnx = () => {
                 try {
-                    const pnx = vm.parentCtrl.item.pnx;
-
-                    return pnx;
+                    return vm.parentCtrl.item.pnx;
                 } catch ( err ) {
                     console.log( 'prmViewOnlineAfter: error accessing `vm.parentCtrl.item.pnx`' );
 
@@ -6178,9 +5664,7 @@ function generateAllPossibleCustomDirectives() {
 
             vm.getPnx = () => {
                 try {
-                    const pnx = vm.parentCtrl.item.pnx;
-
-                    return pnx;
+                    return vm.parentCtrl.item.pnx;
                 } catch ( err ) {
                     console.log( 'prmVirtualBrowseAfter: error accessing `vm.parentCtrl.item.pnx`' );
 
@@ -6202,9 +5686,7 @@ function generateAllPossibleCustomDirectives() {
 
             vm.getPnx = () => {
                 try {
-                    const pnx = vm.parentCtrl.item.pnx;
-
-                    return pnx;
+                    return vm.parentCtrl.item.pnx;
                 } catch ( err ) {
                     console.log( 'prmVirtualBrowseItemAfter: error accessing `vm.parentCtrl.item.pnx`' );
 
@@ -6226,9 +5708,7 @@ function generateAllPossibleCustomDirectives() {
 
             vm.getPnx = () => {
                 try {
-                    const pnx = vm.parentCtrl.item.pnx;
-
-                    return pnx;
+                    return vm.parentCtrl.item.pnx;
                 } catch ( err ) {
                     console.log( 'prmVirtualBrowseItemInfoAfter: error accessing `vm.parentCtrl.item.pnx`' );
 
@@ -6250,9 +5730,7 @@ function generateAllPossibleCustomDirectives() {
 
             vm.getPnx = () => {
                 try {
-                    const pnx = vm.parentCtrl.item.pnx;
-
-                    return pnx;
+                    return vm.parentCtrl.item.pnx;
                 } catch ( err ) {
                     console.log( 'prmVoiceSearchToastAfter: error accessing `vm.parentCtrl.item.pnx`' );
 
