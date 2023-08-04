@@ -158,9 +158,7 @@ function generateAllPossibleCustomDirectives() {
 
             vm.getPnx = () => {
                 try {
-                    const pnx = vm.parentCtrl.item.pnx;
-
-                    return pnx;
+                    return vm.parentCtrl.item.pnx;
                 } catch ( err ) {
                     console.log( '${ camelCaseId }: error accessing \`vm.parentCtrl.item.pnx\`' );
 
