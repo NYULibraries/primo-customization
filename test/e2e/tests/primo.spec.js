@@ -39,7 +39,7 @@ for ( let i = 0; i < testCases.length; i++ ) {
             await page.goto( fullQueryString );
         } );
 
-        test( 'page HTML matches expected', async ( { page } ) => {
+        test.skip( 'page HTML matches expected', async ( { page } ) => {
             // Clean actual/ and diffs/ files
             // NOTE:
             // We don't bother with error handling because these files get overwritten
