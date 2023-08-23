@@ -9,7 +9,7 @@ auth_quay: &auth_quay
     command: |
       docker login -u "$QUAY_USERNAME" -p "$QUAY_PASSWORD" quay.io
 
-version: 2
+version: 2.1
 jobs:
   build:
     <<: *docker-defaults
@@ -34,7 +34,7 @@ jobs:
             scripts/push-images-to-quay.sh
 
 workflows:
-  version: 2
+  version: 2.1
   build:
     jobs:
     - build
