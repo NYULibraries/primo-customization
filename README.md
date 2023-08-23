@@ -76,8 +76,8 @@ VIEW=[VIEW] docker compose up primo-explore-devenv
 For example:
 
 ```shell
-# http://localhost:8003/discovery/search?vid=01NYU_INST:NYU
-VIEW=01NYU_INST-NYU_DEV dc up primo-explore-devenv
+# http://localhost:8003/discovery/search?vid=01NYU_INST-NYU_DEV
+VIEW=01NYU_INST-NYU_DEV docker compose up primo-explore-devenv
 ```
 
 
@@ -100,6 +100,47 @@ dependency, before we decided to simply have it be a part of this repo.  It can
 serve as a reference when/if we need to update _primo-explore-devenv/_.  Depending
 on what changed in the upstream, it could with some minor updates be used to
 refresh the directory.
+
+---
+
+## Primo VE view and `vid` naming conventions
+
+### Fully qualified view names
+
+Fully qualified view names consist of the institution code and a view name joined
+by a hyphen, with all letters in uppercase. The institution codes are created by
+Ex Libris, and each code designates an Institution Zone (IZ). The view names
+within each IZ are created by NYU.  Currently, we are following this convention:
+
+* Prod view name: abbreviation for the campus -- ex. NYU
+* Dev view name: the prod view name with an added "_DEV" suffix -- ex. NYU_DEV
+
+The fully qualified view names for NYU New York campus:
+
+* Prod: 01NYU_INST-NYU
+* Dev: 01NYU_INST-NYU_DEV
+
+NOTE: We have one view name "TESTWS01" which does not follow any particular
+current naming convention.  It was originally a view created in the sandbox domain for
+initial testing, prototyping, and experimentation.  We created the same view
+in real domain to provide developers with a playground view which is not being
+used by non-developer parties.
+
+View names are used for directory names in our various repositories, and are also
+used for customization package zipfile basenames.  For example, for the NYU New York
+campus prod view:
+
+* This repo
+  * Source: _custom/01NYU_INST-NYU/_
+  * Customization package zipfile: _primo-explore-devenv/packages/01NYU_INST-NYU.zip_
+* [primo\-customization\-cdn](https://github.com/NYULibraries/primo-customization-cdn)
+  * Source: _primo-customization/01NYU_INST-NYU/_
+
+### `vid` values/names
+
+Values for the `vid` query param in Primo VE discovery URLs are view names with
+the hyphens replaced by ':' characters.  For example, for the NYU New York campus
+prod view, the `vid` is "01NYU_INST:NYU".
 
 ---
 
