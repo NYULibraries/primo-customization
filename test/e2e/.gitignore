@@ -7,11 +7,17 @@ node_modules/
 /playwright/.cache/
 
 tests/actual/*
+!tests/actual/01NYU_INST-NYU/
+tests/actual/01NYU_INST-NYU/*
+!tests/actual/01NYU_INST-NYU/.gitkeep
 !tests/actual/01NYU_INST-NYU_DEV/
 tests/actual/01NYU_INST-NYU_DEV/*
 !tests/actual/01NYU_INST-NYU_DEV/.gitkeep
 
 tests/diffs/*
+!tests/diffs/01NYU_INST-NYU/
+tests/diffs/01NYU_INST-NYU/*
+!tests/diffs/01NYU_INST-NYU/.gitkeep
 !tests/diffs/01NYU_INST-NYU_DEV/
 tests/diffs/01NYU_INST-NYU_DEV/*
 !tests/diffs/01NYU_INST-NYU_DEV/.gitkeep
