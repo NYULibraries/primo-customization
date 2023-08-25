@@ -23,7 +23,7 @@ const testCases = [
     {
         key         : 'no-search-results',
         name        : 'gasldfjlak===asgjlk&&&&!!!!',
-        queryString : 'query=any,contains,art&tab=Unified_Slot&search_scope=ARTICLES&offset=0',
+        queryString : 'query=any,contains,gasldfjlak%3D%3D%3Dasgjlk%26%26%26%26!!!!&tab=Unified_Slot&search_scope=DN_and_CI&vid=01NYU_INST:NYU_DEV&offset=0',
     },
 ];
 
