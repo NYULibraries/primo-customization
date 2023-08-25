@@ -59,8 +59,12 @@ for ( let i = 0; i < testCases.length; i++ ) {
 
             await page.locator( testCase.waitForSelector ).waitFor();
 
-            // Do not use page.locator(...).textContent(), as the text returned
-            // by that method will include non-human-readable text.
+            // * Do not use page.locator(...).textContent(), as the text returned
+            //   by that method will include non-human-readable text.
+            // * Do not use `page.locator( 'html' )` as neither `.innerText()` nor
+            //   `.allInnerTexts()` seem to reliably return useful text content.
+            //   Targeted locators are more reliable, and also make for slimmer
+            //   and more readable golden files.
             const actual = await page.locator( testCase.elementToTest ).innerText();
 
             const goldenFile = `tests/golden/${ view }/${testCase.key}.txt`;
