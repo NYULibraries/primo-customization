@@ -1,3 +1,8 @@
+/* https://nyu-lib.monday.com/boards/765008773/pulses/4845899493 */
+prm-no-search-result > md-card {
+  display: none;
+}
+
 prm-logo {
   /* Override `prm-topbar prm-logo` from (Chrome Dev Tools link address):
   https://sandbox02-na.primo.exlibrisgroup.com/discovery/components/search/topbar/_top-bar.scss */
@@ -62,7 +67,7 @@ prm-logo {
 }
 
 .md-button.md-secondary {
-  color: #42056a;
+  color: #57068c;
 }
 
 .md-button.md-secondary:hover:not([disabled]),
@@ -301,6 +306,31 @@ md-grid-tile .tile-content>.md-button.link-alt-color._md-focused:not([disabled])
   margin-right: 0;
 }
 
+/* buttonVoiceSearch */
+#voiceSearchButton:hover {
+  background-color: #E8F1F8;
+}
+
+/* button-confirm (magnifying glass)  */
+button.button-confirm {
+  background-color: black !important;
+  color: white !important;
+}
+
+button.button-confirm svg {
+  fill: white !important;
+}
+
+button.button-confirm:hover {
+  background-color: white !important;
+  color: black !important;
+}
+
+button.button-confirm:hover svg {
+  fill: black !important;
+}
+
+
 .md-button.outline-button {
   border: 1px solid;
 }
@@ -440,6 +470,21 @@ md-grid-tile .tile-content>.md-button.link-alt-color._md-focused:not([disabled])
   padding: .5em;
 }
 
+/* Advanced and simple search buttons */
+.switch-to-simple,
+.switch-to-advanced {
+  background-color: #57068c !important;
+  color: #fff !important;
+  font-weight: bold;
+  padding: 0 20px;
+}
+
+.switch-to-simple:hover,
+.switch-to-advanced:hover {
+  background-color: #791CB4 !important;
+}
+
+
 .md-button.button-full-height {
   height: 100%;
 }
@@ -503,27 +548,30 @@ md-tab-content .tab-content-header md-input-container md-select-value .md-text {
 prm-spinner.overlay-cover.light-on-dark:after,
 prm-search-bar {
   color: white;
-  background-color: #57068c;
+  /* background-color: #57068c; */
+  background-image: url('../assets/img/banner-bg.png');
+  background-color: #f5f7fa;
+
 }
 
 .prm-primary-bg.prm-hue1,
 prm-spinner.prm-hue1.overlay-cover.light-on-dark:after,
 prm-topbar .top-nav-bar,
 prm-search-bar.prm-hue1 {
-  background-color: #4e057d;
+  background-color: #57068c;
 }
 
 .prm-primary-bg.prm-hue2,
 prm-spinner.prm-hue2.overlay-cover.light-on-dark:after,
 prm-search-bar.prm-hue2,
 md-backdrop.md-opaque {
-  background-color: #480574;
+  background-color: #57068c;
 }
 
 .prm-primary-bg.prm-hue3,
 prm-spinner.prm-hue3.overlay-cover.light-on-dark:after,
 prm-search-bar.prm-hue3 {
-  background-color: #42056a;
+  background-color: #57068c;
 }
 
 .prm-primary-bg.prm-hue3-important,
@@ -531,13 +579,13 @@ prm-spinner.prm-hue3-important.overlay-cover.light-on-dark:after,
 prm-user-area md-fab-toolbar.md-is-open md-fab-trigger .md-fab-toolbar-background,
 prm-user-area md-fab-toolbar.md-is-open md-fab-trigger ._md-fab-toolbar-background,
 prm-search-bar.prm-hue3-important {
-  background-color: #42056a !important;
+  background-color: #57068c !important;
 }
 
 .prm-primary-bg.prm-hue4,
 prm-spinner.prm-hue4.overlay-cover.light-on-dark:after,
 prm-search-bar.prm-hue4 {
-  background-color: #39045b;
+  background-color: #57068c;
 }
 
 .prm-primary-border {
@@ -577,7 +625,7 @@ prm-topbar .prm-hue2.top-nav-bar {
 
 .prm-secondary-bg,
 md-progress-linear[md-mode=indeterminate].header-progress-bar .md-bar {
-  background-color: #42056a;
+  background-color: #57068c;
 }
 
 .prm-secondary-bg.prm-hue1,
@@ -597,7 +645,7 @@ md-checkbox.md-checked ._md-icon {
 }
 
 .prm-secondary-border {
-  border-color: #42056a;
+  border-color: #57068c;
 }
 
 .prm-secondary-border.prm-hue1,
