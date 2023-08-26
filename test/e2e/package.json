@@ -8,7 +8,7 @@
     "test:e2e:prod:updatesnapshots": "yarn test:e2e:prod --update-snapshots"
   },
   "dependencies": {
-    "@playwright/test": "1.27.1",
+    "@playwright/test": "1.37",
     "dotenv": "16.0.3",
     "js-beautify": "1.14.7"
   }
