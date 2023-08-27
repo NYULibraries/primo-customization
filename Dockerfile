@@ -20,7 +20,6 @@ RUN cd /tmp/ && yarn install --frozen-lockfile \
   && rm -r /tmp/* && yarn cache clean
 
 COPY bookmarklets ./bookmarklets
-COPY cdn ./cdn
 COPY custom ./custom
 COPY scripts ./scripts
 COPY tools ./tools
