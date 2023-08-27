@@ -1,4 +1,5 @@
 import * as http from 'http';
+import { existsSync } from 'node:fs';
 import * as fs from 'node:fs/promises';
 import * as path from 'node:path';
 import * as url from 'url';
@@ -7,7 +8,20 @@ const __dirname = url.fileURLToPath( new URL( '.', import.meta.url ) );
 
 const ROOT = path.join( __dirname, '..', '..' );
 
-const cdnPath = path.join( ROOT, 'cdn' );
+// Default to test fixture CDN
+let cdnPath = path.join( ROOT, 'test', 'e2e', 'fixtures', 'cdn' );
+
+// Check for user-provided CDN path
+const cdnPathArg = process.argv.slice( 2 )[ 0 ];
+if ( cdnPathArg ) {
+    const cdnAbsolutePath = path.resolve( cdnPathArg );
+    if ( existsSync( cdnAbsolutePath ) ) {
+        cdnPath = cdnAbsolutePath;
+    } else {
+        console.error( `Invalid CDN path: ${ cdnPathArg }` );
+        process.exit( 1 );
+    }
+}
 
 const listenOn = 'http://localhost:3000';
 
