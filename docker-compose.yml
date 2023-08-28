@@ -50,6 +50,10 @@ services:
     # volumes:
     #   - ./custom:/app/custom
     #   - ./primo-explore-devenv/packages/:/app/primo-explore-devenv/packages
+  curl:
+    image: appropriate/curl
+    networks:
+      - primo-customization-net
   # TODO: What's the best way to get the file out of the container?
   eslint-cjs-file:
     <<: [ *x-build-primo-customization ]
@@ -81,10 +85,6 @@ services:
       - "8003:8003"
     # volumes:
     #   - ./custom:/app/custom
-  curl:
-    image: appropriate/curl
-    networks:
-      - primo-customization-net
 
 networks:
   primo-customization-net:
