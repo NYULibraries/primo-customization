@@ -16,4 +16,4 @@ COPY test/e2e/ .
 ENTRYPOINT [ "./docker-entrypoint.sh" ]
 
 # Run playwright tests
-CMD ["yarn", "test:e2e:dev"]
+CMD ["yarn", "test:e2e"]
