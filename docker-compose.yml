@@ -42,6 +42,8 @@ services:
       - primo-customization-net
     volumes:
       - ./tmp:/app/tmp
+  # NOTE: This service name is hard-coded into the view packages' `getCdn()` code.
+  #       If changing this name, make sure to update that reference.
   cdn-server:
     <<: [*x-build-cdn-server]
     networks:
@@ -89,6 +91,8 @@ services:
     command: yarn generate-custom-directives
     volumes:
       - ./custom:/app/custom
+  # NOTE: This service name is hard-coded into the view packages' `getCdn()` code.
+  #       If changing this name, make sure to update that reference.
   primo-explore-devenv:
     <<: [*x-build-primo-customization]
     command: yarn primo-explore-devenv:run $VIEW
