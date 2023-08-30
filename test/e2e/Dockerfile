@@ -1,4 +1,4 @@
-FROM mcr.microsoft.com/playwright:v1.27.1-focal
+FROM mcr.microsoft.com/playwright:v1.37.0-jammy
 
 WORKDIR /e2e
 
