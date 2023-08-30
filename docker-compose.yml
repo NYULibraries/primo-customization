@@ -8,6 +8,14 @@ x-build-cdn-server: &x-build-cdn-server
       - primo-customization-cdn-server
     dockerfile: Dockerfile.cdn-server
 
+x-build-e2e: &x-build-e2e
+  image: primo-customization-e2e
+  build:
+    context: ./
+    dockerfile: test/e2e/Dockerfile
+    cache_from:
+      - primo-customization-e2e
+
 x-environment: &x-environment
   VIEW: ${VIEW}
 
@@ -52,6 +60,15 @@ services:
     #   - ./primo-explore-devenv/packages/:/app/primo-explore-devenv/packages
   curl:
     image: appropriate/curl
+    networks:
+      - primo-customization-net
+  e2e:
+    <<: *x-build-e2e
+    depends_on:
+      - primo-explore-devenv
+    environment:
+      <<: *x-environment
+      PLAYWRIGHT_BASE_URL: http://primo-explore-devenv:8003/discovery/search
     networks:
       - primo-customization-net
   # TODO: What's the best way to get the file out of the container?
