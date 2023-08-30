@@ -38,7 +38,7 @@ for ( let i = 0; i < testCases.length; i++ ) {
 
         test( 'has at least 1 clickable LibKey link', async ( { page } ) => {
             // TODO: Find a better waitFor condition.
-            await page.waitForTimeout( 5_000 );
+            await page.waitForTimeout( 10_000 );
 
             let libKeyLinksFound = false;
             let randomLibKeyLinkTestResult = {
