@@ -37,8 +37,40 @@ for ( let i = 0; i < testCases.length; i++ ) {
         } );
 
         test( 'has at least 1 clickable LibKey link', async ( { page } ) => {
-            // TODO: Find a better waitFor condition.
-            await page.waitForTimeout( 10_000 );
+            // This is the maximum amount of time we expect it take for everything
+            // including the LibKey links to load.
+            let waitForEverythingToLoad = 10_000;
+            // Tests running in container take longer and often require a longer
+            // timeout value.
+            if ( process.env.IN_CONTAINER ) {
+                waitForEverythingToLoad = 90_000;
+            }
+            // Our `waitForFunction` function loops through all LIBKEY_LINK_SELECTORS
+            // to check if any links of those types are present.  Since it could
+            // be the case that the only links present are of the very first type
+            // checked, we have to allow for time for those to appear.
+            // If no links of the first type are present, but links of subsequent
+            // types are, we are waiting longer than we have to.
+            // In theory, we could do a `page.waitForTimeout( waitForEveryThingToLoad )`,
+            // but it's generally considered bad practice to rely on timeouts,
+            // which are brittle.  `page.waitForTimeout` itself is deprecated for that reason.
+            const allowForTimeToCheckForAllLibKeyLinkSelectors = LIBKEY_LINK_SELECTORS.length * waitForEverythingToLoad;
+            test.setTimeout( allowForTimeToCheckForAllLibKeyLinkSelectors );
+
+            const waitForLibKeySelectorsFunction = ( libKeySelectors ) => {
+                let result = false;
+
+                for ( let i = 0; i < libKeySelectors.length; i++ ) {
+                    if ( !!document.querySelector( libKeySelectors[ i ] ) ) {
+                        result = true;
+
+                        break;
+                    }
+                }
+
+                return result;
+            }
+            await page.waitForFunction( waitForLibKeySelectorsFunction, LIBKEY_LINK_SELECTORS );
 
             let libKeyLinksFound = false;
             let randomLibKeyLinkTestResult = {
