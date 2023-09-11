@@ -38,15 +38,6 @@ for ( let i = 0; i < testCases.length; i++ ) {
         } );
 
         test( 'page text matches expected', async ( { page } ) => {
-            // Tests running in container take longer and often require a longer
-            // timeout value.
-            // `test.slow()` - https://playwright.dev/docs/api/class-test#test-slow-1
-            //     > Unconditionally marks a test as "slow". Slow test will be given
-            //     > triple the default timeout.
-            if ( process.env.IN_CONTAINER === 'true' ) {
-                test.slow();
-            }
-
             // Clean actual/ and diffs/ files
             // NOTE:
             // We don't bother with error handling because these files get overwritten

@@ -37,27 +37,7 @@ for ( let i = 0; i < testCases.length; i++ ) {
         } );
 
         test( 'has at least 1 clickable LibKey link', async ( { page } ) => {
-            // This is the maximum amount of time we expect it take for everything
-            // including the LibKey links to load.
-            let waitForEverythingToLoad = 10_000;
-            // Tests running in container take longer and often require a longer
-            // timeout value.
-            if ( process.env.IN_CONTAINER ) {
-                waitForEverythingToLoad = 90_000;
-            }
-            // Our `waitForFunction` function loops through all LIBKEY_LINK_SELECTORS
-            // to check if any links of those types are present.  Since it could
-            // be the case that the only links present are of the very first type
-            // checked, we have to allow for time for those to appear.
-            // If no links of the first type are present, but links of subsequent
-            // types are, we are waiting longer than we have to.
-            // In theory, we could do a `page.waitForTimeout( waitForEveryThingToLoad )`,
-            // but it's generally considered bad practice to rely on timeouts,
-            // which are brittle.  `page.waitForTimeout` itself is deprecated for that reason.
-            const allowForTimeToCheckForAllLibKeyLinkSelectors = LIBKEY_LINK_SELECTORS.length * waitForEverythingToLoad;
-            test.setTimeout( allowForTimeToCheckForAllLibKeyLinkSelectors );
-
-            const waitForLibKeySelectorsFunction = ( libKeySelectors ) => {
+            const waitForLibKeyLinksFunction = ( libKeySelectors ) => {
                 let result = false;
 
                 for ( let i = 0; i < libKeySelectors.length; i++ ) {
@@ -70,39 +50,46 @@ for ( let i = 0; i < testCases.length; i++ ) {
 
                 return result;
             }
-            await page.waitForFunction( waitForLibKeySelectorsFunction, LIBKEY_LINK_SELECTORS );
 
-            let libKeyLinksFound = false;
+            // Continuously search for at least one element matching any selector
+            // in LIBKEY_LINK_SELECTORS.
+            // Note that we can't save the element for later when we test click
+            // behavior because `waitForFunction` functions run in the browser,
+            // not in Playwright's Node context.
+            await page.waitForFunction( waitForLibKeyLinksFunction, LIBKEY_LINK_SELECTORS );
+
+            // Since we can't make a reproducible LibKey link click test
+            // due to the fact that we are testing live search results
+            // which are not stable, we might as well increase our coverage
+            // by selecting a link at random each time we test.
+            // As mentioned above, we can't re-use the link found by
+            // `waitForLibKeyLinksFunction`, so we have to loop through and
+            // find one again.  Despite the repetition, it is advantageous to do
+            // the previous `waitFor` test because we can not be assured that
+            // when we use `page.locator` to find LibKey links we do not have to
+            // specify long timeouts, because if `page.locator` fails, we can
+            // be confident that it's due to the absence of links matching that
+            // selector being returned by the LibKey code, and not due to LibKey
+            // links not having to appear yet.  If we didn't have this assurance,
+            // we'd have to allow each `page.locator` call to run a long time,
+            // or do an awkward warm-up step first.
+            let libKeyLinks = [];
+            for ( let i = 0; i < LIBKEY_LINK_SELECTORS.length; i++ ) {
+                const links = await page.locator( LIBKEY_LINK_SELECTORS[ i ] ).all();
+
+                libKeyLinks = [ ...libKeyLinks, ...links ];
+            }
+
             let randomLibKeyLinkTestResult = {
                 result: false,
                 linkHref: null,
                 newPageUrl: null,
             };
-            for ( let i = 0; i < LIBKEY_LINK_SELECTORS.length; i++ ) {
-                const libKeyLinks = await page.locator( LIBKEY_LINK_SELECTORS[ i ] ).all();
-
-                if ( libKeyLinks.length > 0 ) {
-                    libKeyLinksFound = true;
-
-                    // Since we can't make a reproducible LibKey link click test
-                    // due to the fact that we are testing live search results
-                    // which are not stable, we might as well increase our coverage
-                    // by selecting a link at random each time we test.
-                    await randomLibKeyLinkTest(
-                        page,
-                        libKeyLinks,
-                        randomLibKeyLinkTestResult
-                    );
-
-                    break;
-                }
-            }
-
-            expect(
-                libKeyLinksFound,
-                'No elements found matching any of the following: ' +
-                    LIBKEY_LINK_SELECTORS.join( ', ' )
-            ).toBe( true );
+            await randomLibKeyLinkTest(
+                page,
+                libKeyLinks,
+                randomLibKeyLinkTestResult,
+            );
 
             expect(
                 randomLibKeyLinkTestResult.result,
