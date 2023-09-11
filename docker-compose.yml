@@ -70,6 +70,7 @@ services:
       - primo-explore-devenv
     environment:
       <<: *x-environment
+      IN_CONTAINER: true
       PLAYWRIGHT_BASE_URL: http://primo-explore-devenv:8003/discovery/search
     networks:
       - primo-customization-net

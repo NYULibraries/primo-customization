@@ -37,6 +37,14 @@ for ( let i = 0; i < testCases.length; i++ ) {
         } );
 
         test( 'has at least 1 clickable LibKey link', async ( { page } ) => {
+            // Tests running in container sometimes take longer and require a
+            // higher timeout value.
+            if ( process.env.IN_CONTAINER ) {
+                // Slowest measured time for test pass was 1.5 minutes, so set
+                // default timeout to 2 minutes.
+                test.setTimeout( 120_000 );
+            }
+
             const waitForLibKeyLinksFunction = ( libKeySelectors ) => {
                 let result = false;
 
