@@ -27,7 +27,7 @@ const testCases = [
 for ( let i = 0; i < testCases.length; i++ ) {
     const testCase = testCases[ i ];
 
-    test.describe( testCase.name, () => {
+    test.describe( `${ view }: ${ testCase.name }`, () => {
         test.beforeEach( async ( { page } ) => {
             let fullQueryString = `?vid=${ vid }`;
             if ( testCase.queryString ) {
