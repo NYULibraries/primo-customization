@@ -40,9 +40,10 @@ for ( let i = 0; i < testCases.length; i++ ) {
             // Tests running in container sometimes take longer and require a
             // higher timeout value.
             if ( process.env.IN_CONTAINER ) {
-                // Slowest measured time for test pass was 1.5 minutes, so set
-                // default timeout to 2 minutes.
-                test.setTimeout( 120_000 );
+                // This test once timed out in CircleCI at 2 minutes:
+                // https://app.circleci.com/pipelines/github/NYULibraries/primo-customization/111/workflows/14aef5aa-34e4-4f16-8361-bc33624eadf7/jobs/72/parallel-runs/0/steps/0-103
+                // ...so setting default timeout to 3 minutes to be on the safe side.
+                test.setTimeout( 180_000 );
             }
 
             const waitForLibKeyLinksFunction = ( libKeySelectors ) => {
