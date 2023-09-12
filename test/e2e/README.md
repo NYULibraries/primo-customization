@@ -48,7 +48,8 @@ Update golden files (note there is no command for arbitrary VIEW):
 yarn test:e2e:dev:update-golden-files
 # Tests http://localhost:8003/discovery/search?vid=01NYU_INST:NYU
 yarn test:e2e:prod:update-golden-files
-# No command for arbitrary VIEW
+# Tests http://localhost:8003/discovery/search?vid=[VID]
+UPDATE_GOLDEN_FILES=true VIEW=[VIEW] yarn test:e2e
 ```
 
 Using Docker Compose:
