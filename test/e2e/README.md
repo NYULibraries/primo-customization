@@ -38,7 +38,7 @@ yarn test:e2e:dev
 # Tests http://localhost:8003/discovery/search?vid=01NYU_INST:NYU
 yarn test:e2e:prod
 # Tests http://localhost:8003/discovery/search?vid=[VID]
-yarn test:e2e [VIEW]
+VIEW=[VIEW] yarn test:e2e
 ```
 
 Update golden files (note there is no command for arbitrary VIEW):
