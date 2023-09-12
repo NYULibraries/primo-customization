@@ -62,7 +62,7 @@ For example:
 
 ```shell
 # Tests http://primo-explore-devenv:8003/discovery/search?vid=01NYU_INST-NYU_DEV
-VIEW=01NYU_INST-NYU_DEV docker compose up e2e
+VIEW=01NYU_INST-NYU_DEV docker compose up e2e-update-golden-files
 ```
 
 ---

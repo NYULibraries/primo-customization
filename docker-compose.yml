@@ -74,6 +74,17 @@ services:
       PLAYWRIGHT_BASE_URL: http://primo-explore-devenv:8003/discovery/search
     networks:
       - primo-customization-net
+  e2e-update-golden-files:
+    <<: *x-build-e2e
+    depends_on:
+      - primo-explore-devenv
+    environment:
+      <<: *x-environment
+      IN_CONTAINER: true
+      PLAYWRIGHT_BASE_URL: http://primo-explore-devenv:8003/discovery/search
+      UPDATE_GOLDEN_FILES: true
+    networks:
+      - primo-customization-net
   # TODO: What's the best way to get the file out of the container?
   eslint-cjs-file:
     <<: [ *x-build-primo-customization ]
