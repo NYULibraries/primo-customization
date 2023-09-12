@@ -49,6 +49,12 @@ jobs:
             VIEW: 01NYU_INST-NYU_DEV
         <<: *run-e2e
 
+    run-e2e-nyu-prod:
+        <<: *docker-defaults
+        environment:
+            VIEW: 01NYU_INST-NYU
+        <<: *run-e2e
+
 workflows:
     build-test-and-deploy:
         jobs:
