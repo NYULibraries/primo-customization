@@ -34,7 +34,6 @@ jobs:
             scripts/push-images-to-quay.sh
 
 workflows:
-  version: 2.1
   build:
     jobs:
     - build
