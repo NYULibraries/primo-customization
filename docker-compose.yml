@@ -8,6 +8,14 @@ x-build-cdn-server: &x-build-cdn-server
       - primo-customization-cdn-server
     dockerfile: Dockerfile.cdn-server
 
+x-build-e2e: &x-build-e2e
+  image: primo-customization-e2e
+  build:
+    context: ./
+    dockerfile: test/e2e/Dockerfile
+    cache_from:
+      - primo-customization-e2e
+
 x-environment: &x-environment
   VIEW: ${VIEW}
 
@@ -34,6 +42,8 @@ services:
       - primo-customization-net
     volumes:
       - ./tmp:/app/tmp
+  # NOTE: This service name is hard-coded into the view packages' `getCdn()` code.
+  #       If changing this name, make sure to update that reference.
   cdn-server:
     <<: [*x-build-cdn-server]
     networks:
@@ -50,6 +60,33 @@ services:
     # volumes:
     #   - ./custom:/app/custom
     #   - ./primo-explore-devenv/packages/:/app/primo-explore-devenv/packages
+  curl:
+    image: appropriate/curl
+    networks:
+      - primo-customization-net
+  e2e:
+    <<: *x-build-e2e
+    depends_on:
+      - primo-explore-devenv
+    environment:
+      <<: *x-environment
+      IN_CONTAINER: true
+      PLAYWRIGHT_BASE_URL: http://primo-explore-devenv:8003/discovery/search
+    networks:
+      - primo-customization-net
+  e2e-update-golden-files:
+    <<: *x-build-e2e
+    depends_on:
+      - primo-explore-devenv
+    environment:
+      <<: *x-environment
+      IN_CONTAINER: true
+      PLAYWRIGHT_BASE_URL: http://primo-explore-devenv:8003/discovery/search
+      UPDATE_GOLDEN_FILES: true
+    networks:
+      - primo-customization-net
+    # volumes:
+    #   - ./test/e2e/tests/golden:/e2e/tests/golden
   # TODO: What's the best way to get the file out of the container?
   eslint-cjs-file:
     <<: [ *x-build-primo-customization ]
@@ -68,6 +105,8 @@ services:
     command: yarn generate-custom-directives
     volumes:
       - ./custom:/app/custom
+  # NOTE: This service name is hard-coded into the view packages' `getCdn()` code.
+  #       If changing this name, make sure to update that reference.
   primo-explore-devenv:
     <<: [*x-build-primo-customization]
     command: yarn primo-explore-devenv:run $VIEW
@@ -81,10 +120,6 @@ services:
       - "8003:8003"
     # volumes:
     #   - ./custom:/app/custom
-  curl:
-    image: appropriate/curl
-    networks:
-      - primo-customization-net
 
 networks:
   primo-customization-net:

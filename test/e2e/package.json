@@ -1,14 +1,13 @@
 {
   "scripts": {
-    "test:e2e:dev": "yarn test:e2e:dev:clean && VIEW=01NYU_INST-NYU_DEV yarn playwright test",
-    "test:e2e:dev:clean": "rm -rf tests/actual/01NYU_INST-NYU_DEV/* && rm -rf tests/diffs/01NYU_INST-NYU_DEV/*",
-    "test:e2e:dev:updatesnapshots": "yarn test:e2e:dev --update-snapshots",
-    "test:e2e:prod": "yarn test:e2e:prod:clean && VIEW=01NYU_INST-NYU yarn playwright test",
-    "test:e2e:prod:clean": "rm -rf tests/actual/01NYU_INST-NYU/* && rm -rf tests/diffs/01NYU_INST-NYU/*",
-    "test:e2e:prod:updatesnapshots": "yarn test:e2e:prod --update-snapshots"
+    "test:e2e": "./scripts/run-tests.sh",
+    "test:e2e:dev": "VIEW=01NYU_INST-NYU_DEV yarn test:e2e",
+    "test:e2e:dev:update-golden-files": "UPDATE_GOLDEN_FILES=true VIEW=01NYU_INST-NYU_DEV yarn test:e2e",
+    "test:e2e:prod": "VIEW=01NYU_INST-NYU yarn test:e2e",
+    "test:e2e:prod:update-golden-files": "UPDATE_GOLDEN_FILES=true VIEW=01NYU_INST-NYU yarn test:e2e"
   },
   "dependencies": {
-    "@playwright/test": "1.27.1",
+    "@playwright/test": "1.37",
     "dotenv": "16.0.3",
     "js-beautify": "1.14.7"
   }
