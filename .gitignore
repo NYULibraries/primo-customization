@@ -8,7 +8,7 @@
 #
 # In theory we could symlink `./cdn` to the entire repo, but that would include
 # the `.git/` directory of the other repo, which could cause problems.
-cdn/
+./cdn/
 
 # Built by `gulp`
 custom/*/css/app-colors.css
