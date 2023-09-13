@@ -74,6 +74,40 @@ VIEW=01NYU_INST-NYU_DEV docker compose up e2e-update-golden-files
 
 ---
 
+## CDN test fixture
+
+The CDN test fixture _./fixtures/cdn/_ serves as the default CDN path for the
+local `cdn-server`.  It can be synchronized with the `primo-customization-cdn`
+repo using the _./scripts/sync-cdn-test-fixture.sh_ script.
+
+### sync-cdn-test-fixture.sh
+
+Usage:
+
+```shell
+./scripts/sync-cdn-test-fixture.sh [GIT CHECKOUT ARG]
+``` 
+
+Synchronize with `main` branch:
+
+```shell
+./scripts/sync-cdn-test-fixture.sh main
+```
+
+Synchronize with a specific commit:
+
+```shell
+./scripts/sync-cdn-test-fixture.sh b75b41bcdcd64f9a35cf6c35c07f6e316bc557ba
+```
+
+The script will also create version file _./fixtures/cdn/version.txt_ to record
+what version of `primo-customization-cdn` has been duplicated as for the CDN test
+fixture.  Both the modifications to the CDN test fixture resulting from running
+the script and the version file should be checked into the repo together in the
+same commit.
+
+---
+
 ## References
 
 * [Playwright](https://playwright.dev/)
