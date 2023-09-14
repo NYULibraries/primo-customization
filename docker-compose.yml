@@ -66,12 +66,17 @@ services:
       - primo-customization-net
   e2e:
     <<: *x-build-e2e
+    command: tail -f /dev/null
     depends_on:
       - primo-explore-devenv
     environment:
       <<: *x-environment
       IN_CONTAINER: true
       PLAYWRIGHT_BASE_URL: http://primo-explore-devenv:8003/discovery/search
+    # https://playwright.dev/docs/ci#docker
+    # CI configurations > Docker
+    # "Using --ipc=host is also recommended when using Chromium. Without it Chromium can run out of memory and crash."
+    ipc: host
     networks:
       - primo-customization-net
   e2e-update-golden-files:
@@ -83,6 +88,10 @@ services:
       IN_CONTAINER: true
       PLAYWRIGHT_BASE_URL: http://primo-explore-devenv:8003/discovery/search
       UPDATE_GOLDEN_FILES: true
+    # https://playwright.dev/docs/ci#docker
+    # CI configurations > Docker
+    # "Using --ipc=host is also recommended when using Chromium. Without it Chromium can run out of memory and crash."
+    ipc: host
     networks:
       - primo-customization-net
     # volumes:
