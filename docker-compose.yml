@@ -66,7 +66,6 @@ services:
       - primo-customization-net
   e2e:
     <<: *x-build-e2e
-    command: tail -f /dev/null
     depends_on:
       - primo-explore-devenv
     environment:
