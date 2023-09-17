@@ -1,5 +1,7 @@
 const { test, expect } = require( '@playwright/test' );
 
+const BROWZINE_PRIMO_ADAPTER_SCRIPT_URL =
+    'https://s3.amazonaws.com/browzine-adapters/primo/browzine-primo-adapter.js';
 // This is not necessarily a comprehensive list.
 const LIBKEY_LINK_SELECTORS = [
     'a.browzine-article-link',
@@ -17,6 +19,12 @@ const testCases = [
         name        : 'Art',
         queryString : 'query=any,contains,art&tab=Unified_Slot&search_scope=ARTICLES&offset=0',
     },
+    {
+        key                                : 'art',
+        name                               : 'Art',
+        queryString                        : 'query=any,contains,art&tab=Unified_Slot&search_scope=ARTICLES&offset=0',
+        browzinePrimoAdapterExecutionDelay : 10_000,
+    },
     // {
     //     key         : 'ids-of-stable-test-records',
     //     name        : '[TODO: IDS OF STABLE TEST RECORDS]',
@@ -33,10 +41,29 @@ for ( let i = 0; i < testCases.length; i++ ) {
             if ( testCase.queryString ) {
                 fullQueryString += `&${ testCase.queryString }`;
             }
+
+            // Simulate slow response to request for Browzine Primo adapter script.
+            if ( testCase.browzinePrimoAdapterExecutionDelay ) {
+                await page.route(
+                    BROWZINE_PRIMO_ADAPTER_SCRIPT_URL,
+                    async route => {
+                        await new Promise(
+                            fn => setTimeout( fn, testCase.browzinePrimoAdapterExecutionDelay )
+                        );
+                        await route.continue();
+                    }
+                );
+            }
+
             await page.goto( fullQueryString );
         } );
 
-        test( 'has a clickable LibKey link', async ( { page } ) => {
+        let testTitle = 'has a clickable LibKey link';
+        if ( testCase.browzinePrimoAdapterExecutionDelay ) {
+            testTitle += ` (${ testCase.browzinePrimoAdapterExecutionDelay }ms Browzine delay)`;
+        }
+
+        test( testTitle, async ( { page } ) => {
             await testHasAClickableLibKeyLink( page );
         } );
     } );
