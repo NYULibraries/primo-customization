@@ -79,7 +79,7 @@ app.controller( 'prmSearchResultAvailabilityLineAfterController', function( $sco
             }
         } else {
             console.log( `window.browzine.primo.searchResult( $scope ) failed` +
-                         ` after ${ numTries } tries and ${ TIMEOUT }ms` )
+                         ` after ${ numTries } tries and ${ Math.floor( TIMEOUT / 1000 ) } seconds` )
         }
     }
     window.requestAnimationFrame( tryBrowzinePrimoSearchResult );

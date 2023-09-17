@@ -60,7 +60,7 @@ for ( let i = 0; i < testCases.length; i++ ) {
 
         let testTitle = 'has a clickable LibKey link';
         if ( testCase.browzinePrimoAdapterExecutionDelay ) {
-            testTitle += ` (${ testCase.browzinePrimoAdapterExecutionDelay }ms Browzine delay)`;
+            testTitle += ` w/ (${ Math.floor( testCase.browzinePrimoAdapterExecutionDelay / 1_000 ) }s Browzine delay)`;
         }
 
         test( testTitle, async ( { page } ) => {
