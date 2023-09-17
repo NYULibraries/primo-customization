@@ -34,10 +34,12 @@ app.controller( 'prmSearchResultAvailabilityLineAfterController', function( $sco
     //     TypeError: Cannot read properties of undefined (reading 'searchResult')
     //     at Object.<anonymous> (http://primo-explore-devenv:8003/discovery/custom/01NYU_INST-NYU_DEV/js/custom.js:100:27)
     //
-    // This appears to be due to a race condition where the components render
-    // before the 3rd party `browzine-primo-adapter.js` script runs.  This script
-    // is loaded into <head> and under normal conditions adds `browzine` to the
-    // `window` object before Primo returns search results.
+    // This appears to be due to a race condition in which the `prmSearchResultAvailabilityLineAfter`
+    // components render before the 3rd party `browzine-primo-adapter.js` <script>
+    // injected into <head> executes and adds `browzine` to the `window` object before
+    // Primo returns search results.  This could be due to a delay in fetching
+    // the script from Third Iron's hosting service, or a delay in injecting the
+    // <script> tag, or both.
     //
     // Even before the LibKey configuration and <script> tag injection code was
     // moved to CDN, there were frequently e2e test failures when run in containers
