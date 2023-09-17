@@ -36,7 +36,7 @@ for ( let i = 0; i < testCases.length; i++ ) {
             await page.goto( fullQueryString );
         } );
 
-        test( 'has at least 1 clickable LibKey link', async ( { page } ) => {
+        test( 'has a clickable LibKey link', async ( { page } ) => {
             // Tests running in container sometimes take longer and require a
             // higher timeout value.
             if ( process.env.IN_CONTAINER ) {
