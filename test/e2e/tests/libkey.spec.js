@@ -36,6 +36,17 @@ for ( let i = 0; i < testCases.length; i++ ) {
     const testCase = testCases[ i ];
 
     test.describe( `${ view }: ${ testCase.name }`, () => {
+        // Tests running in container sometimes take longer and require a
+        // higher timeout value.  These tests have timed out in containers in
+        // both `test.beforeEach()` and the test itself, so we need to increase
+        // the timeout for everything in `test.describe()`.
+        if ( process.env.IN_CONTAINER ) {
+            // This test once timed out in CircleCI at 3 minutes:
+            // https://app.circleci.com/pipelines/github/NYULibraries/primo-customization/127/workflows/658dc7cb-0d06-4b9d-acb3-51a6c96c9f48/jobs/110
+            // ...so setting default timeout to 5 minutes to be on the safe side.
+            test.setTimeout( 300_000 );
+        }
+
         test.beforeEach( async ( { page } ) => {
             let fullQueryString = `?vid=${ vid }`;
             if ( testCase.queryString ) {
@@ -70,15 +81,6 @@ for ( let i = 0; i < testCases.length; i++ ) {
 }
 
 async function testHasAClickableLibKeyLink( page ) {
-    // Tests running in container sometimes take longer and require a
-    // higher timeout value.
-    if ( process.env.IN_CONTAINER ) {
-        // This test once timed out in CircleCI at 3 minutes:
-        // https://app.circleci.com/pipelines/github/NYULibraries/primo-customization/127/workflows/658dc7cb-0d06-4b9d-acb3-51a6c96c9f48/jobs/110
-        // ...so setting default timeout to 5 minutes to be on the safe side.
-        test.setTimeout( 300_000 );
-    }
-
     const waitForLibKeyLinksFunction = ( libKeySelectors ) => {
         let result = false;
 
