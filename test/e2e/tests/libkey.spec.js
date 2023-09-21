@@ -41,10 +41,7 @@ for ( let i = 0; i < testCases.length; i++ ) {
         // both `test.beforeEach()` and the test itself, so we need to increase
         // the timeout for everything in `test.describe()`.
         if ( process.env.IN_CONTAINER ) {
-            // This test once timed out in CircleCI at 3 minutes:
-            // https://app.circleci.com/pipelines/github/NYULibraries/primo-customization/127/workflows/658dc7cb-0d06-4b9d-acb3-51a6c96c9f48/jobs/110
-            // ...so setting default timeout to 5 minutes to be on the safe side.
-            test.setTimeout( 300_000 );
+            test.slow();
         }
 
         test.beforeEach( async ( { page } ) => {

@@ -28,12 +28,8 @@ const config = {
     // these customized settings.
 
     testDir: './tests',
-    /* Maximum time one test can run for.
-       We leave this default as-is, though we might consider increasing this
-       global timeout to 90 seconds or more when `!!process.env.IN_CONTAINER`,
-       instead of making adjustments per test group.
-     */
-    timeout: 30 * 1000,
+    /* Maximum time one test can run for. */
+    timeout: 90 * 1000,
     expect : {
     /**
      * Maximum time expect() should wait for the condition to be met.
