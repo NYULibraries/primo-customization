@@ -1,5 +1,7 @@
 FROM mcr.microsoft.com/playwright:v1.37.0-jammy
 
+ENV IN_CONTAINER true
+
 WORKDIR /e2e
 
 COPY test/e2e/package.json test/e2e/yarn.lock ./
