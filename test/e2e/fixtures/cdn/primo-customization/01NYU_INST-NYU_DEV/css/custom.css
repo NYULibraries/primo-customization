@@ -1,3 +1,62 @@
+/* ***************************************** */
+/* Styles for browse search & journal search */
+/* ***************************************** */
+
+
+.prm-alert-bg,
+.bar.alert-bar,
+.classic-input .search-scope {
+  background-color: rgba(255, 255, 255, 1) !important;
+}
+
+.prm-alert-border,
+.bar.alert-bar,
+.classic-input .search-scope {
+  border-color: rgba(255, 255, 255, 1) !important;
+}
+
+prm-autocomplete input {
+  font-size: 1.3em !important;
+}
+
+prm-browse-search-bar {
+  padding-bottom: 60px;
+  background-image: url("../assets/img/banner-bg.png") !important;
+  background-color: rgba(255, 255, 255, 1) !important;
+  /* This will act as a fallback */
+}
+
+prm-atoz-search-bar {
+  padding-bottom: 60px;
+  background-image: url("../assets/img/banner-bg.png") !important;
+  background-color: rgba(255, 255, 255, 1) !important;
+  /* This will act as a fallback */
+}
+
+
+
+/* ***************************** */
+/* Styles for user dropdown menu */
+/* ***************************** */
+
+/* Hide 'My Loans' */
+/* Hide 'My Requests' */
+.menu-item-indented.my-loans-ctm,
+.menu-item-indented.my-requests-ctm {
+  display: none !important;
+}
+
+
+/* Setting the order for `Saved Items` and `Search History` in user dropdown menu */
+.my-refworks-separator-ctm {
+  order: 3;
+}
+
+.my-refworks-ctm {
+  order: 4;
+}
+
+
 /* ******************************************************* */
 /* Styles for search-bar-sub-menu feedback & library hours */
 /* ******************************************************* */
