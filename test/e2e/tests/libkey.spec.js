@@ -145,8 +145,11 @@ async function testHasAClickableLibKeyLink( page ) {
 }
 
 async function randomLibKeyLinkTest( page, libKeyLinks, testResult ) {
-    // Test a random LibKey link to see if clicking on it loads
-    // the right URL in a new tab.
+    // Test a random LibKey link to see if clicking on it opens a new tab and
+    // loads the correct URL.  We do this to make sure we don't have a situation
+    // similar to `prm-brief-result-after`, where clicks on links were being
+    // intercepted by a handler which triggered opening to full display view and
+    // blocked the opening of new tabs.
     const randomLibKeyLink =
         libKeyLinks[ Math.floor( Math.random() * libKeyLinks.length ) ]
 
@@ -155,11 +158,20 @@ async function randomLibKeyLinkTest( page, libKeyLinks, testResult ) {
     // https://playwright.dev/docs/pages#handling-new-pages
     // Start waiting for new page before clicking. Note no await.
     const pagePromise = page.context().waitForEvent( 'page' );
+    // Originally, we tested the URL of the new tab using `newPage.url()`.
+    // However, it is often the case that the newly opened tabs redirected through
+    // a chain of URLs, leading to a race condition where sometimes the URL returned
+    // by `newPage.url()` was not the initial URL of the tab/page/frame but one
+    // later in the redirect chain, leading to test failure.
+    // Here is where the Playwright frame URL gets changed by redirects:
+    // https://github.com/microsoft/playwright/blob/60696ef493fe5e35de00efcded77d60b81548599/packages/playwright-core/src/client/frame.ts#L87
+    // The example code for `on('page')` -- https://playwright.dev/docs/api/class-browsercontext#browser-context-event-page.
+    // ...seems to suggest that a viable method for capturing the initial URL of a tab
+    // is to call `newPage.evaluate('location.href')` immediately after the `page`
+    // event is emitted, before it has even fully loaded.
     await randomLibKeyLink.click();
     const newPage = await pagePromise;
-    await newPage.waitForLoadState();
-
-    testResult.newPageUrl = await newPage.url();
+    testResult.newPageUrl = await newPage.evaluate('location.href');
 
     if ( testResult.newPageUrl === testResult.linkHref ) {
         testResult.result = true;
