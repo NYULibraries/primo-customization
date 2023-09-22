@@ -37,18 +37,67 @@
 
 ## Start local CDN server
 
-To run the CDN server in the foreground, printing log messages to the screen:
+To run the CDN server in the foreground with log messages to the screen:
 
 ```shell
 # http://localhost:3000/
-yarn cdn-server
+yarn cdn-server [OPTIONAL CDN PATH]
+```
+
+If `CDN PATH` is not specified, static files are served from the default file system
+_test/e2e/fixtures/cdn/_.
+
+`CDN PATH` can be a relative or absolute path.  One useful setup can be to serve
+from a local clone of
+[primo\-customization\-cdn](https://github.com/NYULibraries/primo-customization-cdn).
+For example:
+
+```shell
+# http://localhost:3000/ serving from a local clone of `primo-customization-cdn`
+# located in the same directory as this repo.
+yarn cdn-server ../primo-customization-cdn
+```
+
+Another useful setup is to have a top-level _cdn/_ directory in which is a symlink
+to the _primo-customization/_ subdirectory of a local clone of
+[primo\-customization\-cdn](https://github.com/NYULibraries/primo-customization-cdn).
+This mirrors how local development was done before the CDN file system was
+split out into the separate `primo-customization-cdn` repo.  Git operations must
+be done in the CDN repo, but all other work can be done in this repo via the symlink.
+The `./cdn/` rule in _.gitignore_ was added to accommodate this setup.
+
+Example:
+
+```shell
+primo-customization> ls -1 ../primo-customization-cdn/
+README.md
+docker-compose.yml
+primo-customization
+scripts
+primo-customization> mkdir cdn
+primo-customization> cd cdn/
+cdn> ln -s ../../primo-customization-cdn/primo-customization/
+cdn> cd ../
+primo-customization> yarn cdn-server cdn
+yarn run v1.22.19
+warning package.json: No license field
+$ node tools/cdn-server/server.mjs cdn
+CDN server started on http://localhost:3000
+
+...
+
 ```
 
 Using Docker Compose (automatically started by `primo-explore-devenv` service):
 
 ```shell
+# http://localhost:3000/ serving from a copy of `test/e2e/fixtures/cdn/` in the container.
 docker compose up cdn-server
 ```
+
+To have the Docker Compose `cdn-server` service use a file system other than
+the default _test/e2e/fixtures/cdn/_, uncomment the `volumes` key and mount the
+local file system in the container at _/app/cdn_.
 
 ---
 
@@ -80,6 +129,11 @@ For example:
 VIEW=01NYU_INST-NYU_DEV docker compose up primo-explore-devenv
 ```
 
+---
+
+# Tests
+
+* [E2E](https://github.com/NYULibraries/primo-customization/test/e2e#README.md)
 
 ---
 

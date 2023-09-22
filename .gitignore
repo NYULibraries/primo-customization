@@ -1,6 +1,15 @@
 # Emacs backup files
 *~
 
+# Allow symlinking to the `primo-customization/` directory of a local clone of
+# https://github.com/NYULibraries/primo-customization-cdn/:
+#
+#     `mkdir ./cdn; cd ./cdn; ln -s ../../primo-customization-cdn/primo-customization`
+#
+# In theory we could symlink `./cdn` to the entire repo, but that would include
+# the `.git/` directory of the other repo, which could cause problems.
+/cdn/
+
 # Built by `gulp`
 custom/*/css/app-colors.css
 custom/*/js/custom.js

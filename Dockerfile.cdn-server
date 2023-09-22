@@ -2,10 +2,10 @@ FROM node:16.17.0-bullseye
 
 WORKDIR /app
 
-COPY cdn ./cdn
+COPY test/e2e/fixtures/cdn ./cdn
 COPY package.json .
 COPY tools/cdn-server ./tools/cdn-server
 
 EXPOSE 3000
 
-CMD ["yarn", "cdn-server"]
+CMD ["yarn", "cdn-server", "./cdn"]

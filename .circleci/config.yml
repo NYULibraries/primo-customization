@@ -1,40 +1,70 @@
 docker-defaults: &docker-defaults
-  docker:
-    - image: cimg/base:2023.07
-  #working_directory: ~/app
+    docker:
+        -   image: cimg/base:2023.07
+    #working_directory: ~/app
 
 auth_quay: &auth_quay
-  run:
-    name: Authenticate Quay
-    command: |
-      docker login -u "$QUAY_USERNAME" -p "$QUAY_PASSWORD" quay.io
+    run:
+        name: Authenticate Quay
+        command: |
+            docker login -u "$QUAY_USERNAME" -p "$QUAY_PASSWORD" quay.io
 
 version: 2.1
 jobs:
-  build:
-    <<: *docker-defaults
-    steps:
-      - checkout
-      - setup_remote_docker
-      - run:
-          name: Build docker
-          command: |
-            docker compose build
-      - run:
-          name: "Sanity check: do devenv and cdn start?"
-          command: |
-            scripts/sanity-check-test.sh
-      - <<: *auth_quay
-      - run:
-          name: Setup custom environment variables
-          command: echo 'export BRANCH_NO_SLASH="${CIRCLE_BRANCH//\//_}"' >> $BASH_ENV
-      - run:
-          name: Push images to quay
-          command: |
-            scripts/push-images-to-quay.sh
+    build-all-services:
+        <<: *docker-defaults
+        steps:
+            - checkout
+            - setup_remote_docker
+            - run:
+                  name: Build docker
+                  command: |
+                      docker compose build
+            - run:
+                  name: "Sanity check: do cdn-server and primo-explore-devenv start?"
+                  command: |
+                      scripts/sanity-check-test.sh
+            - <<: *auth_quay
+            - run:
+                  name: Set up custom environment variables
+                  command: echo 'export BRANCH_NO_SLASH="${CIRCLE_BRANCH//\//_}"' >> $BASH_ENV
+            - run:
+                  name: Push images to quay
+                  command: |
+                      scripts/push-images-to-quay.sh
+
+    run-e2e: &run-e2e
+        <<: *docker-defaults
+        steps:
+            - checkout
+            - setup_remote_docker
+            - run:
+                  name: Run tests
+                  command: |
+                      docker-compose run e2e
+
+    run-e2e-nyu-dev:
+        <<: *docker-defaults
+        environment:
+            VIEW: 01NYU_INST-NYU_DEV
+        <<: *run-e2e
+
+    run-e2e-nyu-prod:
+        <<: *docker-defaults
+        environment:
+            VIEW: 01NYU_INST-NYU
+        <<: *run-e2e
 
 workflows:
-  version: 2.1
-  build:
-    jobs:
-    - build
+    build-test-and-deploy:
+        jobs:
+            - build-all-services
+            - run-e2e-nyu-dev:
+                  filters:
+                      branches:
+                          ignore: main
+            - run-e2e-nyu-prod:
+                  filters:
+                      branches:
+                          only: main
+

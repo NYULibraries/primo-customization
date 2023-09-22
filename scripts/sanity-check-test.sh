@@ -1,7 +1,7 @@
 #!/bin/bash -ex
 
 # check NYU_DEV view
-testview=01NYU_INST-NYU_DEV 
+testview=01NYU_INST-NYU_DEV
 VIEW=$testview docker compose up -d primo-explore-devenv
 
 # use docker compose curl so we're inside primo-customization-net
@@ -17,7 +17,7 @@ customcss_url="http://cdn-server:3000/primo-customization/$testview/css/custom.c
 start_time="$(date -u +%s)"
 timeout_limit=60
 while ! $curl -f $devenv_url -o /dev/null
-do 
+do
   current_time="$(date -u +%s)"
   elapsed_seconds=$(($current_time-$start_time))
   if [ $elapsed_seconds -gt $timeout_limit ]; then
@@ -41,7 +41,7 @@ echo "Local devenv has $devenv_matchstring!"
 
 # check that CDN loads
 #customcss_matchstring="logo-image"
-customcss_matchstring=`cat cdn/primo-customization/$testview/css/custom.css`
+customcss_matchstring=`cat test/e2e/fixtures/cdn/primo-customization/$testview/css/custom.css`
 customcss_html=`$curl $customcss_url`
 if [[ "$customcss_html" != *"$customcss_matchstring"* ]]; then
   echo "Devenv HTML:"
