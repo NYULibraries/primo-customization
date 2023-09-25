@@ -1,3 +1,7 @@
+// ****************************************
+// 01-config.js
+// ****************************************
+
 const searchParams = new URLSearchParams( window.location.search );
 const vid = searchParams.get( 'vid' );
 const cdnUrl = getCdnUrl( vid );
