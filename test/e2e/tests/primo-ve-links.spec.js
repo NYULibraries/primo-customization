@@ -11,23 +11,23 @@ const vid = view.replaceAll( '-', ':' );
 
 const linksToTest = [
     {
-        text: 'browse journals by title',
+        text        : 'browse journals by title',
         expectedHref: `/discovery/jsearch?vid=${ vid }`,
     },
     {
-        text: 'find an article by citation',
+        text        : 'find an article by citation',
         expectedHref: `/discovery/citationlinker?vid=${ vid }`,
     },
 ];
 
-test.only( 'Primo VE links in home page', async ( { page } ) => {
+test( 'Primo VE links in home page', async ( { page } ) => {
     // Tests running in container sometimes take longer and require a
     // higher timeout value.
     if ( process.env.IN_CONTAINER ) {
         test.slow();
     }
 
-    await page.goto( `?vid=${vid}` );
+    await page.goto( `?vid=${ vid }` );
 
     await page.locator( 'md-card[ data-cy="home-need-help" ]' ).waitFor();
 
@@ -41,8 +41,8 @@ test.only( 'Primo VE links in home page', async ( { page } ) => {
 
         if ( href !== linkToTest.expectedHref ) {
             linkTestFailures[ linkToTest.text ] = {
-                expected : linkToTest.expectedHref,
-                actual   : href,
+                expected: linkToTest.expectedHref,
+                actual  : href,
             };
         }
     }
@@ -50,8 +50,8 @@ test.only( 'Primo VE links in home page', async ( { page } ) => {
     const failMessage = 'FAILED LINKS:\n' +
         Object.keys( linkTestFailures ).sort().map( linkText => {
             const testFailure = linkTestFailures[ linkText ];
-            return `* "${ linkText }" link FAIL: expected "${ testFailure.expected }", got "${ testFailure.actual}"`
-        } ).join( "\n" );
+            return `* "${ linkText }" link FAIL: expected "${ testFailure.expected }", got "${ testFailure.actual }"`
+        } ).join( '\n' );
 
     expect( Object.keys( linkTestFailures ).length === 0, failMessage ).toBe( true );
 } );
