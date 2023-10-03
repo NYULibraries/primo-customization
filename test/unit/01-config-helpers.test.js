@@ -1,4 +1,13 @@
 import * as fs from 'node:fs';
+import path from 'node:path';
+import * as url from 'url';
+
+import { describe, expect, test } from 'vitest'
+
+const __dirname = url.fileURLToPath( new URL( '..', import.meta.url ) );
+
+const ROOT = path.join( __dirname, '..' );
+const fileToTest = path.join( ROOT, 'custom', '00_common', 'js', '01-config-helpers.js' );
 
 const testCases = {
     'https://hslcat.med.nyu.edu/discovery/search?vid=01NYU_HS:HSL&offset=0'     : 'https://cdn.library.nyu.edu/primo-customization/01NYU_HS-HSL',
@@ -46,7 +55,7 @@ const window = {
     },
 };
 
-const codeUnderTest = fs.readFileSync( '../../custom/00_common/js/01-config-helpers.js', { encoding: 'utf8' } );
+const codeUnderTest = fs.readFileSync( fileToTest, { encoding : 'utf8' } );
 // According to MDN documentation for eval(): https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/eval
 // ...using a direct eval is supposed to leak function declarations to the surrounding
 // scope.  That doesn't seem to be happening here - perhaps because we're in a Node
@@ -57,21 +66,20 @@ const codeUnderTest = fs.readFileSync( '../../custom/00_common/js/01-config-help
 // in our tests.
 const getCdnUrl = eval( codeUnderTest + 'getCdnUrl' );
 
-// Tests
-Object.keys( testCases ).sort().forEach( url => {
-    const urlObject = new URL( url );
-    const domain = urlObject.host;
-    const searchParams = urlObject.searchParams;
-    const extractedVid = searchParams.get( 'vid' );
+describe( 'getCdnUrl()', () => {
+    Object.keys( testCases ).sort().forEach( url => {
+        test( url, () => {
+            const urlObject = new URL( url );
+            const domain = urlObject.host;
+            const searchParams = urlObject.searchParams;
+            const extractedVid = searchParams.get( 'vid' );
 
-    window.location.hostname = domain.replace( ':3000', '' );
+            window.location.hostname = domain.replace( ':3000', '' );
 
-    const got = getCdnUrl( extractedVid )
-    const expected = testCases[ url ];
+            const got = getCdnUrl( extractedVid )
+            const expected = testCases[ url ];
 
-    if ( got === expected ) {
-        console.log( `OK: ${url} => ${expected}` );
-    } else {
-        console.log( `FAIL: ${url} => ${got}; expected ${expected}` );
-    }
+            expect( got ).toBe( expected );
+        } );
+    } );
 } );
