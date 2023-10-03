@@ -17,6 +17,7 @@ x-build-e2e: &x-build-e2e
       - primo-customization-e2e
 
 x-environment: &x-environment
+  CI: ${CI}
   VIEW: ${VIEW}
 
 x-build-primo-customization: &x-build-primo-customization
