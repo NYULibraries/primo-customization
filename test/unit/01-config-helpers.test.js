@@ -68,18 +68,41 @@ const getCdnUrl = eval( codeUnderTest + 'getCdnUrl' );
 
 describe( 'getCdnUrl()', () => {
     Object.keys( testCases ).sort().forEach( url => {
-        test( url, () => {
-            const urlObject = new URL( url );
-            const domain = urlObject.host;
-            const searchParams = urlObject.searchParams;
-            const extractedVid = searchParams.get( 'vid' );
+        const expected = testCases[ url ];
 
-            window.location.hostname = domain.replace( ':3000', '' );
+        // Primo VE is apparently case-sensitive and will not consider a vid like
+        // "01nyu_inst:nyu_dev" to be valid (user gets loading diamonds on a
+        // white screen of death).
+        // Just to be on the safe side, we made `getCdnUrl` case-insensitive,
+        // so we need to test all cases.
+        describe( url, () => {
+            test( `original case: ${ url }`, () => {
+                testUrl( url, expected );
+            } );
 
-            const got = getCdnUrl( extractedVid )
-            const expected = testCases[ url ];
+            const urlUpperCase = url.toLocaleUpperCase();
+            test( `uppercase: ${ urlUpperCase }`, () => {
+                testUrl( urlUpperCase, expected );
+            } );
 
-            expect( got ).toBe( expected );
+            const urlLowerCase = url.toLocaleLowerCase();
+            test( `lowercase: ${ urlLowerCase }`, () => {
+                testUrl( urlLowerCase, expected );
+            } );
         } );
     } );
 } );
+
+function testUrl( url, expected ) {
+    const urlObject = new URL( url );
+    const domain = urlObject.host;
+    const searchParams = urlObject.searchParams;
+    // URL might be in all uppercase or lowercase
+    const extractedVid = searchParams.get( 'vid' ) || searchParams.get( 'VID' );
+
+    window.location.hostname = domain.replace( ':3000', '' );
+
+    const got = getCdnUrl( extractedVid )
+
+    expect( got ).toBe( expected );
+}
