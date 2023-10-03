@@ -3,10 +3,14 @@
 // ****************************************
 
 function getCdnUrl( vid ) {
-    const cdnUrls = {
-        '01NYU_INST:NYU'     : 'https://cdn.library.nyu.edu/primo-customization',
-        '01NYU_INST:NYU_DEV' : 'https://cdn-dev.library.nyu.edu/primo-customization',
-        '01NYU_INST:TESTWS01': 'https://cdn-dev.library.nyu.edu/primo-customization',
+    const CDN_DEV = 'https://cdn-dev.library.nyu.edu/primo-customization';
+    const CDN_PROD = 'https://cdn.library.nyu.edu/primo-customization';
+
+    const VID_DEV_SUFFIX = '_DEV';
+
+    // Special CDN assignments based on exact vid name, not vid name pattern.
+    const vidToCdnUrlMap = {
+        '01NYU_INST:TESTWS01': CDN_DEV,
     }
 
     const hostname = window.location.hostname;
@@ -20,9 +24,13 @@ function getCdnUrl( vid ) {
     } else if ( hostname === 'primo-explore-devenv' ) {
         // Running in the headless browser in the Docker Compose `e2e` service.
         baseUrl = 'http://cdn-server:3000/primo-customization';
+    } else if ( view.endsWith( VID_DEV_SUFFIX ) ) {
+        baseUrl = CDN_DEV
     } else {
-        baseUrl = cdnUrls[ vid ] ||
-                  cdnUrls[ '01NYU_INST:NYU' ];
+        // Couldn't assign CDN based on hostname or vid name pattern.
+        // Check vid -> CDN map, and if that doesn't return anything, default to
+        // prod CDN.
+        baseUrl = vidToCdnUrlMap[ vid ] || CDN_PROD;
     }
 
     return `${ baseUrl }/${ view }`;
