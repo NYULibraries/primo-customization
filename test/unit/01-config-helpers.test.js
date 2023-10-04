@@ -7,7 +7,9 @@ import { describe, expect, test } from 'vitest'
 const __dirname = url.fileURLToPath( new URL( '..', import.meta.url ) );
 
 const ROOT = path.join( __dirname, '..' );
-const fileToTest = path.join( ROOT, 'custom', '00_common', 'js', '01-config-helpers.js' );
+const fileToTest = process.env.IN_CONTAINER ?
+                   path.join( '01-config-helpers.js' ) :
+                   path.join( ROOT, 'custom', '00_common', 'js', '01-config-helpers.js' );
 
 const testCases = {
     'https://hslcat.med.nyu.edu/discovery/search?vid=01NYU_HS:HSL&offset=0'     : 'https://cdn.library.nyu.edu/primo-customization/01NYU_HS-HSL',
