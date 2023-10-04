@@ -55,10 +55,21 @@ jobs:
             VIEW: 01NYU_INST-NYU
         <<: *run-e2e
 
+    run-unit-tests:
+        <<: *docker-defaults
+        steps:
+            - checkout
+            - setup_remote_docker
+            - run:
+                  name: Run unit tests
+                  command: |
+                      docker-compose run unit-tests
+
 workflows:
     build-test-and-deploy:
         jobs:
             - build-all-services
+            - run-unit-tests
             - run-e2e-nyu-dev:
                   filters:
                       branches:
