@@ -133,8 +133,8 @@ VIEW=01NYU_INST-NYU_DEV docker compose up primo-explore-devenv
 
 # Tests
 
-* [E2E](https://github.com/NYULibraries/primo-customization/test/e2e#README.md)
-* [Unit tests](https://github.com/NYULibraries/primo-customization/test/unit#README.md)
+* [E2E](test/e2e/README.md)
+* [Unit tests](test/unit/README.md)
 
 ---
 
