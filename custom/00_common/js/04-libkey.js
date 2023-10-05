@@ -63,9 +63,8 @@ app.controller( 'prmSearchResultAvailabilityLineAfterController', function( $sco
     // "Identifier directly after number"
     const TIMEOUT = 30000;
 
-    let start, previousTimeStamp;
+    let start;
     let numTries = 0;
-    let success = false;
     function tryBrowzinePrimoSearchResult( timeStamp ) {
         numTries++;
 
@@ -76,9 +75,7 @@ app.controller( 'prmSearchResultAvailabilityLineAfterController', function( $sco
         if ( elapsed < TIMEOUT ) {
             try {
                 window.browzine.primo.searchResult( $scope );
-                success = true;
             } catch ( error ) {
-                previousTimeStamp = timeStamp;
                 window.requestAnimationFrame( tryBrowzinePrimoSearchResult );
             }
         } else {
