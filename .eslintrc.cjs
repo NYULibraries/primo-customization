@@ -2,131 +2,133 @@
 // SEE README.MD FOR INSTRUCTIONS ON HOW TO REGENERATE THIS FILE.
 
 module.exports = {
-    'parserOptions': {
-        'ecmaVersion': 'latest',
+    'parserOptions' : {
+        'ecmaVersion' : 'latest',
     },
-    'rules': {
-        'indent': [
+    'rules' : {
+        'indent' : [
             'error',
             4,
         ],
-        'quotes': [
+        'quotes' : [
             'error',
             'single',
         ],
-        'array-bracket-newline': [
+        'array-bracket-newline' : [
             'error',
             'consistent',
         ],
-        'array-bracket-spacing': [
+        'array-bracket-spacing' : [
             'error',
             'always',
         ],
-        'array-element-newline': [
+        'array-element-newline' : [
             'error',
             'consistent',
         ],
-        'arrow-spacing': [
+        'arrow-spacing' : [
             'error',
             {
-                'before': true,
-                'after' : true,
+                'before' : true,
+                'after'  : true,
             },
         ],
-        'block-spacing': [
+        'block-spacing' : [
             'error',
             'always',
         ],
-        'brace-style': [
+        'brace-style' : [
             'error',
             '1tbs',
         ],
-        'comma-dangle': [
+        'comma-dangle' : [
             'error',
             'always-multiline',
         ],
-        'comma-spacing': [
+        'comma-spacing' : [
             'error',
             {
-                'before': false,
-                'after' : true,
+                'before' : false,
+                'after'  : true,
             },
         ],
-        'comma-style': [
+        'comma-style' : [
             'error',
             'last',
         ],
-        'dot-location': [
+        'dot-location' : [
             'error',
             'property',
         ],
-        'func-call-spacing': [
+        'func-call-spacing' : [
             'error',
             'never',
         ],
-        'key-spacing': [
+        'key-spacing' : [
             'error',
             {
-                'align': 'colon',
+                'afterColon'  : true,
+                'align'       : 'colon',
+                'beforeColon' : true,
             },
         ],
-        'keyword-spacing': [
+        'keyword-spacing' : [
             'error',
             {
-                'before': true,
+                'before' : true,
             },
         ],
-        'max-len': [
+        'max-len' : [
             'warn',
             {
-                'code'    : 80,
-                'tabWidth': 4,
+                'code'     : 80,
+                'tabWidth' : 4,
             },
         ],
-        'multiline-ternary': [
+        'multiline-ternary' : [
             'error',
             'always-multiline',
         ],
-        'no-extra-parens': [
+        'no-extra-parens' : [
             'error',
             'all',
         ],
-        'object-curly-newline': [
+        'object-curly-newline' : [
             'error',
             {
-                'multiline' : true,
-                'consistent': true,
+                'multiline'  : true,
+                'consistent' : true,
             },
         ],
-        'object-curly-spacing': [
+        'object-curly-spacing' : [
             'error',
             'always',
         ],
-        'object-property-newline': [
+        'object-property-newline' : [
             'error',
             {
-                'allowAllPropertiesOnSameLine': true,
+                'allowAllPropertiesOnSameLine' : true,
             },
         ],
-        'operator-linebreak': [
+        'operator-linebreak' : [
             'error',
             'after',
         ],
-        'space-in-parens': [
+        'space-in-parens' : [
             'error',
             'always',
         ],
-        'space-infix-ops': [
+        'space-infix-ops' : [
             'error',
         ],
-        'space-unary-ops': [
+        'space-unary-ops' : [
             'error',
             {
-                'words'   : true,
-                'nonwords': false,
+                'words'    : true,
+                'nonwords' : false,
             },
         ],
-        'template-curly-spacing': [
+        'template-curly-spacing' : [
             'error',
             'always',
         ],

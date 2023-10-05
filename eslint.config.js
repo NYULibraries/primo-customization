@@ -23,7 +23,7 @@ export default [
             'comma-style'            : [ 'error', 'last' ],
             'dot-location'           : [ 'error', 'property' ],
             'func-call-spacing'      : [ 'error', 'never' ],
-            'key-spacing'            : [ 'error', { align: 'colon' } ],
+            'key-spacing'            : [ 'error', { afterColon: true, align: 'colon', beforeColon: true } ],
             'keyword-spacing'        : [ 'error', { before: true } ],
             'max-len'                : [ 'warn', { code: 80, tabWidth: 4 } ],
             'multiline-ternary'      : [ 'error', 'always-multiline' ],
