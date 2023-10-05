@@ -15,7 +15,7 @@ function getCdnUrl( vid ) {
 
     // Special CDN assignments based on exact vid name, not vid name pattern.
     const vidToCdnUrlMap = {
-        '01NYU_INST:TESTWS01': CDN_DEV,
+        '01NYU_INST:TESTWS01' : CDN_DEV,
     }
 
     const hostname = window.location.hostname;
