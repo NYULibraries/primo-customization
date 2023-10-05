@@ -1,3 +1,20 @@
+// ======================================
+// Notes about use of eval() in this test
+// ======================================
+//
+// eval() is always a last resort -- see MDN's "Never use eval!":
+// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/eval#never_use_eval!
+//
+// We need to use it here to test customization package code, which unfortunately
+// is not organized in a way that it can be imported using `require` or `import`.
+// The `gulp` build performed by `primo-explore-devenv` concatenates all the view
+// custom JS files into an IIFE in `custom.js`, which is then loaded via <script>
+// tag.
+//
+// The risk of using eval() in our test is very low, as we are executing code
+// from a file that we control, and the code is browser JS, so it doesn't perform
+// any filesystem operations.
+
 import * as fs from 'node:fs';
 import path from 'node:path';
 import * as url from 'url';
