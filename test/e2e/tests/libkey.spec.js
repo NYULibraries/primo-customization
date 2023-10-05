@@ -57,10 +57,10 @@ for ( let i = 0; i < testCases.length; i++ ) {
                     BROWZINE_PRIMO_ADAPTER_SCRIPT_URL,
                     async route => {
                         await new Promise(
-                            fn => setTimeout( fn, testCase.browzinePrimoAdapterExecutionDelay )
+                            fn => setTimeout( fn, testCase.browzinePrimoAdapterExecutionDelay ),
                         );
                         await route.continue();
-                    }
+                    },
                 );
             }
 
@@ -83,7 +83,7 @@ async function testHasAClickableLibKeyLink( page ) {
         let result = false;
 
         for ( let i = 0; i < libKeySelectors.length; i++ ) {
-            if ( !!document.querySelector( libKeySelectors[ i ] ) ) {
+            if ( document.querySelector( libKeySelectors[ i ] ) ) {
                 result = true;
 
                 break;
@@ -123,9 +123,9 @@ async function testHasAClickableLibKeyLink( page ) {
     }
 
     let randomLibKeyLinkTestResult = {
-        result: false,
-        linkHref: null,
-        newPageUrl: null,
+        result     : false,
+        linkHref   : null,
+        newPageUrl : null,
     };
     await randomLibKeyLinkTest(
         page,
@@ -136,12 +136,12 @@ async function testHasAClickableLibKeyLink( page ) {
     expect(
         randomLibKeyLinkTestResult.result,
         `Randomly selected LibKey link with href "${ randomLibKeyLinkTestResult.linkHref }"` +
-        ` did not correctly open a new tab.` +
+        ' did not correctly open a new tab.' +
         (
             randomLibKeyLinkTestResult.newPageUrl ?
-            ` New tab loaded with incorrect URL "${ randomLibKeyLinkTestResult.newPageUrl }".` :
-            ''
-        )
+                ` New tab loaded with incorrect URL "${ randomLibKeyLinkTestResult.newPageUrl }".` :
+                ''
+        ),
     ).toBe( true );
 }
 
@@ -172,7 +172,7 @@ async function randomLibKeyLinkTest( page, libKeyLinks, testResult ) {
     // event is emitted, before it has even fully loaded.
     await randomLibKeyLink.click();
     const newPage = await pagePromise;
-    testResult.newPageUrl = await newPage.evaluate('location.href');
+    testResult.newPageUrl = await newPage.evaluate( 'location.href' );
 
     if ( testResult.newPageUrl === testResult.linkHref ) {
         testResult.result = true;
