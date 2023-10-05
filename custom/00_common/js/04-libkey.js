@@ -61,11 +61,10 @@ app.controller( 'prmSearchResultAvailabilityLineAfterController', function( $sco
     // Note that we can't use underscore numeric separators (e.g. 5_000 for 5,000) because
     // `primo-explore-devenv`'s `gulp-babel` flags it as a syntax error:
     // "Identifier directly after number"
-    const TIMEOUT = 15000;
+    const TIMEOUT = 30000;
 
-    let start, previousTimeStamp;
+    let start;
     let numTries = 0;
-    let success = false;
     function tryBrowzinePrimoSearchResult( timeStamp ) {
         numTries++;
 
@@ -76,9 +75,7 @@ app.controller( 'prmSearchResultAvailabilityLineAfterController', function( $sco
         if ( elapsed < TIMEOUT ) {
             try {
                 window.browzine.primo.searchResult( $scope );
-                success = true;
             } catch ( error ) {
-                previousTimeStamp = timeStamp;
                 window.requestAnimationFrame( tryBrowzinePrimoSearchResult );
             }
         } else {
