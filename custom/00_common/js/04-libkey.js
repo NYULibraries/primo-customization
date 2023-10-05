@@ -61,7 +61,7 @@ app.controller( 'prmSearchResultAvailabilityLineAfterController', function( $sco
     // Note that we can't use underscore numeric separators (e.g. 5_000 for 5,000) because
     // `primo-explore-devenv`'s `gulp-babel` flags it as a syntax error:
     // "Identifier directly after number"
-    const TIMEOUT = 15000;
+    const TIMEOUT = 30000;
 
     let start, previousTimeStamp;
     let numTries = 0;
