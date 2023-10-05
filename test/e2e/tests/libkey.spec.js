@@ -7,6 +7,7 @@ const LIBKEY_LINK_SELECTORS = [
     'a.browzine-article-link',
     'a.browzine-direct-to-pdf-link',
     'a.browzine-web-link',
+    'a.browzine-web-link-text',
     'a.unpaywall-article-pdf-link',
 ];
 
