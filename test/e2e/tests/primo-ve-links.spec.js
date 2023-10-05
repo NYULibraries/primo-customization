@@ -11,12 +11,12 @@ const vid = view.replaceAll( '-', ':' );
 
 const linksToTest = [
     {
-        text        : 'browse journals by title',
-        expectedHref: `/discovery/jsearch?vid=${ vid }`,
+        text         : 'browse journals by title',
+        expectedHref : `/discovery/jsearch?vid=${ vid }`,
     },
     {
-        text        : 'find an article by citation',
-        expectedHref: `/discovery/citationlinker?vid=${ vid }`,
+        text         : 'find an article by citation',
+        expectedHref : `/discovery/citationlinker?vid=${ vid }`,
     },
 ];
 
@@ -41,8 +41,8 @@ test( 'Primo VE links in home page', async ( { page } ) => {
 
         if ( href !== linkToTest.expectedHref ) {
             linkTestFailures[ linkToTest.text ] = {
-                expected: linkToTest.expectedHref,
-                actual  : href,
+                expected : linkToTest.expectedHref,
+                actual   : href,
             };
         }
     }

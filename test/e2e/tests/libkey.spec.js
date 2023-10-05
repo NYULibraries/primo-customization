@@ -7,6 +7,7 @@ const LIBKEY_LINK_SELECTORS = [
     'a.browzine-article-link',
     'a.browzine-direct-to-pdf-link',
     'a.browzine-web-link',
+    'a.browzine-web-link-text',
     'a.unpaywall-article-pdf-link',
 ];
 
@@ -14,6 +15,8 @@ const view = process.env.VIEW;
 const vid = view.replaceAll( '-', ':' );
 
 const testCases = [
+    // === General searches: potential risk of false positives due to search ranking volatility
+
     {
         key         : 'art',
         name        : 'Art',
@@ -25,11 +28,33 @@ const testCases = [
         queryString                        : 'query=any,contains,art&tab=Unified_Slot&search_scope=ARTICLES&offset=0',
         browzinePrimoAdapterExecutionDelay : 10_000,
     },
-    // {
-    //     key         : 'ids-of-stable-test-records',
-    //     name        : '[TODO: IDS OF STABLE TEST RECORDS]',
-    //     queryString : '[TODO]',
-    // },
+
+    // === Targeted `docid` searches: not subject to search ranking volatility
+    //
+    // The test cases below are targeted `docid` searches provided by KARMS DAI.
+    // DAI determined that based on their permalink history, these records are
+    // likely to be stable over time with regard to inclusion of LibKey links.
+
+    {
+        key         : 'docid-cdi_crossref_primary_10_1080_14672715_2021_1888307',
+        name        : 'docid: cdi_crossref_primary_10_1080_14672715_2021_1888307',
+        queryString : 'query=any,contains,cdi_crossref_primary_10_1080_14672715_2021_1888307&tab=Unified_Slot&search_scope=DN_and_CI&offset=0',
+    },
+    {
+        key         : 'docid-cdi_informaworld_taylorfrancis_310_1080_15596893_2022_2116781',
+        name        : 'docid: cdi_informaworld_taylorfrancis_310_1080_15596893_2022_2116781',
+        queryString : 'query=any,contains,cdi_informaworld_taylorfrancis_310_1080_15596893_2022_2116781&tab=Unified_Slot&search_scope=DN_and_CI&offset=0',
+    },
+    {
+        key         : 'docid-cdi_proquest_journals_2358492548',
+        name        : 'docid: cdi_proquest_journals_2358492548',
+        queryString : 'query=any,contains,cdi_proquest_journals_2358492548&tab=Unified_Slot&search_scope=DN_and_CI&offset=0',
+    },
+    {
+        key         : 'docid-cdi_cleo_primary_oai_revues_org_chinaperspectives_7327',
+        name        : 'docid: cdi_cleo_primary_oai_revues_org_chinaperspectives_7327',
+        queryString : 'query=any,contains,cdi_cleo_primary_oai_revues_org_chinaperspectives_7327&tab=Unified_Slot&search_scope=DN_and_CI&offset=0',
+    },
 ];
 
 for ( let i = 0; i < testCases.length; i++ ) {
@@ -56,10 +81,10 @@ for ( let i = 0; i < testCases.length; i++ ) {
                     BROWZINE_PRIMO_ADAPTER_SCRIPT_URL,
                     async route => {
                         await new Promise(
-                            fn => setTimeout( fn, testCase.browzinePrimoAdapterExecutionDelay )
+                            fn => setTimeout( fn, testCase.browzinePrimoAdapterExecutionDelay ),
                         );
                         await route.continue();
-                    }
+                    },
                 );
             }
 
@@ -82,7 +107,7 @@ async function testHasAClickableLibKeyLink( page ) {
         let result = false;
 
         for ( let i = 0; i < libKeySelectors.length; i++ ) {
-            if ( !!document.querySelector( libKeySelectors[ i ] ) ) {
+            if ( document.querySelector( libKeySelectors[ i ] ) ) {
                 result = true;
 
                 break;
@@ -122,10 +147,12 @@ async function testHasAClickableLibKeyLink( page ) {
     }
 
     let randomLibKeyLinkTestResult = {
-        result: false,
-        linkHref: null,
-        newPageUrl: null,
+        errorMessage : null,
+        linkHref     : null,
+        newPageUrl   : null,
+        result       : false,
     };
+
     await randomLibKeyLinkTest(
         page,
         libKeyLinks,
@@ -134,13 +161,7 @@ async function testHasAClickableLibKeyLink( page ) {
 
     expect(
         randomLibKeyLinkTestResult.result,
-        `Randomly selected LibKey link with href "${ randomLibKeyLinkTestResult.linkHref }"` +
-        ` did not correctly open a new tab.` +
-        (
-            randomLibKeyLinkTestResult.newPageUrl ?
-            ` New tab loaded with incorrect URL "${ randomLibKeyLinkTestResult.newPageUrl }".` :
-            ''
-        )
+        randomLibKeyLinkTestResult.errorMessage,
     ).toBe( true );
 }
 
@@ -155,25 +176,72 @@ async function randomLibKeyLinkTest( page, libKeyLinks, testResult ) {
 
     testResult.linkHref = await randomLibKeyLink.getAttribute( 'href' );
 
+    // It appears to be the case the clicking a LibKey link will always open a
+    // new tab.  However, in the case of download PDF links, this new tab might
+    // either load the PDF in a PDF viewer in the tab or trigger a download of
+    // the PDF file.  We currently don't have a way of determining in advance
+    // which of these behaviors will result from the click, so we test for both.
+
+    // First test to see if a new tab opens up with content: either a regular
+    // web page or a PDF in a viewer.
     // https://playwright.dev/docs/pages#handling-new-pages
-    // Start waiting for new page before clicking. Note no await.
     const pagePromise = page.context().waitForEvent( 'page' );
+
+    await randomLibKeyLink.click();
+
+    const newPage = await pagePromise;
+
     // Originally, we tested the URL of the new tab using `newPage.url()`.
-    // However, it is often the case that the newly opened tabs redirected through
-    // a chain of URLs, leading to a race condition where sometimes the URL returned
-    // by `newPage.url()` was not the initial URL of the tab/page/frame but one
-    // later in the redirect chain, leading to test failure.
+    // However, it is often the case that the newly opened tabs redirected
+    // through a chain of URLs, leading to a race condition where sometimes
+    // the URL returned by `newPage.url()` was not the initial URL of the
+    // tab/page/frame but one later in the redirect chain, leading to test
+    // failure.
     // Here is where the Playwright frame URL gets changed by redirects:
     // https://github.com/microsoft/playwright/blob/60696ef493fe5e35de00efcded77d60b81548599/packages/playwright-core/src/client/frame.ts#L87
     // The example code for `on('page')` -- https://playwright.dev/docs/api/class-browsercontext#browser-context-event-page.
-    // ...seems to suggest that a viable method for capturing the initial URL of a tab
-    // is to call `newPage.evaluate('location.href')` immediately after the `page`
-    // event is emitted, before it has even fully loaded.
-    await randomLibKeyLink.click();
-    const newPage = await pagePromise;
-    testResult.newPageUrl = await newPage.evaluate('location.href');
-
+    // ...seems to suggest that a viable method for capturing the initial
+    // URL of a tab is to call `newPage.evaluate('location.href')`
+    // immediately after the `page` event is emitted, before it has even
+    // fully loaded.
+    testResult.newPageUrl = await newPage.evaluate( 'location.href' );
     if ( testResult.newPageUrl === testResult.linkHref ) {
         testResult.result = true;
+    } else {
+        // This might be a direct download link.  Test to see if we have a blank
+        // new tab and a download event with a filename ending in ".pdf".
+        if ( testResult.newPageUrl === 'about:blank' ) {
+            const EXPECTED_FILE_EXTENSION = '.pdf';
+
+            // https://playwright.dev/docs/downloads
+            // https://playwright.dev/docs/api/class-download
+            const downloadPromise = page.waitForEvent( 'download' );
+
+            await randomLibKeyLink.click();
+
+            const download = await downloadPromise;
+
+            const downloadSuggestedFilename = download.suggestedFilename();
+            if ( downloadSuggestedFilename.toLocaleLowerCase().endsWith( EXPECTED_FILE_EXTENSION ) ) {
+                testResult.result = true;
+            } else {
+                testResult.result = false;
+
+                if ( !testResult.errorMessage ) {
+                    testResult.errorMessage =
+                        `Clicking randomly selected LibKey link with href "${ testResult.linkHref }"` +
+                        ` triggered the download of file "${ downloadSuggestedFilename }", which does` +
+                        ` does not have the expected filename extension "${ EXPECTED_FILE_EXTENSION }".`;
+                }
+            }
+        // It wasn't a direct download link, and it opened a tab with the wrong URL.
+        } else {
+            testResult.result = false;
+            testResult.errorMessage =
+                `Randomly selected LibKey link with href "${ testResult.linkHref }"` +
+                ' did not correctly open a new tab.' + (
+                    testResult.newPageUrl ? ` New tab loaded with incorrect URL "${ testResult.newPageUrl }".` : ''
+                );
+        }
     }
 }
