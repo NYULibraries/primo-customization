@@ -8,8 +8,8 @@
 function generateAllPossibleCustomDirectives() {
     // ALMA-HOWOVP-AFTER
     app.component( 'almaHowovpAfter', {
-        bindings  : { parentCtrl: '<' },
-        controller: function( $scope, $rootScope ) {
+        bindings   : { parentCtrl : '<' },
+        controller : function( $scope, $rootScope ) {
             const vm = this;
 
             vm.getPnx = () => {
@@ -25,13 +25,13 @@ function generateAllPossibleCustomDirectives() {
             vm.rootScope = $rootScope;
             vm.scope = $scope;
         },
-        templateUrl: `${ cdnUrl }/html/alma-howovp-after.html`,
+        templateUrl : `${ cdnUrl }/html/alma-howovp-after.html`,
     } );
 
     // ALMA-HTGI-BACK-BUTTON-AFTER
     app.component( 'almaHtgiBackButtonAfter', {
-        bindings  : { parentCtrl: '<' },
-        controller: function( $scope, $rootScope ) {
+        bindings   : { parentCtrl : '<' },
+        controller : function( $scope, $rootScope ) {
             const vm = this;
 
             vm.getPnx = () => {
@@ -47,13 +47,13 @@ function generateAllPossibleCustomDirectives() {
             vm.rootScope = $rootScope;
             vm.scope = $scope;
         },
-        templateUrl: `${ cdnUrl }/html/alma-htgi-back-button-after.html`,
+        templateUrl : `${ cdnUrl }/html/alma-htgi-back-button-after.html`,
     } );
 
     // ALMA-HTGI-SVC-AFTER
     app.component( 'almaHtgiSvcAfter', {
-        bindings  : { parentCtrl: '<' },
-        controller: function( $scope, $rootScope ) {
+        bindings   : { parentCtrl : '<' },
+        controller : function( $scope, $rootScope ) {
             const vm = this;
 
             vm.getPnx = () => {
@@ -69,13 +69,13 @@ function generateAllPossibleCustomDirectives() {
             vm.rootScope = $rootScope;
             vm.scope = $scope;
         },
-        templateUrl: `${ cdnUrl }/html/alma-htgi-svc-after.html`,
+        templateUrl : `${ cdnUrl }/html/alma-htgi-svc-after.html`,
     } );
 
     // ALMA-HTGI-TABS-AFTER
     app.component( 'almaHtgiTabsAfter', {
-        bindings  : { parentCtrl: '<' },
-        controller: function( $scope, $rootScope ) {
+        bindings   : { parentCtrl : '<' },
+        controller : function( $scope, $rootScope ) {
             const vm = this;
 
             vm.getPnx = () => {
@@ -91,13 +91,13 @@ function generateAllPossibleCustomDirectives() {
             vm.rootScope = $rootScope;
             vm.scope = $scope;
         },
-        templateUrl: `${ cdnUrl }/html/alma-htgi-tabs-after.html`,
+        templateUrl : `${ cdnUrl }/html/alma-htgi-tabs-after.html`,
     } );
 
     // HLS-VIDEO-AFTER
     app.component( 'hlsVideoAfter', {
-        bindings  : { parentCtrl: '<' },
-        controller: function( $scope, $rootScope ) {
+        bindings   : { parentCtrl : '<' },
+        controller : function( $scope, $rootScope ) {
             const vm = this;
 
             vm.getPnx = () => {
@@ -113,13 +113,13 @@ function generateAllPossibleCustomDirectives() {
             vm.rootScope = $rootScope;
             vm.scope = $scope;
         },
-        templateUrl: `${ cdnUrl }/html/hls-video-after.html`,
+        templateUrl : `${ cdnUrl }/html/hls-video-after.html`,
     } );
 
     // NG-FORWARD-HACK-AFTER
     app.component( 'ngForwardHackAfter', {
-        bindings  : { parentCtrl: '<' },
-        controller: function( $scope, $rootScope ) {
+        bindings   : { parentCtrl : '<' },
+        controller : function( $scope, $rootScope ) {
             const vm = this;
 
             vm.getPnx = () => {
@@ -135,13 +135,13 @@ function generateAllPossibleCustomDirectives() {
             vm.rootScope = $rootScope;
             vm.scope = $scope;
         },
-        templateUrl: `${ cdnUrl }/html/ng-forward-hack-after.html`,
+        templateUrl : `${ cdnUrl }/html/ng-forward-hack-after.html`,
     } );
 
     // PICKUP-ANYWHERE-FORM-AFTER
     app.component( 'pickupAnywhereFormAfter', {
-        bindings  : { parentCtrl: '<' },
-        controller: function( $scope, $rootScope ) {
+        bindings   : { parentCtrl : '<' },
+        controller : function( $scope, $rootScope ) {
             const vm = this;
 
             vm.getPnx = () => {
@@ -157,13 +157,13 @@ function generateAllPossibleCustomDirectives() {
             vm.rootScope = $rootScope;
             vm.scope = $scope;
         },
-        templateUrl: `${ cdnUrl }/html/pickup-anywhere-form-after.html`,
+        templateUrl : `${ cdnUrl }/html/pickup-anywhere-form-after.html`,
     } );
 
     // PRM-ACCOUNT-AFTER
     app.component( 'prmAccountAfter', {
-        bindings  : { parentCtrl: '<' },
-        controller: function( $scope, $rootScope ) {
+        bindings   : { parentCtrl : '<' },
+        controller : function( $scope, $rootScope ) {
             const vm = this;
 
             vm.getPnx = () => {
@@ -179,13 +179,13 @@ function generateAllPossibleCustomDirectives() {
             vm.rootScope = $rootScope;
             vm.scope = $scope;
         },
-        templateUrl: `${ cdnUrl }/html/prm-account-after.html`,
+        templateUrl : `${ cdnUrl }/html/prm-account-after.html`,
     } );
 
     // PRM-ACCOUNT-LINKS-AFTER
     app.component( 'prmAccountLinksAfter', {
-        bindings  : { parentCtrl: '<' },
-        controller: function( $scope, $rootScope ) {
+        bindings   : { parentCtrl : '<' },
+        controller : function( $scope, $rootScope ) {
             const vm = this;
 
             vm.getPnx = () => {
@@ -201,13 +201,13 @@ function generateAllPossibleCustomDirectives() {
             vm.rootScope = $rootScope;
             vm.scope = $scope;
         },
-        templateUrl: `${ cdnUrl }/html/prm-account-links-after.html`,
+        templateUrl : `${ cdnUrl }/html/prm-account-links-after.html`,
     } );
 
     // PRM-ACCOUNT-OVERVIEW-AFTER
     app.component( 'prmAccountOverviewAfter', {
-        bindings  : { parentCtrl: '<' },
-        controller: function( $scope, $rootScope ) {
+        bindings   : { parentCtrl : '<' },
+        controller : function( $scope, $rootScope ) {
             const vm = this;
 
             vm.getPnx = () => {
@@ -223,13 +223,13 @@ function generateAllPossibleCustomDirectives() {
             vm.rootScope = $rootScope;
             vm.scope = $scope;
         },
-        templateUrl: `${ cdnUrl }/html/prm-account-overview-after.html`,
+        templateUrl : `${ cdnUrl }/html/prm-account-overview-after.html`,
     } );
 
     // PRM-ACTION-CONTAINER-AFTER
     app.component( 'prmActionContainerAfter', {
-        bindings  : { parentCtrl: '<' },
-        controller: function( $scope, $rootScope ) {
+        bindings   : { parentCtrl : '<' },
+        controller : function( $scope, $rootScope ) {
             const vm = this;
 
             vm.getPnx = () => {
@@ -245,13 +245,13 @@ function generateAllPossibleCustomDirectives() {
             vm.rootScope = $rootScope;
             vm.scope = $scope;
         },
-        templateUrl: `${ cdnUrl }/html/prm-action-container-after.html`,
+        templateUrl : `${ cdnUrl }/html/prm-action-container-after.html`,
     } );
 
     // PRM-ACTION-LIST-AFTER
     app.component( 'prmActionListAfter', {
-        bindings  : { parentCtrl: '<' },
-        controller: function( $scope, $rootScope ) {
+        bindings   : { parentCtrl : '<' },
+        controller : function( $scope, $rootScope ) {
             const vm = this;
 
             vm.getPnx = () => {
@@ -267,13 +267,13 @@ function generateAllPossibleCustomDirectives() {
             vm.rootScope = $rootScope;
             vm.scope = $scope;
         },
-        templateUrl: `${ cdnUrl }/html/prm-action-list-after.html`,
+        templateUrl : `${ cdnUrl }/html/prm-action-list-after.html`,
     } );
 
     // PRM-ADD-ALERT-TOAST-AFTER
     app.component( 'prmAddAlertToastAfter', {
-        bindings  : { parentCtrl: '<' },
-        controller: function( $scope, $rootScope ) {
+        bindings   : { parentCtrl : '<' },
+        controller : function( $scope, $rootScope ) {
             const vm = this;
 
             vm.getPnx = () => {
@@ -289,13 +289,13 @@ function generateAllPossibleCustomDirectives() {
             vm.rootScope = $rootScope;
             vm.scope = $scope;
         },
-        templateUrl: `${ cdnUrl }/html/prm-add-alert-toast-after.html`,
+        templateUrl : `${ cdnUrl }/html/prm-add-alert-toast-after.html`,
     } );
 
     // PRM-ADD-QUERY-TO-SAVED-SEARCHES-AFTER
     app.component( 'prmAddQueryToSavedSearchesAfter', {
-        bindings  : { parentCtrl: '<' },
-        controller: function( $scope, $rootScope ) {
+        bindings   : { parentCtrl : '<' },
+        controller : function( $scope, $rootScope ) {
             const vm = this;
 
             vm.getPnx = () => {
@@ -311,13 +311,13 @@ function generateAllPossibleCustomDirectives() {
             vm.rootScope = $rootScope;
             vm.scope = $scope;
         },
-        templateUrl: `${ cdnUrl }/html/prm-add-query-to-saved-searches-after.html`,
+        templateUrl : `${ cdnUrl }/html/prm-add-query-to-saved-searches-after.html`,
     } );
 
     // PRM-ADDITIONAL-SERVICES-AFTER
     app.component( 'prmAdditionalServicesAfter', {
-        bindings  : { parentCtrl: '<' },
-        controller: function( $scope, $rootScope ) {
+        bindings   : { parentCtrl : '<' },
+        controller : function( $scope, $rootScope ) {
             const vm = this;
 
             vm.getPnx = () => {
@@ -333,13 +333,13 @@ function generateAllPossibleCustomDirectives() {
             vm.rootScope = $rootScope;
             vm.scope = $scope;
         },
-        templateUrl: `${ cdnUrl }/html/prm-additional-services-after.html`,
+        templateUrl : `${ cdnUrl }/html/prm-additional-services-after.html`,
     } );
 
     // PRM-ADVANCED-SEARCH-AFTER
     app.component( 'prmAdvancedSearchAfter', {
-        bindings  : { parentCtrl: '<' },
-        controller: function( $scope, $rootScope ) {
+        bindings   : { parentCtrl : '<' },
+        controller : function( $scope, $rootScope ) {
             const vm = this;
 
             vm.getPnx = () => {
@@ -355,13 +355,13 @@ function generateAllPossibleCustomDirectives() {
             vm.rootScope = $rootScope;
             vm.scope = $scope;
         },
-        templateUrl: `${ cdnUrl }/html/prm-advanced-search-after.html`,
+        templateUrl : `${ cdnUrl }/html/prm-advanced-search-after.html`,
     } );
 
     // PRM-ALMA-MASHUP-AFTER
     app.component( 'prmAlmaMashupAfter', {
-        bindings  : { parentCtrl: '<' },
-        controller: function( $scope, $rootScope ) {
+        bindings   : { parentCtrl : '<' },
+        controller : function( $scope, $rootScope ) {
             const vm = this;
 
             vm.getPnx = () => {
@@ -377,13 +377,13 @@ function generateAllPossibleCustomDirectives() {
             vm.rootScope = $rootScope;
             vm.scope = $scope;
         },
-        templateUrl: `${ cdnUrl }/html/prm-alma-mashup-after.html`,
+        templateUrl : `${ cdnUrl }/html/prm-alma-mashup-after.html`,
     } );
 
     // PRM-ALMA-MORE-INST-AFTER
     app.component( 'prmAlmaMoreInstAfter', {
-        bindings  : { parentCtrl: '<' },
-        controller: function( $scope, $rootScope ) {
+        bindings   : { parentCtrl : '<' },
+        controller : function( $scope, $rootScope ) {
             const vm = this;
 
             vm.getPnx = () => {
@@ -399,13 +399,13 @@ function generateAllPossibleCustomDirectives() {
             vm.rootScope = $rootScope;
             vm.scope = $scope;
         },
-        templateUrl: `${ cdnUrl }/html/prm-alma-more-inst-after.html`,
+        templateUrl : `${ cdnUrl }/html/prm-alma-more-inst-after.html`,
     } );
 
     // PRM-ALMA-OTHER-MEMBERS-AFTER
     app.component( 'prmAlmaOtherMembersAfter', {
-        bindings  : { parentCtrl: '<' },
-        controller: function( $scope, $rootScope ) {
+        bindings   : { parentCtrl : '<' },
+        controller : function( $scope, $rootScope ) {
             const vm = this;
 
             vm.getPnx = () => {
@@ -421,13 +421,13 @@ function generateAllPossibleCustomDirectives() {
             vm.rootScope = $rootScope;
             vm.scope = $scope;
         },
-        templateUrl: `${ cdnUrl }/html/prm-alma-other-members-after.html`,
+        templateUrl : `${ cdnUrl }/html/prm-alma-other-members-after.html`,
     } );
 
     // PRM-ALMA-OTHER-UNITS-AFTER
     app.component( 'prmAlmaOtherUnitsAfter', {
-        bindings  : { parentCtrl: '<' },
-        controller: function( $scope, $rootScope ) {
+        bindings   : { parentCtrl : '<' },
+        controller : function( $scope, $rootScope ) {
             const vm = this;
 
             vm.getPnx = () => {
@@ -443,13 +443,13 @@ function generateAllPossibleCustomDirectives() {
             vm.rootScope = $rootScope;
             vm.scope = $scope;
         },
-        templateUrl: `${ cdnUrl }/html/prm-alma-other-units-after.html`,
+        templateUrl : `${ cdnUrl }/html/prm-alma-other-units-after.html`,
     } );
 
     // PRM-ALMA-REPRESENTATIONS-FILTER-AFTER
     app.component( 'prmAlmaRepresentationsFilterAfter', {
-        bindings  : { parentCtrl: '<' },
-        controller: function( $scope, $rootScope ) {
+        bindings   : { parentCtrl : '<' },
+        controller : function( $scope, $rootScope ) {
             const vm = this;
 
             vm.getPnx = () => {
@@ -465,13 +465,13 @@ function generateAllPossibleCustomDirectives() {
             vm.rootScope = $rootScope;
             vm.scope = $scope;
         },
-        templateUrl: `${ cdnUrl }/html/prm-alma-representations-filter-after.html`,
+        templateUrl : `${ cdnUrl }/html/prm-alma-representations-filter-after.html`,
     } );
 
     // PRM-ALMA-VIEWER-AFTER
     app.component( 'prmAlmaViewerAfter', {
-        bindings  : { parentCtrl: '<' },
-        controller: function( $scope, $rootScope ) {
+        bindings   : { parentCtrl : '<' },
+        controller : function( $scope, $rootScope ) {
             const vm = this;
 
             vm.getPnx = () => {
@@ -487,13 +487,13 @@ function generateAllPossibleCustomDirectives() {
             vm.rootScope = $rootScope;
             vm.scope = $scope;
         },
-        templateUrl: `${ cdnUrl }/html/prm-alma-viewer-after.html`,
+        templateUrl : `${ cdnUrl }/html/prm-alma-viewer-after.html`,
     } );
 
     // PRM-ALMA-VIEWIT-AFTER
     app.component( 'prmAlmaViewitAfter', {
-        bindings  : { parentCtrl: '<' },
-        controller: function( $scope, $rootScope ) {
+        bindings   : { parentCtrl : '<' },
+        controller : function( $scope, $rootScope ) {
             const vm = this;
 
             vm.getPnx = () => {
@@ -509,13 +509,13 @@ function generateAllPossibleCustomDirectives() {
             vm.rootScope = $rootScope;
             vm.scope = $scope;
         },
-        templateUrl: `${ cdnUrl }/html/prm-alma-viewit-after.html`,
+        templateUrl : `${ cdnUrl }/html/prm-alma-viewit-after.html`,
     } );
 
     // PRM-ALMA-VIEWIT-ITEMS-AFTER
     app.component( 'prmAlmaViewitItemsAfter', {
-        bindings  : { parentCtrl: '<' },
-        controller: function( $scope, $rootScope ) {
+        bindings   : { parentCtrl : '<' },
+        controller : function( $scope, $rootScope ) {
             const vm = this;
 
             vm.getPnx = () => {
@@ -531,13 +531,13 @@ function generateAllPossibleCustomDirectives() {
             vm.rootScope = $rootScope;
             vm.scope = $scope;
         },
-        templateUrl: `${ cdnUrl }/html/prm-alma-viewit-items-after.html`,
+        templateUrl : `${ cdnUrl }/html/prm-alma-viewit-items-after.html`,
     } );
 
     // PRM-ALPHABET-TOOLBAR-AFTER
     app.component( 'prmAlphabetToolbarAfter', {
-        bindings  : { parentCtrl: '<' },
-        controller: function( $scope, $rootScope ) {
+        bindings   : { parentCtrl : '<' },
+        controller : function( $scope, $rootScope ) {
             const vm = this;
 
             vm.getPnx = () => {
@@ -553,13 +553,13 @@ function generateAllPossibleCustomDirectives() {
             vm.rootScope = $rootScope;
             vm.scope = $scope;
         },
-        templateUrl: `${ cdnUrl }/html/prm-alphabet-toolbar-after.html`,
+        templateUrl : `${ cdnUrl }/html/prm-alphabet-toolbar-after.html`,
     } );
 
     // PRM-ATOZ-SEARCH-BAR-AFTER
     app.component( 'prmAtozSearchBarAfter', {
-        bindings  : { parentCtrl: '<' },
-        controller: function( $scope, $rootScope ) {
+        bindings   : { parentCtrl : '<' },
+        controller : function( $scope, $rootScope ) {
             const vm = this;
 
             vm.getPnx = () => {
@@ -575,13 +575,13 @@ function generateAllPossibleCustomDirectives() {
             vm.rootScope = $rootScope;
             vm.scope = $scope;
         },
-        templateUrl: `${ cdnUrl }/html/prm-atoz-search-bar-after.html`,
+        templateUrl : `${ cdnUrl }/html/prm-atoz-search-bar-after.html`,
     } );
 
     // PRM-AUTHENTICATION-AFTER
     app.component( 'prmAuthenticationAfter', {
-        bindings  : { parentCtrl: '<' },
-        controller: function( $scope, $rootScope ) {
+        bindings   : { parentCtrl : '<' },
+        controller : function( $scope, $rootScope ) {
             const vm = this;
 
             vm.getPnx = () => {
@@ -597,13 +597,13 @@ function generateAllPossibleCustomDirectives() {
             vm.rootScope = $rootScope;
             vm.scope = $scope;
         },
-        templateUrl: `${ cdnUrl }/html/prm-authentication-after.html`,
+        templateUrl : `${ cdnUrl }/html/prm-authentication-after.html`,
     } );
 
     // PRM-BACK-TO-LIBRARY-SEARCH-AFTER
     app.component( 'prmBackToLibrarySearchAfter', {
-        bindings  : { parentCtrl: '<' },
-        controller: function( $scope, $rootScope ) {
+        bindings   : { parentCtrl : '<' },
+        controller : function( $scope, $rootScope ) {
             const vm = this;
 
             vm.getPnx = () => {
@@ -619,13 +619,13 @@ function generateAllPossibleCustomDirectives() {
             vm.rootScope = $rootScope;
             vm.scope = $scope;
         },
-        templateUrl: `${ cdnUrl }/html/prm-back-to-library-search-after.html`,
+        templateUrl : `${ cdnUrl }/html/prm-back-to-library-search-after.html`,
     } );
 
     // PRM-BACK-TO-LIBRARY-SEARCH-BUTTON-AFTER
     app.component( 'prmBackToLibrarySearchButtonAfter', {
-        bindings  : { parentCtrl: '<' },
-        controller: function( $scope, $rootScope ) {
+        bindings   : { parentCtrl : '<' },
+        controller : function( $scope, $rootScope ) {
             const vm = this;
 
             vm.getPnx = () => {
@@ -641,13 +641,13 @@ function generateAllPossibleCustomDirectives() {
             vm.rootScope = $rootScope;
             vm.scope = $scope;
         },
-        templateUrl: `${ cdnUrl }/html/prm-back-to-library-search-button-after.html`,
+        templateUrl : `${ cdnUrl }/html/prm-back-to-library-search-button-after.html`,
     } );
 
     // PRM-BACK-TO-SEARCH-RESULTS-BUTTON-AFTER
     app.component( 'prmBackToSearchResultsButtonAfter', {
-        bindings  : { parentCtrl: '<' },
-        controller: function( $scope, $rootScope ) {
+        bindings   : { parentCtrl : '<' },
+        controller : function( $scope, $rootScope ) {
             const vm = this;
 
             vm.getPnx = () => {
@@ -663,13 +663,13 @@ function generateAllPossibleCustomDirectives() {
             vm.rootScope = $rootScope;
             vm.scope = $scope;
         },
-        templateUrl: `${ cdnUrl }/html/prm-back-to-search-results-button-after.html`,
+        templateUrl : `${ cdnUrl }/html/prm-back-to-search-results-button-after.html`,
     } );
 
     // PRM-BANNER-CARD-CONTENT-AFTER
     app.component( 'prmBannerCardContentAfter', {
-        bindings  : { parentCtrl: '<' },
-        controller: function( $scope, $rootScope ) {
+        bindings   : { parentCtrl : '<' },
+        controller : function( $scope, $rootScope ) {
             const vm = this;
 
             vm.getPnx = () => {
@@ -685,13 +685,13 @@ function generateAllPossibleCustomDirectives() {
             vm.rootScope = $rootScope;
             vm.scope = $scope;
         },
-        templateUrl: `${ cdnUrl }/html/prm-banner-card-content-after.html`,
+        templateUrl : `${ cdnUrl }/html/prm-banner-card-content-after.html`,
     } );
 
     // PRM-BARCODE-SEARCH-AFTER
     app.component( 'prmBarcodeSearchAfter', {
-        bindings  : { parentCtrl: '<' },
-        controller: function( $scope, $rootScope ) {
+        bindings   : { parentCtrl : '<' },
+        controller : function( $scope, $rootScope ) {
             const vm = this;
 
             vm.getPnx = () => {
@@ -707,13 +707,13 @@ function generateAllPossibleCustomDirectives() {
             vm.rootScope = $rootScope;
             vm.scope = $scope;
         },
-        templateUrl: `${ cdnUrl }/html/prm-barcode-search-after.html`,
+        templateUrl : `${ cdnUrl }/html/prm-barcode-search-after.html`,
     } );
 
     // PRM-BLANK-ILL-AFTER
     app.component( 'prmBlankIllAfter', {
-        bindings  : { parentCtrl: '<' },
-        controller: function( $scope, $rootScope ) {
+        bindings   : { parentCtrl : '<' },
+        controller : function( $scope, $rootScope ) {
             const vm = this;
 
             vm.getPnx = () => {
@@ -729,13 +729,13 @@ function generateAllPossibleCustomDirectives() {
             vm.rootScope = $rootScope;
             vm.scope = $scope;
         },
-        templateUrl: `${ cdnUrl }/html/prm-blank-ill-after.html`,
+        templateUrl : `${ cdnUrl }/html/prm-blank-ill-after.html`,
     } );
 
     // PRM-BLANK-PURCHASE-REQUEST-AFTER
     app.component( 'prmBlankPurchaseRequestAfter', {
-        bindings  : { parentCtrl: '<' },
-        controller: function( $scope, $rootScope ) {
+        bindings   : { parentCtrl : '<' },
+        controller : function( $scope, $rootScope ) {
             const vm = this;
 
             vm.getPnx = () => {
@@ -751,13 +751,13 @@ function generateAllPossibleCustomDirectives() {
             vm.rootScope = $rootScope;
             vm.scope = $scope;
         },
-        templateUrl: `${ cdnUrl }/html/prm-blank-purchase-request-after.html`,
+        templateUrl : `${ cdnUrl }/html/prm-blank-purchase-request-after.html`,
     } );
 
     // PRM-BREADCRUMBS-AFTER
     app.component( 'prmBreadcrumbsAfter', {
-        bindings  : { parentCtrl: '<' },
-        controller: function( $scope, $rootScope ) {
+        bindings   : { parentCtrl : '<' },
+        controller : function( $scope, $rootScope ) {
             const vm = this;
 
             vm.getPnx = () => {
@@ -773,13 +773,13 @@ function generateAllPossibleCustomDirectives() {
             vm.rootScope = $rootScope;
             vm.scope = $scope;
         },
-        templateUrl: `${ cdnUrl }/html/prm-breadcrumbs-after.html`,
+        templateUrl : `${ cdnUrl }/html/prm-breadcrumbs-after.html`,
     } );
 
     // PRM-BRIEF-RESULT-AFTER
     app.component( 'prmBriefResultAfter', {
-        bindings  : { parentCtrl: '<' },
-        controller: function( $scope, $rootScope ) {
+        bindings   : { parentCtrl : '<' },
+        controller : function( $scope, $rootScope ) {
             const vm = this;
 
             vm.getPnx = () => {
@@ -795,13 +795,13 @@ function generateAllPossibleCustomDirectives() {
             vm.rootScope = $rootScope;
             vm.scope = $scope;
         },
-        templateUrl: `${ cdnUrl }/html/prm-brief-result-after.html`,
+        templateUrl : `${ cdnUrl }/html/prm-brief-result-after.html`,
     } );
 
     // PRM-BRIEF-RESULT-CONTAINER-AFTER
     app.component( 'prmBriefResultContainerAfter', {
-        bindings  : { parentCtrl: '<' },
-        controller: function( $scope, $rootScope ) {
+        bindings   : { parentCtrl : '<' },
+        controller : function( $scope, $rootScope ) {
             const vm = this;
 
             vm.getPnx = () => {
@@ -817,13 +817,13 @@ function generateAllPossibleCustomDirectives() {
             vm.rootScope = $rootScope;
             vm.scope = $scope;
         },
-        templateUrl: `${ cdnUrl }/html/prm-brief-result-container-after.html`,
+        templateUrl : `${ cdnUrl }/html/prm-brief-result-container-after.html`,
     } );
 
     // PRM-BRIEF-RESULT-DELIVERY-OPTION-LINK-AFTER
     app.component( 'prmBriefResultDeliveryOptionLinkAfter', {
-        bindings  : { parentCtrl: '<' },
-        controller: function( $scope, $rootScope ) {
+        bindings   : { parentCtrl : '<' },
+        controller : function( $scope, $rootScope ) {
             const vm = this;
 
             vm.getPnx = () => {
@@ -839,13 +839,13 @@ function generateAllPossibleCustomDirectives() {
             vm.rootScope = $rootScope;
             vm.scope = $scope;
         },
-        templateUrl: `${ cdnUrl }/html/prm-brief-result-delivery-option-link-after.html`,
+        templateUrl : `${ cdnUrl }/html/prm-brief-result-delivery-option-link-after.html`,
     } );
 
     // PRM-BRIEF-RESULT-DIGITAL-BEST-OFFER-AFTER
     app.component( 'prmBriefResultDigitalBestOfferAfter', {
-        bindings  : { parentCtrl: '<' },
-        controller: function( $scope, $rootScope ) {
+        bindings   : { parentCtrl : '<' },
+        controller : function( $scope, $rootScope ) {
             const vm = this;
 
             vm.getPnx = () => {
@@ -861,13 +861,13 @@ function generateAllPossibleCustomDirectives() {
             vm.rootScope = $rootScope;
             vm.scope = $scope;
         },
-        templateUrl: `${ cdnUrl }/html/prm-brief-result-digital-best-offer-after.html`,
+        templateUrl : `${ cdnUrl }/html/prm-brief-result-digital-best-offer-after.html`,
     } );
 
     // PRM-BRIEF-RESULT-PHYSICAL-BEST-OFFER-AFTER
     app.component( 'prmBriefResultPhysicalBestOfferAfter', {
-        bindings  : { parentCtrl: '<' },
-        controller: function( $scope, $rootScope ) {
+        bindings   : { parentCtrl : '<' },
+        controller : function( $scope, $rootScope ) {
             const vm = this;
 
             vm.getPnx = () => {
@@ -883,13 +883,13 @@ function generateAllPossibleCustomDirectives() {
             vm.rootScope = $rootScope;
             vm.scope = $scope;
         },
-        templateUrl: `${ cdnUrl }/html/prm-brief-result-physical-best-offer-after.html`,
+        templateUrl : `${ cdnUrl }/html/prm-brief-result-physical-best-offer-after.html`,
     } );
 
     // PRM-BROWSE-RESULT-AFTER
     app.component( 'prmBrowseResultAfter', {
-        bindings  : { parentCtrl: '<' },
-        controller: function( $scope, $rootScope ) {
+        bindings   : { parentCtrl : '<' },
+        controller : function( $scope, $rootScope ) {
             const vm = this;
 
             vm.getPnx = () => {
@@ -905,13 +905,13 @@ function generateAllPossibleCustomDirectives() {
             vm.rootScope = $rootScope;
             vm.scope = $scope;
         },
-        templateUrl: `${ cdnUrl }/html/prm-browse-result-after.html`,
+        templateUrl : `${ cdnUrl }/html/prm-browse-result-after.html`,
     } );
 
     // PRM-BROWSE-SEARCH-AFTER
     app.component( 'prmBrowseSearchAfter', {
-        bindings  : { parentCtrl: '<' },
-        controller: function( $scope, $rootScope ) {
+        bindings   : { parentCtrl : '<' },
+        controller : function( $scope, $rootScope ) {
             const vm = this;
 
             vm.getPnx = () => {
@@ -927,13 +927,13 @@ function generateAllPossibleCustomDirectives() {
             vm.rootScope = $rootScope;
             vm.scope = $scope;
         },
-        templateUrl: `${ cdnUrl }/html/prm-browse-search-after.html`,
+        templateUrl : `${ cdnUrl }/html/prm-browse-search-after.html`,
     } );
 
     // PRM-BROWSE-SEARCH-BAR-AFTER
     app.component( 'prmBrowseSearchBarAfter', {
-        bindings  : { parentCtrl: '<' },
-        controller: function( $scope, $rootScope ) {
+        bindings   : { parentCtrl : '<' },
+        controller : function( $scope, $rootScope ) {
             const vm = this;
 
             vm.getPnx = () => {
@@ -949,13 +949,13 @@ function generateAllPossibleCustomDirectives() {
             vm.rootScope = $rootScope;
             vm.scope = $scope;
         },
-        templateUrl: `${ cdnUrl }/html/prm-browse-search-bar-after.html`,
+        templateUrl : `${ cdnUrl }/html/prm-browse-search-bar-after.html`,
     } );
 
     // PRM-CHAPTERS-AND-REVIEWS-ITEM-AFTER
     app.component( 'prmChaptersAndReviewsItemAfter', {
-        bindings  : { parentCtrl: '<' },
-        controller: function( $scope, $rootScope ) {
+        bindings   : { parentCtrl : '<' },
+        controller : function( $scope, $rootScope ) {
             const vm = this;
 
             vm.getPnx = () => {
@@ -971,13 +971,13 @@ function generateAllPossibleCustomDirectives() {
             vm.rootScope = $rootScope;
             vm.scope = $scope;
         },
-        templateUrl: `${ cdnUrl }/html/prm-chapters-and-Reviews-item-after.html`,
+        templateUrl : `${ cdnUrl }/html/prm-chapters-and-Reviews-item-after.html`,
     } );
 
     // PRM-CHAPTERS-AND-REVIEWS-AFTER
     app.component( 'prmChaptersAndReviewsAfter', {
-        bindings  : { parentCtrl: '<' },
-        controller: function( $scope, $rootScope ) {
+        bindings   : { parentCtrl : '<' },
+        controller : function( $scope, $rootScope ) {
             const vm = this;
 
             vm.getPnx = () => {
@@ -993,13 +993,13 @@ function generateAllPossibleCustomDirectives() {
             vm.rootScope = $rootScope;
             vm.scope = $scope;
         },
-        templateUrl: `${ cdnUrl }/html/prm-chapters-and-reviews-after.html`,
+        templateUrl : `${ cdnUrl }/html/prm-chapters-and-reviews-after.html`,
     } );
 
     // PRM-CHAPTERS-RESULTS-LINE-AFTER
     app.component( 'prmChaptersResultsLineAfter', {
-        bindings  : { parentCtrl: '<' },
-        controller: function( $scope, $rootScope ) {
+        bindings   : { parentCtrl : '<' },
+        controller : function( $scope, $rootScope ) {
             const vm = this;
 
             vm.getPnx = () => {
@@ -1015,13 +1015,13 @@ function generateAllPossibleCustomDirectives() {
             vm.rootScope = $rootScope;
             vm.scope = $scope;
         },
-        templateUrl: `${ cdnUrl }/html/prm-chapters-results-line-after.html`,
+        templateUrl : `${ cdnUrl }/html/prm-chapters-results-line-after.html`,
     } );
 
     // PRM-CITATION-AFTER
     app.component( 'prmCitationAfter', {
-        bindings  : { parentCtrl: '<' },
-        controller: function( $scope, $rootScope ) {
+        bindings   : { parentCtrl : '<' },
+        controller : function( $scope, $rootScope ) {
             const vm = this;
 
             vm.getPnx = () => {
@@ -1037,13 +1037,13 @@ function generateAllPossibleCustomDirectives() {
             vm.rootScope = $rootScope;
             vm.scope = $scope;
         },
-        templateUrl: `${ cdnUrl }/html/prm-citation-after.html`,
+        templateUrl : `${ cdnUrl }/html/prm-citation-after.html`,
     } );
 
     // PRM-CITATION-LINKER-AFTER
     app.component( 'prmCitationLinkerAfter', {
-        bindings  : { parentCtrl: '<' },
-        controller: function( $scope, $rootScope ) {
+        bindings   : { parentCtrl : '<' },
+        controller : function( $scope, $rootScope ) {
             const vm = this;
 
             vm.getPnx = () => {
@@ -1059,13 +1059,13 @@ function generateAllPossibleCustomDirectives() {
             vm.rootScope = $rootScope;
             vm.scope = $scope;
         },
-        templateUrl: `${ cdnUrl }/html/prm-citation-linker-after.html`,
+        templateUrl : `${ cdnUrl }/html/prm-citation-linker-after.html`,
     } );
 
     // PRM-CITATION-TRAILS-BREADCRUMBS-AFTER
     app.component( 'prmCitationTrailsBreadcrumbsAfter', {
-        bindings  : { parentCtrl: '<' },
-        controller: function( $scope, $rootScope ) {
+        bindings   : { parentCtrl : '<' },
+        controller : function( $scope, $rootScope ) {
             const vm = this;
 
             vm.getPnx = () => {
@@ -1081,13 +1081,13 @@ function generateAllPossibleCustomDirectives() {
             vm.rootScope = $rootScope;
             vm.scope = $scope;
         },
-        templateUrl: `${ cdnUrl }/html/prm-citation-trails-breadcrumbs-after.html`,
+        templateUrl : `${ cdnUrl }/html/prm-citation-trails-breadcrumbs-after.html`,
     } );
 
     // PRM-CITATION-TRAILS-FULLVIEW-LINK-AFTER
     app.component( 'prmCitationTrailsFullviewLinkAfter', {
-        bindings  : { parentCtrl: '<' },
-        controller: function( $scope, $rootScope ) {
+        bindings   : { parentCtrl : '<' },
+        controller : function( $scope, $rootScope ) {
             const vm = this;
 
             vm.getPnx = () => {
@@ -1103,13 +1103,13 @@ function generateAllPossibleCustomDirectives() {
             vm.rootScope = $rootScope;
             vm.scope = $scope;
         },
-        templateUrl: `${ cdnUrl }/html/prm-citation-trails-fullview-link-after.html`,
+        templateUrl : `${ cdnUrl }/html/prm-citation-trails-fullview-link-after.html`,
     } );
 
     // PRM-CITATION-TRAILS-INDICATION-AFTER
     app.component( 'prmCitationTrailsIndicationAfter', {
-        bindings  : { parentCtrl: '<' },
-        controller: function( $scope, $rootScope ) {
+        bindings   : { parentCtrl : '<' },
+        controller : function( $scope, $rootScope ) {
             const vm = this;
 
             vm.getPnx = () => {
@@ -1125,13 +1125,13 @@ function generateAllPossibleCustomDirectives() {
             vm.rootScope = $rootScope;
             vm.scope = $scope;
         },
-        templateUrl: `${ cdnUrl }/html/prm-citation-trails-indication-after.html`,
+        templateUrl : `${ cdnUrl }/html/prm-citation-trails-indication-after.html`,
     } );
 
     // PRM-CITATION-TRAILS-INDICATION-CONTAINER-AFTER
     app.component( 'prmCitationTrailsIndicationContainerAfter', {
-        bindings  : { parentCtrl: '<' },
-        controller: function( $scope, $rootScope ) {
+        bindings   : { parentCtrl : '<' },
+        controller : function( $scope, $rootScope ) {
             const vm = this;
 
             vm.getPnx = () => {
@@ -1147,13 +1147,13 @@ function generateAllPossibleCustomDirectives() {
             vm.rootScope = $rootScope;
             vm.scope = $scope;
         },
-        templateUrl: `${ cdnUrl }/html/prm-citation-trails-indication-container-after.html`,
+        templateUrl : `${ cdnUrl }/html/prm-citation-trails-indication-container-after.html`,
     } );
 
     // PRM-CITATION-TRAILS-ITEM-AFTER
     app.component( 'prmCitationTrailsItemAfter', {
-        bindings  : { parentCtrl: '<' },
-        controller: function( $scope, $rootScope ) {
+        bindings   : { parentCtrl : '<' },
+        controller : function( $scope, $rootScope ) {
             const vm = this;
 
             vm.getPnx = () => {
@@ -1169,13 +1169,13 @@ function generateAllPossibleCustomDirectives() {
             vm.rootScope = $rootScope;
             vm.scope = $scope;
         },
-        templateUrl: `${ cdnUrl }/html/prm-citation-trails-item-after.html`,
+        templateUrl : `${ cdnUrl }/html/prm-citation-trails-item-after.html`,
     } );
 
     // PRM-COLLECTION-AFTER
     app.component( 'prmCollectionAfter', {
-        bindings  : { parentCtrl: '<' },
-        controller: function( $scope, $rootScope ) {
+        bindings   : { parentCtrl : '<' },
+        controller : function( $scope, $rootScope ) {
             const vm = this;
 
             vm.getPnx = () => {
@@ -1191,13 +1191,13 @@ function generateAllPossibleCustomDirectives() {
             vm.rootScope = $rootScope;
             vm.scope = $scope;
         },
-        templateUrl: `${ cdnUrl }/html/prm-collection-after.html`,
+        templateUrl : `${ cdnUrl }/html/prm-collection-after.html`,
     } );
 
     // PRM-COLLECTION-BREADCRUMBS-AFTER
     app.component( 'prmCollectionBreadcrumbsAfter', {
-        bindings  : { parentCtrl: '<' },
-        controller: function( $scope, $rootScope ) {
+        bindings   : { parentCtrl : '<' },
+        controller : function( $scope, $rootScope ) {
             const vm = this;
 
             vm.getPnx = () => {
@@ -1213,13 +1213,13 @@ function generateAllPossibleCustomDirectives() {
             vm.rootScope = $rootScope;
             vm.scope = $scope;
         },
-        templateUrl: `${ cdnUrl }/html/prm-collection-breadcrumbs-after.html`,
+        templateUrl : `${ cdnUrl }/html/prm-collection-breadcrumbs-after.html`,
     } );
 
     // PRM-COLLECTION-DISCOVERY-AFTER
     app.component( 'prmCollectionDiscoveryAfter', {
-        bindings  : { parentCtrl: '<' },
-        controller: function( $scope, $rootScope ) {
+        bindings   : { parentCtrl : '<' },
+        controller : function( $scope, $rootScope ) {
             const vm = this;
 
             vm.getPnx = () => {
@@ -1235,13 +1235,13 @@ function generateAllPossibleCustomDirectives() {
             vm.rootScope = $rootScope;
             vm.scope = $scope;
         },
-        templateUrl: `${ cdnUrl }/html/prm-collection-discovery-after.html`,
+        templateUrl : `${ cdnUrl }/html/prm-collection-discovery-after.html`,
     } );
 
     // PRM-COLLECTION-DISCOVERY-VIEW-SWITCHER-AFTER
     app.component( 'prmCollectionDiscoveryViewSwitcherAfter', {
-        bindings  : { parentCtrl: '<' },
-        controller: function( $scope, $rootScope ) {
+        bindings   : { parentCtrl : '<' },
+        controller : function( $scope, $rootScope ) {
             const vm = this;
 
             vm.getPnx = () => {
@@ -1257,13 +1257,13 @@ function generateAllPossibleCustomDirectives() {
             vm.rootScope = $rootScope;
             vm.scope = $scope;
         },
-        templateUrl: `${ cdnUrl }/html/prm-collection-discovery-view-switcher-after.html`,
+        templateUrl : `${ cdnUrl }/html/prm-collection-discovery-view-switcher-after.html`,
     } );
 
     // PRM-COLLECTION-GALLERY-AFTER
     app.component( 'prmCollectionGalleryAfter', {
-        bindings  : { parentCtrl: '<' },
-        controller: function( $scope, $rootScope ) {
+        bindings   : { parentCtrl : '<' },
+        controller : function( $scope, $rootScope ) {
             const vm = this;
 
             vm.getPnx = () => {
@@ -1279,13 +1279,13 @@ function generateAllPossibleCustomDirectives() {
             vm.rootScope = $rootScope;
             vm.scope = $scope;
         },
-        templateUrl: `${ cdnUrl }/html/prm-collection-gallery-after.html`,
+        templateUrl : `${ cdnUrl }/html/prm-collection-gallery-after.html`,
     } );
 
     // PRM-COLLECTION-GALLERY-HEADER-AFTER
     app.component( 'prmCollectionGalleryHeaderAfter', {
-        bindings  : { parentCtrl: '<' },
-        controller: function( $scope, $rootScope ) {
+        bindings   : { parentCtrl : '<' },
+        controller : function( $scope, $rootScope ) {
             const vm = this;
 
             vm.getPnx = () => {
@@ -1301,13 +1301,13 @@ function generateAllPossibleCustomDirectives() {
             vm.rootScope = $rootScope;
             vm.scope = $scope;
         },
-        templateUrl: `${ cdnUrl }/html/prm-collection-gallery-header-after.html`,
+        templateUrl : `${ cdnUrl }/html/prm-collection-gallery-header-after.html`,
     } );
 
     // PRM-COLLECTION-NAVIGATION-BREADCRUMBS-AFTER
     app.component( 'prmCollectionNavigationBreadcrumbsAfter', {
-        bindings  : { parentCtrl: '<' },
-        controller: function( $scope, $rootScope ) {
+        bindings   : { parentCtrl : '<' },
+        controller : function( $scope, $rootScope ) {
             const vm = this;
 
             vm.getPnx = () => {
@@ -1323,13 +1323,13 @@ function generateAllPossibleCustomDirectives() {
             vm.rootScope = $rootScope;
             vm.scope = $scope;
         },
-        templateUrl: `${ cdnUrl }/html/prm-collection-navigation-breadcrumbs-after.html`,
+        templateUrl : `${ cdnUrl }/html/prm-collection-navigation-breadcrumbs-after.html`,
     } );
 
     // PRM-COLLECTION-NAVIGATION-BREADCRUMBS-ITEM-AFTER
     app.component( 'prmCollectionNavigationBreadcrumbsItemAfter', {
-        bindings  : { parentCtrl: '<' },
-        controller: function( $scope, $rootScope ) {
+        bindings   : { parentCtrl : '<' },
+        controller : function( $scope, $rootScope ) {
             const vm = this;
 
             vm.getPnx = () => {
@@ -1345,13 +1345,13 @@ function generateAllPossibleCustomDirectives() {
             vm.rootScope = $rootScope;
             vm.scope = $scope;
         },
-        templateUrl: `${ cdnUrl }/html/prm-collection-navigation-breadcrumbs-item-after.html`,
+        templateUrl : `${ cdnUrl }/html/prm-collection-navigation-breadcrumbs-item-after.html`,
     } );
 
     // PRM-COLLECTION-SEARCH-AFTER
     app.component( 'prmCollectionSearchAfter', {
-        bindings  : { parentCtrl: '<' },
-        controller: function( $scope, $rootScope ) {
+        bindings   : { parentCtrl : '<' },
+        controller : function( $scope, $rootScope ) {
             const vm = this;
 
             vm.getPnx = () => {
@@ -1367,13 +1367,13 @@ function generateAllPossibleCustomDirectives() {
             vm.rootScope = $rootScope;
             vm.scope = $scope;
         },
-        templateUrl: `${ cdnUrl }/html/prm-collection-search-after.html`,
+        templateUrl : `${ cdnUrl }/html/prm-collection-search-after.html`,
     } );
 
     // PRM-CONTROLLED-VOCABULARY-AFTER
     app.component( 'prmControlledVocabularyAfter', {
-        bindings  : { parentCtrl: '<' },
-        controller: function( $scope, $rootScope ) {
+        bindings   : { parentCtrl : '<' },
+        controller : function( $scope, $rootScope ) {
             const vm = this;
 
             vm.getPnx = () => {
@@ -1389,13 +1389,13 @@ function generateAllPossibleCustomDirectives() {
             vm.rootScope = $rootScope;
             vm.scope = $scope;
         },
-        templateUrl: `${ cdnUrl }/html/prm-controlled-vocabulary-after.html`,
+        templateUrl : `${ cdnUrl }/html/prm-controlled-vocabulary-after.html`,
     } );
 
     // PRM-COPY-CLIPBOARD-BTN-AFTER
     app.component( 'prmCopyClipboardBtnAfter', {
-        bindings  : { parentCtrl: '<' },
-        controller: function( $scope, $rootScope ) {
+        bindings   : { parentCtrl : '<' },
+        controller : function( $scope, $rootScope ) {
             const vm = this;
 
             vm.getPnx = () => {
@@ -1411,13 +1411,13 @@ function generateAllPossibleCustomDirectives() {
             vm.rootScope = $rootScope;
             vm.scope = $scope;
         },
-        templateUrl: `${ cdnUrl }/html/prm-copy-clipboard-btn-after.html`,
+        templateUrl : `${ cdnUrl }/html/prm-copy-clipboard-btn-after.html`,
     } );
 
     // PRM-COPYRIGHTS-AFTER
     app.component( 'prmCopyrightsAfter', {
-        bindings  : { parentCtrl: '<' },
-        controller: function( $scope, $rootScope ) {
+        bindings   : { parentCtrl : '<' },
+        controller : function( $scope, $rootScope ) {
             const vm = this;
 
             vm.getPnx = () => {
@@ -1433,13 +1433,13 @@ function generateAllPossibleCustomDirectives() {
             vm.rootScope = $rootScope;
             vm.scope = $scope;
         },
-        templateUrl: `${ cdnUrl }/html/prm-copyrights-after.html`,
+        templateUrl : `${ cdnUrl }/html/prm-copyrights-after.html`,
     } );
 
     // PRM-DATABASES-AFTER
     app.component( 'prmDatabasesAfter', {
-        bindings  : { parentCtrl: '<' },
-        controller: function( $scope, $rootScope ) {
+        bindings   : { parentCtrl : '<' },
+        controller : function( $scope, $rootScope ) {
             const vm = this;
 
             vm.getPnx = () => {
@@ -1455,13 +1455,13 @@ function generateAllPossibleCustomDirectives() {
             vm.rootScope = $rootScope;
             vm.scope = $scope;
         },
-        templateUrl: `${ cdnUrl }/html/prm-databases-after.html`,
+        templateUrl : `${ cdnUrl }/html/prm-databases-after.html`,
     } );
 
     // PRM-DATABASES-CATEGORIZE-AFTER
     app.component( 'prmDatabasesCategorizeAfter', {
-        bindings  : { parentCtrl: '<' },
-        controller: function( $scope, $rootScope ) {
+        bindings   : { parentCtrl : '<' },
+        controller : function( $scope, $rootScope ) {
             const vm = this;
 
             vm.getPnx = () => {
@@ -1477,13 +1477,13 @@ function generateAllPossibleCustomDirectives() {
             vm.rootScope = $rootScope;
             vm.scope = $scope;
         },
-        templateUrl: `${ cdnUrl }/html/prm-databases-categorize-after.html`,
+        templateUrl : `${ cdnUrl }/html/prm-databases-categorize-after.html`,
     } );
 
     // PRM-DATABASES-FULL-VIEW-AFTER
     app.component( 'prmDatabasesFullViewAfter', {
-        bindings  : { parentCtrl: '<' },
-        controller: function( $scope, $rootScope ) {
+        bindings   : { parentCtrl : '<' },
+        controller : function( $scope, $rootScope ) {
             const vm = this;
 
             vm.getPnx = () => {
@@ -1499,13 +1499,13 @@ function generateAllPossibleCustomDirectives() {
             vm.rootScope = $rootScope;
             vm.scope = $scope;
         },
-        templateUrl: `${ cdnUrl }/html/prm-databases-full-view-after.html`,
+        templateUrl : `${ cdnUrl }/html/prm-databases-full-view-after.html`,
     } );
 
     // PRM-DATABASES-RESULTS-AFTER
     app.component( 'prmDatabasesResultsAfter', {
-        bindings  : { parentCtrl: '<' },
-        controller: function( $scope, $rootScope ) {
+        bindings   : { parentCtrl : '<' },
+        controller : function( $scope, $rootScope ) {
             const vm = this;
 
             vm.getPnx = () => {
@@ -1521,13 +1521,13 @@ function generateAllPossibleCustomDirectives() {
             vm.rootScope = $rootScope;
             vm.scope = $scope;
         },
-        templateUrl: `${ cdnUrl }/html/prm-databases-results-after.html`,
+        templateUrl : `${ cdnUrl }/html/prm-databases-results-after.html`,
     } );
 
     // PRM-DELIVERY-REGISTRATION-AFTER
     app.component( 'prmDeliveryRegistrationAfter', {
-        bindings  : { parentCtrl: '<' },
-        controller: function( $scope, $rootScope ) {
+        bindings   : { parentCtrl : '<' },
+        controller : function( $scope, $rootScope ) {
             const vm = this;
 
             vm.getPnx = () => {
@@ -1543,13 +1543,13 @@ function generateAllPossibleCustomDirectives() {
             vm.rootScope = $rootScope;
             vm.scope = $scope;
         },
-        templateUrl: `${ cdnUrl }/html/prm-delivery-registration-after.html`,
+        templateUrl : `${ cdnUrl }/html/prm-delivery-registration-after.html`,
     } );
 
     // PRM-DELIVERY-SESSION-EXPIRY-NOTIFICATION-AFTER
     app.component( 'prmDeliverySessionExpiryNotificationAfter', {
-        bindings  : { parentCtrl: '<' },
-        controller: function( $scope, $rootScope ) {
+        bindings   : { parentCtrl : '<' },
+        controller : function( $scope, $rootScope ) {
             const vm = this;
 
             vm.getPnx = () => {
@@ -1565,13 +1565,13 @@ function generateAllPossibleCustomDirectives() {
             vm.rootScope = $rootScope;
             vm.scope = $scope;
         },
-        templateUrl: `${ cdnUrl }/html/prm-delivery-session-expiry-notification-after.html`,
+        templateUrl : `${ cdnUrl }/html/prm-delivery-session-expiry-notification-after.html`,
     } );
 
     // PRM-DENIED-ACCESS-AFTER
     app.component( 'prmDeniedAccessAfter', {
-        bindings  : { parentCtrl: '<' },
-        controller: function( $scope, $rootScope ) {
+        bindings   : { parentCtrl : '<' },
+        controller : function( $scope, $rootScope ) {
             const vm = this;
 
             vm.getPnx = () => {
@@ -1587,13 +1587,13 @@ function generateAllPossibleCustomDirectives() {
             vm.rootScope = $rootScope;
             vm.scope = $scope;
         },
-        templateUrl: `${ cdnUrl }/html/prm-denied-access-after.html`,
+        templateUrl : `${ cdnUrl }/html/prm-denied-access-after.html`,
     } );
 
     // PRM-DEPOSITS-AFTER
     app.component( 'prmDepositsAfter', {
-        bindings  : { parentCtrl: '<' },
-        controller: function( $scope, $rootScope ) {
+        bindings   : { parentCtrl : '<' },
+        controller : function( $scope, $rootScope ) {
             const vm = this;
 
             vm.getPnx = () => {
@@ -1609,13 +1609,13 @@ function generateAllPossibleCustomDirectives() {
             vm.rootScope = $rootScope;
             vm.scope = $scope;
         },
-        templateUrl: `${ cdnUrl }/html/prm-deposits-after.html`,
+        templateUrl : `${ cdnUrl }/html/prm-deposits-after.html`,
     } );
 
     // PRM-DEPOSITS-LINK-AFTER
     app.component( 'prmDepositsLinkAfter', {
-        bindings  : { parentCtrl: '<' },
-        controller: function( $scope, $rootScope ) {
+        bindings   : { parentCtrl : '<' },
+        controller : function( $scope, $rootScope ) {
             const vm = this;
 
             vm.getPnx = () => {
@@ -1631,13 +1631,13 @@ function generateAllPossibleCustomDirectives() {
             vm.rootScope = $rootScope;
             vm.scope = $scope;
         },
-        templateUrl: `${ cdnUrl }/html/prm-deposits-link-after.html`,
+        templateUrl : `${ cdnUrl }/html/prm-deposits-link-after.html`,
     } );
 
     // PRM-DEPOSITS-OVERVIEW-AFTER
     app.component( 'prmDepositsOverviewAfter', {
-        bindings  : { parentCtrl: '<' },
-        controller: function( $scope, $rootScope ) {
+        bindings   : { parentCtrl : '<' },
+        controller : function( $scope, $rootScope ) {
             const vm = this;
 
             vm.getPnx = () => {
@@ -1653,13 +1653,13 @@ function generateAllPossibleCustomDirectives() {
             vm.rootScope = $rootScope;
             vm.scope = $scope;
         },
-        templateUrl: `${ cdnUrl }/html/prm-deposits-overview-after.html`,
+        templateUrl : `${ cdnUrl }/html/prm-deposits-overview-after.html`,
     } );
 
     // PRM-DID-U-MEAN-AFTER
     app.component( 'prmDidUMeanAfter', {
-        bindings  : { parentCtrl: '<' },
-        controller: function( $scope, $rootScope ) {
+        bindings   : { parentCtrl : '<' },
+        controller : function( $scope, $rootScope ) {
             const vm = this;
 
             vm.getPnx = () => {
@@ -1675,13 +1675,13 @@ function generateAllPossibleCustomDirectives() {
             vm.rootScope = $rootScope;
             vm.scope = $scope;
         },
-        templateUrl: `${ cdnUrl }/html/prm-did-u-mean-after.html`,
+        templateUrl : `${ cdnUrl }/html/prm-did-u-mean-after.html`,
     } );
 
     // PRM-EASYBIB-AFTER
     app.component( 'prmEasybibAfter', {
-        bindings  : { parentCtrl: '<' },
-        controller: function( $scope, $rootScope ) {
+        bindings   : { parentCtrl : '<' },
+        controller : function( $scope, $rootScope ) {
             const vm = this;
 
             vm.getPnx = () => {
@@ -1697,13 +1697,13 @@ function generateAllPossibleCustomDirectives() {
             vm.rootScope = $rootScope;
             vm.scope = $scope;
         },
-        templateUrl: `${ cdnUrl }/html/prm-easybib-after.html`,
+        templateUrl : `${ cdnUrl }/html/prm-easybib-after.html`,
     } );
 
     // PRM-EDIT-NOTIFICATION-SETTINGS-AFTER
     app.component( 'prmEditNotificationSettingsAfter', {
-        bindings  : { parentCtrl: '<' },
-        controller: function( $scope, $rootScope ) {
+        bindings   : { parentCtrl : '<' },
+        controller : function( $scope, $rootScope ) {
             const vm = this;
 
             vm.getPnx = () => {
@@ -1719,13 +1719,13 @@ function generateAllPossibleCustomDirectives() {
             vm.rootScope = $rootScope;
             vm.scope = $scope;
         },
-        templateUrl: `${ cdnUrl }/html/prm-edit-notification-settings-after.html`,
+        templateUrl : `${ cdnUrl }/html/prm-edit-notification-settings-after.html`,
     } );
 
     // PRM-ENDNOTE-AFTER
     app.component( 'prmEndnoteAfter', {
-        bindings  : { parentCtrl: '<' },
-        controller: function( $scope, $rootScope ) {
+        bindings   : { parentCtrl : '<' },
+        controller : function( $scope, $rootScope ) {
             const vm = this;
 
             vm.getPnx = () => {
@@ -1741,13 +1741,13 @@ function generateAllPossibleCustomDirectives() {
             vm.rootScope = $rootScope;
             vm.scope = $scope;
         },
-        templateUrl: `${ cdnUrl }/html/prm-endnote-after.html`,
+        templateUrl : `${ cdnUrl }/html/prm-endnote-after.html`,
     } );
 
     // PRM-EXPLORE-FOOTER-AFTER
     app.component( 'prmExploreFooterAfter', {
-        bindings  : { parentCtrl: '<' },
-        controller: function( $scope, $rootScope ) {
+        bindings   : { parentCtrl : '<' },
+        controller : function( $scope, $rootScope ) {
             const vm = this;
 
             vm.getPnx = () => {
@@ -1763,13 +1763,13 @@ function generateAllPossibleCustomDirectives() {
             vm.rootScope = $rootScope;
             vm.scope = $scope;
         },
-        templateUrl: `${ cdnUrl }/html/prm-explore-footer-after.html`,
+        templateUrl : `${ cdnUrl }/html/prm-explore-footer-after.html`,
     } );
 
     // PRM-EXPLORE-MAIN-AFTER
     app.component( 'prmExploreMainAfter', {
-        bindings  : { parentCtrl: '<' },
-        controller: function( $scope, $rootScope ) {
+        bindings   : { parentCtrl : '<' },
+        controller : function( $scope, $rootScope ) {
             const vm = this;
 
             vm.getPnx = () => {
@@ -1785,13 +1785,13 @@ function generateAllPossibleCustomDirectives() {
             vm.rootScope = $rootScope;
             vm.scope = $scope;
         },
-        templateUrl: `${ cdnUrl }/html/prm-explore-main-after.html`,
+        templateUrl : `${ cdnUrl }/html/prm-explore-main-after.html`,
     } );
 
     // PRM-EXPORT-BIBTEX-AFTER
     app.component( 'prmExportBibtexAfter', {
-        bindings  : { parentCtrl: '<' },
-        controller: function( $scope, $rootScope ) {
+        bindings   : { parentCtrl : '<' },
+        controller : function( $scope, $rootScope ) {
             const vm = this;
 
             vm.getPnx = () => {
@@ -1807,13 +1807,13 @@ function generateAllPossibleCustomDirectives() {
             vm.rootScope = $rootScope;
             vm.scope = $scope;
         },
-        templateUrl: `${ cdnUrl }/html/prm-export-bibtex-after.html`,
+        templateUrl : `${ cdnUrl }/html/prm-export-bibtex-after.html`,
     } );
 
     // PRM-EXPORT-EXCEL-AFTER
     app.component( 'prmExportExcelAfter', {
-        bindings  : { parentCtrl: '<' },
-        controller: function( $scope, $rootScope ) {
+        bindings   : { parentCtrl : '<' },
+        controller : function( $scope, $rootScope ) {
             const vm = this;
 
             vm.getPnx = () => {
@@ -1829,13 +1829,13 @@ function generateAllPossibleCustomDirectives() {
             vm.rootScope = $rootScope;
             vm.scope = $scope;
         },
-        templateUrl: `${ cdnUrl }/html/prm-export-excel-after.html`,
+        templateUrl : `${ cdnUrl }/html/prm-export-excel-after.html`,
     } );
 
     // PRM-EXPORT-RIS-AFTER
     app.component( 'prmExportRisAfter', {
-        bindings  : { parentCtrl: '<' },
-        controller: function( $scope, $rootScope ) {
+        bindings   : { parentCtrl : '<' },
+        controller : function( $scope, $rootScope ) {
             const vm = this;
 
             vm.getPnx = () => {
@@ -1851,13 +1851,13 @@ function generateAllPossibleCustomDirectives() {
             vm.rootScope = $rootScope;
             vm.scope = $scope;
         },
-        templateUrl: `${ cdnUrl }/html/prm-export-ris-after.html`,
+        templateUrl : `${ cdnUrl }/html/prm-export-ris-after.html`,
     } );
 
     // PRM-FACET-AFTER
     app.component( 'prmFacetAfter', {
-        bindings  : { parentCtrl: '<' },
-        controller: function( $scope, $rootScope ) {
+        bindings   : { parentCtrl : '<' },
+        controller : function( $scope, $rootScope ) {
             const vm = this;
 
             vm.getPnx = () => {
@@ -1873,13 +1873,13 @@ function generateAllPossibleCustomDirectives() {
             vm.rootScope = $rootScope;
             vm.scope = $scope;
         },
-        templateUrl: `${ cdnUrl }/html/prm-facet-after.html`,
+        templateUrl : `${ cdnUrl }/html/prm-facet-after.html`,
     } );
 
     // PRM-FACET-EXACT-AFTER
     app.component( 'prmFacetExactAfter', {
-        bindings  : { parentCtrl: '<' },
-        controller: function( $scope, $rootScope ) {
+        bindings   : { parentCtrl : '<' },
+        controller : function( $scope, $rootScope ) {
             const vm = this;
 
             vm.getPnx = () => {
@@ -1895,13 +1895,13 @@ function generateAllPossibleCustomDirectives() {
             vm.rootScope = $rootScope;
             vm.scope = $scope;
         },
-        templateUrl: `${ cdnUrl }/html/prm-facet-exact-after.html`,
+        templateUrl : `${ cdnUrl }/html/prm-facet-exact-after.html`,
     } );
 
     // PRM-FACET-RANGE-AFTER
     app.component( 'prmFacetRangeAfter', {
-        bindings  : { parentCtrl: '<' },
-        controller: function( $scope, $rootScope ) {
+        bindings   : { parentCtrl : '<' },
+        controller : function( $scope, $rootScope ) {
             const vm = this;
 
             vm.getPnx = () => {
@@ -1917,13 +1917,13 @@ function generateAllPossibleCustomDirectives() {
             vm.rootScope = $rootScope;
             vm.scope = $scope;
         },
-        templateUrl: `${ cdnUrl }/html/prm-facet-range-after.html`,
+        templateUrl : `${ cdnUrl }/html/prm-facet-range-after.html`,
     } );
 
     // PRM-FAVORITES-AFTER
     app.component( 'prmFavoritesAfter', {
-        bindings  : { parentCtrl: '<' },
-        controller: function( $scope, $rootScope ) {
+        bindings   : { parentCtrl : '<' },
+        controller : function( $scope, $rootScope ) {
             const vm = this;
 
             vm.getPnx = () => {
@@ -1939,13 +1939,13 @@ function generateAllPossibleCustomDirectives() {
             vm.rootScope = $rootScope;
             vm.scope = $scope;
         },
-        templateUrl: `${ cdnUrl }/html/prm-favorites-after.html`,
+        templateUrl : `${ cdnUrl }/html/prm-favorites-after.html`,
     } );
 
     // PRM-FAVORITES-EDIT-LABELS-MENU-AFTER
     app.component( 'prmFavoritesEditLabelsMenuAfter', {
-        bindings  : { parentCtrl: '<' },
-        controller: function( $scope, $rootScope ) {
+        bindings   : { parentCtrl : '<' },
+        controller : function( $scope, $rootScope ) {
             const vm = this;
 
             vm.getPnx = () => {
@@ -1961,13 +1961,13 @@ function generateAllPossibleCustomDirectives() {
             vm.rootScope = $rootScope;
             vm.scope = $scope;
         },
-        templateUrl: `${ cdnUrl }/html/prm-favorites-edit-labels-menu-after.html`,
+        templateUrl : `${ cdnUrl }/html/prm-favorites-edit-labels-menu-after.html`,
     } );
 
     // PRM-FAVORITES-LABELS-AFTER
     app.component( 'prmFavoritesLabelsAfter', {
-        bindings  : { parentCtrl: '<' },
-        controller: function( $scope, $rootScope ) {
+        bindings   : { parentCtrl : '<' },
+        controller : function( $scope, $rootScope ) {
             const vm = this;
 
             vm.getPnx = () => {
@@ -1983,13 +1983,13 @@ function generateAllPossibleCustomDirectives() {
             vm.rootScope = $rootScope;
             vm.scope = $scope;
         },
-        templateUrl: `${ cdnUrl }/html/prm-favorites-labels-after.html`,
+        templateUrl : `${ cdnUrl }/html/prm-favorites-labels-after.html`,
     } );
 
     // PRM-FAVORITES-RECORD-LABELS-AFTER
     app.component( 'prmFavoritesRecordLabelsAfter', {
-        bindings  : { parentCtrl: '<' },
-        controller: function( $scope, $rootScope ) {
+        bindings   : { parentCtrl : '<' },
+        controller : function( $scope, $rootScope ) {
             const vm = this;
 
             vm.getPnx = () => {
@@ -2005,13 +2005,13 @@ function generateAllPossibleCustomDirectives() {
             vm.rootScope = $rootScope;
             vm.scope = $scope;
         },
-        templateUrl: `${ cdnUrl }/html/prm-favorites-record-labels-after.html`,
+        templateUrl : `${ cdnUrl }/html/prm-favorites-record-labels-after.html`,
     } );
 
     // PRM-FAVORITES-TOOL-BAR-AFTER
     app.component( 'prmFavoritesToolBarAfter', {
-        bindings  : { parentCtrl: '<' },
-        controller: function( $scope, $rootScope ) {
+        bindings   : { parentCtrl : '<' },
+        controller : function( $scope, $rootScope ) {
             const vm = this;
 
             vm.getPnx = () => {
@@ -2027,13 +2027,13 @@ function generateAllPossibleCustomDirectives() {
             vm.rootScope = $rootScope;
             vm.scope = $scope;
         },
-        templateUrl: `${ cdnUrl }/html/prm-favorites-tool-bar-after.html`,
+        templateUrl : `${ cdnUrl }/html/prm-favorites-tool-bar-after.html`,
     } );
 
     // PRM-FAVORITES-WARNING-MESSAGE-AFTER
     app.component( 'prmFavoritesWarningMessageAfter', {
-        bindings  : { parentCtrl: '<' },
-        controller: function( $scope, $rootScope ) {
+        bindings   : { parentCtrl : '<' },
+        controller : function( $scope, $rootScope ) {
             const vm = this;
 
             vm.getPnx = () => {
@@ -2049,13 +2049,13 @@ function generateAllPossibleCustomDirectives() {
             vm.rootScope = $rootScope;
             vm.scope = $scope;
         },
-        templateUrl: `${ cdnUrl }/html/prm-favorites-warning-message-after.html`,
+        templateUrl : `${ cdnUrl }/html/prm-favorites-warning-message-after.html`,
     } );
 
     // PRM-FEATURED-RESULT-ITEM-AFTER
     app.component( 'prmFeaturedResultItemAfter', {
-        bindings  : { parentCtrl: '<' },
-        controller: function( $scope, $rootScope ) {
+        bindings   : { parentCtrl : '<' },
+        controller : function( $scope, $rootScope ) {
             const vm = this;
 
             vm.getPnx = () => {
@@ -2071,13 +2071,13 @@ function generateAllPossibleCustomDirectives() {
             vm.rootScope = $rootScope;
             vm.scope = $scope;
         },
-        templateUrl: `${ cdnUrl }/html/prm-featured-result-item-after.html`,
+        templateUrl : `${ cdnUrl }/html/prm-featured-result-item-after.html`,
     } );
 
     // PRM-FEATURED-RESULTS-AFTER
     app.component( 'prmFeaturedResultsAfter', {
-        bindings  : { parentCtrl: '<' },
-        controller: function( $scope, $rootScope ) {
+        bindings   : { parentCtrl : '<' },
+        controller : function( $scope, $rootScope ) {
             const vm = this;
 
             vm.getPnx = () => {
@@ -2093,13 +2093,13 @@ function generateAllPossibleCustomDirectives() {
             vm.rootScope = $rootScope;
             vm.scope = $scope;
         },
-        templateUrl: `${ cdnUrl }/html/prm-featured-results-after.html`,
+        templateUrl : `${ cdnUrl }/html/prm-featured-results-after.html`,
     } );
 
     // PRM-FINES-AFTER
     app.component( 'prmFinesAfter', {
-        bindings  : { parentCtrl: '<' },
-        controller: function( $scope, $rootScope ) {
+        bindings   : { parentCtrl : '<' },
+        controller : function( $scope, $rootScope ) {
             const vm = this;
 
             vm.getPnx = () => {
@@ -2115,13 +2115,13 @@ function generateAllPossibleCustomDirectives() {
             vm.rootScope = $rootScope;
             vm.scope = $scope;
         },
-        templateUrl: `${ cdnUrl }/html/prm-fines-after.html`,
+        templateUrl : `${ cdnUrl }/html/prm-fines-after.html`,
     } );
 
     // PRM-FINES-OVERVIEW-AFTER
     app.component( 'prmFinesOverviewAfter', {
-        bindings  : { parentCtrl: '<' },
-        controller: function( $scope, $rootScope ) {
+        bindings   : { parentCtrl : '<' },
+        controller : function( $scope, $rootScope ) {
             const vm = this;
 
             vm.getPnx = () => {
@@ -2137,13 +2137,13 @@ function generateAllPossibleCustomDirectives() {
             vm.rootScope = $rootScope;
             vm.scope = $scope;
         },
-        templateUrl: `${ cdnUrl }/html/prm-fines-overview-after.html`,
+        templateUrl : `${ cdnUrl }/html/prm-fines-overview-after.html`,
     } );
 
     // PRM-FULL-VIEW-AFTER
     app.component( 'prmFullViewAfter', {
-        bindings  : { parentCtrl: '<' },
-        controller: function( $scope, $rootScope ) {
+        bindings   : { parentCtrl : '<' },
+        controller : function( $scope, $rootScope ) {
             const vm = this;
 
             vm.getPnx = () => {
@@ -2159,13 +2159,13 @@ function generateAllPossibleCustomDirectives() {
             vm.rootScope = $rootScope;
             vm.scope = $scope;
         },
-        templateUrl: `${ cdnUrl }/html/prm-full-view-after.html`,
+        templateUrl : `${ cdnUrl }/html/prm-full-view-after.html`,
     } );
 
     // PRM-FULL-VIEW-CONT-AFTER
     app.component( 'prmFullViewContAfter', {
-        bindings  : { parentCtrl: '<' },
-        controller: function( $scope, $rootScope ) {
+        bindings   : { parentCtrl : '<' },
+        controller : function( $scope, $rootScope ) {
             const vm = this;
 
             vm.getPnx = () => {
@@ -2181,13 +2181,13 @@ function generateAllPossibleCustomDirectives() {
             vm.rootScope = $rootScope;
             vm.scope = $scope;
         },
-        templateUrl: `${ cdnUrl }/html/prm-full-view-cont-after.html`,
+        templateUrl : `${ cdnUrl }/html/prm-full-view-cont-after.html`,
     } );
 
     // PRM-FULL-VIEW-PAGE-AFTER
     app.component( 'prmFullViewPageAfter', {
-        bindings  : { parentCtrl: '<' },
-        controller: function( $scope, $rootScope ) {
+        bindings   : { parentCtrl : '<' },
+        controller : function( $scope, $rootScope ) {
             const vm = this;
 
             vm.getPnx = () => {
@@ -2203,13 +2203,13 @@ function generateAllPossibleCustomDirectives() {
             vm.rootScope = $rootScope;
             vm.scope = $scope;
         },
-        templateUrl: `${ cdnUrl }/html/prm-full-view-page-after.html`,
+        templateUrl : `${ cdnUrl }/html/prm-full-view-page-after.html`,
     } );
 
     // PRM-FULL-VIEW-SERVICE-CONTAINER-AFTER
     app.component( 'prmFullViewServiceContainerAfter', {
-        bindings  : { parentCtrl: '<' },
-        controller: function( $scope, $rootScope ) {
+        bindings   : { parentCtrl : '<' },
+        controller : function( $scope, $rootScope ) {
             const vm = this;
 
             vm.getPnx = () => {
@@ -2225,13 +2225,13 @@ function generateAllPossibleCustomDirectives() {
             vm.rootScope = $rootScope;
             vm.scope = $scope;
         },
-        templateUrl: `${ cdnUrl }/html/prm-full-view-service-container-after.html`,
+        templateUrl : `${ cdnUrl }/html/prm-full-view-service-container-after.html`,
     } );
 
     // PRM-GALLERY-COLLECTION-AFTER
     app.component( 'prmGalleryCollectionAfter', {
-        bindings  : { parentCtrl: '<' },
-        controller: function( $scope, $rootScope ) {
+        bindings   : { parentCtrl : '<' },
+        controller : function( $scope, $rootScope ) {
             const vm = this;
 
             vm.getPnx = () => {
@@ -2247,13 +2247,13 @@ function generateAllPossibleCustomDirectives() {
             vm.rootScope = $rootScope;
             vm.scope = $scope;
         },
-        templateUrl: `${ cdnUrl }/html/prm-gallery-collection-after.html`,
+        templateUrl : `${ cdnUrl }/html/prm-gallery-collection-after.html`,
     } );
 
     // PRM-GALLERY-COLLECTIONS-LIST-AFTER
     app.component( 'prmGalleryCollectionsListAfter', {
-        bindings  : { parentCtrl: '<' },
-        controller: function( $scope, $rootScope ) {
+        bindings   : { parentCtrl : '<' },
+        controller : function( $scope, $rootScope ) {
             const vm = this;
 
             vm.getPnx = () => {
@@ -2269,13 +2269,13 @@ function generateAllPossibleCustomDirectives() {
             vm.rootScope = $rootScope;
             vm.scope = $scope;
         },
-        templateUrl: `${ cdnUrl }/html/prm-gallery-collections-list-after.html`,
+        templateUrl : `${ cdnUrl }/html/prm-gallery-collections-list-after.html`,
     } );
 
     // PRM-GALLERY-ITEM-AFTER
     app.component( 'prmGalleryItemAfter', {
-        bindings  : { parentCtrl: '<' },
-        controller: function( $scope, $rootScope ) {
+        bindings   : { parentCtrl : '<' },
+        controller : function( $scope, $rootScope ) {
             const vm = this;
 
             vm.getPnx = () => {
@@ -2291,13 +2291,13 @@ function generateAllPossibleCustomDirectives() {
             vm.rootScope = $rootScope;
             vm.scope = $scope;
         },
-        templateUrl: `${ cdnUrl }/html/prm-gallery-item-after.html`,
+        templateUrl : `${ cdnUrl }/html/prm-gallery-item-after.html`,
     } );
 
     // PRM-GALLERY-ITEMS-LIST-AFTER
     app.component( 'prmGalleryItemsListAfter', {
-        bindings  : { parentCtrl: '<' },
-        controller: function( $scope, $rootScope ) {
+        bindings   : { parentCtrl : '<' },
+        controller : function( $scope, $rootScope ) {
             const vm = this;
 
             vm.getPnx = () => {
@@ -2313,13 +2313,13 @@ function generateAllPossibleCustomDirectives() {
             vm.rootScope = $rootScope;
             vm.scope = $scope;
         },
-        templateUrl: `${ cdnUrl }/html/prm-gallery-items-list-after.html`,
+        templateUrl : `${ cdnUrl }/html/prm-gallery-items-list-after.html`,
     } );
 
     // PRM-GET-IT-REQUEST-AFTER
     app.component( 'prmGetItRequestAfter', {
-        bindings  : { parentCtrl: '<' },
-        controller: function( $scope, $rootScope ) {
+        bindings   : { parentCtrl : '<' },
+        controller : function( $scope, $rootScope ) {
             const vm = this;
 
             vm.getPnx = () => {
@@ -2335,13 +2335,13 @@ function generateAllPossibleCustomDirectives() {
             vm.rootScope = $rootScope;
             vm.scope = $scope;
         },
-        templateUrl: `${ cdnUrl }/html/prm-get-it-request-after.html`,
+        templateUrl : `${ cdnUrl }/html/prm-get-it-request-after.html`,
     } );
 
     // PRM-ICON-AFTER
     app.component( 'prmIconAfter', {
-        bindings  : { parentCtrl: '<' },
-        controller: function( $scope, $rootScope ) {
+        bindings   : { parentCtrl : '<' },
+        controller : function( $scope, $rootScope ) {
             const vm = this;
 
             vm.getPnx = () => {
@@ -2357,13 +2357,13 @@ function generateAllPossibleCustomDirectives() {
             vm.rootScope = $rootScope;
             vm.scope = $scope;
         },
-        templateUrl: `${ cdnUrl }/html/prm-icon-after.html`,
+        templateUrl : `${ cdnUrl }/html/prm-icon-after.html`,
     } );
 
     // PRM-ICP-LICENSE-FOOTER-AFTER
     app.component( 'prmIcpLicenseFooterAfter', {
-        bindings  : { parentCtrl: '<' },
-        controller: function( $scope, $rootScope ) {
+        bindings   : { parentCtrl : '<' },
+        controller : function( $scope, $rootScope ) {
             const vm = this;
 
             vm.getPnx = () => {
@@ -2379,13 +2379,13 @@ function generateAllPossibleCustomDirectives() {
             vm.rootScope = $rootScope;
             vm.scope = $scope;
         },
-        templateUrl: `${ cdnUrl }/html/prm-icp-license-footer-after.html`,
+        templateUrl : `${ cdnUrl }/html/prm-icp-license-footer-after.html`,
     } );
 
     // PRM-JOURNALS-AFTER
     app.component( 'prmJournalsAfter', {
-        bindings  : { parentCtrl: '<' },
-        controller: function( $scope, $rootScope ) {
+        bindings   : { parentCtrl : '<' },
+        controller : function( $scope, $rootScope ) {
             const vm = this;
 
             vm.getPnx = () => {
@@ -2401,13 +2401,13 @@ function generateAllPossibleCustomDirectives() {
             vm.rootScope = $rootScope;
             vm.scope = $scope;
         },
-        templateUrl: `${ cdnUrl }/html/prm-journals-after.html`,
+        templateUrl : `${ cdnUrl }/html/prm-journals-after.html`,
     } );
 
     // PRM-JOURNALS-FULL-VIEW-AFTER
     app.component( 'prmJournalsFullViewAfter', {
-        bindings  : { parentCtrl: '<' },
-        controller: function( $scope, $rootScope ) {
+        bindings   : { parentCtrl : '<' },
+        controller : function( $scope, $rootScope ) {
             const vm = this;
 
             vm.getPnx = () => {
@@ -2423,13 +2423,13 @@ function generateAllPossibleCustomDirectives() {
             vm.rootScope = $rootScope;
             vm.scope = $scope;
         },
-        templateUrl: `${ cdnUrl }/html/prm-journals-full-view-after.html`,
+        templateUrl : `${ cdnUrl }/html/prm-journals-full-view-after.html`,
     } );
 
     // PRM-LANGUAGE-SELECTION-AFTER
     app.component( 'prmLanguageSelectionAfter', {
-        bindings  : { parentCtrl: '<' },
-        controller: function( $scope, $rootScope ) {
+        bindings   : { parentCtrl : '<' },
+        controller : function( $scope, $rootScope ) {
             const vm = this;
 
             vm.getPnx = () => {
@@ -2445,13 +2445,13 @@ function generateAllPossibleCustomDirectives() {
             vm.rootScope = $rootScope;
             vm.scope = $scope;
         },
-        templateUrl: `${ cdnUrl }/html/prm-language-selection-after.html`,
+        templateUrl : `${ cdnUrl }/html/prm-language-selection-after.html`,
     } );
 
     // PRM-LEGANTO-AFTER
     app.component( 'prmLegantoAfter', {
-        bindings  : { parentCtrl: '<' },
-        controller: function( $scope, $rootScope ) {
+        bindings   : { parentCtrl : '<' },
+        controller : function( $scope, $rootScope ) {
             const vm = this;
 
             vm.getPnx = () => {
@@ -2467,13 +2467,13 @@ function generateAllPossibleCustomDirectives() {
             vm.rootScope = $rootScope;
             vm.scope = $scope;
         },
-        templateUrl: `${ cdnUrl }/html/prm-leganto-after.html`,
+        templateUrl : `${ cdnUrl }/html/prm-leganto-after.html`,
     } );
 
     // PRM-LEGANTO-GETIT-AFTER
     app.component( 'prmLegantoGetitAfter', {
-        bindings  : { parentCtrl: '<' },
-        controller: function( $scope, $rootScope ) {
+        bindings   : { parentCtrl : '<' },
+        controller : function( $scope, $rootScope ) {
             const vm = this;
 
             vm.getPnx = () => {
@@ -2489,13 +2489,13 @@ function generateAllPossibleCustomDirectives() {
             vm.rootScope = $rootScope;
             vm.scope = $scope;
         },
-        templateUrl: `${ cdnUrl }/html/prm-leganto-getit-after.html`,
+        templateUrl : `${ cdnUrl }/html/prm-leganto-getit-after.html`,
     } );
 
     // PRM-LIBRARIES-AROUND-BAR-AFTER
     app.component( 'prmLibrariesAroundBarAfter', {
-        bindings  : { parentCtrl: '<' },
-        controller: function( $scope, $rootScope ) {
+        bindings   : { parentCtrl : '<' },
+        controller : function( $scope, $rootScope ) {
             const vm = this;
 
             vm.getPnx = () => {
@@ -2511,13 +2511,13 @@ function generateAllPossibleCustomDirectives() {
             vm.rootScope = $rootScope;
             vm.scope = $scope;
         },
-        templateUrl: `${ cdnUrl }/html/prm-libraries-around-bar-after.html`,
+        templateUrl : `${ cdnUrl }/html/prm-libraries-around-bar-after.html`,
     } );
 
     // PRM-LIBRARY-AFTER
     app.component( 'prmLibraryAfter', {
-        bindings  : { parentCtrl: '<' },
-        controller: function( $scope, $rootScope ) {
+        bindings   : { parentCtrl : '<' },
+        controller : function( $scope, $rootScope ) {
             const vm = this;
 
             vm.getPnx = () => {
@@ -2533,13 +2533,13 @@ function generateAllPossibleCustomDirectives() {
             vm.rootScope = $rootScope;
             vm.scope = $scope;
         },
-        templateUrl: `${ cdnUrl }/html/prm-library-after.html`,
+        templateUrl : `${ cdnUrl }/html/prm-library-after.html`,
     } );
 
     // PRM-LIBRARY-CARD-MENU-AFTER
     app.component( 'prmLibraryCardMenuAfter', {
-        bindings  : { parentCtrl: '<' },
-        controller: function( $scope, $rootScope ) {
+        bindings   : { parentCtrl : '<' },
+        controller : function( $scope, $rootScope ) {
             const vm = this;
 
             vm.getPnx = () => {
@@ -2555,13 +2555,13 @@ function generateAllPossibleCustomDirectives() {
             vm.rootScope = $rootScope;
             vm.scope = $scope;
         },
-        templateUrl: `${ cdnUrl }/html/prm-library-card-menu-after.html`,
+        templateUrl : `${ cdnUrl }/html/prm-library-card-menu-after.html`,
     } );
 
     // PRM-LINKED-DATA-AFTER
     app.component( 'prmLinkedDataAfter', {
-        bindings  : { parentCtrl: '<' },
-        controller: function( $scope, $rootScope ) {
+        bindings   : { parentCtrl : '<' },
+        controller : function( $scope, $rootScope ) {
             const vm = this;
 
             vm.getPnx = () => {
@@ -2577,13 +2577,13 @@ function generateAllPossibleCustomDirectives() {
             vm.rootScope = $rootScope;
             vm.scope = $scope;
         },
-        templateUrl: `${ cdnUrl }/html/prm-linked-data-after.html`,
+        templateUrl : `${ cdnUrl }/html/prm-linked-data-after.html`,
     } );
 
     // PRM-LINKED-DATA-CARD-AFTER
     app.component( 'prmLinkedDataCardAfter', {
-        bindings  : { parentCtrl: '<' },
-        controller: function( $scope, $rootScope ) {
+        bindings   : { parentCtrl : '<' },
+        controller : function( $scope, $rootScope ) {
             const vm = this;
 
             vm.getPnx = () => {
@@ -2599,13 +2599,13 @@ function generateAllPossibleCustomDirectives() {
             vm.rootScope = $rootScope;
             vm.scope = $scope;
         },
-        templateUrl: `${ cdnUrl }/html/prm-linked-data-card-after.html`,
+        templateUrl : `${ cdnUrl }/html/prm-linked-data-card-after.html`,
     } );
 
     // PRM-LINKED-USER-SELECTOR-AFTER
     app.component( 'prmLinkedUserSelectorAfter', {
-        bindings  : { parentCtrl: '<' },
-        controller: function( $scope, $rootScope ) {
+        bindings   : { parentCtrl : '<' },
+        controller : function( $scope, $rootScope ) {
             const vm = this;
 
             vm.getPnx = () => {
@@ -2621,13 +2621,13 @@ function generateAllPossibleCustomDirectives() {
             vm.rootScope = $rootScope;
             vm.scope = $scope;
         },
-        templateUrl: `${ cdnUrl }/html/prm-linked-user-selector-after.html`,
+        templateUrl : `${ cdnUrl }/html/prm-linked-user-selector-after.html`,
     } );
 
     // PRM-LOAN-AFTER
     app.component( 'prmLoanAfter', {
-        bindings  : { parentCtrl: '<' },
-        controller: function( $scope, $rootScope ) {
+        bindings   : { parentCtrl : '<' },
+        controller : function( $scope, $rootScope ) {
             const vm = this;
 
             vm.getPnx = () => {
@@ -2643,13 +2643,13 @@ function generateAllPossibleCustomDirectives() {
             vm.rootScope = $rootScope;
             vm.scope = $scope;
         },
-        templateUrl: `${ cdnUrl }/html/prm-loan-after.html`,
+        templateUrl : `${ cdnUrl }/html/prm-loan-after.html`,
     } );
 
     // PRM-LOANS-AFTER
     app.component( 'prmLoansAfter', {
-        bindings  : { parentCtrl: '<' },
-        controller: function( $scope, $rootScope ) {
+        bindings   : { parentCtrl : '<' },
+        controller : function( $scope, $rootScope ) {
             const vm = this;
 
             vm.getPnx = () => {
@@ -2665,13 +2665,13 @@ function generateAllPossibleCustomDirectives() {
             vm.rootScope = $rootScope;
             vm.scope = $scope;
         },
-        templateUrl: `${ cdnUrl }/html/prm-loans-after.html`,
+        templateUrl : `${ cdnUrl }/html/prm-loans-after.html`,
     } );
 
     // PRM-LOANS-OVERVIEW-AFTER
     app.component( 'prmLoansOverviewAfter', {
-        bindings  : { parentCtrl: '<' },
-        controller: function( $scope, $rootScope ) {
+        bindings   : { parentCtrl : '<' },
+        controller : function( $scope, $rootScope ) {
             const vm = this;
 
             vm.getPnx = () => {
@@ -2687,13 +2687,13 @@ function generateAllPossibleCustomDirectives() {
             vm.rootScope = $rootScope;
             vm.scope = $scope;
         },
-        templateUrl: `${ cdnUrl }/html/prm-loans-overview-after.html`,
+        templateUrl : `${ cdnUrl }/html/prm-loans-overview-after.html`,
     } );
 
     // PRM-LOCATION-AFTER
     app.component( 'prmLocationAfter', {
-        bindings  : { parentCtrl: '<' },
-        controller: function( $scope, $rootScope ) {
+        bindings   : { parentCtrl : '<' },
+        controller : function( $scope, $rootScope ) {
             const vm = this;
 
             vm.getPnx = () => {
@@ -2709,13 +2709,13 @@ function generateAllPossibleCustomDirectives() {
             vm.rootScope = $rootScope;
             vm.scope = $scope;
         },
-        templateUrl: `${ cdnUrl }/html/prm-location-after.html`,
+        templateUrl : `${ cdnUrl }/html/prm-location-after.html`,
     } );
 
     // PRM-LOCATION-HOLDINGS-AFTER
     app.component( 'prmLocationHoldingsAfter', {
-        bindings  : { parentCtrl: '<' },
-        controller: function( $scope, $rootScope ) {
+        bindings   : { parentCtrl : '<' },
+        controller : function( $scope, $rootScope ) {
             const vm = this;
 
             vm.getPnx = () => {
@@ -2731,13 +2731,13 @@ function generateAllPossibleCustomDirectives() {
             vm.rootScope = $rootScope;
             vm.scope = $scope;
         },
-        templateUrl: `${ cdnUrl }/html/prm-location-holdings-after.html`,
+        templateUrl : `${ cdnUrl }/html/prm-location-holdings-after.html`,
     } );
 
     // PRM-LOCATION-ITEM-AFTER
     app.component( 'prmLocationItemAfter', {
-        bindings  : { parentCtrl: '<' },
-        controller: function( $scope, $rootScope ) {
+        bindings   : { parentCtrl : '<' },
+        controller : function( $scope, $rootScope ) {
             const vm = this;
 
             vm.getPnx = () => {
@@ -2753,13 +2753,13 @@ function generateAllPossibleCustomDirectives() {
             vm.rootScope = $rootScope;
             vm.scope = $scope;
         },
-        templateUrl: `${ cdnUrl }/html/prm-location-item-after.html`,
+        templateUrl : `${ cdnUrl }/html/prm-location-item-after.html`,
     } );
 
     // PRM-LOCATION-ITEMS-AFTER
     app.component( 'prmLocationItemsAfter', {
-        bindings  : { parentCtrl: '<' },
-        controller: function( $scope, $rootScope ) {
+        bindings   : { parentCtrl : '<' },
+        controller : function( $scope, $rootScope ) {
             const vm = this;
 
             vm.getPnx = () => {
@@ -2775,13 +2775,13 @@ function generateAllPossibleCustomDirectives() {
             vm.rootScope = $rootScope;
             vm.scope = $scope;
         },
-        templateUrl: `${ cdnUrl }/html/prm-location-items-after.html`,
+        templateUrl : `${ cdnUrl }/html/prm-location-items-after.html`,
     } );
 
     // PRM-LOCATIONS-AFTER
     app.component( 'prmLocationsAfter', {
-        bindings  : { parentCtrl: '<' },
-        controller: function( $scope, $rootScope ) {
+        bindings   : { parentCtrl : '<' },
+        controller : function( $scope, $rootScope ) {
             const vm = this;
 
             vm.getPnx = () => {
@@ -2797,13 +2797,13 @@ function generateAllPossibleCustomDirectives() {
             vm.rootScope = $rootScope;
             vm.scope = $scope;
         },
-        templateUrl: `${ cdnUrl }/html/prm-locations-after.html`,
+        templateUrl : `${ cdnUrl }/html/prm-locations-after.html`,
     } );
 
     // PRM-LOGIN-AFTER
     app.component( 'prmLoginAfter', {
-        bindings  : { parentCtrl: '<' },
-        controller: function( $scope, $rootScope ) {
+        bindings   : { parentCtrl : '<' },
+        controller : function( $scope, $rootScope ) {
             const vm = this;
 
             vm.getPnx = () => {
@@ -2819,13 +2819,13 @@ function generateAllPossibleCustomDirectives() {
             vm.rootScope = $rootScope;
             vm.scope = $scope;
         },
-        templateUrl: `${ cdnUrl }/html/prm-login-after.html`,
+        templateUrl : `${ cdnUrl }/html/prm-login-after.html`,
     } );
 
     // PRM-LOGIN-ALMA-MASHUP-AFTER
     app.component( 'prmLoginAlmaMashupAfter', {
-        bindings  : { parentCtrl: '<' },
-        controller: function( $scope, $rootScope ) {
+        bindings   : { parentCtrl : '<' },
+        controller : function( $scope, $rootScope ) {
             const vm = this;
 
             vm.getPnx = () => {
@@ -2841,13 +2841,13 @@ function generateAllPossibleCustomDirectives() {
             vm.rootScope = $rootScope;
             vm.scope = $scope;
         },
-        templateUrl: `${ cdnUrl }/html/prm-login-alma-mashup-after.html`,
+        templateUrl : `${ cdnUrl }/html/prm-login-alma-mashup-after.html`,
     } );
 
     // PRM-LOGIN-HELP-AFTER
     app.component( 'prmLoginHelpAfter', {
-        bindings  : { parentCtrl: '<' },
-        controller: function( $scope, $rootScope ) {
+        bindings   : { parentCtrl : '<' },
+        controller : function( $scope, $rootScope ) {
             const vm = this;
 
             vm.getPnx = () => {
@@ -2863,13 +2863,13 @@ function generateAllPossibleCustomDirectives() {
             vm.rootScope = $rootScope;
             vm.scope = $scope;
         },
-        templateUrl: `${ cdnUrl }/html/prm-login-help-after.html`,
+        templateUrl : `${ cdnUrl }/html/prm-login-help-after.html`,
     } );
 
     // PRM-LOGIN-IFRAME-AFTER
     app.component( 'prmLoginIframeAfter', {
-        bindings  : { parentCtrl: '<' },
-        controller: function( $scope, $rootScope ) {
+        bindings   : { parentCtrl : '<' },
+        controller : function( $scope, $rootScope ) {
             const vm = this;
 
             vm.getPnx = () => {
@@ -2885,13 +2885,13 @@ function generateAllPossibleCustomDirectives() {
             vm.rootScope = $rootScope;
             vm.scope = $scope;
         },
-        templateUrl: `${ cdnUrl }/html/prm-login-iframe-after.html`,
+        templateUrl : `${ cdnUrl }/html/prm-login-iframe-after.html`,
     } );
 
     // PRM-LOGIN-ITEM-AFTER
     app.component( 'prmLoginItemAfter', {
-        bindings  : { parentCtrl: '<' },
-        controller: function( $scope, $rootScope ) {
+        bindings   : { parentCtrl : '<' },
+        controller : function( $scope, $rootScope ) {
             const vm = this;
 
             vm.getPnx = () => {
@@ -2907,13 +2907,13 @@ function generateAllPossibleCustomDirectives() {
             vm.rootScope = $rootScope;
             vm.scope = $scope;
         },
-        templateUrl: `${ cdnUrl }/html/prm-login-item-after.html`,
+        templateUrl : `${ cdnUrl }/html/prm-login-item-after.html`,
     } );
 
     // PRM-LOGO-AFTER
     app.component( 'prmLogoAfter', {
-        bindings  : { parentCtrl: '<' },
-        controller: function( $scope, $rootScope ) {
+        bindings   : { parentCtrl : '<' },
+        controller : function( $scope, $rootScope ) {
             const vm = this;
 
             vm.getPnx = () => {
@@ -2929,13 +2929,13 @@ function generateAllPossibleCustomDirectives() {
             vm.rootScope = $rootScope;
             vm.scope = $scope;
         },
-        templateUrl: `${ cdnUrl }/html/prm-logo-after.html`,
+        templateUrl : `${ cdnUrl }/html/prm-logo-after.html`,
     } );
 
     // PRM-MAIN-MENU-AFTER
     app.component( 'prmMainMenuAfter', {
-        bindings  : { parentCtrl: '<' },
-        controller: function( $scope, $rootScope ) {
+        bindings   : { parentCtrl : '<' },
+        controller : function( $scope, $rootScope ) {
             const vm = this;
 
             vm.getPnx = () => {
@@ -2951,13 +2951,13 @@ function generateAllPossibleCustomDirectives() {
             vm.rootScope = $rootScope;
             vm.scope = $scope;
         },
-        templateUrl: `${ cdnUrl }/html/prm-main-menu-after.html`,
+        templateUrl : `${ cdnUrl }/html/prm-main-menu-after.html`,
     } );
 
     // PRM-MENDELEY-AFTER
     app.component( 'prmMendeleyAfter', {
-        bindings  : { parentCtrl: '<' },
-        controller: function( $scope, $rootScope ) {
+        bindings   : { parentCtrl : '<' },
+        controller : function( $scope, $rootScope ) {
             const vm = this;
 
             vm.getPnx = () => {
@@ -2973,13 +2973,13 @@ function generateAllPossibleCustomDirectives() {
             vm.rootScope = $rootScope;
             vm.scope = $scope;
         },
-        templateUrl: `${ cdnUrl }/html/prm-mendeley-after.html`,
+        templateUrl : `${ cdnUrl }/html/prm-mendeley-after.html`,
     } );
 
     // PRM-MENDELEY-TOAST-AFTER
     app.component( 'prmMendeleyToastAfter', {
-        bindings  : { parentCtrl: '<' },
-        controller: function( $scope, $rootScope ) {
+        bindings   : { parentCtrl : '<' },
+        controller : function( $scope, $rootScope ) {
             const vm = this;
 
             vm.getPnx = () => {
@@ -2995,13 +2995,13 @@ function generateAllPossibleCustomDirectives() {
             vm.rootScope = $rootScope;
             vm.scope = $scope;
         },
-        templateUrl: `${ cdnUrl }/html/prm-mendeley-toast-after.html`,
+        templateUrl : `${ cdnUrl }/html/prm-mendeley-toast-after.html`,
     } );
 
     // PRM-MESSAGES-AND-BLOCKS-AFTER
     app.component( 'prmMessagesAndBlocksAfter', {
-        bindings  : { parentCtrl: '<' },
-        controller: function( $scope, $rootScope ) {
+        bindings   : { parentCtrl : '<' },
+        controller : function( $scope, $rootScope ) {
             const vm = this;
 
             vm.getPnx = () => {
@@ -3017,13 +3017,13 @@ function generateAllPossibleCustomDirectives() {
             vm.rootScope = $rootScope;
             vm.scope = $scope;
         },
-        templateUrl: `${ cdnUrl }/html/prm-messages-and-blocks-after.html`,
+        templateUrl : `${ cdnUrl }/html/prm-messages-and-blocks-after.html`,
     } );
 
     // PRM-MESSAGES-AND-BLOCKS-OVERVIEW-AFTER
     app.component( 'prmMessagesAndBlocksOverviewAfter', {
-        bindings  : { parentCtrl: '<' },
-        controller: function( $scope, $rootScope ) {
+        bindings   : { parentCtrl : '<' },
+        controller : function( $scope, $rootScope ) {
             const vm = this;
 
             vm.getPnx = () => {
@@ -3039,13 +3039,13 @@ function generateAllPossibleCustomDirectives() {
             vm.rootScope = $rootScope;
             vm.scope = $scope;
         },
-        templateUrl: `${ cdnUrl }/html/prm-messages-and-blocks-overview-after.html`,
+        templateUrl : `${ cdnUrl }/html/prm-messages-and-blocks-overview-after.html`,
     } );
 
     // PRM-MORE-LIKE-THIS-AFTER
     app.component( 'prmMoreLikeThisAfter', {
-        bindings  : { parentCtrl: '<' },
-        controller: function( $scope, $rootScope ) {
+        bindings   : { parentCtrl : '<' },
+        controller : function( $scope, $rootScope ) {
             const vm = this;
 
             vm.getPnx = () => {
@@ -3061,13 +3061,13 @@ function generateAllPossibleCustomDirectives() {
             vm.rootScope = $rootScope;
             vm.scope = $scope;
         },
-        templateUrl: `${ cdnUrl }/html/prm-more-like-this-after.html`,
+        templateUrl : `${ cdnUrl }/html/prm-more-like-this-after.html`,
     } );
 
     // PRM-MORE-LIKE-THIS-ITEM-AFTER
     app.component( 'prmMoreLikeThisItemAfter', {
-        bindings  : { parentCtrl: '<' },
-        controller: function( $scope, $rootScope ) {
+        bindings   : { parentCtrl : '<' },
+        controller : function( $scope, $rootScope ) {
             const vm = this;
 
             vm.getPnx = () => {
@@ -3083,13 +3083,13 @@ function generateAllPossibleCustomDirectives() {
             vm.rootScope = $rootScope;
             vm.scope = $scope;
         },
-        templateUrl: `${ cdnUrl }/html/prm-more-like-this-item-after.html`,
+        templateUrl : `${ cdnUrl }/html/prm-more-like-this-item-after.html`,
     } );
 
     // PRM-MORE-LIKE-THIS-ITEM-INFO-AFTER
     app.component( 'prmMoreLikeThisItemInfoAfter', {
-        bindings  : { parentCtrl: '<' },
-        controller: function( $scope, $rootScope ) {
+        bindings   : { parentCtrl : '<' },
+        controller : function( $scope, $rootScope ) {
             const vm = this;
 
             vm.getPnx = () => {
@@ -3105,13 +3105,13 @@ function generateAllPossibleCustomDirectives() {
             vm.rootScope = $rootScope;
             vm.scope = $scope;
         },
-        templateUrl: `${ cdnUrl }/html/prm-more-like-this-item-info-after.html`,
+        templateUrl : `${ cdnUrl }/html/prm-more-like-this-item-info-after.html`,
     } );
 
     // PRM-MULTI-SELECT-FILTER-AFTER
     app.component( 'prmMultiSelectFilterAfter', {
-        bindings  : { parentCtrl: '<' },
-        controller: function( $scope, $rootScope ) {
+        bindings   : { parentCtrl : '<' },
+        controller : function( $scope, $rootScope ) {
             const vm = this;
 
             vm.getPnx = () => {
@@ -3127,13 +3127,13 @@ function generateAllPossibleCustomDirectives() {
             vm.rootScope = $rootScope;
             vm.scope = $scope;
         },
-        templateUrl: `${ cdnUrl }/html/prm-multi-select-filter-after.html`,
+        templateUrl : `${ cdnUrl }/html/prm-multi-select-filter-after.html`,
     } );
 
     // PRM-NEWSPAPERS-FACET-AFTER
     app.component( 'prmNewspapersFacetAfter', {
-        bindings  : { parentCtrl: '<' },
-        controller: function( $scope, $rootScope ) {
+        bindings   : { parentCtrl : '<' },
+        controller : function( $scope, $rootScope ) {
             const vm = this;
 
             vm.getPnx = () => {
@@ -3149,13 +3149,13 @@ function generateAllPossibleCustomDirectives() {
             vm.rootScope = $rootScope;
             vm.scope = $scope;
         },
-        templateUrl: `${ cdnUrl }/html/prm-newspapers-facet-after.html`,
+        templateUrl : `${ cdnUrl }/html/prm-newspapers-facet-after.html`,
     } );
 
     // PRM-NEWSPAPERS-FULL-VIEW-AFTER
     app.component( 'prmNewspapersFullViewAfter', {
-        bindings  : { parentCtrl: '<' },
-        controller: function( $scope, $rootScope ) {
+        bindings   : { parentCtrl : '<' },
+        controller : function( $scope, $rootScope ) {
             const vm = this;
 
             vm.getPnx = () => {
@@ -3171,13 +3171,13 @@ function generateAllPossibleCustomDirectives() {
             vm.rootScope = $rootScope;
             vm.scope = $scope;
         },
-        templateUrl: `${ cdnUrl }/html/prm-newspapers-full-view-after.html`,
+        templateUrl : `${ cdnUrl }/html/prm-newspapers-full-view-after.html`,
     } );
 
     // PRM-NEWSPAPERS-HOME-AFTER
     app.component( 'prmNewspapersHomeAfter', {
-        bindings  : { parentCtrl: '<' },
-        controller: function( $scope, $rootScope ) {
+        bindings   : { parentCtrl : '<' },
+        controller : function( $scope, $rootScope ) {
             const vm = this;
 
             vm.getPnx = () => {
@@ -3193,13 +3193,13 @@ function generateAllPossibleCustomDirectives() {
             vm.rootScope = $rootScope;
             vm.scope = $scope;
         },
-        templateUrl: `${ cdnUrl }/html/prm-newspapers-home-after.html`,
+        templateUrl : `${ cdnUrl }/html/prm-newspapers-home-after.html`,
     } );
 
     // PRM-NEWSPAPERS-SEARCH-BAR-AFTER
     app.component( 'prmNewspapersSearchBarAfter', {
-        bindings  : { parentCtrl: '<' },
-        controller: function( $scope, $rootScope ) {
+        bindings   : { parentCtrl : '<' },
+        controller : function( $scope, $rootScope ) {
             const vm = this;
 
             vm.getPnx = () => {
@@ -3215,13 +3215,13 @@ function generateAllPossibleCustomDirectives() {
             vm.rootScope = $rootScope;
             vm.scope = $scope;
         },
-        templateUrl: `${ cdnUrl }/html/prm-newspapers-search-bar-after.html`,
+        templateUrl : `${ cdnUrl }/html/prm-newspapers-search-bar-after.html`,
     } );
 
     // PRM-NEWSPAPERS-SPOTLIGHT-AFTER
     app.component( 'prmNewspapersSpotlightAfter', {
-        bindings  : { parentCtrl: '<' },
-        controller: function( $scope, $rootScope ) {
+        bindings   : { parentCtrl : '<' },
+        controller : function( $scope, $rootScope ) {
             const vm = this;
 
             vm.getPnx = () => {
@@ -3237,13 +3237,13 @@ function generateAllPossibleCustomDirectives() {
             vm.rootScope = $rootScope;
             vm.scope = $scope;
         },
-        templateUrl: `${ cdnUrl }/html/prm-newspapers-spotlight-after.html`,
+        templateUrl : `${ cdnUrl }/html/prm-newspapers-spotlight-after.html`,
     } );
 
     // PRM-NGRS-BRIEF-RESULT-LINE-AFTER
     app.component( 'prmNgrsBriefResultLineAfter', {
-        bindings  : { parentCtrl: '<' },
-        controller: function( $scope, $rootScope ) {
+        bindings   : { parentCtrl : '<' },
+        controller : function( $scope, $rootScope ) {
             const vm = this;
 
             vm.getPnx = () => {
@@ -3259,13 +3259,13 @@ function generateAllPossibleCustomDirectives() {
             vm.rootScope = $rootScope;
             vm.scope = $scope;
         },
-        templateUrl: `${ cdnUrl }/html/prm-ngrs-brief-result-Line-after.html`,
+        templateUrl : `${ cdnUrl }/html/prm-ngrs-brief-result-Line-after.html`,
     } );
 
     // PRM-NGRS-RESULTS-BUTTON-AFTER
     app.component( 'prmNgrsResultsButtonAfter', {
-        bindings  : { parentCtrl: '<' },
-        controller: function( $scope, $rootScope ) {
+        bindings   : { parentCtrl : '<' },
+        controller : function( $scope, $rootScope ) {
             const vm = this;
 
             vm.getPnx = () => {
@@ -3281,13 +3281,13 @@ function generateAllPossibleCustomDirectives() {
             vm.rootScope = $rootScope;
             vm.scope = $scope;
         },
-        templateUrl: `${ cdnUrl }/html/prm-ngrs-results-button-after.html`,
+        templateUrl : `${ cdnUrl }/html/prm-ngrs-results-button-after.html`,
     } );
 
     // PRM-NO-SEARCH-RESULT-AFTER
     app.component( 'prmNoSearchResultAfter', {
-        bindings  : { parentCtrl: '<' },
-        controller: function( $scope, $rootScope ) {
+        bindings   : { parentCtrl : '<' },
+        controller : function( $scope, $rootScope ) {
             const vm = this;
 
             vm.getPnx = () => {
@@ -3303,13 +3303,13 @@ function generateAllPossibleCustomDirectives() {
             vm.rootScope = $rootScope;
             vm.scope = $scope;
         },
-        templateUrl: `${ cdnUrl }/html/prm-no-search-result-after.html`,
+        templateUrl : `${ cdnUrl }/html/prm-no-search-result-after.html`,
     } );
 
     // PRM-OFFER-DETAILS-TILE-AFTER
     app.component( 'prmOfferDetailsTileAfter', {
-        bindings  : { parentCtrl: '<' },
-        controller: function( $scope, $rootScope ) {
+        bindings   : { parentCtrl : '<' },
+        controller : function( $scope, $rootScope ) {
             const vm = this;
 
             vm.getPnx = () => {
@@ -3325,13 +3325,13 @@ function generateAllPossibleCustomDirectives() {
             vm.rootScope = $rootScope;
             vm.scope = $scope;
         },
-        templateUrl: `${ cdnUrl }/html/prm-offer-details-tile-after.html`,
+        templateUrl : `${ cdnUrl }/html/prm-offer-details-tile-after.html`,
     } );
 
     // PRM-OPAC-AFTER
     app.component( 'prmOpacAfter', {
-        bindings  : { parentCtrl: '<' },
-        controller: function( $scope, $rootScope ) {
+        bindings   : { parentCtrl : '<' },
+        controller : function( $scope, $rootScope ) {
             const vm = this;
 
             vm.getPnx = () => {
@@ -3347,13 +3347,13 @@ function generateAllPossibleCustomDirectives() {
             vm.rootScope = $rootScope;
             vm.scope = $scope;
         },
-        templateUrl: `${ cdnUrl }/html/prm-opac-after.html`,
+        templateUrl : `${ cdnUrl }/html/prm-opac-after.html`,
     } );
 
     // PRM-OPAC-BACK-BUTTON-AFTER
     app.component( 'prmOpacBackButtonAfter', {
-        bindings  : { parentCtrl: '<' },
-        controller: function( $scope, $rootScope ) {
+        bindings   : { parentCtrl : '<' },
+        controller : function( $scope, $rootScope ) {
             const vm = this;
 
             vm.getPnx = () => {
@@ -3369,13 +3369,13 @@ function generateAllPossibleCustomDirectives() {
             vm.rootScope = $rootScope;
             vm.scope = $scope;
         },
-        templateUrl: `${ cdnUrl }/html/prm-opac-back-button-after.html`,
+        templateUrl : `${ cdnUrl }/html/prm-opac-back-button-after.html`,
     } );
 
     // PRM-ORGANIZATION-OR-FACET-TOGGLE-AFTER
     app.component( 'prmOrganizationOrFacetToggleAfter', {
-        bindings  : { parentCtrl: '<' },
-        controller: function( $scope, $rootScope ) {
+        bindings   : { parentCtrl : '<' },
+        controller : function( $scope, $rootScope ) {
             const vm = this;
 
             vm.getPnx = () => {
@@ -3391,13 +3391,13 @@ function generateAllPossibleCustomDirectives() {
             vm.rootScope = $rootScope;
             vm.scope = $scope;
         },
-        templateUrl: `${ cdnUrl }/html/prm-organization-or-facet-toggle-after.html`,
+        templateUrl : `${ cdnUrl }/html/prm-organization-or-facet-toggle-after.html`,
     } );
 
     // PRM-ORGANIZATIONS-AFTER
     app.component( 'prmOrganizationsAfter', {
-        bindings  : { parentCtrl: '<' },
-        controller: function( $scope, $rootScope ) {
+        bindings   : { parentCtrl : '<' },
+        controller : function( $scope, $rootScope ) {
             const vm = this;
 
             vm.getPnx = () => {
@@ -3413,13 +3413,13 @@ function generateAllPossibleCustomDirectives() {
             vm.rootScope = $rootScope;
             vm.scope = $scope;
         },
-        templateUrl: `${ cdnUrl }/html/prm-organizations-after.html`,
+        templateUrl : `${ cdnUrl }/html/prm-organizations-after.html`,
     } );
 
     // PRM-ORGLIST-CATEGORIZE-AFTER
     app.component( 'prmOrglistCategorizeAfter', {
-        bindings  : { parentCtrl: '<' },
-        controller: function( $scope, $rootScope ) {
+        bindings   : { parentCtrl : '<' },
+        controller : function( $scope, $rootScope ) {
             const vm = this;
 
             vm.getPnx = () => {
@@ -3435,13 +3435,13 @@ function generateAllPossibleCustomDirectives() {
             vm.rootScope = $rootScope;
             vm.scope = $scope;
         },
-        templateUrl: `${ cdnUrl }/html/prm-orglist-categorize-after.html`,
+        templateUrl : `${ cdnUrl }/html/prm-orglist-categorize-after.html`,
     } );
 
     // PRM-PAGE-NAV-MENU-AFTER
     app.component( 'prmPageNavMenuAfter', {
-        bindings  : { parentCtrl: '<' },
-        controller: function( $scope, $rootScope ) {
+        bindings   : { parentCtrl : '<' },
+        controller : function( $scope, $rootScope ) {
             const vm = this;
 
             vm.getPnx = () => {
@@ -3457,13 +3457,13 @@ function generateAllPossibleCustomDirectives() {
             vm.rootScope = $rootScope;
             vm.scope = $scope;
         },
-        templateUrl: `${ cdnUrl }/html/prm-page-nav-menu-after.html`,
+        templateUrl : `${ cdnUrl }/html/prm-page-nav-menu-after.html`,
     } );
 
     // PRM-PAGING-BAR-AFTER
     app.component( 'prmPagingBarAfter', {
-        bindings  : { parentCtrl: '<' },
-        controller: function( $scope, $rootScope ) {
+        bindings   : { parentCtrl : '<' },
+        controller : function( $scope, $rootScope ) {
             const vm = this;
 
             vm.getPnx = () => {
@@ -3479,13 +3479,13 @@ function generateAllPossibleCustomDirectives() {
             vm.rootScope = $rootScope;
             vm.scope = $scope;
         },
-        templateUrl: `${ cdnUrl }/html/prm-paging-bar-after.html`,
+        templateUrl : `${ cdnUrl }/html/prm-paging-bar-after.html`,
     } );
 
     // PRM-PDF-VIEWER-AFTER
     app.component( 'prmPdfViewerAfter', {
-        bindings  : { parentCtrl: '<' },
-        controller: function( $scope, $rootScope ) {
+        bindings   : { parentCtrl : '<' },
+        controller : function( $scope, $rootScope ) {
             const vm = this;
 
             vm.getPnx = () => {
@@ -3501,13 +3501,13 @@ function generateAllPossibleCustomDirectives() {
             vm.rootScope = $rootScope;
             vm.scope = $scope;
         },
-        templateUrl: `${ cdnUrl }/html/prm-pdf-viewer-after.html`,
+        templateUrl : `${ cdnUrl }/html/prm-pdf-viewer-after.html`,
     } );
 
     // PRM-PERFORMANCE-MONITOR-AFTER
     app.component( 'prmPerformanceMonitorAfter', {
-        bindings  : { parentCtrl: '<' },
-        controller: function( $scope, $rootScope ) {
+        bindings   : { parentCtrl : '<' },
+        controller : function( $scope, $rootScope ) {
             const vm = this;
 
             vm.getPnx = () => {
@@ -3523,13 +3523,13 @@ function generateAllPossibleCustomDirectives() {
             vm.rootScope = $rootScope;
             vm.scope = $scope;
         },
-        templateUrl: `${ cdnUrl }/html/prm-performance-monitor-after.html`,
+        templateUrl : `${ cdnUrl }/html/prm-performance-monitor-after.html`,
     } );
 
     // PRM-PERMALINK-AFTER
     app.component( 'prmPermalinkAfter', {
-        bindings  : { parentCtrl: '<' },
-        controller: function( $scope, $rootScope ) {
+        bindings   : { parentCtrl : '<' },
+        controller : function( $scope, $rootScope ) {
             const vm = this;
 
             vm.getPnx = () => {
@@ -3545,13 +3545,13 @@ function generateAllPossibleCustomDirectives() {
             vm.rootScope = $rootScope;
             vm.scope = $scope;
         },
-        templateUrl: `${ cdnUrl }/html/prm-permalink-after.html`,
+        templateUrl : `${ cdnUrl }/html/prm-permalink-after.html`,
     } );
 
     // PRM-PERSONAL-INFO-AFTER
     app.component( 'prmPersonalInfoAfter', {
-        bindings  : { parentCtrl: '<' },
-        controller: function( $scope, $rootScope ) {
+        bindings   : { parentCtrl : '<' },
+        controller : function( $scope, $rootScope ) {
             const vm = this;
 
             vm.getPnx = () => {
@@ -3567,13 +3567,13 @@ function generateAllPossibleCustomDirectives() {
             vm.rootScope = $rootScope;
             vm.scope = $scope;
         },
-        templateUrl: `${ cdnUrl }/html/prm-personal-info-after.html`,
+        templateUrl : `${ cdnUrl }/html/prm-personal-info-after.html`,
     } );
 
     // PRM-PERSONAL-SETTINGS-AFTER
     app.component( 'prmPersonalSettingsAfter', {
-        bindings  : { parentCtrl: '<' },
-        controller: function( $scope, $rootScope ) {
+        bindings   : { parentCtrl : '<' },
+        controller : function( $scope, $rootScope ) {
             const vm = this;
 
             vm.getPnx = () => {
@@ -3589,13 +3589,13 @@ function generateAllPossibleCustomDirectives() {
             vm.rootScope = $rootScope;
             vm.scope = $scope;
         },
-        templateUrl: `${ cdnUrl }/html/prm-personal-settings-after.html`,
+        templateUrl : `${ cdnUrl }/html/prm-personal-settings-after.html`,
     } );
 
     // PRM-PERSONALIZATION-DIALOG-AFTER
     app.component( 'prmPersonalizationDialogAfter', {
-        bindings  : { parentCtrl: '<' },
-        controller: function( $scope, $rootScope ) {
+        bindings   : { parentCtrl : '<' },
+        controller : function( $scope, $rootScope ) {
             const vm = this;
 
             vm.getPnx = () => {
@@ -3611,13 +3611,13 @@ function generateAllPossibleCustomDirectives() {
             vm.rootScope = $rootScope;
             vm.scope = $scope;
         },
-        templateUrl: `${ cdnUrl }/html/prm-personalization-dialog-after.html`,
+        templateUrl : `${ cdnUrl }/html/prm-personalization-dialog-after.html`,
     } );
 
     // PRM-PERSONALIZE-RESULTS-BUTTON-AFTER
     app.component( 'prmPersonalizeResultsButtonAfter', {
-        bindings  : { parentCtrl: '<' },
-        controller: function( $scope, $rootScope ) {
+        bindings   : { parentCtrl : '<' },
+        controller : function( $scope, $rootScope ) {
             const vm = this;
 
             vm.getPnx = () => {
@@ -3633,13 +3633,13 @@ function generateAllPossibleCustomDirectives() {
             vm.rootScope = $rootScope;
             vm.scope = $scope;
         },
-        templateUrl: `${ cdnUrl }/html/prm-personalize-results-button-after.html`,
+        templateUrl : `${ cdnUrl }/html/prm-personalize-results-button-after.html`,
     } );
 
     // PRM-PHYSICAL-DELIVERY-MORE-OPTION-ROW-AFTER
     app.component( 'prmPhysicalDeliveryMoreOptionRowAfter', {
-        bindings  : { parentCtrl: '<' },
-        controller: function( $scope, $rootScope ) {
+        bindings   : { parentCtrl : '<' },
+        controller : function( $scope, $rootScope ) {
             const vm = this;
 
             vm.getPnx = () => {
@@ -3655,13 +3655,13 @@ function generateAllPossibleCustomDirectives() {
             vm.rootScope = $rootScope;
             vm.scope = $scope;
         },
-        templateUrl: `${ cdnUrl }/html/prm-physical-delivery-more-option-row-after.html`,
+        templateUrl : `${ cdnUrl }/html/prm-physical-delivery-more-option-row-after.html`,
     } );
 
     // PRM-PHYSICAL-DELIVERY-OPTIONS-AFTER
     app.component( 'prmPhysicalDeliveryOptionsAfter', {
-        bindings  : { parentCtrl: '<' },
-        controller: function( $scope, $rootScope ) {
+        bindings   : { parentCtrl : '<' },
+        controller : function( $scope, $rootScope ) {
             const vm = this;
 
             vm.getPnx = () => {
@@ -3677,13 +3677,13 @@ function generateAllPossibleCustomDirectives() {
             vm.rootScope = $rootScope;
             vm.scope = $scope;
         },
-        templateUrl: `${ cdnUrl }/html/prm-physical-delivery-options-after.html`,
+        templateUrl : `${ cdnUrl }/html/prm-physical-delivery-options-after.html`,
     } );
 
     // PRM-PHYSICAL-DELIVERY-OPTIONS-TABLE-AFTER
     app.component( 'prmPhysicalDeliveryOptionsTableAfter', {
-        bindings  : { parentCtrl: '<' },
-        controller: function( $scope, $rootScope ) {
+        bindings   : { parentCtrl : '<' },
+        controller : function( $scope, $rootScope ) {
             const vm = this;
 
             vm.getPnx = () => {
@@ -3699,13 +3699,13 @@ function generateAllPossibleCustomDirectives() {
             vm.rootScope = $rootScope;
             vm.scope = $scope;
         },
-        templateUrl: `${ cdnUrl }/html/prm-physical-delivery-options-table-after.html`,
+        templateUrl : `${ cdnUrl }/html/prm-physical-delivery-options-table-after.html`,
     } );
 
     // PRM-POPUP-MESSAGE-AFTER
     app.component( 'prmPopupMessageAfter', {
-        bindings  : { parentCtrl: '<' },
-        controller: function( $scope, $rootScope ) {
+        bindings   : { parentCtrl : '<' },
+        controller : function( $scope, $rootScope ) {
             const vm = this;
 
             vm.getPnx = () => {
@@ -3721,13 +3721,13 @@ function generateAllPossibleCustomDirectives() {
             vm.rootScope = $rootScope;
             vm.scope = $scope;
         },
-        templateUrl: `${ cdnUrl }/html/prm-popup-message-after.html`,
+        templateUrl : `${ cdnUrl }/html/prm-popup-message-after.html`,
     } );
 
     // PRM-PRE-FILTERS-AFTER
     app.component( 'prmPreFiltersAfter', {
-        bindings  : { parentCtrl: '<' },
-        controller: function( $scope, $rootScope ) {
+        bindings   : { parentCtrl : '<' },
+        controller : function( $scope, $rootScope ) {
             const vm = this;
 
             vm.getPnx = () => {
@@ -3743,13 +3743,13 @@ function generateAllPossibleCustomDirectives() {
             vm.rootScope = $rootScope;
             vm.scope = $scope;
         },
-        templateUrl: `${ cdnUrl }/html/prm-pre-filters-after.html`,
+        templateUrl : `${ cdnUrl }/html/prm-pre-filters-after.html`,
     } );
 
     // PRM-PRINT-ITEM-AFTER
     app.component( 'prmPrintItemAfter', {
-        bindings  : { parentCtrl: '<' },
-        controller: function( $scope, $rootScope ) {
+        bindings   : { parentCtrl : '<' },
+        controller : function( $scope, $rootScope ) {
             const vm = this;
 
             vm.getPnx = () => {
@@ -3765,13 +3765,13 @@ function generateAllPossibleCustomDirectives() {
             vm.rootScope = $rootScope;
             vm.scope = $scope;
         },
-        templateUrl: `${ cdnUrl }/html/prm-print-item-after.html`,
+        templateUrl : `${ cdnUrl }/html/prm-print-item-after.html`,
     } );
 
     // PRM-PROGRESS-BAR-AFTER
     app.component( 'prmProgressBarAfter', {
-        bindings  : { parentCtrl: '<' },
-        controller: function( $scope, $rootScope ) {
+        bindings   : { parentCtrl : '<' },
+        controller : function( $scope, $rootScope ) {
             const vm = this;
 
             vm.getPnx = () => {
@@ -3787,13 +3787,13 @@ function generateAllPossibleCustomDirectives() {
             vm.rootScope = $rootScope;
             vm.scope = $scope;
         },
-        templateUrl: `${ cdnUrl }/html/prm-progress-bar-after.html`,
+        templateUrl : `${ cdnUrl }/html/prm-progress-bar-after.html`,
     } );
 
     // PRM-PROGRESS-CHECKBOX-AFTER
     app.component( 'prmProgressCheckboxAfter', {
-        bindings  : { parentCtrl: '<' },
-        controller: function( $scope, $rootScope ) {
+        bindings   : { parentCtrl : '<' },
+        controller : function( $scope, $rootScope ) {
             const vm = this;
 
             vm.getPnx = () => {
@@ -3809,13 +3809,13 @@ function generateAllPossibleCustomDirectives() {
             vm.rootScope = $rootScope;
             vm.scope = $scope;
         },
-        templateUrl: `${ cdnUrl }/html/prm-progress-checkbox-after.html`,
+        templateUrl : `${ cdnUrl }/html/prm-progress-checkbox-after.html`,
     } );
 
     // PRM-QR-CODE-AFTER
     app.component( 'prmQrCodeAfter', {
-        bindings  : { parentCtrl: '<' },
-        controller: function( $scope, $rootScope ) {
+        bindings   : { parentCtrl : '<' },
+        controller : function( $scope, $rootScope ) {
             const vm = this;
 
             vm.getPnx = () => {
@@ -3831,13 +3831,13 @@ function generateAllPossibleCustomDirectives() {
             vm.rootScope = $rootScope;
             vm.scope = $scope;
         },
-        templateUrl: `${ cdnUrl }/html/prm-qr-code-after.html`,
+        templateUrl : `${ cdnUrl }/html/prm-qr-code-after.html`,
     } );
 
     // PRM-QUICK-ACCESS-AFTER
     app.component( 'prmQuickAccessAfter', {
-        bindings  : { parentCtrl: '<' },
-        controller: function( $scope, $rootScope ) {
+        bindings   : { parentCtrl : '<' },
+        controller : function( $scope, $rootScope ) {
             const vm = this;
 
             vm.getPnx = () => {
@@ -3853,13 +3853,13 @@ function generateAllPossibleCustomDirectives() {
             vm.rootScope = $rootScope;
             vm.scope = $scope;
         },
-        templateUrl: `${ cdnUrl }/html/prm-quick-access-after.html`,
+        templateUrl : `${ cdnUrl }/html/prm-quick-access-after.html`,
     } );
 
     // PRM-QUICK-LINK-AFTER
     app.component( 'prmQuickLinkAfter', {
-        bindings  : { parentCtrl: '<' },
-        controller: function( $scope, $rootScope ) {
+        bindings   : { parentCtrl : '<' },
+        controller : function( $scope, $rootScope ) {
             const vm = this;
 
             vm.getPnx = () => {
@@ -3875,13 +3875,13 @@ function generateAllPossibleCustomDirectives() {
             vm.rootScope = $rootScope;
             vm.scope = $scope;
         },
-        templateUrl: `${ cdnUrl }/html/prm-quick-link-after.html`,
+        templateUrl : `${ cdnUrl }/html/prm-quick-link-after.html`,
     } );
 
     // PRM-RAPIDO-MESSAGE-BAR-AFTER
     app.component( 'prmRapidoMessageBarAfter', {
-        bindings  : { parentCtrl: '<' },
-        controller: function( $scope, $rootScope ) {
+        bindings   : { parentCtrl : '<' },
+        controller : function( $scope, $rootScope ) {
             const vm = this;
 
             vm.getPnx = () => {
@@ -3897,13 +3897,13 @@ function generateAllPossibleCustomDirectives() {
             vm.rootScope = $rootScope;
             vm.scope = $scope;
         },
-        templateUrl: `${ cdnUrl }/html/prm-rapido-message-bar-after.html`,
+        templateUrl : `${ cdnUrl }/html/prm-rapido-message-bar-after.html`,
     } );
 
     // PRM-RAPIDO-NO-OFFER-MESSAGE-AFTER
     app.component( 'prmRapidoNoOfferMessageAfter', {
-        bindings  : { parentCtrl: '<' },
-        controller: function( $scope, $rootScope ) {
+        bindings   : { parentCtrl : '<' },
+        controller : function( $scope, $rootScope ) {
             const vm = this;
 
             vm.getPnx = () => {
@@ -3919,13 +3919,13 @@ function generateAllPossibleCustomDirectives() {
             vm.rootScope = $rootScope;
             vm.scope = $scope;
         },
-        templateUrl: `${ cdnUrl }/html/prm-rapido-no-offer-message-after.html`,
+        templateUrl : `${ cdnUrl }/html/prm-rapido-no-offer-message-after.html`,
     } );
 
     // PRM-RECOMENDATION-ITEM-AFTER
     app.component( 'prmRecomendationItemAfter', {
-        bindings  : { parentCtrl: '<' },
-        controller: function( $scope, $rootScope ) {
+        bindings   : { parentCtrl : '<' },
+        controller : function( $scope, $rootScope ) {
             const vm = this;
 
             vm.getPnx = () => {
@@ -3941,13 +3941,13 @@ function generateAllPossibleCustomDirectives() {
             vm.rootScope = $rootScope;
             vm.scope = $scope;
         },
-        templateUrl: `${ cdnUrl }/html/prm-recomendation-item-after.html`,
+        templateUrl : `${ cdnUrl }/html/prm-recomendation-item-after.html`,
     } );
 
     // PRM-RECOMENDATIONS-AFTER
     app.component( 'prmRecomendationsAfter', {
-        bindings  : { parentCtrl: '<' },
-        controller: function( $scope, $rootScope ) {
+        bindings   : { parentCtrl : '<' },
+        controller : function( $scope, $rootScope ) {
             const vm = this;
 
             vm.getPnx = () => {
@@ -3963,13 +3963,13 @@ function generateAllPossibleCustomDirectives() {
             vm.rootScope = $rootScope;
             vm.scope = $scope;
         },
-        templateUrl: `${ cdnUrl }/html/prm-recomendations-after.html`,
+        templateUrl : `${ cdnUrl }/html/prm-recomendations-after.html`,
     } );
 
     // PRM-RECORD-COLLECTION-PATHS-AFTER
     app.component( 'prmRecordCollectionPathsAfter', {
-        bindings  : { parentCtrl: '<' },
-        controller: function( $scope, $rootScope ) {
+        bindings   : { parentCtrl : '<' },
+        controller : function( $scope, $rootScope ) {
             const vm = this;
 
             vm.getPnx = () => {
@@ -3985,13 +3985,13 @@ function generateAllPossibleCustomDirectives() {
             vm.rootScope = $rootScope;
             vm.scope = $scope;
         },
-        templateUrl: `${ cdnUrl }/html/prm-record-collection-paths-after.html`,
+        templateUrl : `${ cdnUrl }/html/prm-record-collection-paths-after.html`,
     } );
 
     // PRM-REFERENCE-ENTRY-ITEM-AFTER
     app.component( 'prmReferenceEntryItemAfter', {
-        bindings  : { parentCtrl: '<' },
-        controller: function( $scope, $rootScope ) {
+        bindings   : { parentCtrl : '<' },
+        controller : function( $scope, $rootScope ) {
             const vm = this;
 
             vm.getPnx = () => {
@@ -4007,13 +4007,13 @@ function generateAllPossibleCustomDirectives() {
             vm.rootScope = $rootScope;
             vm.scope = $scope;
         },
-        templateUrl: `${ cdnUrl }/html/prm-reference-entry-item-after.html`,
+        templateUrl : `${ cdnUrl }/html/prm-reference-entry-item-after.html`,
     } );
 
     // PRM-REFWORKS-AFTER
     app.component( 'prmRefworksAfter', {
-        bindings  : { parentCtrl: '<' },
-        controller: function( $scope, $rootScope ) {
+        bindings   : { parentCtrl : '<' },
+        controller : function( $scope, $rootScope ) {
             const vm = this;
 
             vm.getPnx = () => {
@@ -4029,13 +4029,13 @@ function generateAllPossibleCustomDirectives() {
             vm.rootScope = $rootScope;
             vm.scope = $scope;
         },
-        templateUrl: `${ cdnUrl }/html/prm-refworks-after.html`,
+        templateUrl : `${ cdnUrl }/html/prm-refworks-after.html`,
     } );
 
     // PRM-REPORT-PROBLEM-AFTER
     app.component( 'prmReportProblemAfter', {
-        bindings  : { parentCtrl: '<' },
-        controller: function( $scope, $rootScope ) {
+        bindings   : { parentCtrl : '<' },
+        controller : function( $scope, $rootScope ) {
             const vm = this;
 
             vm.getPnx = () => {
@@ -4051,13 +4051,13 @@ function generateAllPossibleCustomDirectives() {
             vm.rootScope = $rootScope;
             vm.scope = $scope;
         },
-        templateUrl: `${ cdnUrl }/html/prm-report-problem-after.html`,
+        templateUrl : `${ cdnUrl }/html/prm-report-problem-after.html`,
     } );
 
     // PRM-REQUEST-AFTER
     app.component( 'prmRequestAfter', {
-        bindings  : { parentCtrl: '<' },
-        controller: function( $scope, $rootScope ) {
+        bindings   : { parentCtrl : '<' },
+        controller : function( $scope, $rootScope ) {
             const vm = this;
 
             vm.getPnx = () => {
@@ -4073,13 +4073,13 @@ function generateAllPossibleCustomDirectives() {
             vm.rootScope = $rootScope;
             vm.scope = $scope;
         },
-        templateUrl: `${ cdnUrl }/html/prm-request-after.html`,
+        templateUrl : `${ cdnUrl }/html/prm-request-after.html`,
     } );
 
     // PRM-REQUEST-APPROVAL-AFTER
     app.component( 'prmRequestApprovalAfter', {
-        bindings  : { parentCtrl: '<' },
-        controller: function( $scope, $rootScope ) {
+        bindings   : { parentCtrl : '<' },
+        controller : function( $scope, $rootScope ) {
             const vm = this;
 
             vm.getPnx = () => {
@@ -4095,13 +4095,13 @@ function generateAllPossibleCustomDirectives() {
             vm.rootScope = $rootScope;
             vm.scope = $scope;
         },
-        templateUrl: `${ cdnUrl }/html/prm-request-approval-after.html`,
+        templateUrl : `${ cdnUrl }/html/prm-request-approval-after.html`,
     } );
 
     // PRM-REQUEST-SERVICES-AFTER
     app.component( 'prmRequestServicesAfter', {
-        bindings  : { parentCtrl: '<' },
-        controller: function( $scope, $rootScope ) {
+        bindings   : { parentCtrl : '<' },
+        controller : function( $scope, $rootScope ) {
             const vm = this;
 
             vm.getPnx = () => {
@@ -4117,13 +4117,13 @@ function generateAllPossibleCustomDirectives() {
             vm.rootScope = $rootScope;
             vm.scope = $scope;
         },
-        templateUrl: `${ cdnUrl }/html/prm-request-services-after.html`,
+        templateUrl : `${ cdnUrl }/html/prm-request-services-after.html`,
     } );
 
     // PRM-REQUESTS-AFTER
     app.component( 'prmRequestsAfter', {
-        bindings  : { parentCtrl: '<' },
-        controller: function( $scope, $rootScope ) {
+        bindings   : { parentCtrl : '<' },
+        controller : function( $scope, $rootScope ) {
             const vm = this;
 
             vm.getPnx = () => {
@@ -4139,13 +4139,13 @@ function generateAllPossibleCustomDirectives() {
             vm.rootScope = $rootScope;
             vm.scope = $scope;
         },
-        templateUrl: `${ cdnUrl }/html/prm-requests-after.html`,
+        templateUrl : `${ cdnUrl }/html/prm-requests-after.html`,
     } );
 
     // PRM-REQUESTS-OVERVIEW-AFTER
     app.component( 'prmRequestsOverviewAfter', {
-        bindings  : { parentCtrl: '<' },
-        controller: function( $scope, $rootScope ) {
+        bindings   : { parentCtrl : '<' },
+        controller : function( $scope, $rootScope ) {
             const vm = this;
 
             vm.getPnx = () => {
@@ -4161,13 +4161,13 @@ function generateAllPossibleCustomDirectives() {
             vm.rootScope = $rootScope;
             vm.scope = $scope;
         },
-        templateUrl: `${ cdnUrl }/html/prm-requests-overview-after.html`,
+        templateUrl : `${ cdnUrl }/html/prm-requests-overview-after.html`,
     } );
 
     // PRM-REQUESTS-SERVICES-OVL-AFTER
     app.component( 'prmRequestsServicesOvlAfter', {
-        bindings  : { parentCtrl: '<' },
-        controller: function( $scope, $rootScope ) {
+        bindings   : { parentCtrl : '<' },
+        controller : function( $scope, $rootScope ) {
             const vm = this;
 
             vm.getPnx = () => {
@@ -4183,13 +4183,13 @@ function generateAllPossibleCustomDirectives() {
             vm.rootScope = $rootScope;
             vm.scope = $scope;
         },
-        templateUrl: `${ cdnUrl }/html/prm-requests-services-ovl-after.html`,
+        templateUrl : `${ cdnUrl }/html/prm-requests-services-ovl-after.html`,
     } );
 
     // PRM-RESOURCE-RECOMMENDER-AFTER
     app.component( 'prmResourceRecommenderAfter', {
-        bindings  : { parentCtrl: '<' },
-        controller: function( $scope, $rootScope ) {
+        bindings   : { parentCtrl : '<' },
+        controller : function( $scope, $rootScope ) {
             const vm = this;
 
             vm.getPnx = () => {
@@ -4205,13 +4205,13 @@ function generateAllPossibleCustomDirectives() {
             vm.rootScope = $rootScope;
             vm.scope = $scope;
         },
-        templateUrl: `${ cdnUrl }/html/prm-resource-recommender-after.html`,
+        templateUrl : `${ cdnUrl }/html/prm-resource-recommender-after.html`,
     } );
 
     // PRM-RESOURCE-RECOMMENDER-CARD-CONTENT-AFTER
     app.component( 'prmResourceRecommenderCardContentAfter', {
-        bindings  : { parentCtrl: '<' },
-        controller: function( $scope, $rootScope ) {
+        bindings   : { parentCtrl : '<' },
+        controller : function( $scope, $rootScope ) {
             const vm = this;
 
             vm.getPnx = () => {
@@ -4227,13 +4227,13 @@ function generateAllPossibleCustomDirectives() {
             vm.rootScope = $rootScope;
             vm.scope = $scope;
         },
-        templateUrl: `${ cdnUrl }/html/prm-resource-recommender-card-content-after.html`,
+        templateUrl : `${ cdnUrl }/html/prm-resource-recommender-card-content-after.html`,
     } );
 
     // PRM-RESOURCE-RECOMMENDER-FULL-VIEW-AFTER
     app.component( 'prmResourceRecommenderFullViewAfter', {
-        bindings  : { parentCtrl: '<' },
-        controller: function( $scope, $rootScope ) {
+        bindings   : { parentCtrl : '<' },
+        controller : function( $scope, $rootScope ) {
             const vm = this;
 
             vm.getPnx = () => {
@@ -4249,13 +4249,13 @@ function generateAllPossibleCustomDirectives() {
             vm.rootScope = $rootScope;
             vm.scope = $scope;
         },
-        templateUrl: `${ cdnUrl }/html/prm-resource-recommender-full-view-after.html`,
+        templateUrl : `${ cdnUrl }/html/prm-resource-recommender-full-view-after.html`,
     } );
 
     // PRM-RESOURCE-TYPE-FILTER-BAR-AFTER
     app.component( 'prmResourceTypeFilterBarAfter', {
-        bindings  : { parentCtrl: '<' },
-        controller: function( $scope, $rootScope ) {
+        bindings   : { parentCtrl : '<' },
+        controller : function( $scope, $rootScope ) {
             const vm = this;
 
             vm.getPnx = () => {
@@ -4271,13 +4271,13 @@ function generateAllPossibleCustomDirectives() {
             vm.rootScope = $rootScope;
             vm.scope = $scope;
         },
-        templateUrl: `${ cdnUrl }/html/prm-resource-type-filter-bar-after.html`,
+        templateUrl : `${ cdnUrl }/html/prm-resource-type-filter-bar-after.html`,
     } );
 
     // PRM-REVIEWS-RESULTS-LINE-AFTER
     app.component( 'prmReviewsResultsLineAfter', {
-        bindings  : { parentCtrl: '<' },
-        controller: function( $scope, $rootScope ) {
+        bindings   : { parentCtrl : '<' },
+        controller : function( $scope, $rootScope ) {
             const vm = this;
 
             vm.getPnx = () => {
@@ -4293,13 +4293,13 @@ function generateAllPossibleCustomDirectives() {
             vm.rootScope = $rootScope;
             vm.scope = $scope;
         },
-        templateUrl: `${ cdnUrl }/html/prm-reviews-results-line-after.html`,
+        templateUrl : `${ cdnUrl }/html/prm-reviews-results-line-after.html`,
     } );
 
     // PRM-SAVE-TO-FAVORITES-BUTTON-AFTER
     app.component( 'prmSaveToFavoritesButtonAfter', {
-        bindings  : { parentCtrl: '<' },
-        controller: function( $scope, $rootScope ) {
+        bindings   : { parentCtrl : '<' },
+        controller : function( $scope, $rootScope ) {
             const vm = this;
 
             vm.getPnx = () => {
@@ -4315,13 +4315,13 @@ function generateAllPossibleCustomDirectives() {
             vm.rootScope = $rootScope;
             vm.scope = $scope;
         },
-        templateUrl: `${ cdnUrl }/html/prm-save-to-favorites-button-after.html`,
+        templateUrl : `${ cdnUrl }/html/prm-save-to-favorites-button-after.html`,
     } );
 
     // PRM-SAVED-QUERIES-AFTER
     app.component( 'prmSavedQueriesAfter', {
-        bindings  : { parentCtrl: '<' },
-        controller: function( $scope, $rootScope ) {
+        bindings   : { parentCtrl : '<' },
+        controller : function( $scope, $rootScope ) {
             const vm = this;
 
             vm.getPnx = () => {
@@ -4337,13 +4337,13 @@ function generateAllPossibleCustomDirectives() {
             vm.rootScope = $rootScope;
             vm.scope = $scope;
         },
-        templateUrl: `${ cdnUrl }/html/prm-saved-queries-after.html`,
+        templateUrl : `${ cdnUrl }/html/prm-saved-queries-after.html`,
     } );
 
     // PRM-SAVED-QUERIES-LIST-AFTER
     app.component( 'prmSavedQueriesListAfter', {
-        bindings  : { parentCtrl: '<' },
-        controller: function( $scope, $rootScope ) {
+        bindings   : { parentCtrl : '<' },
+        controller : function( $scope, $rootScope ) {
             const vm = this;
 
             vm.getPnx = () => {
@@ -4359,13 +4359,13 @@ function generateAllPossibleCustomDirectives() {
             vm.rootScope = $rootScope;
             vm.scope = $scope;
         },
-        templateUrl: `${ cdnUrl }/html/prm-saved-queries-list-after.html`,
+        templateUrl : `${ cdnUrl }/html/prm-saved-queries-list-after.html`,
     } );
 
     // PRM-SAVED-QUERY-FILTER-AFTER
     app.component( 'prmSavedQueryFilterAfter', {
-        bindings  : { parentCtrl: '<' },
-        controller: function( $scope, $rootScope ) {
+        bindings   : { parentCtrl : '<' },
+        controller : function( $scope, $rootScope ) {
             const vm = this;
 
             vm.getPnx = () => {
@@ -4381,13 +4381,13 @@ function generateAllPossibleCustomDirectives() {
             vm.rootScope = $rootScope;
             vm.scope = $scope;
         },
-        templateUrl: `${ cdnUrl }/html/prm-saved-query-filter-after.html`,
+        templateUrl : `${ cdnUrl }/html/prm-saved-query-filter-after.html`,
     } );
 
     // PRM-SAVED-SEARCHES-GROUP-ACTIONS-AFTER
     app.component( 'prmSavedSearchesGroupActionsAfter', {
-        bindings  : { parentCtrl: '<' },
-        controller: function( $scope, $rootScope ) {
+        bindings   : { parentCtrl : '<' },
+        controller : function( $scope, $rootScope ) {
             const vm = this;
 
             vm.getPnx = () => {
@@ -4403,13 +4403,13 @@ function generateAllPossibleCustomDirectives() {
             vm.rootScope = $rootScope;
             vm.scope = $scope;
         },
-        templateUrl: `${ cdnUrl }/html/prm-saved-searches-group-actions-after.html`,
+        templateUrl : `${ cdnUrl }/html/prm-saved-searches-group-actions-after.html`,
     } );
 
     // PRM-SCROLL-AFTER
     app.component( 'prmScrollAfter', {
-        bindings  : { parentCtrl: '<' },
-        controller: function( $scope, $rootScope ) {
+        bindings   : { parentCtrl : '<' },
+        controller : function( $scope, $rootScope ) {
             const vm = this;
 
             vm.getPnx = () => {
@@ -4425,13 +4425,13 @@ function generateAllPossibleCustomDirectives() {
             vm.rootScope = $rootScope;
             vm.scope = $scope;
         },
-        templateUrl: `${ cdnUrl }/html/prm-scroll-after.html`,
+        templateUrl : `${ cdnUrl }/html/prm-scroll-after.html`,
     } );
 
     // PRM-SEADRAGON-VIEWER-AFTER
     app.component( 'prmSeadragonViewerAfter', {
-        bindings  : { parentCtrl: '<' },
-        controller: function( $scope, $rootScope ) {
+        bindings   : { parentCtrl : '<' },
+        controller : function( $scope, $rootScope ) {
             const vm = this;
 
             vm.getPnx = () => {
@@ -4447,13 +4447,13 @@ function generateAllPossibleCustomDirectives() {
             vm.rootScope = $rootScope;
             vm.scope = $scope;
         },
-        templateUrl: `${ cdnUrl }/html/prm-seadragon-viewer-after.html`,
+        templateUrl : `${ cdnUrl }/html/prm-seadragon-viewer-after.html`,
     } );
 
     // PRM-SEARCH-AFTER
     app.component( 'prmSearchAfter', {
-        bindings  : { parentCtrl: '<' },
-        controller: function( $scope, $rootScope ) {
+        bindings   : { parentCtrl : '<' },
+        controller : function( $scope, $rootScope ) {
             const vm = this;
 
             vm.getPnx = () => {
@@ -4469,13 +4469,13 @@ function generateAllPossibleCustomDirectives() {
             vm.rootScope = $rootScope;
             vm.scope = $scope;
         },
-        templateUrl: `${ cdnUrl }/html/prm-search-after.html`,
+        templateUrl : `${ cdnUrl }/html/prm-search-after.html`,
     } );
 
     // PRM-SEARCH-BAR-AFTER
     app.component( 'prmSearchBarAfter', {
-        bindings  : { parentCtrl: '<' },
-        controller: function( $scope, $rootScope ) {
+        bindings   : { parentCtrl : '<' },
+        controller : function( $scope, $rootScope ) {
             const vm = this;
 
             vm.getPnx = () => {
@@ -4491,13 +4491,13 @@ function generateAllPossibleCustomDirectives() {
             vm.rootScope = $rootScope;
             vm.scope = $scope;
         },
-        templateUrl: `${ cdnUrl }/html/prm-search-bar-after.html`,
+        templateUrl : `${ cdnUrl }/html/prm-search-bar-after.html`,
     } );
 
     // PRM-SEARCH-BOOKMARK-FILTER-AFTER
     app.component( 'prmSearchBookmarkFilterAfter', {
-        bindings  : { parentCtrl: '<' },
-        controller: function( $scope, $rootScope ) {
+        bindings   : { parentCtrl : '<' },
+        controller : function( $scope, $rootScope ) {
             const vm = this;
 
             vm.getPnx = () => {
@@ -4513,13 +4513,13 @@ function generateAllPossibleCustomDirectives() {
             vm.rootScope = $rootScope;
             vm.scope = $scope;
         },
-        templateUrl: `${ cdnUrl }/html/prm-search-bookmark-filter-after.html`,
+        templateUrl : `${ cdnUrl }/html/prm-search-bookmark-filter-after.html`,
     } );
 
     // PRM-SEARCH-ERROR-MESSAGE-AFTER
     app.component( 'prmSearchErrorMessageAfter', {
-        bindings  : { parentCtrl: '<' },
-        controller: function( $scope, $rootScope ) {
+        bindings   : { parentCtrl : '<' },
+        controller : function( $scope, $rootScope ) {
             const vm = this;
 
             vm.getPnx = () => {
@@ -4535,13 +4535,13 @@ function generateAllPossibleCustomDirectives() {
             vm.rootScope = $rootScope;
             vm.scope = $scope;
         },
-        templateUrl: `${ cdnUrl }/html/prm-search-error-message-after.html`,
+        templateUrl : `${ cdnUrl }/html/prm-search-error-message-after.html`,
     } );
 
     // PRM-SEARCH-EXPLAIN-AFTER
     app.component( 'prmSearchExplainAfter', {
-        bindings  : { parentCtrl: '<' },
-        controller: function( $scope, $rootScope ) {
+        bindings   : { parentCtrl : '<' },
+        controller : function( $scope, $rootScope ) {
             const vm = this;
 
             vm.getPnx = () => {
@@ -4557,13 +4557,13 @@ function generateAllPossibleCustomDirectives() {
             vm.rootScope = $rootScope;
             vm.scope = $scope;
         },
-        templateUrl: `${ cdnUrl }/html/prm-search-explain-after.html`,
+        templateUrl : `${ cdnUrl }/html/prm-search-explain-after.html`,
     } );
 
     // PRM-SEARCH-HISTORY-AFTER
     app.component( 'prmSearchHistoryAfter', {
-        bindings  : { parentCtrl: '<' },
-        controller: function( $scope, $rootScope ) {
+        bindings   : { parentCtrl : '<' },
+        controller : function( $scope, $rootScope ) {
             const vm = this;
 
             vm.getPnx = () => {
@@ -4579,13 +4579,13 @@ function generateAllPossibleCustomDirectives() {
             vm.rootScope = $rootScope;
             vm.scope = $scope;
         },
-        templateUrl: `${ cdnUrl }/html/prm-search-history-after.html`,
+        templateUrl : `${ cdnUrl }/html/prm-search-history-after.html`,
     } );
 
     // PRM-SEARCH-RESULT-ADD-TO-FAVORITES-MENU-AFTER
     app.component( 'prmSearchResultAddToFavoritesMenuAfter', {
-        bindings  : { parentCtrl: '<' },
-        controller: function( $scope, $rootScope ) {
+        bindings   : { parentCtrl : '<' },
+        controller : function( $scope, $rootScope ) {
             const vm = this;
 
             vm.getPnx = () => {
@@ -4601,13 +4601,13 @@ function generateAllPossibleCustomDirectives() {
             vm.rootScope = $rootScope;
             vm.scope = $scope;
         },
-        templateUrl: `${ cdnUrl }/html/prm-search-result-add-to-favorites-menu-after.html`,
+        templateUrl : `${ cdnUrl }/html/prm-search-result-add-to-favorites-menu-after.html`,
     } );
 
     // PRM-SEARCH-RESULT-FRBR-LINE-AFTER
     app.component( 'prmSearchResultFrbrLineAfter', {
-        bindings  : { parentCtrl: '<' },
-        controller: function( $scope, $rootScope ) {
+        bindings   : { parentCtrl : '<' },
+        controller : function( $scope, $rootScope ) {
             const vm = this;
 
             vm.getPnx = () => {
@@ -4623,13 +4623,13 @@ function generateAllPossibleCustomDirectives() {
             vm.rootScope = $rootScope;
             vm.scope = $scope;
         },
-        templateUrl: `${ cdnUrl }/html/prm-search-result-frbr-line-after.html`,
+        templateUrl : `${ cdnUrl }/html/prm-search-result-frbr-line-after.html`,
     } );
 
     // PRM-SEARCH-RESULT-JOURNAL-INDICATION-LINE-AFTER
     app.component( 'prmSearchResultJournalIndicationLineAfter', {
-        bindings  : { parentCtrl: '<' },
-        controller: function( $scope, $rootScope ) {
+        bindings   : { parentCtrl : '<' },
+        controller : function( $scope, $rootScope ) {
             const vm = this;
 
             vm.getPnx = () => {
@@ -4645,13 +4645,13 @@ function generateAllPossibleCustomDirectives() {
             vm.rootScope = $rootScope;
             vm.scope = $scope;
         },
-        templateUrl: `${ cdnUrl }/html/prm-search-result-journal-indication-line-after.html`,
+        templateUrl : `${ cdnUrl }/html/prm-search-result-journal-indication-line-after.html`,
     } );
 
     // PRM-SEARCH-RESULT-LIST-AFTER
     app.component( 'prmSearchResultListAfter', {
-        bindings  : { parentCtrl: '<' },
-        controller: function( $scope, $rootScope ) {
+        bindings   : { parentCtrl : '<' },
+        controller : function( $scope, $rootScope ) {
             const vm = this;
 
             vm.getPnx = () => {
@@ -4667,13 +4667,13 @@ function generateAllPossibleCustomDirectives() {
             vm.rootScope = $rootScope;
             vm.scope = $scope;
         },
-        templateUrl: `${ cdnUrl }/html/prm-search-result-list-after.html`,
+        templateUrl : `${ cdnUrl }/html/prm-search-result-list-after.html`,
     } );
 
     // PRM-SEARCH-RESULT-SORT-BY-AFTER
     app.component( 'prmSearchResultSortByAfter', {
-        bindings  : { parentCtrl: '<' },
-        controller: function( $scope, $rootScope ) {
+        bindings   : { parentCtrl : '<' },
+        controller : function( $scope, $rootScope ) {
             const vm = this;
 
             vm.getPnx = () => {
@@ -4689,13 +4689,13 @@ function generateAllPossibleCustomDirectives() {
             vm.rootScope = $rootScope;
             vm.scope = $scope;
         },
-        templateUrl: `${ cdnUrl }/html/prm-search-result-sort-by-after.html`,
+        templateUrl : `${ cdnUrl }/html/prm-search-result-sort-by-after.html`,
     } );
 
     // PRM-SEARCH-RESULT-THUMBNAIL-CONTAINER-AFTER
     app.component( 'prmSearchResultThumbnailContainerAfter', {
-        bindings  : { parentCtrl: '<' },
-        controller: function( $scope, $rootScope ) {
+        bindings   : { parentCtrl : '<' },
+        controller : function( $scope, $rootScope ) {
             const vm = this;
 
             vm.getPnx = () => {
@@ -4711,13 +4711,13 @@ function generateAllPossibleCustomDirectives() {
             vm.rootScope = $rootScope;
             vm.scope = $scope;
         },
-        templateUrl: `${ cdnUrl }/html/prm-search-result-thumbnail-container-after.html`,
+        templateUrl : `${ cdnUrl }/html/prm-search-result-thumbnail-container-after.html`,
     } );
 
     // PRM-SEARCH-RESULT-TITLE-AFTER
     app.component( 'prmSearchResultTitleAfter', {
-        bindings  : { parentCtrl: '<' },
-        controller: function( $scope, $rootScope ) {
+        bindings   : { parentCtrl : '<' },
+        controller : function( $scope, $rootScope ) {
             const vm = this;
 
             vm.getPnx = () => {
@@ -4733,13 +4733,13 @@ function generateAllPossibleCustomDirectives() {
             vm.rootScope = $rootScope;
             vm.scope = $scope;
         },
-        templateUrl: `${ cdnUrl }/html/prm-search-result-title-after.html`,
+        templateUrl : `${ cdnUrl }/html/prm-search-result-title-after.html`,
     } );
 
     // PRM-SEARCH-RESULT-TOOL-BAR-AFTER
     app.component( 'prmSearchResultToolBarAfter', {
-        bindings  : { parentCtrl: '<' },
-        controller: function( $scope, $rootScope ) {
+        bindings   : { parentCtrl : '<' },
+        controller : function( $scope, $rootScope ) {
             const vm = this;
 
             vm.getPnx = () => {
@@ -4755,13 +4755,13 @@ function generateAllPossibleCustomDirectives() {
             vm.rootScope = $rootScope;
             vm.scope = $scope;
         },
-        templateUrl: `${ cdnUrl }/html/prm-search-result-tool-bar-after.html`,
+        templateUrl : `${ cdnUrl }/html/prm-search-result-tool-bar-after.html`,
     } );
 
     // PRM-SEARCH-WITHIN-JOURNAL-AFTER
     app.component( 'prmSearchWithinJournalAfter', {
-        bindings  : { parentCtrl: '<' },
-        controller: function( $scope, $rootScope ) {
+        bindings   : { parentCtrl : '<' },
+        controller : function( $scope, $rootScope ) {
             const vm = this;
 
             vm.getPnx = () => {
@@ -4777,13 +4777,13 @@ function generateAllPossibleCustomDirectives() {
             vm.rootScope = $rootScope;
             vm.scope = $scope;
         },
-        templateUrl: `${ cdnUrl }/html/prm-search-within-journal-after.html`,
+        templateUrl : `${ cdnUrl }/html/prm-search-within-journal-after.html`,
     } );
 
     // PRM-SEND-EMAIL-AFTER
     app.component( 'prmSendEmailAfter', {
-        bindings  : { parentCtrl: '<' },
-        controller: function( $scope, $rootScope ) {
+        bindings   : { parentCtrl : '<' },
+        controller : function( $scope, $rootScope ) {
             const vm = this;
 
             vm.getPnx = () => {
@@ -4799,13 +4799,13 @@ function generateAllPossibleCustomDirectives() {
             vm.rootScope = $rootScope;
             vm.scope = $scope;
         },
-        templateUrl: `${ cdnUrl }/html/prm-send-email-after.html`,
+        templateUrl : `${ cdnUrl }/html/prm-send-email-after.html`,
     } );
 
     // PRM-SERVICE-BUTTON-AFTER
     app.component( 'prmServiceButtonAfter', {
-        bindings  : { parentCtrl: '<' },
-        controller: function( $scope, $rootScope ) {
+        bindings   : { parentCtrl : '<' },
+        controller : function( $scope, $rootScope ) {
             const vm = this;
 
             vm.getPnx = () => {
@@ -4821,13 +4821,13 @@ function generateAllPossibleCustomDirectives() {
             vm.rootScope = $rootScope;
             vm.scope = $scope;
         },
-        templateUrl: `${ cdnUrl }/html/prm-service-button-after.html`,
+        templateUrl : `${ cdnUrl }/html/prm-service-button-after.html`,
     } );
 
     // PRM-SERVICE-DETAILS-AFTER
     app.component( 'prmServiceDetailsAfter', {
-        bindings  : { parentCtrl: '<' },
-        controller: function( $scope, $rootScope ) {
+        bindings   : { parentCtrl : '<' },
+        controller : function( $scope, $rootScope ) {
             const vm = this;
 
             vm.getPnx = () => {
@@ -4843,13 +4843,13 @@ function generateAllPossibleCustomDirectives() {
             vm.rootScope = $rootScope;
             vm.scope = $scope;
         },
-        templateUrl: `${ cdnUrl }/html/prm-service-details-after.html`,
+        templateUrl : `${ cdnUrl }/html/prm-service-details-after.html`,
     } );
 
     // PRM-SERVICE-HEADER-AFTER
     app.component( 'prmServiceHeaderAfter', {
-        bindings  : { parentCtrl: '<' },
-        controller: function( $scope, $rootScope ) {
+        bindings   : { parentCtrl : '<' },
+        controller : function( $scope, $rootScope ) {
             const vm = this;
 
             vm.getPnx = () => {
@@ -4865,13 +4865,13 @@ function generateAllPossibleCustomDirectives() {
             vm.rootScope = $rootScope;
             vm.scope = $scope;
         },
-        templateUrl: `${ cdnUrl }/html/prm-service-header-after.html`,
+        templateUrl : `${ cdnUrl }/html/prm-service-header-after.html`,
     } );
 
     // PRM-SERVICE-LINKS-AFTER
     app.component( 'prmServiceLinksAfter', {
-        bindings  : { parentCtrl: '<' },
-        controller: function( $scope, $rootScope ) {
+        bindings   : { parentCtrl : '<' },
+        controller : function( $scope, $rootScope ) {
             const vm = this;
 
             vm.getPnx = () => {
@@ -4887,13 +4887,13 @@ function generateAllPossibleCustomDirectives() {
             vm.rootScope = $rootScope;
             vm.scope = $scope;
         },
-        templateUrl: `${ cdnUrl }/html/prm-service-links-after.html`,
+        templateUrl : `${ cdnUrl }/html/prm-service-links-after.html`,
     } );
 
     // PRM-SERVICE-NGRS-AFTER
     app.component( 'prmServiceNgrsAfter', {
-        bindings  : { parentCtrl: '<' },
-        controller: function( $scope, $rootScope ) {
+        bindings   : { parentCtrl : '<' },
+        controller : function( $scope, $rootScope ) {
             const vm = this;
 
             vm.getPnx = () => {
@@ -4909,13 +4909,13 @@ function generateAllPossibleCustomDirectives() {
             vm.rootScope = $rootScope;
             vm.scope = $scope;
         },
-        templateUrl: `${ cdnUrl }/html/prm-service-ngrs-after.html`,
+        templateUrl : `${ cdnUrl }/html/prm-service-ngrs-after.html`,
     } );
 
     // PRM-SERVICE-NO-OFFER-FOUND-AFTER
     app.component( 'prmServiceNoOfferFoundAfter', {
-        bindings  : { parentCtrl: '<' },
-        controller: function( $scope, $rootScope ) {
+        bindings   : { parentCtrl : '<' },
+        controller : function( $scope, $rootScope ) {
             const vm = this;
 
             vm.getPnx = () => {
@@ -4931,13 +4931,13 @@ function generateAllPossibleCustomDirectives() {
             vm.rootScope = $rootScope;
             vm.scope = $scope;
         },
-        templateUrl: `${ cdnUrl }/html/prm-service-no-offer-found-after.html`,
+        templateUrl : `${ cdnUrl }/html/prm-service-no-offer-found-after.html`,
     } );
 
     // PRM-SERVICE-PHYSICAL-BEST-OFFER-AFTER
     app.component( 'prmServicePhysicalBestOfferAfter', {
-        bindings  : { parentCtrl: '<' },
-        controller: function( $scope, $rootScope ) {
+        bindings   : { parentCtrl : '<' },
+        controller : function( $scope, $rootScope ) {
             const vm = this;
 
             vm.getPnx = () => {
@@ -4953,13 +4953,13 @@ function generateAllPossibleCustomDirectives() {
             vm.rootScope = $rootScope;
             vm.scope = $scope;
         },
-        templateUrl: `${ cdnUrl }/html/prm-service-physical-best-offer-after.html`,
+        templateUrl : `${ cdnUrl }/html/prm-service-physical-best-offer-after.html`,
     } );
 
     // PRM-SERVICES-PAGE-AFTER
     app.component( 'prmServicesPageAfter', {
-        bindings  : { parentCtrl: '<' },
-        controller: function( $scope, $rootScope ) {
+        bindings   : { parentCtrl : '<' },
+        controller : function( $scope, $rootScope ) {
             const vm = this;
 
             vm.getPnx = () => {
@@ -4975,13 +4975,13 @@ function generateAllPossibleCustomDirectives() {
             vm.rootScope = $rootScope;
             vm.scope = $scope;
         },
-        templateUrl: `${ cdnUrl }/html/prm-services-page-after.html`,
+        templateUrl : `${ cdnUrl }/html/prm-services-page-after.html`,
     } );
 
     // PRM-SHARE-AFTER
     app.component( 'prmShareAfter', {
-        bindings  : { parentCtrl: '<' },
-        controller: function( $scope, $rootScope ) {
+        bindings   : { parentCtrl : '<' },
+        controller : function( $scope, $rootScope ) {
             const vm = this;
 
             vm.getPnx = () => {
@@ -4997,13 +4997,13 @@ function generateAllPossibleCustomDirectives() {
             vm.rootScope = $rootScope;
             vm.scope = $scope;
         },
-        templateUrl: `${ cdnUrl }/html/prm-share-after.html`,
+        templateUrl : `${ cdnUrl }/html/prm-share-after.html`,
     } );
 
     // PRM-SIGN-IN-TO-VIEW-AFTER
     app.component( 'prmSignInToViewAfter', {
-        bindings  : { parentCtrl: '<' },
-        controller: function( $scope, $rootScope ) {
+        bindings   : { parentCtrl : '<' },
+        controller : function( $scope, $rootScope ) {
             const vm = this;
 
             vm.getPnx = () => {
@@ -5019,13 +5019,13 @@ function generateAllPossibleCustomDirectives() {
             vm.rootScope = $rootScope;
             vm.scope = $scope;
         },
-        templateUrl: `${ cdnUrl }/html/prm-sign-in-to-view-after.html`,
+        templateUrl : `${ cdnUrl }/html/prm-sign-in-to-view-after.html`,
     } );
 
     // PRM-SILENT-LOGIN-AFTER
     app.component( 'prmSilentLoginAfter', {
-        bindings  : { parentCtrl: '<' },
-        controller: function( $scope, $rootScope ) {
+        bindings   : { parentCtrl : '<' },
+        controller : function( $scope, $rootScope ) {
             const vm = this;
 
             vm.getPnx = () => {
@@ -5041,13 +5041,13 @@ function generateAllPossibleCustomDirectives() {
             vm.rootScope = $rootScope;
             vm.scope = $scope;
         },
-        templateUrl: `${ cdnUrl }/html/prm-silent-login-after.html`,
+        templateUrl : `${ cdnUrl }/html/prm-silent-login-after.html`,
     } );
 
     // PRM-SILENT-LOGIN-ALERT-TOAST-AFTER
     app.component( 'prmSilentLoginAlertToastAfter', {
-        bindings  : { parentCtrl: '<' },
-        controller: function( $scope, $rootScope ) {
+        bindings   : { parentCtrl : '<' },
+        controller : function( $scope, $rootScope ) {
             const vm = this;
 
             vm.getPnx = () => {
@@ -5063,13 +5063,13 @@ function generateAllPossibleCustomDirectives() {
             vm.rootScope = $rootScope;
             vm.scope = $scope;
         },
-        templateUrl: `${ cdnUrl }/html/prm-silent-login-alert-toast-after.html`,
+        templateUrl : `${ cdnUrl }/html/prm-silent-login-alert-toast-after.html`,
     } );
 
     // PRM-SKIP-TO-AFTER
     app.component( 'prmSkipToAfter', {
-        bindings  : { parentCtrl: '<' },
-        controller: function( $scope, $rootScope ) {
+        bindings   : { parentCtrl : '<' },
+        controller : function( $scope, $rootScope ) {
             const vm = this;
 
             vm.getPnx = () => {
@@ -5085,13 +5085,13 @@ function generateAllPossibleCustomDirectives() {
             vm.rootScope = $rootScope;
             vm.scope = $scope;
         },
-        templateUrl: `${ cdnUrl }/html/prm-skip-to-after.html`,
+        templateUrl : `${ cdnUrl }/html/prm-skip-to-after.html`,
     } );
 
     // PRM-SLIDER-FIELD-AFTER
     app.component( 'prmSliderFieldAfter', {
-        bindings  : { parentCtrl: '<' },
-        controller: function( $scope, $rootScope ) {
+        bindings   : { parentCtrl : '<' },
+        controller : function( $scope, $rootScope ) {
             const vm = this;
 
             vm.getPnx = () => {
@@ -5107,13 +5107,13 @@ function generateAllPossibleCustomDirectives() {
             vm.rootScope = $rootScope;
             vm.scope = $scope;
         },
-        templateUrl: `${ cdnUrl }/html/prm-slider-field-after.html`,
+        templateUrl : `${ cdnUrl }/html/prm-slider-field-after.html`,
     } );
 
     // PRM-SNIPPET-AFTER
     app.component( 'prmSnippetAfter', {
-        bindings  : { parentCtrl: '<' },
-        controller: function( $scope, $rootScope ) {
+        bindings   : { parentCtrl : '<' },
+        controller : function( $scope, $rootScope ) {
             const vm = this;
 
             vm.getPnx = () => {
@@ -5129,13 +5129,13 @@ function generateAllPossibleCustomDirectives() {
             vm.rootScope = $rootScope;
             vm.scope = $scope;
         },
-        templateUrl: `${ cdnUrl }/html/prm-snippet-after.html`,
+        templateUrl : `${ cdnUrl }/html/prm-snippet-after.html`,
     } );
 
     // PRM-SOCIAL-MENU-AFTER
     app.component( 'prmSocialMenuAfter', {
-        bindings  : { parentCtrl: '<' },
-        controller: function( $scope, $rootScope ) {
+        bindings   : { parentCtrl : '<' },
+        controller : function( $scope, $rootScope ) {
             const vm = this;
 
             vm.getPnx = () => {
@@ -5151,13 +5151,13 @@ function generateAllPossibleCustomDirectives() {
             vm.rootScope = $rootScope;
             vm.scope = $scope;
         },
-        templateUrl: `${ cdnUrl }/html/prm-social-menu-after.html`,
+        templateUrl : `${ cdnUrl }/html/prm-social-menu-after.html`,
     } );
 
     // PRM-SOURCE-RECORD-AFTER
     app.component( 'prmSourceRecordAfter', {
-        bindings  : { parentCtrl: '<' },
-        controller: function( $scope, $rootScope ) {
+        bindings   : { parentCtrl : '<' },
+        controller : function( $scope, $rootScope ) {
             const vm = this;
 
             vm.getPnx = () => {
@@ -5173,13 +5173,13 @@ function generateAllPossibleCustomDirectives() {
             vm.rootScope = $rootScope;
             vm.scope = $scope;
         },
-        templateUrl: `${ cdnUrl }/html/prm-source-record-after.html`,
+        templateUrl : `${ cdnUrl }/html/prm-source-record-after.html`,
     } );
 
     // PRM-STACK-MAP-AFTER
     app.component( 'prmStackMapAfter', {
-        bindings  : { parentCtrl: '<' },
-        controller: function( $scope, $rootScope ) {
+        bindings   : { parentCtrl : '<' },
+        controller : function( $scope, $rootScope ) {
             const vm = this;
 
             vm.getPnx = () => {
@@ -5195,13 +5195,13 @@ function generateAllPossibleCustomDirectives() {
             vm.rootScope = $rootScope;
             vm.scope = $scope;
         },
-        templateUrl: `${ cdnUrl }/html/prm-stack-map-after.html`,
+        templateUrl : `${ cdnUrl }/html/prm-stack-map-after.html`,
     } );
 
     // PRM-STAND-ALONE-LOGIN-AFTER
     app.component( 'prmStandAloneLoginAfter', {
-        bindings  : { parentCtrl: '<' },
-        controller: function( $scope, $rootScope ) {
+        bindings   : { parentCtrl : '<' },
+        controller : function( $scope, $rootScope ) {
             const vm = this;
 
             vm.getPnx = () => {
@@ -5217,13 +5217,13 @@ function generateAllPossibleCustomDirectives() {
             vm.rootScope = $rootScope;
             vm.scope = $scope;
         },
-        templateUrl: `${ cdnUrl }/html/prm-stand-alone-login-after.html`,
+        templateUrl : `${ cdnUrl }/html/prm-stand-alone-login-after.html`,
     } );
 
     // PRM-SYNDETIC-UNBOUND-AFTER
     app.component( 'prmSyndeticUnboundAfter', {
-        bindings  : { parentCtrl: '<' },
-        controller: function( $scope, $rootScope ) {
+        bindings   : { parentCtrl : '<' },
+        controller : function( $scope, $rootScope ) {
             const vm = this;
 
             vm.getPnx = () => {
@@ -5239,13 +5239,13 @@ function generateAllPossibleCustomDirectives() {
             vm.rootScope = $rootScope;
             vm.scope = $scope;
         },
-        templateUrl: `${ cdnUrl }/html/prm-syndetic-unbound-after.html`,
+        templateUrl : `${ cdnUrl }/html/prm-syndetic-unbound-after.html`,
     } );
 
     // PRM-TABS-AND-SCOPES-SELECTOR-AFTER
     app.component( 'prmTabsAndScopesSelectorAfter', {
-        bindings  : { parentCtrl: '<' },
-        controller: function( $scope, $rootScope ) {
+        bindings   : { parentCtrl : '<' },
+        controller : function( $scope, $rootScope ) {
             const vm = this;
 
             vm.getPnx = () => {
@@ -5261,13 +5261,13 @@ function generateAllPossibleCustomDirectives() {
             vm.rootScope = $rootScope;
             vm.scope = $scope;
         },
-        templateUrl: `${ cdnUrl }/html/prm-tabs-and-scopes-selector-after.html`,
+        templateUrl : `${ cdnUrl }/html/prm-tabs-and-scopes-selector-after.html`,
     } );
 
     // PRM-TAGS-AFTER
     app.component( 'prmTagsAfter', {
-        bindings  : { parentCtrl: '<' },
-        controller: function( $scope, $rootScope ) {
+        bindings   : { parentCtrl : '<' },
+        controller : function( $scope, $rootScope ) {
             const vm = this;
 
             vm.getPnx = () => {
@@ -5283,13 +5283,13 @@ function generateAllPossibleCustomDirectives() {
             vm.rootScope = $rootScope;
             vm.scope = $scope;
         },
-        templateUrl: `${ cdnUrl }/html/prm-tags-after.html`,
+        templateUrl : `${ cdnUrl }/html/prm-tags-after.html`,
     } );
 
     // PRM-TAGS-LIST-AFTER
     app.component( 'prmTagsListAfter', {
-        bindings  : { parentCtrl: '<' },
-        controller: function( $scope, $rootScope ) {
+        bindings   : { parentCtrl : '<' },
+        controller : function( $scope, $rootScope ) {
             const vm = this;
 
             vm.getPnx = () => {
@@ -5305,13 +5305,13 @@ function generateAllPossibleCustomDirectives() {
             vm.rootScope = $rootScope;
             vm.scope = $scope;
         },
-        templateUrl: `${ cdnUrl }/html/prm-tags-list-after.html`,
+        templateUrl : `${ cdnUrl }/html/prm-tags-list-after.html`,
     } );
 
     // PRM-TAGS-RESULTS-AFTER
     app.component( 'prmTagsResultsAfter', {
-        bindings  : { parentCtrl: '<' },
-        controller: function( $scope, $rootScope ) {
+        bindings   : { parentCtrl : '<' },
+        controller : function( $scope, $rootScope ) {
             const vm = this;
 
             vm.getPnx = () => {
@@ -5327,13 +5327,13 @@ function generateAllPossibleCustomDirectives() {
             vm.rootScope = $rootScope;
             vm.scope = $scope;
         },
-        templateUrl: `${ cdnUrl }/html/prm-tags-results-after.html`,
+        templateUrl : `${ cdnUrl }/html/prm-tags-results-after.html`,
     } );
 
     // PRM-TAGS-SEARCH-BAR-AFTER
     app.component( 'prmTagsSearchBarAfter', {
-        bindings  : { parentCtrl: '<' },
-        controller: function( $scope, $rootScope ) {
+        bindings   : { parentCtrl : '<' },
+        controller : function( $scope, $rootScope ) {
             const vm = this;
 
             vm.getPnx = () => {
@@ -5349,13 +5349,13 @@ function generateAllPossibleCustomDirectives() {
             vm.rootScope = $rootScope;
             vm.scope = $scope;
         },
-        templateUrl: `${ cdnUrl }/html/prm-tags-search-bar-after.html`,
+        templateUrl : `${ cdnUrl }/html/prm-tags-search-bar-after.html`,
     } );
 
     // PRM-THUMBNAIL-LIST-AFTER
     app.component( 'prmThumbnailListAfter', {
-        bindings  : { parentCtrl: '<' },
-        controller: function( $scope, $rootScope ) {
+        bindings   : { parentCtrl : '<' },
+        controller : function( $scope, $rootScope ) {
             const vm = this;
 
             vm.getPnx = () => {
@@ -5371,13 +5371,13 @@ function generateAllPossibleCustomDirectives() {
             vm.rootScope = $rootScope;
             vm.scope = $scope;
         },
-        templateUrl: `${ cdnUrl }/html/prm-thumbnail-list-after.html`,
+        templateUrl : `${ cdnUrl }/html/prm-thumbnail-list-after.html`,
     } );
 
     // PRM-TIMEOUT-TOAST-AFTER
     app.component( 'prmTimeoutToastAfter', {
-        bindings  : { parentCtrl: '<' },
-        controller: function( $scope, $rootScope ) {
+        bindings   : { parentCtrl : '<' },
+        controller : function( $scope, $rootScope ) {
             const vm = this;
 
             vm.getPnx = () => {
@@ -5393,13 +5393,13 @@ function generateAllPossibleCustomDirectives() {
             vm.rootScope = $rootScope;
             vm.scope = $scope;
         },
-        templateUrl: `${ cdnUrl }/html/prm-timeout-toast-after.html`,
+        templateUrl : `${ cdnUrl }/html/prm-timeout-toast-after.html`,
     } );
 
     // PRM-TIMES-CITED-AFTER
     app.component( 'prmTimesCitedAfter', {
-        bindings  : { parentCtrl: '<' },
-        controller: function( $scope, $rootScope ) {
+        bindings   : { parentCtrl : '<' },
+        controller : function( $scope, $rootScope ) {
             const vm = this;
 
             vm.getPnx = () => {
@@ -5415,13 +5415,13 @@ function generateAllPossibleCustomDirectives() {
             vm.rootScope = $rootScope;
             vm.scope = $scope;
         },
-        templateUrl: `${ cdnUrl }/html/prm-times-cited-after.html`,
+        templateUrl : `${ cdnUrl }/html/prm-times-cited-after.html`,
     } );
 
     // PRM-TOP-BAR-BEFORE
     app.component( 'prmTopBarBefore', {
-        bindings  : { parentCtrl: '<' },
-        controller: function( $scope, $rootScope ) {
+        bindings   : { parentCtrl : '<' },
+        controller : function( $scope, $rootScope ) {
             const vm = this;
 
             vm.getPnx = () => {
@@ -5437,13 +5437,13 @@ function generateAllPossibleCustomDirectives() {
             vm.rootScope = $rootScope;
             vm.scope = $scope;
         },
-        templateUrl: `${ cdnUrl }/html/prm-top-bar-before.html`,
+        templateUrl : `${ cdnUrl }/html/prm-top-bar-before.html`,
     } );
 
     // PRM-TOP-NAV-BAR-LINKS-AFTER
     app.component( 'prmTopNavBarLinksAfter', {
-        bindings  : { parentCtrl: '<' },
-        controller: function( $scope, $rootScope ) {
+        bindings   : { parentCtrl : '<' },
+        controller : function( $scope, $rootScope ) {
             const vm = this;
 
             vm.getPnx = () => {
@@ -5459,13 +5459,13 @@ function generateAllPossibleCustomDirectives() {
             vm.rootScope = $rootScope;
             vm.scope = $scope;
         },
-        templateUrl: `${ cdnUrl }/html/prm-top-nav-bar-links-after.html`,
+        templateUrl : `${ cdnUrl }/html/prm-top-nav-bar-links-after.html`,
     } );
 
     // PRM-TOPBAR-AFTER
     app.component( 'prmTopbarAfter', {
-        bindings  : { parentCtrl: '<' },
-        controller: function( $scope, $rootScope ) {
+        bindings   : { parentCtrl : '<' },
+        controller : function( $scope, $rootScope ) {
             const vm = this;
 
             vm.getPnx = () => {
@@ -5481,13 +5481,13 @@ function generateAllPossibleCustomDirectives() {
             vm.rootScope = $rootScope;
             vm.scope = $scope;
         },
-        templateUrl: `${ cdnUrl }/html/prm-topbar-after.html`,
+        templateUrl : `${ cdnUrl }/html/prm-topbar-after.html`,
     } );
 
     // PRM-TREE-NAV-AFTER
     app.component( 'prmTreeNavAfter', {
-        bindings  : { parentCtrl: '<' },
-        controller: function( $scope, $rootScope ) {
+        bindings   : { parentCtrl : '<' },
+        controller : function( $scope, $rootScope ) {
             const vm = this;
 
             vm.getPnx = () => {
@@ -5503,13 +5503,13 @@ function generateAllPossibleCustomDirectives() {
             vm.rootScope = $rootScope;
             vm.scope = $scope;
         },
-        templateUrl: `${ cdnUrl }/html/prm-tree-nav-after.html`,
+        templateUrl : `${ cdnUrl }/html/prm-tree-nav-after.html`,
     } );
 
     // PRM-UNION-CATALOG-LOGIN-AFTER
     app.component( 'prmUnionCatalogLoginAfter', {
-        bindings  : { parentCtrl: '<' },
-        controller: function( $scope, $rootScope ) {
+        bindings   : { parentCtrl : '<' },
+        controller : function( $scope, $rootScope ) {
             const vm = this;
 
             vm.getPnx = () => {
@@ -5525,13 +5525,13 @@ function generateAllPossibleCustomDirectives() {
             vm.rootScope = $rootScope;
             vm.scope = $scope;
         },
-        templateUrl: `${ cdnUrl }/html/prm-union-catalog-login-after.html`,
+        templateUrl : `${ cdnUrl }/html/prm-union-catalog-login-after.html`,
     } );
 
     // PRM-UNION-CATALOG-LOGIN-INSTITUTION-ITEM-AFTER
     app.component( 'prmUnionCatalogLoginInstitutionItemAfter', {
-        bindings  : { parentCtrl: '<' },
-        controller: function( $scope, $rootScope ) {
+        bindings   : { parentCtrl : '<' },
+        controller : function( $scope, $rootScope ) {
             const vm = this;
 
             vm.getPnx = () => {
@@ -5547,13 +5547,13 @@ function generateAllPossibleCustomDirectives() {
             vm.rootScope = $rootScope;
             vm.scope = $scope;
         },
-        templateUrl: `${ cdnUrl }/html/prm-union-catalog-login-institution-item-after.html`,
+        templateUrl : `${ cdnUrl }/html/prm-union-catalog-login-institution-item-after.html`,
     } );
 
     // PRM-USAGE-METRICS-AFTER
     app.component( 'prmUsageMetricsAfter', {
-        bindings  : { parentCtrl: '<' },
-        controller: function( $scope, $rootScope ) {
+        bindings   : { parentCtrl : '<' },
+        controller : function( $scope, $rootScope ) {
             const vm = this;
 
             vm.getPnx = () => {
@@ -5569,13 +5569,13 @@ function generateAllPossibleCustomDirectives() {
             vm.rootScope = $rootScope;
             vm.scope = $scope;
         },
-        templateUrl: `${ cdnUrl }/html/prm-usage-metrics-after.html`,
+        templateUrl : `${ cdnUrl }/html/prm-usage-metrics-after.html`,
     } );
 
     // PRM-USER-AREA-AFTER
     app.component( 'prmUserAreaAfter', {
-        bindings  : { parentCtrl: '<' },
-        controller: function( $scope, $rootScope ) {
+        bindings   : { parentCtrl : '<' },
+        controller : function( $scope, $rootScope ) {
             const vm = this;
 
             vm.getPnx = () => {
@@ -5591,13 +5591,13 @@ function generateAllPossibleCustomDirectives() {
             vm.rootScope = $rootScope;
             vm.scope = $scope;
         },
-        templateUrl: `${ cdnUrl }/html/prm-user-area-after.html`,
+        templateUrl : `${ cdnUrl }/html/prm-user-area-after.html`,
     } );
 
     // PRM-USER-AREA-EXPANDABLE-AFTER
     app.component( 'prmUserAreaExpandableAfter', {
-        bindings  : { parentCtrl: '<' },
-        controller: function( $scope, $rootScope ) {
+        bindings   : { parentCtrl : '<' },
+        controller : function( $scope, $rootScope ) {
             const vm = this;
 
             vm.getPnx = () => {
@@ -5613,13 +5613,13 @@ function generateAllPossibleCustomDirectives() {
             vm.rootScope = $rootScope;
             vm.scope = $scope;
         },
-        templateUrl: `${ cdnUrl }/html/prm-user-area-expandable-after.html`,
+        templateUrl : `${ cdnUrl }/html/prm-user-area-expandable-after.html`,
     } );
 
     // PRM-USERNAME-PASSWORD-LOGIN-AFTER
     app.component( 'prmUsernamePasswordLoginAfter', {
-        bindings  : { parentCtrl: '<' },
-        controller: function( $scope, $rootScope ) {
+        bindings   : { parentCtrl : '<' },
+        controller : function( $scope, $rootScope ) {
             const vm = this;
 
             vm.getPnx = () => {
@@ -5635,13 +5635,13 @@ function generateAllPossibleCustomDirectives() {
             vm.rootScope = $rootScope;
             vm.scope = $scope;
         },
-        templateUrl: `${ cdnUrl }/html/prm-username-password-login-after.html`,
+        templateUrl : `${ cdnUrl }/html/prm-username-password-login-after.html`,
     } );
 
     // PRM-VIEW-ONLINE-AFTER
     app.component( 'prmViewOnlineAfter', {
-        bindings  : { parentCtrl: '<' },
-        controller: function( $scope, $rootScope ) {
+        bindings   : { parentCtrl : '<' },
+        controller : function( $scope, $rootScope ) {
             const vm = this;
 
             vm.getPnx = () => {
@@ -5657,13 +5657,13 @@ function generateAllPossibleCustomDirectives() {
             vm.rootScope = $rootScope;
             vm.scope = $scope;
         },
-        templateUrl: `${ cdnUrl }/html/prm-view-online-after.html`,
+        templateUrl : `${ cdnUrl }/html/prm-view-online-after.html`,
     } );
 
     // PRM-VIRTUAL-BROWSE-AFTER
     app.component( 'prmVirtualBrowseAfter', {
-        bindings  : { parentCtrl: '<' },
-        controller: function( $scope, $rootScope ) {
+        bindings   : { parentCtrl : '<' },
+        controller : function( $scope, $rootScope ) {
             const vm = this;
 
             vm.getPnx = () => {
@@ -5679,13 +5679,13 @@ function generateAllPossibleCustomDirectives() {
             vm.rootScope = $rootScope;
             vm.scope = $scope;
         },
-        templateUrl: `${ cdnUrl }/html/prm-virtual-browse-after.html`,
+        templateUrl : `${ cdnUrl }/html/prm-virtual-browse-after.html`,
     } );
 
     // PRM-VIRTUAL-BROWSE-ITEM-AFTER
     app.component( 'prmVirtualBrowseItemAfter', {
-        bindings  : { parentCtrl: '<' },
-        controller: function( $scope, $rootScope ) {
+        bindings   : { parentCtrl : '<' },
+        controller : function( $scope, $rootScope ) {
             const vm = this;
 
             vm.getPnx = () => {
@@ -5701,13 +5701,13 @@ function generateAllPossibleCustomDirectives() {
             vm.rootScope = $rootScope;
             vm.scope = $scope;
         },
-        templateUrl: `${ cdnUrl }/html/prm-virtual-browse-item-after.html`,
+        templateUrl : `${ cdnUrl }/html/prm-virtual-browse-item-after.html`,
     } );
 
     // PRM-VIRTUAL-BROWSE-ITEM-INFO-AFTER
     app.component( 'prmVirtualBrowseItemInfoAfter', {
-        bindings  : { parentCtrl: '<' },
-        controller: function( $scope, $rootScope ) {
+        bindings   : { parentCtrl : '<' },
+        controller : function( $scope, $rootScope ) {
             const vm = this;
 
             vm.getPnx = () => {
@@ -5723,13 +5723,13 @@ function generateAllPossibleCustomDirectives() {
             vm.rootScope = $rootScope;
             vm.scope = $scope;
         },
-        templateUrl: `${ cdnUrl }/html/prm-virtual-browse-item-info-after.html`,
+        templateUrl : `${ cdnUrl }/html/prm-virtual-browse-item-info-after.html`,
     } );
 
     // PRM-VOICE-SEARCH-TOAST-AFTER
     app.component( 'prmVoiceSearchToastAfter', {
-        bindings  : { parentCtrl: '<' },
-        controller: function( $scope, $rootScope ) {
+        bindings   : { parentCtrl : '<' },
+        controller : function( $scope, $rootScope ) {
             const vm = this;
 
             vm.getPnx = () => {
@@ -5745,7 +5745,7 @@ function generateAllPossibleCustomDirectives() {
             vm.rootScope = $rootScope;
             vm.scope = $scope;
         },
-        templateUrl: `${ cdnUrl }/html/prm-voice-search-toast-after.html`,
+        templateUrl : `${ cdnUrl }/html/prm-voice-search-toast-after.html`,
     } );
 
 

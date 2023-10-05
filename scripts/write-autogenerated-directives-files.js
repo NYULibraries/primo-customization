@@ -20,11 +20,11 @@ const CDN_VIEWS = [
 
 const EXCLUDED_CUSTOM_DIRECTIVES = {
     'prm-search-result-availability-line-after' : {
-        excludeFromCdn: false,
+        excludeFromCdn : false,
     },
 };
 
-const lines = fs.readFileSync( EXLIBRIS_TEMPLATE_CACHE_CODE_FILE, { encoding: 'utf8' } )
+const lines = fs.readFileSync( EXLIBRIS_TEMPLATE_CACHE_CODE_FILE, { encoding : 'utf8' } )
     .toString()
     .split( EOL );
 
@@ -188,5 +188,5 @@ ${ componentJs }
 generateAllPossibleCustomDirectives();
 `
 
-    fs.writeFileSync( customPackageJsFile, js, { encoding: 'utf8' } );
+    fs.writeFileSync( customPackageJsFile, js, { encoding : 'utf8' } );
 }
