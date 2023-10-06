@@ -1,3 +1,5 @@
+/* global document, process, require, setTimeout */
+
 const { test, expect } = require( '@playwright/test' );
 
 const BROWZINE_PRIMO_ADAPTER_SCRIPT_URL =

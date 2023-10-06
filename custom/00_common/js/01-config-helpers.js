@@ -2,6 +2,9 @@
 // 01-config-helpers.js
 // ****************************************
 
+/* global window */
+
+// eslint-disable-next-line no-unused-vars
 function getCdnUrl( vid ) {
     // Normalize the vid, even though it's theoretically impossible for the vid to
     // not be all uppercase already, given that Primo VE is apparently case-sensitive

@@ -1,3 +1,5 @@
+/* global process, URL */
+
 // ======================================
 // Notes about use of eval() in this test
 // ======================================

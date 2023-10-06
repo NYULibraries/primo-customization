@@ -1,3 +1,5 @@
+/* global process, require */
+
 // Currently in the `homepage_en.html` files we have Primo VE links with hardcoded
 // `vid` values in the `href` URLs, and occasionally the URLs have been absolute
 // instead of relative URLs.  Ideally we'd like to eliminate URL `vid`-based

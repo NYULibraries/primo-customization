@@ -2,6 +2,8 @@
 // 01-config.js
 // ****************************************
 
+/* global app, console, getCdnUrl, URLSearchParams, window */
+
 const searchParams = new URLSearchParams( window.location.search );
 const vid = searchParams.get( 'vid' );
 const cdnUrl = getCdnUrl( vid );

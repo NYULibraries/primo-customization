@@ -1,3 +1,5 @@
+/* global console, process, URL */
+
 import * as http from 'http';
 import { existsSync } from 'node:fs';
 import * as fs from 'node:fs/promises';

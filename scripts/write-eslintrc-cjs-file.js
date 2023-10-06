@@ -1,3 +1,5 @@
+/* global URL */
+
 import fs from 'node:fs';
 import path from 'node:path';
 import * as url from 'url';

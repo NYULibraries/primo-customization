@@ -2,6 +2,9 @@
 // 03-inject.js
 // ****************************************
 
+/* global cdnUrl, document */
+
+// eslint-disable-next-line no-unused-vars
 function injectCDNResourceTags() {
     injectLinkTagsForCDNCustomCSS()
     injectScriptTagForCDNCustomJS();
