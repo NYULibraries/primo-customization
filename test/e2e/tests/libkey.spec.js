@@ -213,7 +213,7 @@ async function randomLibKeyLinkTest( page, libKeyLinks, testResult ) {
         if ( testResult.newPageUrl === 'about:blank' ) {
             // This might be a direct download link.  Test to see if we have a blank
             // new tab and a download event with a filename ending in ".pdf".
-            testIsDirectDownloadLink( page, randomLibKeyLink, testResult );
+            await testIsDirectDownloadLink( page, randomLibKeyLink, testResult );
         } else {
             // It wasn't a direct download link, and it opened a tab with the wrong URL.
             testResult.result = false;
