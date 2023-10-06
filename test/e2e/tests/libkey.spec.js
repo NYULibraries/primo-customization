@@ -208,40 +208,44 @@ async function randomLibKeyLinkTest( page, libKeyLinks, testResult ) {
     if ( testResult.newPageUrl === testResult.linkHref ) {
         testResult.result = true;
     } else {
-        // This might be a direct download link.  Test to see if we have a blank
-        // new tab and a download event with a filename ending in ".pdf".
         if ( testResult.newPageUrl === 'about:blank' ) {
-            const EXPECTED_FILE_EXTENSION = '.pdf';
-
-            // https://playwright.dev/docs/downloads
-            // https://playwright.dev/docs/api/class-download
-            const downloadPromise = page.waitForEvent( 'download' );
-
-            await randomLibKeyLink.click();
-
-            const download = await downloadPromise;
-
-            const downloadSuggestedFilename = download.suggestedFilename();
-            if ( downloadSuggestedFilename.toLocaleLowerCase().endsWith( EXPECTED_FILE_EXTENSION ) ) {
-                testResult.result = true;
-            } else {
-                testResult.result = false;
-
-                if ( !testResult.errorMessage ) {
-                    testResult.errorMessage =
-                        `Clicking randomly selected LibKey link with href "${ testResult.linkHref }"` +
-                        ` triggered the download of file "${ downloadSuggestedFilename }", which does` +
-                        ` does not have the expected filename extension "${ EXPECTED_FILE_EXTENSION }".`;
-                }
-            }
-        // It wasn't a direct download link, and it opened a tab with the wrong URL.
+            // This might be a direct download link.  Test to see if we have a blank
+            // new tab and a download event with a filename ending in ".pdf".
+            testIsDirectDownloadLink( page, randomLibKeyLink, testResult );
         } else {
+            // It wasn't a direct download link, and it opened a tab with the wrong URL.
             testResult.result = false;
             testResult.errorMessage =
                 `Randomly selected LibKey link with href "${ testResult.linkHref }"` +
                 ' did not correctly open a new tab.' + (
                     testResult.newPageUrl ? ` New tab loaded with incorrect URL "${ testResult.newPageUrl }".` : ''
                 );
+        }
+    }
+}
+
+async function testIsDirectDownloadLink( page, randomLibKeyLink, testResult ) {
+    const EXPECTED_FILE_EXTENSION = '.pdf';
+
+    // https://playwright.dev/docs/downloads
+    // https://playwright.dev/docs/api/class-download
+    const downloadPromise = page.waitForEvent( 'download' );
+
+    await randomLibKeyLink.click();
+
+    const download = await downloadPromise;
+
+    const downloadSuggestedFilename = download.suggestedFilename();
+    if ( downloadSuggestedFilename.toLocaleLowerCase().endsWith( EXPECTED_FILE_EXTENSION ) ) {
+        testResult.result = true;
+    } else {
+        testResult.result = false;
+
+        if ( !testResult.errorMessage ) {
+            testResult.errorMessage =
+                `Clicking randomly selected LibKey link with href "${ testResult.linkHref }"` +
+                ` triggered the download of file "${ downloadSuggestedFilename }", which does` +
+                ` does not have the expected filename extension "${ EXPECTED_FILE_EXTENSION }".`;
         }
     }
 }
