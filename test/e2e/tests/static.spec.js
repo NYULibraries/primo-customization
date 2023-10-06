@@ -1,3 +1,5 @@
+/* global console, process, require, TextDecoder */
+
 import * as fs from 'node:fs';
 
 import { execSync } from 'child_process';
@@ -57,13 +59,11 @@ for ( let i = 0; i < testCases.length; i++ ) {
             const actualFile = `tests/actual/${ view }/${ testCase.key }.txt`;
             try {
                 fs.unlinkSync( actualFile );
-            } catch ( error ) {
-            }
+            } catch ( error ) { /* empty */ }
             const diffFile = `tests/diffs/${ view }/${ testCase.key }.txt`;
             try {
                 fs.unlinkSync( diffFile );
-            } catch ( error ) {
-            }
+            } catch ( error ) { /* empty */ }
 
             await page.locator( testCase.waitForSelector ).waitFor();
 
