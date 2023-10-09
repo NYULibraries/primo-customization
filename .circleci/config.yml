@@ -73,7 +73,7 @@ workflows:
             - run-e2e-nyu-dev:
                   filters:
                       branches:
-                          ignore: main
+                          only: develop
             - run-e2e-nyu-prod:
                   filters:
                       branches:
