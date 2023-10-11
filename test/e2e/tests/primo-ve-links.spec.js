@@ -1,11 +1,12 @@
-/* global process, require */
-
 // Currently in the `homepage_en.html` files we have Primo VE links with hardcoded
 // `vid` values in the `href` URLs, and occasionally the URLs have been absolute
 // instead of relative URLs.  Ideally we'd like to eliminate URL `vid`-based
 // differences between `homepage_en.html` files, setting or overriding the `vid`
 // values at page load time, but until then, we need to protect against bad
 // URLs that might inadvertently send the user to the wrong Primo VE view.
+
+/* global process, require */
+
 const { test, expect } = require( '@playwright/test' );
 
 const view = process.env.VIEW;
