@@ -48,7 +48,3 @@ function configureAndInjectLibKey() {
 }
 
 configureAndInjectLibKey();
-
-function findingAidsLinkClickHandler(event) {
-    event.stopPropagation();
-}

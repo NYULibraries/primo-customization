@@ -1,3 +1,14 @@
+/* Hide 'block+messages', 'personal details' */
+md-tab-item#tab-item-14.md-tab,
+md-tab-item#tab-item-15.md-tab,
+md-tab-item#tab-item-46.md-tab,
+md-tab-item#tab-item-47.md-tab {
+  display: none !important
+}
+
+prm-messages-and-blocks-overview {
+  display: none !important;
+}
 
 /* ***************************************** */
 /* Styles for full display */
@@ -11,22 +22,59 @@ prm-full-view .services-index-under button:not(.accessible-close) {
 
 
 
-#full-view-container >*:first-child {
-    display: flex;
-    flex-direction: column;
+#full-view-container>*:first-child {
+  display: flex;
+  flex-direction: column;
 }
 
 /* Reorder FullDisplay sections. */
-#searchWithinJournal { order: 1; } /* "Search inside" */
-#getit_link1_0 { order: 2; } /* "View Online" or "How to get it" */
-#getit_link1_1 { order: 3; } /* "Get It" */
-#getit_link2 { order: 4; }
-#details { order: 5; } /* "Details" */
-#action_list { order: 6; } /* "Send to" */
-#citationTrails { order: 7; } /* "Citations" */
-#links { order: 8; } /* "Links" */
-#virtualBrowse { order: 9; } /* "Virtual Browse" */
-#tags { order: 10; }
+#searchWithinJournal {
+  order: 1;
+}
+
+/* "Search inside" */
+#getit_link1_0 {
+  order: 2;
+}
+
+/* "View Online" or "How to get it" */
+#getit_link1_1 {
+  order: 3;
+}
+
+/* "Get It" */
+#getit_link2 {
+  order: 4;
+}
+
+#details {
+  order: 5;
+}
+
+/* "Details" */
+#action_list {
+  order: 6;
+}
+
+/* "Send to" */
+#citationTrails {
+  order: 7;
+}
+
+/* "Citations" */
+#links {
+  order: 8;
+}
+
+/* "Links" */
+#virtualBrowse {
+  order: 9;
+}
+
+/* "Virtual Browse" */
+#tags {
+  order: 10;
+}
 
 /* ***************************************** */
 /* Styles for browse search & journal search */

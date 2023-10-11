@@ -1,1 +1,1 @@
-https://github.com/NYULibraries/primo-customization-cdn/commit/15900b02072c9d548db4705f4a9785b3d80c9424
+https://github.com/NYULibraries/primo-customization-cdn/commit/3d4f11a671510374e92cef44e72c921ea7d48fbf
