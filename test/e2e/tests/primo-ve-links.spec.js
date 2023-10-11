@@ -17,7 +17,12 @@ const vid = view.replaceAll( '-', ':' );
 const linksToTest =
     getViewConfig( 'primo-ve-links', view ).getLinksToTest( vid );
 if ( linksToTest.length > 0 ) {
-    test( 'Primo VE links in home page', async ( { page } ) => {
+    const homePageWaitForSelector =
+        getViewConfig( 'static', view ).testCases.find(
+            element => element.key === 'home-page',
+        ).waitForSelector;
+
+    test.only( 'Primo VE links in home page', async ( { page } ) => {
         // Tests running in container sometimes take longer and require a
         // higher timeout value.
         if ( process.env.IN_CONTAINER ) {
@@ -26,7 +31,7 @@ if ( linksToTest.length > 0 ) {
 
         await page.goto( `?vid=${ vid }` );
 
-        await page.locator( 'md-card[ data-cy="home-need-help" ]' ).waitFor();
+        await page.locator( homePageWaitForSelector ).waitFor();
 
         const linkTestFailures = {};
         for ( let i = 0; i < linksToTest.length; i++ ) {
