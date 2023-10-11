@@ -4,7 +4,7 @@ const testCases = [
         name            : 'Home page',
         queryString     : '',
         elementToTest   : 'prm-static',
-        waitForSelector : 'md-card[ data-cy="home-need-help" ]',
+        waitForSelector : 'md-card[ data-cy="home-additional-options" ]',
     },
     // TODO: Re-enable if/when customization has been implemented.  Until then,
     //       this test will fail due to `prm-no-search-result-after` being hidden.
