@@ -1,5 +1,13 @@
 /* global process */
 
+import path from 'node:path';
+
+function getViewConfigFile( testSuite, view ) {
+    return path.resolve(
+        path.join( 'tests', 'view-config', testSuite, view + '.js' ),
+    );
+}
+
 // NOTE: it's current not possible to use a custom flag like `--update-golden-files`
 // with `playwright`:
 // "[Feature] Add support for test.each / describe.each #7036"
@@ -10,5 +18,6 @@ function updateGoldenFiles() {
 }
 
 export {
+    getViewConfigFile,
     updateGoldenFiles,
 };
