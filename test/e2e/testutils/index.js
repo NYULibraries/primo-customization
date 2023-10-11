@@ -1,10 +1,12 @@
-/* global process */
+/* global process require */
 
 import path from 'node:path';
 
-function getViewConfigFile( testSuite, view ) {
-    return path.resolve(
-        path.join( 'tests', 'view-config', testSuite, view + '.js' ),
+function getViewConfig( testSuite, view ) {
+    return require(
+        path.resolve(
+            path.join( 'tests', 'view-config', testSuite, view + '.js' ),
+        ),
     );
 }
 
@@ -18,6 +20,6 @@ function updateGoldenFiles() {
 }
 
 export {
-    getViewConfigFile,
+    getViewConfig,
     updateGoldenFiles,
 };
