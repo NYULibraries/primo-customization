@@ -1,3 +1,5 @@
+/* global process */
+
 // NOTE: it's current not possible to use a custom flag like `--update-golden-files`
 // with `playwright`:
 // "[Feature] Add support for test.each / describe.each #7036"
