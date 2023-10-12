@@ -107,11 +107,11 @@ Local Primo: http://localhost:8003/discovery/search?vid=[VIEW]
 
 ```shell
 # http://localhost:8003/discovery/search?vid=01NYU_INST:NYU_DEV
-yarn primo-explore-devenv:run:dev
+yarn primo-explore-devenv:run:nyu:dev
 # http://localhost:8003/discovery/search?vid=01NYU_INST:NYU
-yarn primo-explore-devenv:run:prod
+yarn primo-explore-devenv:run:nyu:prod
 # http://localhost:8003/discovery/search?vid=01NYU_INST:TESTWS01
-yarn primo-explore-devenv:run:testws01
+yarn primo-explore-devenv:run:nyu:testws01
 # http://localhost:8003/discovery/search?vid=[VID]
 yarn primo-explore-devenv:run [VIEW]
 ```
@@ -207,11 +207,11 @@ This command will create a new package in _primo-explore-devenv/packages/_:
 
 ```shell
 # Creates ./primo-explore-devenv/packages/01NYU_INST-NYU_DEV.zip
-yarn primo-explore-devenv:create-package:dev
+yarn primo-explore-devenv:create-package:nyu:dev
 # Creates ./primo-explore-devenv/packages/01NYU_INST-NYU.zip
-yarn primo-explore-devenv:create-package:prod
+yarn primo-explore-devenv:create-package:nyu:prod
 # Creates ./primo-explore-devenv/packages/01NYU_INST-TESTWS01.zip
-yarn primo-explore-devenv:create-package:testws01
+yarn primo-explore-devenv:create-package:nyu:testws01
 # Creates ./primo-explore-devenv/packages/[VIEW].zip
 yarn primo-explore-devenv:create-package [VIEW]
 ```
@@ -242,9 +242,9 @@ _app-colors.css_ files should be moved from the customization package to the
 appropriate paths in the CDN.  The _scss/_ directories can simply be deleted.
 
 ```shell
-yarn primo-explore-devenv:app-css:dev
-yarn primo-explore-devenv:app-css:prod
-yarn primo-explore-devenv:app-css:testws01
+yarn primo-explore-devenv:app-css:nyu:dev
+yarn primo-explore-devenv:app-css:nyu:prod
+yarn primo-explore-devenv:app-css:nyu:testws01
 ```
 
 Using Docker Compose:
