@@ -3,7 +3,7 @@
 import * as fs from 'node:fs';
 
 import { execSync } from 'child_process';
-import { getViewConfig, updateGoldenFiles } from '../testutils/index.js';
+import { getViewConfig, updateGoldenFiles } from '../testutils';
 
 const { test, expect } = require( '@playwright/test' );
 
