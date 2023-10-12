@@ -382,7 +382,7 @@ See [Start local CDN server](https://github.com/NYULibraries/primo-customization
 
 ## Archived code
 
-### Have CloudFront server a custom empty 403 error page when a non-existent templateUrl file is requested
+### Have CloudFront serve a custom empty 403 error page when a non-existent templateUrl file is requested
 
 Ideally, we would not want to be generating empty `templateUrl` files in S3 for
 all custom directives that haven't been customized.  We set up our S3 bucket and
