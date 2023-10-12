@@ -12,7 +12,6 @@
 
 # Built by `gulp`
 custom/*/css/app-colors.css
-custom/*/css/custom1.css
 custom/*/js/custom.js
 custom/*/scss/
 
