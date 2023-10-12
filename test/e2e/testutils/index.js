@@ -2,16 +2,16 @@
 
 import path from 'node:path';
 
-function parseVid( view ) {
-    return view.replaceAll( '-', ':' );
-}
-
 function getViewConfig( testSuite, view ) {
     return require(
         path.resolve(
             path.join( 'tests', 'view-config', testSuite, view + '.js' ),
         ),
     );
+}
+
+function parseVid( view ) {
+    return view.replaceAll( '-', ':' );
 }
 
 // NOTE: it's current not possible to use a custom flag like `--update-golden-files`
