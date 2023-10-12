@@ -2,7 +2,7 @@
 
 const { test, expect } = require( '@playwright/test' );
 
-import { getViewConfig } from '../testutils';
+import { getViewConfig, parseVid } from '../testutils';
 
 const BROWZINE_PRIMO_ADAPTER_SCRIPT_URL =
     'https://s3.amazonaws.com/browzine-adapters/primo/browzine-primo-adapter.js';
@@ -16,7 +16,7 @@ const LIBKEY_LINK_SELECTORS = [
 ];
 
 const view = process.env.VIEW;
-const vid = view.replaceAll( '-', ':' );
+const vid = parseVid( view );
 
 const testCases = getViewConfig( 'libkey', view ).testCases;
 

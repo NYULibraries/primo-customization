@@ -9,10 +9,10 @@
 
 const { test, expect } = require( '@playwright/test' );
 
-import { getViewConfig } from '../testutils';
+import { getViewConfig, parseVid } from '../testutils';
 
 const view = process.env.VIEW;
-const vid = view.replaceAll( '-', ':' );
+const vid = parseVid( view );
 
 const linksToTest =
     getViewConfig( 'primo-ve-links', view ).getLinksToTest( vid );

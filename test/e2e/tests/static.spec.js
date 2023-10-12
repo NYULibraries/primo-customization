@@ -3,12 +3,16 @@
 import * as fs from 'node:fs';
 
 import { execSync } from 'child_process';
-import { getViewConfig, updateGoldenFiles } from '../testutils';
+import {
+    getViewConfig,
+    parseVid,
+    updateGoldenFiles
+} from '../testutils';
 
 const { test, expect } = require( '@playwright/test' );
 
 const view = process.env.VIEW;
-const vid = view.replaceAll( '-', ':' );
+const vid = parseVid( view );
 
 const testCases = getViewConfig( 'static', view ).testCases;
 

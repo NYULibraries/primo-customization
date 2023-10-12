@@ -2,6 +2,10 @@
 
 import path from 'node:path';
 
+function parseVid( view ) {
+    return view.replaceAll( '-', ':' );
+}
+
 function getViewConfig( testSuite, view ) {
     return require(
         path.resolve(
@@ -21,5 +25,6 @@ function updateGoldenFiles() {
 
 export {
     getViewConfig,
+    parseVid,
     updateGoldenFiles,
 };
