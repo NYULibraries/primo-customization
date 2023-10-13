@@ -44,7 +44,6 @@ COPY primo-explore-devenv/tests ./primo-explore-devenv/tests
 
 EXPOSE 8003
 
-# This should be overridden by `command` in the Docker Compose service definitions
-# in all cases, so in theory this CMD should never be run, but let's provide a
-# sensible default anyway just in case.
+# https://github.com/NYULibraries/primo-customization-cdn runs this default command with VIEW specified
+# ensure any changes are interoperational with this repo
 CMD ["sh", "-c", "yarn primo-explore-devenv:run $VIEW"]
