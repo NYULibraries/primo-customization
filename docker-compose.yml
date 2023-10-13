@@ -16,6 +16,14 @@ x-build-e2e: &x-build-e2e
     cache_from:
       - primo-customization-e2e
 
+x-build-unit: &x-build-unit-tests
+  image: primo-customization-unit-tests
+  build:
+    context: ./
+    dockerfile: test/unit/Dockerfile
+    cache_from:
+      - primo-customization-unit-tests
+
 x-environment: &x-environment
   CI: ${CI}
   VIEW: ${VIEW}
@@ -127,6 +135,8 @@ services:
       - "8003:8003"
     # volumes:
     #   - ./custom:/app/custom
+  unit-tests:
+    <<: *x-build-unit-tests
 
 networks:
   primo-customization-net:

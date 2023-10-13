@@ -1,12 +1,28 @@
 {
   "scripts": {
     "test:e2e": "./scripts/run-tests.sh",
-    "test:e2e:dev": "VIEW=01NYU_INST-NYU_DEV yarn test:e2e",
-    "test:e2e:dev:update-golden-files": "UPDATE_GOLDEN_FILES=true VIEW=01NYU_INST-NYU_DEV yarn test:e2e",
-    "test:e2e:prod": "VIEW=01NYU_INST-NYU yarn test:e2e",
-    "test:e2e:prod:update-golden-files": "UPDATE_GOLDEN_FILES=true VIEW=01NYU_INST-NYU yarn test:e2e",
-    "test:e2e:testws01": "VIEW=01NYU_INST-TESTWS01 yarn test:e2e",
-    "test:e2e:testws01:update-golden-files": "UPDATE_GOLDEN_FILES=true VIEW=01NYU_INST-TESTWS01 yarn test:e2e"
+
+    "test:e2e:ad:dev": "VIEW=01NYU_AD-AD_DEV yarn test:e2e",
+    "test:e2e:ad:dev:update-golden-files": "UPDATE_GOLDEN_FILES=true VIEW=01NYU_AD-AD_DEV yarn test:e2e",
+    "test:e2e:ad:prod": "VIEW=01NYU_AD-AD yarn test:e2e",
+    "test:e2e:ad:prod:update-golden-files": "UPDATE_GOLDEN_FILES=true VIEW=01NYU_AD-AD yarn test:e2e",
+
+    "test:e2e:nyhs:dev": "VIEW=01NYU_NYHS-NYHS_DEV yarn test:e2e",
+    "test:e2e:nyhs:dev:update-golden-files": "UPDATE_GOLDEN_FILES=true VIEW=01NYU_NYHS-NYHS_DEV yarn test:e2e",
+    "test:e2e:nyhs:prod": "VIEW=01NYU_NYHS-NYHS yarn test:e2e",
+    "test:e2e:nyhs:prod:update-golden-files": "UPDATE_GOLDEN_FILES=true VIEW=01NYU_NYHS-NYHS yarn test:e2e",
+
+    "test:e2e:nyu:dev": "VIEW=01NYU_INST-NYU_DEV yarn test:e2e",
+    "test:e2e:nyu:dev:update-golden-files": "UPDATE_GOLDEN_FILES=true VIEW=01NYU_INST-NYU_DEV yarn test:e2e",
+    "test:e2e:nyu:prod": "VIEW=01NYU_INST-NYU yarn test:e2e",
+    "test:e2e:nyu:prod:update-golden-files": "UPDATE_GOLDEN_FILES=true VIEW=01NYU_INST-NYU yarn test:e2e",
+    "test:e2e:nyu:testws01": "VIEW=01NYU_INST-TESTWS01 yarn test:e2e",
+    "test:e2e:nyu:testws01:update-golden-files": "UPDATE_GOLDEN_FILES=true VIEW=01NYU_INST-TESTWS01 yarn test:e2e",
+
+    "test:e2e:sh:dev": "VIEW=01NYU_US-SH_DEV yarn test:e2e",
+    "test:e2e:sh:dev:update-golden-files": "UPDATE_GOLDEN_FILES=true VIEW=01NYU_US-SH_DEV yarn test:e2e",
+    "test:e2e:sh:prod": "VIEW=01NYU_US-SH yarn test:e2e",
+    "test:e2e:sh:prod:update-golden-files": "UPDATE_GOLDEN_FILES=true VIEW=01NYU_US-SH yarn test:e2e"
   },
   "dependencies": {
     "@playwright/test": "1.37",

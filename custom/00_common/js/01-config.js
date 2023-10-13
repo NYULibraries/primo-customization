@@ -2,11 +2,26 @@
 // 01-config.js
 // ****************************************
 
+/* global app, console, getCdnUrl, URLSearchParams, window */
+
 const searchParams = new URLSearchParams( window.location.search );
 const vid = searchParams.get( 'vid' );
 const cdnUrl = getCdnUrl( vid );
 
 console.log( `[DEBUG] cdnUrl = ${ cdnUrl }` );
+
+// All the code in our customization package is run inside an IIFE (Immediately
+// Invoked Function Expression), which means any variables defined here are not
+// accessible to the CDN JS code.  The only way for the CDN JS code to know the
+// CDN URL without duplicating `getCdnUrl()` there is to attach it to an object
+// it has access to, or to inject it in a <script> or DOM element on the page.
+// We choose to attach it to the global `window` object since we are already
+// allowing the Third Iron code to attach the `browzine` object to `window` for
+// LibKey functionality, and it seems safe enough using the `nyulibraries`
+// namespace.
+window.nyulibraries = {
+    cdnUrl,
+};
 
 // This is necessary to allow the `templateURL` method to fetch cross-domain
 // from the CDN.
@@ -21,33 +36,3 @@ app.config( function ( $sceDelegateProvider ) {
         ],
     );
 } );
-
-function getCdnUrl( vid ) {
-    const cdnUrls = {
-        '01NYU_INST:NYU'     : 'https://cdn.library.nyu.edu/primo-customization',
-        '01NYU_INST:NYU_DEV' : 'https://cdn-dev.library.nyu.edu/primo-customization',
-        '01NYU_INST:TESTWS01': 'https://cdn-dev.library.nyu.edu/primo-customization',
-    }
-
-    const hostname = window.location.hostname;
-    const view = parseViewDirectoryName( vid );
-
-    let baseUrl;
-    if ( hostname === 'localhost' ) {
-        baseUrl = 'http://localhost:3000/primo-customization';
-    } else if ( hostname === 'sandbox02-na.primo.exlibrisgroup.com' ) {
-        baseUrl = 'https://d290kawcj1dea9.cloudfront.net/primo-customization';
-    } else if ( hostname === 'primo-explore-devenv' ) {
-        // Running in the headless browser in the Docker Compose `e2e` service.
-        baseUrl = 'http://cdn-server:3000/primo-customization';
-    } else {
-        baseUrl = cdnUrls[ vid ] ||
-                  cdnUrls[ '01NYU_INST:NYU' ];
-    }
-
-    return `${ baseUrl }/${ view }`;
-}
-
-function parseViewDirectoryName( vid ) {
-    return vid.replaceAll( ':', '-' );
-}

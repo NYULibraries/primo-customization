@@ -1,0 +1,11 @@
+{
+  "name": "primo-customization-unit-tests",
+  "version": "0.0.1",
+  "devDependencies": {
+    "vitest": "0.34.6"
+  },
+  "scripts": {
+    "test:unit": "vitest run",
+    "test:unit:watch": "vitest watch"
+  }
+}

@@ -1,7 +1,7 @@
 docker-defaults: &docker-defaults
     docker:
         -   image: cimg/base:2023.07
-    #working_directory: ~/app
+    working_directory: ~/app
 
 auth_quay: &auth_quay
     run:
@@ -43,28 +43,73 @@ jobs:
                   command: |
                       docker-compose run e2e
 
-    run-e2e-nyu-dev:
-        <<: *docker-defaults
+    run-e2e-ad-dev:
+        <<: [*docker-defaults, *run-e2e]
         environment:
-            VIEW: 01NYU_INST-NYU_DEV
+            VIEW: 01NYU_AD-AD_DEV
         <<: *run-e2e
 
+    run-e2e-ad-prod:
+        <<: [*docker-defaults, *run-e2e]
+        environment:
+            VIEW: 01NYU_AD-AD
+
+    run-e2e-nyhs-dev:
+        <<: [*docker-defaults, *run-e2e]
+        environment:
+            VIEW: 01NYU_NYHS-NYHS_DEV
+
+    run-e2e-nyhs-prod:
+        <<: [*docker-defaults, *run-e2e]
+        environment:
+            VIEW: 01NYU_NYHS-NYHS
+
+    run-e2e-nyu-dev:
+        <<: [*docker-defaults, *run-e2e]
+        environment:
+            VIEW: 01NYU_INST-NYU_DEV
+
     run-e2e-nyu-prod:
-        <<: *docker-defaults
+        <<: [*docker-defaults, *run-e2e]
         environment:
             VIEW: 01NYU_INST-NYU
-        <<: *run-e2e
+
+    run-e2e-nyu-test:
+        <<: [*docker-defaults, *run-e2e]
+        environment:
+            VIEW: 01NYU_INST-TESTWS01
+
+    run-e2e-sh-dev:
+        <<: [*docker-defaults, *run-e2e]
+        environment:
+            VIEW: 01NYU_US-SH_DEV
+
+    run-e2e-sh-prod:
+        <<: [*docker-defaults, *run-e2e]
+        environment:
+            VIEW: 01NYU_US-SH
+
+    run-unit-tests:
+        <<: *docker-defaults
+        steps:
+            - checkout
+            - setup_remote_docker
+            - run:
+                  name: Run unit tests
+                  command: |
+                      docker-compose run unit-tests
 
 workflows:
     build-test-and-deploy:
         jobs:
             - build-all-services
-            - run-e2e-nyu-dev:
-                  filters:
-                      branches:
-                          ignore: main
-            - run-e2e-nyu-prod:
-                  filters:
-                      branches:
-                          only: main
-
+            - run-unit-tests
+            - run-e2e-ad-dev
+            - run-e2e-ad-prod
+            - run-e2e-nyhs-dev
+            - run-e2e-nyhs-prod
+            - run-e2e-nyu-dev
+            - run-e2e-nyu-prod
+            - run-e2e-nyu-test
+            - run-e2e-sh-dev
+            - run-e2e-sh-prod
