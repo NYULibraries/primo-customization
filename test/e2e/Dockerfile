@@ -1,6 +1,6 @@
 FROM mcr.microsoft.com/playwright:v1.37.0-jammy AS builder
 
-ENV IN_CONTAINER true
+ENV CONTAINER_MODE true
 
 WORKDIR /e2e
 
