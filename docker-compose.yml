@@ -124,7 +124,6 @@ services:
   #       If changing this name, make sure to update that reference.
   primo-explore-devenv:
     <<: [*x-build-primo-customization]
-    command: yarn primo-explore-devenv:run $VIEW
     networks:
       - primo-customization-net
     depends_on:
