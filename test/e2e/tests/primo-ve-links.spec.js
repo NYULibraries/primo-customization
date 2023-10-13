@@ -17,6 +17,16 @@ const vid = parseVid( view );
 const linksToTest =
     getViewConfig( 'primo-ve-links', view ).getLinksToTest( vid );
 if ( linksToTest.length > 0 ) {
+    // We need to wait for home page to fully load before running the test.
+    // There is already a home page test in the `static` test suite for all
+    // views which has the selector for the element we need to wait for.  For
+    // now, we just grab it from there.
+    // This is a bit brittle, because conceivably we might one day remove the
+    // home page test for a view, or change the `key` for the test case to a
+    // different string.  Once we get a sense of which selectors are needed
+    // across test suites, we could perhaps extract them to library code.  We
+    // might also switch to using page objects, in which case the selectors will
+    // be nicely encapsulated there.
     const homePageWaitForSelector =
         getViewConfig( 'static', view ).testCases.find(
             element => element.key === 'home-page',
