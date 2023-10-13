@@ -35,7 +35,6 @@ COPY --from=builder /e2e .
 COPY --from=builder /ms-playwright /ms-playwright
 
 ENV CONTAINER_MODE true
-ENV PATH /e2e/node_modules/.bin:$PATH
 # Set the PLAYWRIGHT_BROWSERS_PATH environment variable to tell Playwright where to look for the browser binaries
 # https://github.com/microsoft/playwright/blob/1f209204cd18bce7d1bfae50f5af105dec752df8/utils/docker/Dockerfile.focal#L24
 ENV PLAYWRIGHT_BROWSERS_PATH=/ms-playwright
