@@ -14,10 +14,10 @@ require( 'dotenv' ).config(
  * @type {import('@playwright/test').PlaywrightTestConfig}
  */
 const config = {
-    // === Note about `process.env.CI` vs `process.env.IN_CONTAINER` ===
+    // === Note about `process.env.CI` vs `process.env.CONTAINER_MODE` ===
     // Playwright documentation and its generated default code make frequent use of
     // `process.env.CI` for specifying configuration in continuous integration
-    // environments.  In most cases we replace this with `process.env.IN_CONTAINER`,
+    // environments.  In most cases we replace this with `process.env.CONTAINER_MODE`,
     // to increase stability when containers are being used in local development
     // environments in addition to when they are being used in CI.
     // This equivalence seems reasonable given Playwright assumes (understandably)
@@ -48,9 +48,9 @@ const config = {
        We increase the number of retries in all environments to mitigate various
        LibKey-related test instabilities.
      */
-    retries      : process.env.IN_CONTAINER ? 4 : 2,
+    retries      : process.env.CONTAINER_MODE ? 4 : 2,
     /* Opt out of parallel tests. */
-    workers      : process.env.IN_CONTAINER ? 1 : undefined,
+    workers      : process.env.CONTAINER_MODE ? 1 : undefined,
     /* Reporter to use. See https://playwright.dev/docs/test-reporters */
     reporter     : 'list',
     /* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions. */

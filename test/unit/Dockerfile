@@ -1,6 +1,6 @@
 FROM node:18-slim
 
-ENV IN_CONTAINER true
+ENV CONTAINER_MODE true
 ENV INSTALL_PATH /app
 
 COPY test/unit/package.json test/unit/yarn.lock /tmp/

@@ -26,7 +26,7 @@ import { describe, expect, test } from 'vitest'
 const __dirname = url.fileURLToPath( new URL( '..', import.meta.url ) );
 
 const ROOT = path.join( __dirname, '..' );
-const fileToTest = process.env.IN_CONTAINER ?
+const fileToTest = process.env.CONTAINER_MODE ?
     path.join( '01-config-helpers.js' ) :
     path.join( ROOT, 'custom', '00_common', 'js', '01-config-helpers.js' );
 
