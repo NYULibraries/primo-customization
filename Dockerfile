@@ -44,6 +44,4 @@ COPY primo-explore-devenv/tests ./primo-explore-devenv/tests
 
 EXPOSE 8003
 
-# https://github.com/NYULibraries/primo-customization-cdn runs this default command with VIEW specified
-# ensure any changes are interoperational with this repo
 CMD ["sh", "-c", "yarn primo-explore-devenv:run $VIEW"]
