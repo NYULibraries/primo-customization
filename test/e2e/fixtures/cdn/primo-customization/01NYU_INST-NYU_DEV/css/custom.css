@@ -1,3 +1,81 @@
+/* Hide 'block+messages', 'personal details' */
+md-tab-item#tab-item-14.md-tab,
+md-tab-item#tab-item-15.md-tab,
+md-tab-item#tab-item-46.md-tab,
+md-tab-item#tab-item-47.md-tab {
+  display: none !important
+}
+
+prm-messages-and-blocks-overview {
+  display: none !important;
+}
+
+/* ***************************************** */
+/* Styles for full display */
+/* ***************************************** */
+
+/* Hide the side menu except for the invisible
+  'Prev', 'Close', and 'Next' options for accessibility.*/
+prm-full-view .services-index-under button:not(.accessible-close) {
+  display: none;
+}
+
+
+
+#full-view-container>*:first-child {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Reorder FullDisplay sections. */
+#searchWithinJournal {
+  order: 1;
+}
+
+/* "Search inside" */
+#getit_link1_0 {
+  order: 2;
+}
+
+/* "View Online" or "How to get it" */
+#getit_link1_1 {
+  order: 3;
+}
+
+/* "Get It" */
+#getit_link2 {
+  order: 4;
+}
+
+#details {
+  order: 5;
+}
+
+/* "Details" */
+#action_list {
+  order: 6;
+}
+
+/* "Send to" */
+#citationTrails {
+  order: 7;
+}
+
+/* "Citations" */
+#links {
+  order: 8;
+}
+
+/* "Links" */
+#virtualBrowse {
+  order: 9;
+}
+
+/* "Virtual Browse" */
+#tags {
+  order: 10;
+}
+
 /* ***************************************** */
 /* Styles for browse search & journal search */
 /* ***************************************** */
@@ -26,6 +104,34 @@ prm-browse-search-bar {
   /* This will act as a fallback */
 }
 
+/* Styles for clear button */
+prm-browse-search-bar .clear-button.is-visible {
+  right: 62px !important;
+}
+
+button.md-button.md-icon-button.clear-button.md-primoExplore-theme.md-ink-ripple.is-visible {
+  padding: 0 !important;
+  margin: 15px 5px !important;
+  width: 30px !important;
+  height: 30px !important;
+  min-width: 30px !important;
+  min-height: 30px !important;
+}
+
+md-icon.md-primoExplore-theme {
+  display: inline-block !important;
+  height: 21.6px;
+  width: 21.6px;
+  min-height: 21.6px;
+  min-width: 21.6px;
+}
+
+prm-browse-search-bar .clear-button.is-visible:hover,
+prm-browse-search-bar .clear-button.is-visible:focus {
+  color: #fff;
+  background-color: #3a3a3a;
+}
+
 prm-atoz-search-bar {
   padding-bottom: 60px;
   background-image: url("../assets/img/banner-bg.png") !important;
@@ -33,6 +139,21 @@ prm-atoz-search-bar {
   /* This will act as a fallback */
 }
 
+@media (max-width: 959px) {
+
+  prm-browse-search-bar,
+  prm-atoz-search-bar {
+    padding-bottom: 3.8em !important;
+  }
+}
+
+@media (max-width: 600px) {
+
+  prm-browse-search-bar,
+  prm-atoz-search-bar {
+    padding-top: 1.2em !important;
+  }
+}
 
 
 /* ***************************** */

@@ -3,29 +3,18 @@
 import * as fs from 'node:fs';
 
 import { execSync } from 'child_process';
-import { updateGoldenFiles } from '../testutils/index.js';
+import {
+    getViewConfig,
+    parseVid,
+    updateGoldenFiles
+} from '../testutils';
 
 const { test, expect } = require( '@playwright/test' );
 
 const view = process.env.VIEW;
-const vid = view.replaceAll( '-', ':' );
+const vid = parseVid( view );
 
-const testCases = [
-    {
-        key             : 'home-page',
-        name            : 'Home page',
-        queryString     : '',
-        elementToTest   : 'prm-static',
-        waitForSelector : 'md-card[ data-cy="home-need-help" ]',
-    },
-    {
-        key             : 'no-search-results',
-        name            : 'gasldfjlak===asgjlk&&&&!!!!',
-        queryString     : 'query=any,contains,gasldfjlak%3D%3D%3Dasgjlk%26%26%26%26!!!!&tab=Unified_Slot&search_scope=DN_and_CI&vid=01NYU_INST:NYU_DEV&offset=0',
-        elementToTest   : 'prm-no-search-result',
-        waitForSelector : 'prm-no-search-result-after',
-    },
-];
+const testCases = getViewConfig( 'static', view ).testCases;
 
 for ( let i = 0; i < testCases.length; i++ ) {
     const testCase = testCases[ i ];
