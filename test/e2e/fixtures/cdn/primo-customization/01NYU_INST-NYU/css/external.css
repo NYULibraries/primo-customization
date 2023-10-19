@@ -1,0 +1,397 @@
+/* Hide 'block+messages', 'personal details' */
+md-tab-item#tab-item-14.md-tab,
+md-tab-item#tab-item-15.md-tab,
+md-tab-item#tab-item-46.md-tab,
+md-tab-item#tab-item-47.md-tab {
+  display: none !important
+}
+
+prm-messages-and-blocks-overview {
+  display: none !important;
+}
+
+/* ***************************************** */
+/* Styles for full display */
+/* ***************************************** */
+
+/* Hide the side menu except for the invisible
+  'Prev', 'Close', and 'Next' options for accessibility.*/
+prm-full-view .services-index-under button:not(.accessible-close) {
+  display: none;
+}
+
+
+
+#full-view-container>*:first-child {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Reorder FullDisplay sections. */
+#searchWithinJournal {
+  order: 1;
+}
+
+/* "Search inside" */
+#getit_link1_0 {
+  order: 2;
+}
+
+/* "View Online" or "How to get it" */
+#getit_link1_1 {
+  order: 3;
+}
+
+/* "Get It" */
+#getit_link2 {
+  order: 4;
+}
+
+#details {
+  order: 5;
+}
+
+/* "Details" */
+#action_list {
+  order: 6;
+}
+
+/* "Send to" */
+#citationTrails {
+  order: 7;
+}
+
+/* "Citations" */
+#links {
+  order: 8;
+}
+
+/* "Links" */
+#virtualBrowse {
+  order: 9;
+}
+
+/* "Virtual Browse" */
+#tags {
+  order: 10;
+}
+
+/* ***************************************** */
+/* Styles for browse search & journal search */
+/* ***************************************** */
+
+
+.prm-alert-bg,
+.bar.alert-bar,
+.classic-input .search-scope {
+  background-color: rgba(255, 255, 255, 1) !important;
+}
+
+.prm-alert-border,
+.bar.alert-bar,
+.classic-input .search-scope {
+  border-color: rgba(255, 255, 255, 1) !important;
+}
+
+prm-autocomplete input {
+  font-size: 1.3em !important;
+}
+
+prm-browse-search-bar {
+  padding-bottom: 60px;
+  background-image: url("../assets/img/banner-bg.png") !important;
+  background-color: rgba(255, 255, 255, 1) !important;
+  /* This will act as a fallback */
+}
+
+/* Styles for clear button */
+prm-browse-search-bar .clear-button.is-visible {
+  right: 62px !important;
+}
+
+button.md-button.md-icon-button.clear-button.md-primoExplore-theme.md-ink-ripple.is-visible {
+  padding: 0 !important;
+  margin: 15px 5px !important;
+  width: 30px !important;
+  height: 30px !important;
+  min-width: 30px !important;
+  min-height: 30px !important;
+}
+
+md-icon.md-primoExplore-theme {
+  display: inline-block !important;
+  height: 21.6px;
+  width: 21.6px;
+  min-height: 21.6px;
+  min-width: 21.6px;
+}
+
+prm-browse-search-bar .clear-button.is-visible:hover,
+prm-browse-search-bar .clear-button.is-visible:focus {
+  color: #fff;
+  background-color: #3a3a3a;
+}
+
+prm-atoz-search-bar {
+  padding-bottom: 60px;
+  background-image: url("../assets/img/banner-bg.png") !important;
+  background-color: rgba(255, 255, 255, 1) !important;
+  /* This will act as a fallback */
+}
+
+@media (max-width: 959px) {
+
+  prm-browse-search-bar,
+  prm-atoz-search-bar {
+    padding-bottom: 3.8em !important;
+  }
+}
+
+@media (max-width: 600px) {
+
+  prm-browse-search-bar,
+  prm-atoz-search-bar {
+    padding-top: 1.2em !important;
+  }
+}
+
+
+/* ***************************** */
+/* Styles for user dropdown menu */
+/* ***************************** */
+
+/* Hide 'My Loans' */
+/* Hide 'My Requests' */
+.menu-item-indented.my-loans-ctm,
+.menu-item-indented.my-requests-ctm {
+  display: none !important;
+}
+
+
+/* Setting the order for `Saved Items` and `Search History` in user dropdown menu */
+.my-refworks-separator-ctm {
+  order: 3;
+}
+
+.my-refworks-ctm {
+  order: 4;
+}
+
+
+/* ******************************************************* */
+/* Styles for search-bar-sub-menu feedback & library hours */
+/* ******************************************************* */
+
+.search-wrapper.dark-toolbar.prm-top-bar-container.main-header-row.layout-row {
+  padding-bottom: 35px;
+}
+
+search-bar-sub-menu div.search-bar-sub-menu {
+  background-color: #CCD0D5;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 36px;
+}
+
+.search-bar-sub-menu a:hover,
+.search-bar-sub-menu a:focus,
+.search-bar-sub-menu a:active {
+  box-shadow: none !important;
+  background-color: transparent;
+}
+
+search-bar-sub-menu ul {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+search-bar-sub-menu ul li {
+  display: inline;
+  list-style: none;
+  padding: 0;
+}
+
+search-bar-sub-menu .md-button.md-small {
+  font-size: 11.25px;
+  min-width: 42px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.zero-margin,
+prm-more-like-this-item md-card>.md-button,
+prm-topbar .md-button:not(.md-icon-button),
+prm-user-area .user-menu-button,
+prm-virtual-browse-item md-card>.md-button {
+  margin: 0 !important;
+}
+
+/* General styles for md-button */
+.md-button {
+  color: #333;
+  text-decoration: none;
+}
+
+/* Styles for buttons with icons */
+.md-button.button-with-icon>prm-icon {
+  display: inline-block;
+}
+
+.md-button.button-with-icon>prm-icon md-icon {
+  position: relative;
+  top: -2px;
+}
+
+.md-button.button-with-icon>prm-icon+span {
+  display: inline-block;
+  margin-left: 3px;
+  padding-right: 0.5em;
+}
+
+.md-button:hover:not([disabled]),
+.md-button:focus:not([disabled]),
+.md-button.hovered:not([disabled]),
+.md-button.md-focused:not([disabled]),
+.md-button._md-focused:not([disabled]) {
+  color: #1d1616;
+  background-color: rgba(51, 51, 51, 0.1);
+}
+
+button:focus,
+a:focus,
+a:focus-visible,
+.md-primoExplore-theme:focus {
+  box-shadow: inset 0 0 0 2px #3dbbdb !important;
+}
+
+
+
+/* <------feedback & library hours--------> */
+
+
+/* https://nyu-lib.monday.com/boards/765008773/pulses/4845899493 */
+prm-no-search-result>md-card {
+  display: none;
+}
+
+prm-logo {
+  /* Override `prm-topbar prm-logo` from (Chrome Dev Tools link address):
+  https://sandbox02-na.primo.exlibrisgroup.com/discovery/components/search/topbar/_top-bar.scss */
+  max-width: 300px !important;
+}
+
+.logo-image {
+  display: block;
+  margin: auto;
+  width: 207px;
+}
+
+#banner>.md-primoExplore-theme {
+  width: 100%;
+}
+
+/* Unhide facet checkboxes by default */
+.multiselect-facet-group.multiselect-inactive .md-chip md-checkbox {
+  transform: none;
+  transition: none;
+}
+
+/* bold headers on landing page */
+.md-subhead {
+  font-weight: 600;
+  margin: 1em .25em auto auto;
+}
+
+
+/* ***************************************************** */
+/* EVERYTHING BELOW app-colors / look and feel overrides */
+/* ***************************************************** */
+
+/* search bar background image */
+prm-search-bar {
+  background-color: #f5f7fa;
+  background-image: url('../assets/img/banner-bg.png');
+}
+
+.prm-secondary-color,
+prm-search-bookmark-filter .md-button,
+prm-topbar .top-nav-bar {
+  color: #57068c;
+}
+
+/* Advanced and simple search buttons */
+.switch-to-simple,
+.switch-to-advanced {
+  background-color: #57068c !important;
+  color: #fff !important;
+  font-weight: bold;
+  padding: 0 20px;
+}
+
+.switch-to-simple:hover,
+.switch-to-advanced:hover {
+  background-color: #791CB4 !important;
+}
+
+/* buttonVoiceSearch */
+#voiceSearchButton:hover {
+  background-color: #E8F1F8;
+  color: #05568a;
+}
+
+/* button-confirm (magnifying glass)  */
+button.button-confirm {
+  background-color: black !important;
+  color: white !important;
+}
+
+button.button-confirm svg {
+  fill: white !important;
+}
+
+button.button-confirm:hover {
+  background-color: white !important;
+  color: black !important;
+}
+
+button.button-confirm:hover svg {
+  fill: black !important;
+}
+
+/* color overrides */
+.prm-primary-bg.prm-hue1,
+prm-spinner.prm-hue1.overlay-cover.light-on-dark:after,
+prm-topbar .top-nav-bar,
+prm-search-bar.prm-hue1 {
+  background-color: #57068c;
+}
+
+.prm-primary-bg.prm-hue2,
+prm-spinner.prm-hue2.overlay-cover.light-on-dark:after,
+prm-search-bar.prm-hue2,
+md-backdrop.md-opaque {
+  background-color: #57068c;
+}
+
+.prm-primary-bg.prm-hue3,
+prm-spinner.prm-hue3.overlay-cover.light-on-dark:after,
+prm-search-bar.prm-hue3 {
+  background-color: #57068c;
+}
+
+.prm-primary-bg.prm-hue3-important,
+prm-spinner.prm-hue3-important.overlay-cover.light-on-dark:after,
+prm-user-area md-fab-toolbar.md-is-open md-fab-trigger .md-fab-toolbar-background,
+prm-user-area md-fab-toolbar.md-is-open md-fab-trigger ._md-fab-toolbar-background,
+prm-search-bar.prm-hue3-important {
+  background-color: #57068c !important;
+}
+
+.prm-primary-bg.prm-hue4,
+prm-spinner.prm-hue4.overlay-cover.light-on-dark:after,
+prm-search-bar.prm-hue4 {
+  background-color: #57068c;
+}
