@@ -56,6 +56,31 @@ yarn test:e2e:nyu:testws01:update-golden-files
 UPDATE_GOLDEN_FILES=true VIEW=[VIEW] yarn test:e2e
 ```
 
+---
+
+Note that the `yarn` scripts can accept
+[Playwright options](https://playwright.dev/docs/test-cli).
+
+Debug tests using [Playwright Inspector](https://playwright.dev/docs/debug#playwright-inspector):
+
+* Browsers launch in headed mode, even if `headless` is set to `true` in _playwright.config.js_.
+* Tests run with no default timeout
+* Tests run one by one, regardless of the parallism settings in _playwright.config.js_.
+
+```shell
+# Tests http://localhost:8003/discovery/search?vid=01NYU_INST:NYU_DEV
+yarn test:e2e:nyu:dev --debug
+```
+
+Override the `workers` setting in _playwright.config.js_:
+
+```shell
+# Tests http://localhost:8003/discovery/search?vid=01NYU_INST:NYU_DEV using 6 workers
+yarn test:e2e:nyu:dev --workers=6
+```
+
+---
+
 Using Docker Compose:
 
 ```shell
