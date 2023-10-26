@@ -29,4 +29,4 @@ rm -rf "${ACTUAL_DIR:?}"/*
 rm -rf "${DIFFS_DIR:?}"/*
 
 # Run tests
-yarn playwright test
+yarn playwright test "$@"
