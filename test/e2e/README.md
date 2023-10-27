@@ -103,6 +103,23 @@ VIEW=01NYU_INST-NYU_DEV docker compose up e2e-update-golden-files
 
 ---
 
+[Playwright options](https://playwright.dev/docs/test-cli) can be passed in
+using the `PLAYWRIGHT_COMMAND_LINE_OPTIONS` environment variable.
+
+Example: override the `workers` setting in _playwright.config.js_:
+
+```shell
+# Tests http://localhost:8003/discovery/search?vid=01NYU_INST:NYU_DEV using 6 workers
+PLAYWRIGHT_COMMAND_LINE_OPTIONS='--workers=6' VIEW=01NYU_INST-NYU_DEV docker compose up e2e
+```
+
+Note that not all command line options will work properly inside a container.
+For example, the `--debug` option for running tests with
+[Playwright Inspector](https://playwright.dev/docs/debug#playwright-inspector) will not work without X11 forwarding or something
+similar already set up.
+
+---
+
 ## CDN test fixture
 
 The CDN test fixture _./fixtures/cdn/_ serves as the default CDN path for the
