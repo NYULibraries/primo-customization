@@ -37,6 +37,20 @@ tests/diffs/01NYU_NYHS-NYHS/*
 tests/diffs/01NYU_NYHS-NYHS_DEV/*
 !tests/diffs/01NYU_NYHS-NYHS_DEV/.gitkeep
 
+!tests/actual/01NYU_NYSID-NYSID/
+tests/actual/01NYU_NYSID-NYSID/*
+!tests/actual/01NYU_NYSID-NYSID/.gitkeep
+!tests/actual/01NYU_NYSID-NYSID_DEV/
+tests/actual/01NYU_NYSID-NYSID_DEV/*
+!tests/actual/01NYU_NYSID-NYSID_DEV/.gitkeep
+
+!tests/diffs/01NYU_NYSID-NYSID/
+tests/diffs/01NYU_NYSID-NYSID/*
+!tests/diffs/01NYU_NYSID-NYSID/.gitkeep
+!tests/diffs/01NYU_NYSID-NYSID_DEV/
+tests/diffs/01NYU_NYSID-NYSID_DEV/*
+!tests/diffs/01NYU_NYSID-NYSID_DEV/.gitkeep
+
 !tests/actual/01NYU_INST-NYU/
 tests/actual/01NYU_INST-NYU/*
 !tests/actual/01NYU_INST-NYU/.gitkeep
