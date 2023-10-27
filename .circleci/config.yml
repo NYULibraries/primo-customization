@@ -118,6 +118,8 @@ workflows:
             - run-e2e-ad-prod
             - run-e2e-nyhs-dev
             - run-e2e-nyhs-prod
+            - run-e2e-nysid-dev
+            - run-e2e-nysid-prod
             - run-e2e-nyu-dev
             - run-e2e-nyu-prod
             - run-e2e-nyu-test
