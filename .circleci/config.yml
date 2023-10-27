@@ -64,6 +64,16 @@ jobs:
         environment:
             VIEW: 01NYU_NYHS-NYHS
 
+    run-e2e-nysid-dev:
+        <<: [*docker-defaults, *run-e2e]
+        environment:
+            VIEW: 01NYU_NYSID-NYSID_DEV
+
+    run-e2e-nysid-prod:
+        <<: [*docker-defaults, *run-e2e]
+        environment:
+            VIEW: 01NYU_NYSID-NYSID
+
     run-e2e-nyu-dev:
         <<: [*docker-defaults, *run-e2e]
         environment:
