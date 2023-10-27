@@ -14,9 +14,9 @@
 * Start local Primo **for the view to be tested**: [Start local Primo (primo-explore-devenv)](https://github.com/NYULibraries/primo-customization#start-local-primo-primo-explore-devenv)
   * Make sure to match the local Primo and e2e test views.  Not doing so can lead to
     inaccurate test results.  For example: if the local Primo being tested was
-    started using `yarn primo-explore-devenv:run:dev` (or equivalent Docker Compose
-    command), you should run tests using `yarn test:e2e:dev`.  DO NOT RUN
-    `yarn test:e2e:prod`.
+    started using `yarn primo-explore-devenv:run:nyu:dev` (or equivalent Docker Compose
+    command), you should run tests using `yarn test:e2e:nyu:dev`.  DO NOT RUN
+    `yarn test:e2e:nyu:prod`.
 * [Run tests](https://github.com/NYULibraries/primo-customization/test/e2e/README.md#run-tests)
 
 ---
