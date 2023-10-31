@@ -98,3 +98,10 @@ tests/actual/01NYU_CU-CU_DEV/*
 !tests/diffs/01NYU_CU-CU_DEV/
 tests/diffs/01NYU_CU-CU_DEV/*
 !tests/diffs/01NYU_CU-CU_DEV/.gitkeep
+
+!tests/actual/01NYU_CU-CU_DEV/
+tests/actual/01NYU_CU-CU_DEV/*
+!tests/actual/01NYU_CU-CU_DEV/.gitkeep
+!tests/diffs/01NYU_CU-CU_DEV/
+tests/diffs/01NYU_CU-CU_DEV/*
+!tests/diffs/01NYU_CU-CU_DEV/.gitkeep

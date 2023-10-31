@@ -54,6 +54,17 @@ jobs:
         environment:
             VIEW: 01NYU_AD-AD
 
+    run-e2e-cu-dev:
+        <<: [*docker-defaults, *run-e2e]
+        environment:
+            VIEW: 01NYU_CU-CU_DEV
+        <<: *run-e2e
+
+    run-e2e-cu-prod:
+        <<: [*docker-defaults, *run-e2e]
+        environment:
+            VIEW: 01NYU_CU-CU
+
     run-e2e-nyhs-dev:
         <<: [*docker-defaults, *run-e2e]
         environment:
