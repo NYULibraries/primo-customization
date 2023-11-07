@@ -47,7 +47,6 @@ jobs:
         <<: [*docker-defaults, *run-e2e]
         environment:
             VIEW: 01NYU_AD-AD_DEV
-        <<: *run-e2e
 
     run-e2e-ad-prod:
         <<: [*docker-defaults, *run-e2e]
@@ -58,7 +57,6 @@ jobs:
         <<: [*docker-defaults, *run-e2e]
         environment:
             VIEW: 01NYU_CU-CU_DEV
-        <<: *run-e2e
 
     run-e2e-cu-prod:
         <<: [*docker-defaults, *run-e2e]
