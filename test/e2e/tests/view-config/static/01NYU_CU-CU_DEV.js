@@ -1,12 +1,6 @@
-const testCases = [
-    {
-        key             : 'home-page',
-        name            : 'Home page',
-        queryString     : '',
-        elementToTest   : 'prm-static',
-        waitForSelector : 'md-card[ data-cy="home-need-help" ]',
-    },
-];
+import { getViewConfig } from '../../../testutils';
+
+const testCases = getViewConfig( 'static', '01NYU_CU-CU' ).testCases;
 
 export {
     testCases,
