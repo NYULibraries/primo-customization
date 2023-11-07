@@ -119,12 +119,14 @@ jobs:
                       docker-compose run unit-tests
 
 workflows:
-    build-test-and-deploy:
+    build-and-test:
         jobs:
             - build-all-services
             - run-unit-tests
             - run-e2e-ad-dev
             - run-e2e-ad-prod
+            - run-e2e-cu-dev
+            - run-e2e-cu-prod
             - run-e2e-nyhs-dev
             - run-e2e-nyhs-prod
             - run-e2e-nysid-dev
