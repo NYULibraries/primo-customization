@@ -1,14 +1,8 @@
 Welcome!
 
-This version of BobCat has been customized for Cooper Union. You will see similar versions at NYU and other participating libraries.
+This version of the catalog has been customized for Cooper Union. You will see similar versions at NYU and other participating libraries.
 
-As an alternative, use BobCat Standard, but keep in mind that some features are only available using this interface.
-
-Books & More
-
-Enter search terms, then choose from the drop-down menu either Consortium Catalog (to search all participating libraries) or Cooper Library Catalog. If you do not make a choice the default is all participating libraries.
-
-Please note that results displays for electronic resources may vary between this Cooper version of BobCat and the versions at NYU libraries or others. Contact a reference librarian for assistance.
+Please note that results displays for electronic resources may vary between this Cooper version of the catalog and the versions at NYU libraries or others. Contact a reference librarian for assistance.
 
 Need Help?
 Contact Us
