@@ -10,6 +10,11 @@ if [ -z "$VIEW" ]; then
     exit 1
 fi
 
+if [ "$#" -gt 0 ]
+then
+    PLAYWRIGHT_COMMAND_LINE_OPTIONS="$*"
+fi
+
 TEST_VIEW_DIR=$ROOT/tests
 ACTUAL_DIR=$TEST_VIEW_DIR/actual/$VIEW
 DIFFS_DIR=$TEST_VIEW_DIR/diffs/$VIEW
@@ -29,4 +34,4 @@ rm -rf "${ACTUAL_DIR:?}"/*
 rm -rf "${DIFFS_DIR:?}"/*
 
 # Run tests
-yarn playwright test
+yarn playwright test "$PLAYWRIGHT_COMMAND_LINE_OPTIONS"

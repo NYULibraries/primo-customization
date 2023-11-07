@@ -14,9 +14,9 @@
 * Start local Primo **for the view to be tested**: [Start local Primo (primo-explore-devenv)](https://github.com/NYULibraries/primo-customization#start-local-primo-primo-explore-devenv)
   * Make sure to match the local Primo and e2e test views.  Not doing so can lead to
     inaccurate test results.  For example: if the local Primo being tested was
-    started using `yarn primo-explore-devenv:run:dev` (or equivalent Docker Compose
-    command), you should run tests using `yarn test:e2e:dev`.  DO NOT RUN
-    `yarn test:e2e:prod`.
+    started using `yarn primo-explore-devenv:run:nyu:dev` (or equivalent Docker Compose
+    command), you should run tests using `yarn test:e2e:nyu:dev`.  DO NOT RUN
+    `yarn test:e2e:nyu:prod`.
 * [Run tests](https://github.com/NYULibraries/primo-customization/test/e2e/README.md#run-tests)
 
 ---
@@ -56,6 +56,31 @@ yarn test:e2e:nyu:testws01:update-golden-files
 UPDATE_GOLDEN_FILES=true VIEW=[VIEW] yarn test:e2e
 ```
 
+---
+
+Note that the `yarn` scripts can accept
+[Playwright options](https://playwright.dev/docs/test-cli).
+
+Debug tests using [Playwright Inspector](https://playwright.dev/docs/debug#playwright-inspector):
+
+* Browsers launch in headed mode, even if `headless` is set to `true` in _playwright.config.js_.
+* Tests run with no default timeout
+* Tests run one by one, regardless of the parallism settings in _playwright.config.js_.
+
+```shell
+# Tests http://localhost:8003/discovery/search?vid=01NYU_INST:NYU_DEV
+yarn test:e2e:nyu:dev --debug
+```
+
+Override the `workers` setting in _playwright.config.js_:
+
+```shell
+# Tests http://localhost:8003/discovery/search?vid=01NYU_INST:NYU_DEV using 6 workers
+yarn test:e2e:nyu:dev --workers=6
+```
+
+---
+
 Using Docker Compose:
 
 ```shell
@@ -75,6 +100,23 @@ Update golden files:
 # Tests http://primo-explore-devenv:8003/discovery/search?vid=01NYU_INST-NYU_DEV
 VIEW=01NYU_INST-NYU_DEV docker compose up e2e-update-golden-files
 ```
+
+---
+
+[Playwright options](https://playwright.dev/docs/test-cli) can be passed in
+using the `PLAYWRIGHT_COMMAND_LINE_OPTIONS` environment variable.
+
+Example: override the `workers` setting in _playwright.config.js_:
+
+```shell
+# Tests http://localhost:8003/discovery/search?vid=01NYU_INST:NYU_DEV using 6 workers
+PLAYWRIGHT_COMMAND_LINE_OPTIONS='--workers=6' VIEW=01NYU_INST-NYU_DEV docker compose up e2e
+```
+
+Note that not all command line options will work properly inside a container.
+For example, the `--debug` option for running tests with
+[Playwright Inspector](https://playwright.dev/docs/debug#playwright-inspector) will not work without X11 forwarding or something
+similar already set up.
 
 ---
 

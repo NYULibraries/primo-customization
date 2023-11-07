@@ -1,3 +1,86 @@
+/*** A11y colors implementation ***/
+.prm-positive,
+.status-available,
+[class*="available"],
+[class*="FT"],
+.not_restricted,
+.ext_not_restricted,
+.fulltext_multiple,
+.fulltext,
+.fulltext_linktorsrc,
+.fulltext_newspaper,
+.fulltext_linktorsrc_newspaper,
+.fulltext_linktorsrc_topic,
+.fulltext_topic,
+.esploro_status\.not_restricted {
+  color: #0F6000;
+}
+
+.md-button.arrow-link-button prm-quick-link .button-content span,
+prm-quick-link .md-button.arrow-link-button .button-content span,
+prm-quick-link a span {
+  color: #0F6000;
+}
+
+.prm-negative.prm-hue1,
+.status-unavailable,
+[class*="unavailable"],
+[class*="no_"],
+.restricted,
+.ext_restrictedNoLink,
+.ext_restrictedWithLink,
+.duedate,
+.esploro_status\.embargoed,
+.esploro_status\.restricted {
+  color: #035488;
+}
+
+.prm-open-access {
+  color: #b84d00;
+}
+
+.prm-peer-reviewed,
+.prm-course {
+  color: #5E34AF;
+}
+
+prm-citation-color.prm-hue2,
+prm-citation-trails-item .item-type,
+prm-chapters-and-reviews .prm-hue2.item-type {
+  color: #57068c;
+}
+
+.prm-primary-color.prm-hue2,
+.request-form md-input-container label.prm-hue2,
+.request-form md-input-container label.prm-hue2:not(.md-no-float):not(._md-container-ignore),
+.request-form md-input-container md-select .prm-hue2.md-select-value.md-select-placeholder,
+.request-form md-input-container .md-input-container-dummy>.md-select-dummy .prm-hue2.md-select-value.md-select-placeholder,
+.request-form md-input-container md-select .prm-hue2._md-select-value._md-select-placeholder,
+.request-form md-input-container .md-input-container-dummy>.md-select-dummy .prm-hue2._md-select-value._md-select-placeholder,
+.result-item-actions .md-icon-button,
+.result-item-actions .prm-hue2.more-options-button,
+prm-add-query-to-saved-searches .prm-hue2.custom-button,
+prm-pre-filters md-input-container.prm-hue2.is-active,
+.md-autocomplete-suggestions .prm-hue2.suggestion-scope,
+md-tab-content .tab-content-header md-input-container md-select-value .prm-hue2.md-text,
+prm-resource-type-filter-bar md-input-container.prm-hue2.is-active {
+  color: #57068c;
+}
+
+.md-button {
+  color: #1C2127;
+}
+
+.md-button:hover:not([disabled]),
+.md-button:focus:not([disabled]),
+.md-button.hovered:not([disabled]),
+.md-button.md-focused:not([disabled]),
+.md-button._md-focused:not([disabled]) {
+  color: white;
+  background-color: #1C2127;
+}
+
+
 /* Hide 'block+messages', 'personal details' */
 md-tab-item#tab-item-14.md-tab,
 md-tab-item#tab-item-15.md-tab,

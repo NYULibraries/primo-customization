@@ -35,7 +35,7 @@ if ( linksToTest.length > 0 ) {
     test( 'Primo VE links in home page', async ( { page } ) => {
         // Tests running in container sometimes take longer and require a
         // higher timeout value.
-        if ( process.env.IN_CONTAINER ) {
+        if ( process.env.CONTAINER_MODE ) {
             test.slow();
         }
 

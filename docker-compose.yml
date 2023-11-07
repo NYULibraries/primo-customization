@@ -26,6 +26,7 @@ x-build-unit: &x-build-unit-tests
 
 x-environment: &x-environment
   CI: ${CI}
+  PLAYWRIGHT_COMMAND_LINE_OPTIONS: ${PLAYWRIGHT_COMMAND_LINE_OPTIONS}
   VIEW: ${VIEW}
 
 x-build-primo-customization: &x-build-primo-customization
