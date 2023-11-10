@@ -3,6 +3,17 @@ prm-topbar {
     height: 120px;
 }
 
+/* Hide navigation 'Side Links' in 'Full Display' page */
+prm-full-view .services-index-under #services-index {
+    display: none
+}
+
+/* make 'Virtual Browse' thumbnail images slightly smaller */
+prm-virtual-browse [md-virtual-repeat] {
+    width: 100px;
+    margin: 0.4em;
+}
+
 prm-topbar .md-button:not(.close-btn-favorits-warning-message):not(.md-icon-button) {
     color: #3a3a3a;
 }
