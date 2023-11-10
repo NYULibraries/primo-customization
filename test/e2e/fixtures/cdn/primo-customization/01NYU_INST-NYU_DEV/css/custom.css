@@ -1,4 +1,24 @@
 /*** A11y colors implementation ***/
+/* sidebar transparent background */
+.md-dialog-container.fixed-container {
+  background-color: transparent;
+}
+
+
+/* Override the existing hover color with #57068c */
+prm-facet-exact .section-title:hover span,
+prm-facet-range .section-title:hover span,
+prm-facet-exact .section-title:focus span,
+prm-facet-range .section-title:focus span {
+  color: #57068c;
+}
+
+
+prm-citation-trails-indication .md-button.button-with-icon,
+prm-citation-trails-indication .md-button.md-icon-button {
+  color: #57068c;
+}
+
 .prm-positive,
 .status-available,
 [class*="available"],
