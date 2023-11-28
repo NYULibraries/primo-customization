@@ -1,3 +1,5 @@
+/* global process, require */
+
 const { test, expect } = require( '@playwright/test' );
 
 import { getViewConfig, parseVid } from '../testutils';
