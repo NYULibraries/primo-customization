@@ -4,42 +4,42 @@
 function configureAndInjectLibKey() {
 // Begin BrowZine - Primo Integration...
     window.browzine = {
-        api   : 'https://public-api.thirdiron.com/public/v1/libraries/177',
-        apiKey: '4997c984-6148-41db-a3d4-f1dc44c5602a',
+        api    : 'https://public-api.thirdiron.com/public/v1/libraries/177',
+        apiKey : '4997c984-6148-41db-a3d4-f1dc44c5602a',
 
-        journalCoverImagesEnabled: true,
+        journalCoverImagesEnabled : true,
 
-        journalBrowZineWebLinkTextEnabled: true,
-        journalBrowZineWebLinkText       : 'View Journal Contents',
+        journalBrowZineWebLinkTextEnabled : true,
+        journalBrowZineWebLinkText        : 'View Journal Contents',
 
-        articleBrowZineWebLinkTextEnabled: true,
-        articleBrowZineWebLinkText       : 'View Issue Contents',
+        articleBrowZineWebLinkTextEnabled : true,
+        articleBrowZineWebLinkText        : 'View Issue Contents',
 
-        articlePDFDownloadLinkEnabled: true,
-        articlePDFDownloadLinkText   : 'Download PDF',
+        articlePDFDownloadLinkEnabled : true,
+        articlePDFDownloadLinkText    : 'Download PDF',
 
-        articleLinkEnabled: true,
-        articleLinkText   : 'Read Article',
+        articleLinkEnabled : true,
+        articleLinkText    : 'Read Article',
 
-        printRecordsIntegrationEnabled: true,
-        showFormatChoice              : true,
-        showLinkResolverLink          : true,
-        enableLinkOptimizer           : true,
+        printRecordsIntegrationEnabled : true,
+        showFormatChoice               : true,
+        showLinkResolverLink           : true,
+        enableLinkOptimizer            : true,
 
-        articleRetractionWatchEnabled: true,
-        articleRetractionWatchText   : 'Retracted Article',
+        articleRetractionWatchEnabled : true,
+        articleRetractionWatchText    : 'Retracted Article',
 
         // See https://nyu-lib.monday.com/boards/765008773/pulses/4770873703/posts/2283414551
         // for details on `unpaywallEmailAddressKey`.
-        unpaywallEmailAddressKey                               : 'fakeuser@nyu.edu',
-        articlePDFDownloadViaUnpaywallEnabled                  : true,
-        articlePDFDownloadViaUnpaywallText                     : 'Download PDF (via Unpaywall)',
-        articleLinkViaUnpaywallEnabled                         : true,
-        articleLinkViaUnpaywallText                            : 'Read Article (via Unpaywall)',
-        articleAcceptedManuscriptPDFViaUnpaywallEnabled        : true,
-        articleAcceptedManuscriptPDFViaUnpaywallText           : 'Download PDF (Accepted Manuscript via Unpaywall)',
-        articleAcceptedManuscriptArticleLinkViaUnpaywallEnabled: true,
-        articleAcceptedManuscriptArticleLinkViaUnpaywallText   : 'Read Article (Accepted Manuscript via Unpaywall)',
+        unpaywallEmailAddressKey                                : 'fakeuser@nyu.edu',
+        articlePDFDownloadViaUnpaywallEnabled                   : true,
+        articlePDFDownloadViaUnpaywallText                      : 'Download PDF (via Unpaywall)',
+        articleLinkViaUnpaywallEnabled                          : true,
+        articleLinkViaUnpaywallText                             : 'Read Article (via Unpaywall)',
+        articleAcceptedManuscriptPDFViaUnpaywallEnabled         : true,
+        articleAcceptedManuscriptPDFViaUnpaywallText            : 'Download PDF (Accepted Manuscript via Unpaywall)',
+        articleAcceptedManuscriptArticleLinkViaUnpaywallEnabled : true,
+        articleAcceptedManuscriptArticleLinkViaUnpaywallText    : 'Read Article (Accepted Manuscript via Unpaywall)',
     };
 
     browzine.script = document.createElement( 'script' );
@@ -49,6 +49,6 @@ function configureAndInjectLibKey() {
 
 configureAndInjectLibKey();
 
-function findingAidsLinkClickHandler(event) {
+function findingAidsLinkClickHandler( event ) {
     event.stopPropagation();
 }

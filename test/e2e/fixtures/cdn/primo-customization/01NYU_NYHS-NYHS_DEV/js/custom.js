@@ -1,3 +1,3 @@
-function findingAidsLinkClickHandler(event) {
+function findingAidsLinkClickHandler( event ) {
     event.stopPropagation();
 }

@@ -7,11 +7,11 @@ import { getViewConfig, parseVid } from '../testutils';
 const view = process.env.VIEW;
 const vid = parseVid( view );
 
-const viewConfig = getViewConfig( 'chat-widget', view );
+const viewConfig = getViewConfig( 'statuspage-embed', view );
 const testCases = viewConfig.testCases;
 if ( testCases.length > 0 ) {
-    const CHAT_WIDGET_SELECTOR =
-        viewConfig.CHAT_WIDGET_SELECTOR;
+    const STATUSPAGE_EMBED_SELECTOR =
+        viewConfig.STATUSPAGE_EMBED_SELECTOR;
 
     for ( let i = 0; i < testCases.length; i++ ) {
         const testCase = testCases[ i ];
@@ -33,13 +33,16 @@ if ( testCases.length > 0 ) {
                 await page.goto( fullQueryString );
             } );
 
-            test( 'chat widget found on page', async ( { page } ) => {
-                await page.locator( CHAT_WIDGET_SELECTOR ).waitFor();
+            test( 'StatusPage Embed found on page', async ( { page } ) => {
+                // Can't use `waitFor()` with no options because the default state
+                // that is waited for is "visible", and <script> tags are never
+                // visible.
+                await page.locator( STATUSPAGE_EMBED_SELECTOR ).waitFor( {  state : 'attached' } );
 
-                // If we got this far, just pass the test.  Usually the chat
-                // widgets are third-party: do we want to test their functionality?
-                // Within limits, of course...we wouldn't want to engage live
-                // staffers responsible for responding to chat requests.
+                // If we got this far, just pass the test.  We can't test the
+                // results of statuspage-embed because we always use the prod
+                // version, and we can't manipulate the prod content for testing
+                // purposes.
                 expect( true ).toBe( true );
             } );
         } ) // End `test.describe(...)`
