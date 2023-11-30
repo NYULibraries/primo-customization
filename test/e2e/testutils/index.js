@@ -14,6 +14,10 @@ function parseVid( view ) {
     return view.replaceAll( '-', ':' );
 }
 
+function setPathAndQueryVid( pathAndQuery, vid ) {
+    return pathAndQuery.replace( 'vid=[VID]', `vid=${ vid }` );
+}
+
 // NOTE: it's current not possible to use a custom flag like `--update-golden-files`
 // with `playwright`:
 // "[Feature] Add support for test.each / describe.each #7036"
@@ -26,5 +30,6 @@ function updateGoldenFiles() {
 export {
     getViewConfig,
     parseVid,
+    setPathAndQueryVid,
     updateGoldenFiles,
 };

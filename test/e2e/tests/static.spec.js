@@ -6,6 +6,7 @@ import { execSync } from 'child_process';
 import {
     getViewConfig,
     parseVid,
+    setPathAndQueryVid,
     updateGoldenFiles,
 } from '../testutils';
 
@@ -29,11 +30,7 @@ for ( let i = 0; i < testCases.length; i++ ) {
         }
 
         test.beforeEach( async ( { page } ) => {
-            let fullQueryString = `?vid=${ vid }`;
-            if ( testCase.queryString ) {
-                fullQueryString += `&${ testCase.queryString }`;
-            }
-            await page.goto( fullQueryString );
+            await page.goto( setPathAndQueryVid( testCase.pathAndQuery, vid ) );
         } );
 
         test( 'page text matches expected', async ( { page } ) => {

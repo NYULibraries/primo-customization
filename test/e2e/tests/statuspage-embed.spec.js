@@ -2,7 +2,7 @@
 
 const { test, expect } = require( '@playwright/test' );
 
-import { getViewConfig, parseVid } from '../testutils';
+import { getViewConfig, parseVid, setPathAndQueryVid } from '../testutils';
 
 const view = process.env.VIEW;
 const vid = parseVid( view );
@@ -26,11 +26,7 @@ if ( testCases.length > 0 ) {
             }
 
             test.beforeEach( async ( { page } ) => {
-                let fullQueryString = `?vid=${ vid }`;
-                if ( testCase.queryString ) {
-                    fullQueryString += `&${ testCase.queryString }`;
-                }
-                await page.goto( fullQueryString );
+                await page.goto( setPathAndQueryVid( testCase.pathAndQuery, vid ) );
             } );
 
             test( 'StatusPage Embed found on page', async ( { page } ) => {
