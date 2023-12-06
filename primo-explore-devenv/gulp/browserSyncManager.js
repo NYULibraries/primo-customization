@@ -1,43 +1,43 @@
-var browserSync = require('browser-sync');
+var browserSync = require( 'browser-sync' );
 
 
 module.exports = {
-    closeServer: closeServer,
-    reloadServer: reloadServer,
-    streamToServer: streamToServer,
-    startServer: startServer,
+    closeServer    : closeServer,
+    reloadServer   : reloadServer,
+    streamToServer : streamToServer,
+    startServer    : startServer,
 };
 
-function closeServer(label) {
-   browserSync.get(label).exit();
+function closeServer( label ) {
+    browserSync.get( label ).exit();
 }
 
-function reloadServer(label) {
-    return browserSync.get('production').reload();
+function reloadServer( label ) {
+    return browserSync.get( 'production' ).reload();
 }
 
 function streamToServer() {
-    return browserSync.get('production').stream();
+    return browserSync.get( 'production' ).stream();
 }
 
-function startServer(args) {
+function startServer( args ) {
     var label = args.label;
     var port = args.port;
     var baseDir = args.baseDir;
     var middleware = args.middleware;
     var open = args.open;
 
-    var server = browserSync.create(label);
+    var server = browserSync.create( label );
     var conf = {
-        port: port,
-        server: {
-            baseDir: baseDir
+        port   : port,
+        server : {
+            baseDir : baseDir,
         },
-        open:open
+        open : open,
     };
-    if(middleware) {
+    if ( middleware ) {
         conf.middleware = args.middleware;
     }
-    server.init(conf);
+    server.init( conf );
 
 }
