@@ -1,9 +1,9 @@
-@import url('../../chatwidget-embed/dist/index.min.css');
+@import url('../../01_embeds/chatwidget-embed/index.min.css');
 /*  Import the chatwidgetEmbed CSS stylesheet into the project. Should be at the top of this file!!
 Do not move or alter the import order   */
 
 /*  Import the statuspageEmbed CSS stylesheet into the project.*/
-@import url('../../statuspage-embed/dist/index.min.css');
+@import url('../../01_embeds/statuspage-embed/index.min.css');
 
 /*** A11y colors implementation ***/
 /* sidebar transparent background */
