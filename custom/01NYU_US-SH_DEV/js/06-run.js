@@ -1,9 +1,1 @@
-// ****************************************
-// 06-run.js
-// ****************************************
-
-/* global app, injectCDNResourceTags */
-
-app.run( function() {
-    injectCDNResourceTags();
-} );
+../../00_common/js/06-run.js
