@@ -2,7 +2,7 @@
 
 const { test, expect } = require( '@playwright/test' );
 
-import { getViewConfig, parseVid, setPathAndQueryVid } from '../testutils';
+import { getViewConfig, modifyCSPHeader, parseVid, setPathAndQueryVid } from '../testutils';
 
 const BROWZINE_PRIMO_ADAPTER_SCRIPT_URL =
     'https://s3.amazonaws.com/browzine-adapters/primo/browzine-primo-adapter.js';
@@ -33,6 +33,10 @@ for ( let i = 0; i < testCases.length; i++ ) {
         }
 
         test.beforeEach( async ( { page } ) => {
+            if ( process.env.CONTAINER_MODE ) {
+                await modifyCSPHeader(page);
+            }
+
             // Simulate slow response to request for Browzine Primo adapter script.
             if ( testCase.browzinePrimoAdapterExecutionDelay ) {
                 await page.route(

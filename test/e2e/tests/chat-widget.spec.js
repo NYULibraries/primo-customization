@@ -2,7 +2,7 @@
 
 const { test, expect } = require( '@playwright/test' );
 
-import { getViewConfig, parseVid, setPathAndQueryVid } from '../testutils';
+import { getViewConfig, modifyCSPHeader, parseVid, setPathAndQueryVid } from '../testutils';
 
 const view = process.env.VIEW;
 const vid = parseVid( view );
@@ -26,6 +26,9 @@ if ( testCases.length > 0 ) {
             }
 
             test.beforeEach( async ( { page } ) => {
+                if ( process.env.CONTAINER_MODE ) {
+                    await modifyCSPHeader(page);
+                }
                 await page.goto( setPathAndQueryVid( testCase.pathAndQuery, vid ) );
             } );
 
