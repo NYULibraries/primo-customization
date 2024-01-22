@@ -18,7 +18,7 @@ do
 
     # Path to the JS folder in the destination directory
     destination_js_folder="$DESTINATION_DIR/$dir_name/js"
-    destination_custom_js="$destination_js_folder/custom1.js"
+    destination_custom_js="$destination_js_folder/05-custom1.js"
 
     # Check if the source custom.js file exists
     if [ -f "$source_js_file" ]; then
