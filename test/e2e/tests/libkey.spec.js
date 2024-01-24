@@ -2,7 +2,7 @@
 
 const { test, expect } = require( '@playwright/test' );
 
-import { getViewConfig, parseVid } from '../testutils';
+import { getViewConfig, modifyCSPHeader, parseVid, setPathAndQueryVid } from '../testutils';
 
 const BROWZINE_PRIMO_ADAPTER_SCRIPT_URL =
     'https://s3.amazonaws.com/browzine-adapters/primo/browzine-primo-adapter.js';
@@ -33,9 +33,8 @@ for ( let i = 0; i < testCases.length; i++ ) {
         }
 
         test.beforeEach( async ( { page } ) => {
-            let fullQueryString = `?vid=${ vid }`;
-            if ( testCase.queryString ) {
-                fullQueryString += `&${ testCase.queryString }`;
+            if ( process.env.CONTAINER_MODE ) {
+                await modifyCSPHeader(page);
             }
 
             // Simulate slow response to request for Browzine Primo adapter script.
@@ -51,7 +50,7 @@ for ( let i = 0; i < testCases.length; i++ ) {
                 );
             }
 
-            await page.goto( fullQueryString );
+            await page.goto( setPathAndQueryVid( testCase.pathAndQuery, vid ) );
         } );
 
         let testTitle = 'has a clickable LibKey link';

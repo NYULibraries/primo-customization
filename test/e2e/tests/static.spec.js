@@ -2,12 +2,15 @@
 
 import * as fs from 'node:fs';
 
-import { execSync } from 'child_process';
 import {
     getViewConfig,
+    modifyCSPHeader,
     parseVid,
+    setPathAndQueryVid,
     updateGoldenFiles,
 } from '../testutils';
+
+import { execSync } from 'child_process';
 
 const { test, expect } = require( '@playwright/test' );
 
@@ -29,11 +32,11 @@ for ( let i = 0; i < testCases.length; i++ ) {
         }
 
         test.beforeEach( async ( { page } ) => {
-            let fullQueryString = `?vid=${ vid }`;
-            if ( testCase.queryString ) {
-                fullQueryString += `&${ testCase.queryString }`;
+            if ( process.env.CONTAINER_MODE ) {
+                await modifyCSPHeader(page);
             }
-            await page.goto( fullQueryString );
+
+            await page.goto( setPathAndQueryVid( testCase.pathAndQuery, vid ) );
         } );
 
         test( 'page text matches expected', async ( { page } ) => {

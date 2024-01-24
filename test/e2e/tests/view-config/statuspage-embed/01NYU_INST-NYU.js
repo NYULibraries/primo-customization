@@ -1,4 +1,4 @@
-const CHAT_WIDGET_SELECTOR = 'div#lcs_slide_out-22908';
+const STATUSPAGE_EMBED_SELECTOR = 'script[ src*="statuspage-embed" ]';
 
 const testCases = [
     {
@@ -12,6 +12,6 @@ const testCases = [
 ];
 
 export {
-    CHAT_WIDGET_SELECTOR,
+    STATUSPAGE_EMBED_SELECTOR,
     testCases,
 };

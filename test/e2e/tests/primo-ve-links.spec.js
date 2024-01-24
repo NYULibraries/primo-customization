@@ -9,7 +9,7 @@
 
 const { test, expect } = require( '@playwright/test' );
 
-import { getViewConfig, parseVid } from '../testutils';
+import { getViewConfig, modifyCSPHeader, parseVid } from '../testutils';
 
 const view = process.env.VIEW;
 const vid = parseVid( view );
@@ -37,6 +37,10 @@ if ( linksToTest.length > 0 ) {
         // higher timeout value.
         if ( process.env.CONTAINER_MODE ) {
             test.slow();
+        }
+
+        if ( process.env.CONTAINER_MODE ) {
+            await modifyCSPHeader(page);
         }
 
         await page.goto( `?vid=${ vid }` );
