@@ -1086,6 +1086,28 @@ function generateAllPossibleCustomDirectives() {
         templateUrl : `${ cdnUrl }/html/prm-citation-trails-breadcrumbs-after.html`,
     } );
 
+    // PRM-CITATION-TRAILS-EXPAND-BUTTON-AFTER
+    app.component( 'prmCitationTrailsExpandButtonAfter', {
+        bindings   : { parentCtrl : '<' },
+        controller : function ( $scope, $rootScope ) {
+            const vm = this;
+    
+            vm.getPnx = () => {
+                try {
+                    return vm.parentCtrl.item.pnx;
+                } catch ( err ) {
+                    console.log( 'prmCitationTrailsExpandButtonAfter: error accessing `vm.parentCtrl.item.pnx`' );
+    
+                    return null;
+                }
+            };
+    
+            vm.rootScope = $rootScope;
+            vm.scope = $scope;
+        },
+        templateUrl : `${ cdnUrl }/html/prm-citation-trails-expand-button-after.html`,
+    } );
+
     // PRM-CITATION-TRAILS-FULLVIEW-LINK-AFTER
     app.component( 'prmCitationTrailsFullviewLinkAfter', {
         bindings   : { parentCtrl : '<' },
@@ -1744,6 +1766,28 @@ function generateAllPossibleCustomDirectives() {
             vm.scope = $scope;
         },
         templateUrl : `${ cdnUrl }/html/prm-endnote-after.html`,
+    } );
+
+    // PRM-EPUB-FOLIATE-VIEWER-AFTER
+    app.component( 'prmEpubFoliateViewerAfter', {
+        bindings   : { parentCtrl : '<' },
+        controller : function ( $scope, $rootScope ) {
+            const vm = this;
+    
+            vm.getPnx = () => {
+                try {
+                    return vm.parentCtrl.item.pnx;
+                } catch ( err ) {
+                    console.log( 'prmEpubFoliateViewerAfter: error accessing `vm.parentCtrl.item.pnx`' );
+    
+                    return null;
+                }
+            };
+    
+            vm.rootScope = $rootScope;
+            vm.scope = $scope;
+        },
+        templateUrl : `${ cdnUrl }/html/prm-epub-foliate-viewer-after.html`,
     } );
 
     // PRM-EXPLORE-FOOTER-AFTER
@@ -4780,6 +4824,28 @@ function generateAllPossibleCustomDirectives() {
             vm.scope = $scope;
         },
         templateUrl : `${ cdnUrl }/html/prm-search-within-journal-after.html`,
+    } );
+
+    // PRM-SELF-REGISTRATION-AFTER
+    app.component( 'prmSelfRegistrationAfter', {
+        bindings   : { parentCtrl : '<' },
+        controller : function ( $scope, $rootScope ) {
+            const vm = this;
+    
+            vm.getPnx = () => {
+                try {
+                    return vm.parentCtrl.item.pnx;
+                } catch ( err ) {
+                    console.log( 'prmSelfRegistrationAfter: error accessing `vm.parentCtrl.item.pnx`' );
+    
+                    return null;
+                }
+            };
+    
+            vm.rootScope = $rootScope;
+            vm.scope = $scope;
+        },
+        templateUrl : `${ cdnUrl }/html/prm-self-registration-after.html`,
     } );
 
     // PRM-SEND-EMAIL-AFTER
