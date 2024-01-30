@@ -44,6 +44,13 @@ function getCdnUrl( vid ) {
     return `${ baseUrl }/${ view }`;
 }
 
+function getLocalPath( vid ) {
+    const view = parseViewDirectoryName( vid );
+    const localBasePath = '../../../../../custom'; 
+
+    return `${ localBasePath }/${ view }`;
+}
+
 function parseViewDirectoryName( vid ) {
     return vid.replaceAll( ':', '-' );
 }

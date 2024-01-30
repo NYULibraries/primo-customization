@@ -7,6 +7,7 @@
 const searchParams = new URLSearchParams( window.location.search );
 const vid = searchParams.get( 'vid' );
 const cdnUrl = getCdnUrl( vid );
+const basePathForView = getLocalPath( vid );
 
 console.log( `[DEBUG] cdnUrl = ${ cdnUrl }` );
 
