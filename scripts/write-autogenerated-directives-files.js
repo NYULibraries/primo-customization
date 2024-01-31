@@ -26,9 +26,10 @@ const EXCLUDED_CUSTOM_DIRECTIVES = {
     },
 };
 
-const lines = fs.readFileSync( EXLIBRIS_TEMPLATE_CACHE_CODE_FILE, { encoding : 'utf8' } )
-    .toString()
-    .split( EOL );
+const lines =
+    fs.readFileSync( EXLIBRIS_TEMPLATE_CACHE_CODE_FILE, { encoding : 'utf8' } )
+        .toString()
+        .split( EOL );
 
 const idsObject = {};
 lines.forEach( line => {
