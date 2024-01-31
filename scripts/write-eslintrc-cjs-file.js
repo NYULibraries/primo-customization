@@ -16,7 +16,8 @@ const config = { ...newSystemConfig[ 0 ], ...newSystemConfig[ 1 ] };
 
 // This is the configuration using the old system that is soon to be deprecated.
 const oldSystemConfig = {
-    parserOptions : {
+    ignorePatterns : config.ignores,
+    parserOptions  : {
         ecmaVersion : config.languageOptions.ecmaVersion,
     },
     rules : config.rules,

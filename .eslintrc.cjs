@@ -2,6 +2,9 @@
 // SEE README.MD FOR INSTRUCTIONS ON HOW TO REGENERATE THIS FILE.
 
 module.exports = {
+    'ignorePatterns' : [
+        'scripts/exlibris-template-cache-code.txt',
+    ],
     'parserOptions' : {
         'ecmaVersion' : 'latest',
     },
