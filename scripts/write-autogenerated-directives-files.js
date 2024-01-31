@@ -51,9 +51,11 @@ const ids = Object.keys( idsObject ).sort();
 
 writeCustomPackageJsFile( CUSTOM_PACKAGE_JS_FILE, ids );
 
-CDN_VIEWS.forEach( cdnView => {
-    writeCdnHtmlFiles( CDN_ROOT, cdnView, ids );
-} );
+if ( fs.existsSync( CDN_ROOT ) ) {
+    CDN_VIEWS.forEach( cdnView => {
+        writeCdnHtmlFiles( CDN_ROOT, cdnView, ids );
+    } );
+}
 
 // Source: answer by kanine
 // https://stackoverflow.com/questions/57556471/convert-kebab-case-to-camelcase-with-javascript
