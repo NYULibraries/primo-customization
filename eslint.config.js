@@ -3,6 +3,7 @@ import js from '@eslint/js';
 export default [
     js.configs.recommended,
     {
+        ignores         : [ 'scripts/exlibris-template-cache-code.txt' ],
         languageOptions : {
             ecmaVersion : 'latest',
         },

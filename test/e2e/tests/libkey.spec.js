@@ -34,7 +34,7 @@ for ( let i = 0; i < testCases.length; i++ ) {
 
         test.beforeEach( async ( { page } ) => {
             if ( process.env.CONTAINER_MODE ) {
-                await modifyCSPHeader(page);
+                await modifyCSPHeader( page );
             }
 
             // Simulate slow response to request for Browzine Primo adapter script.

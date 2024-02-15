@@ -40,7 +40,7 @@ if ( linksToTest.length > 0 ) {
         }
 
         if ( process.env.CONTAINER_MODE ) {
-            await modifyCSPHeader(page);
+            await modifyCSPHeader( page );
         }
 
         await page.goto( `?vid=${ vid }` );

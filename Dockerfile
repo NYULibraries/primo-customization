@@ -1,4 +1,4 @@
-FROM node:16.17.0-bullseye
+FROM node:20.11.0-bullseye
 
 ENV TOP_LEVEL_NODE_MODULES_PATH /app/
 ENV PRIMO_EXPLORE_DEVENV_NODE_MODULES_PATH /app/primo-explore-devenv/
