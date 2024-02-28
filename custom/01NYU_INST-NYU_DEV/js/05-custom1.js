@@ -55,10 +55,10 @@ function configureAndInjectLibKey() {
 function injectStatusEmbed() {
     // Always use prod URL for all views:
     // https://nyu-lib.monday.com/boards/765008773/pulses/5525193850/posts/2571053345
-    const STATUS_EMBED_PROD_URL =
-        '../../01_embeds/statuspage-embed/index.min.js';
+    const STATUS_EMBED_PROD_PATH =
+        '../../../custom/01_embeds/statuspage-embed/index.min.js';
     const scriptTag = document.createElement( 'script' );
-    scriptTag.setAttribute( 'src', STATUS_EMBED_PROD_URL );
+    scriptTag.setAttribute( 'src', STATUS_EMBED_PROD_PATH );
     document.body.appendChild( scriptTag )
 }
 
@@ -71,10 +71,12 @@ function findingAidsLinkClickHandler( event ) {
 
 // chatwidget-embed
 ( function () {
+    const CHATWIDGET_EMBED_PATH =
+        '../../../custom/01_embeds/chatwidget-embed/index.min.js'
     var s = document.createElement( 'script' );
     s.type = 'text/javascript';
     s.async = true;
-    s.src = '../../01_embeds/chatwidget-embed/index.min.js';
+    s.src = CHATWIDGET_EMBED_PATH;
     var x = document.getElementsByTagName( 'script' )[0];
     x.parentNode.insertBefore( s, x );
 } )();
