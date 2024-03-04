@@ -1,4 +1,4 @@
-@import url('../../../../../custom/01_embeds/chatwidget-embed/index.min.css');
+/* @import url('../../../../../custom/01_embeds/chatwidget-embed/index.min.css'); */
 /*  Import the chatwidgetEmbed CSS stylesheet into the project. Should be at the top of this file!!
 Do not move or alter the import order   */
 
@@ -206,7 +206,7 @@ prm-autocomplete input {
 
 prm-browse-search-bar {
   padding-bottom: 60px;
-  background-image: url("../assets/img/banner-bg.png") !important;
+  background-image: url("../img/banner-bg.png") !important;
   background-color: rgba(255, 255, 255, 1) !important;
   /* This will act as a fallback */
 }
@@ -525,6 +525,7 @@ prm-search-bar.prm-hue4 {
 
 /* chatWidget-embed styles */
 /* chatwidget button styles */
+
 #nyulibraries_chat_widget .nyulibraries-chat-button {
   padding: 10px 10px 8px;
   width: 131.38px;
@@ -573,3 +574,27 @@ prm-search-bar.prm-hue4 {
 prm-form-field .checkbox-warning-message {
   color: #3A3A3A;
 }
+
+/* Statuspage embed styles */
+aside.nyulibraries-alert-banner {
+  background-color: #cc0d00;
+  padding: 1em;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+aside.nyulibraries-alert-banner,
+aside.nyulibraries-alert-banner a {
+  color: #fff;
+}
+
+aside.nyulibraries-alert-banner a {
+  text-decoration: underline;
+}
+
+aside.nyulibraries-alert-banner a:hover,
+aside.nyulibraries-alert-banner a:focus {
+  box-shadow: none;
+}
+
+/* End of Statuspage embed styles */
