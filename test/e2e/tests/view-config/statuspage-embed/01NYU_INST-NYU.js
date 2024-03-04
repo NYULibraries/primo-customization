@@ -1,4 +1,4 @@
-const STATUSPAGE_EMBED_SELECTOR = 'script[ src*="statuspage-embed" ]';
+const STATUSPAGE_EMBED_SELECTOR = '#nyulibraries-alert-banner';
 
 const testCases = [
     {
