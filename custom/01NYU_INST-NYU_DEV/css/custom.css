@@ -241,7 +241,7 @@ prm-browse-search-bar .clear-button.is-visible:focus {
 
 prm-atoz-search-bar {
   padding-bottom: 60px;
-  background-image: url("../assets/img/banner-bg.png") !important;
+  background-image: url("../img/banner-bg.png") !important;
   background-color: rgba(255, 255, 255, 1) !important;
   /* This will act as a fallback */
 }
@@ -420,7 +420,7 @@ prm-logo {
 /* search bar background image */
 prm-search-bar {
   background-color: #f5f7fa;
-  background-image: url('../assets/img/banner-bg.png');
+  background-image: url("../img/banner-bg.png");
 }
 
 .prm-secondary-color,
