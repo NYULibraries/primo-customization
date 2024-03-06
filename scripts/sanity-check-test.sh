@@ -10,7 +10,7 @@ curl='docker compose run curl'
 # make test urls for devenv and cdn based on testview
 testvid=${testview//-/:}
 devenv_url="http://primo-explore-devenv:8003/discovery/search?vid=$testvid"
-customcss_url="http://cdn-server:3000/primo-customization/$testview/css/custom.css"
+external_css_url="http://cdn-server:3000/primo-customization/$testview/css/external.css"
 
 # wait for services to load
 # timeout logic thanks to https://stackoverflow.com/a/70362046
@@ -40,14 +40,14 @@ fi
 echo "Local devenv has $devenv_matchstring!"
 
 # check that CDN loads
-#customcss_matchstring="logo-image"
-customcss_matchstring=`cat test/e2e/fixtures/cdn/primo-customization/$testview/css/custom.css`
-customcss_html=`$curl $customcss_url`
-if [[ "$customcss_html" != *"$customcss_matchstring"* ]]; then
-  echo "Devenv HTML:"
-  echo $customcss_html
-  echo "'$customcss_matchstring' not found in local CDN customcss; failure!"
+#external_css_matchstring="logo-image"
+external_css_matchstring=`cat test/e2e/fixtures/cdn/primo-customization/$testview/css/external.css`
+external_css_actual=`$curl $external_css_url`
+if [[ "$external_css_actual" != *"$external_css_matchstring"* ]]; then
+  echo "Devenv CSS:"
+  echo $external_css_actual
+  echo "'$external_css_matchstring' not found in local CDN external.css; failure!"
   exit 1
 fi
-echo "Local CDN has $customcss_matchstring!"
+echo "Local CDN has $external_css_matchstring!"
 
