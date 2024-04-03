@@ -33,12 +33,6 @@ if ( linksToTest.length > 0 ) {
         ).waitForSelector;
 
     test( 'Primo VE links in home page', async ( { page } ) => {
-        // Tests running in container sometimes take longer and require a
-        // higher timeout value.
-        if ( process.env.CONTAINER_MODE ) {
-            test.slow();
-        }
-
         if ( process.env.CONTAINER_MODE ) {
             await modifyCSPHeader( page );
         }
