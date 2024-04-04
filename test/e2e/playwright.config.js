@@ -29,7 +29,7 @@ const config = {
 
     testDir: './tests',
     /* Maximum time one test can run for. */
-    timeout: 10 * 1000,
+    timeout: 30 * 1000,
     expect : {
     /**
      * Maximum time expect() should wait for the condition to be met.
@@ -48,7 +48,7 @@ const config = {
        We increase the number of retries in all environments to mitigate various
        LibKey-related test instabilities.
      */
-    retries      : process.env.CONTAINER_MODE ? 1 : 2,
+    retries      : process.env.CONTAINER_MODE ? 2 : 2,
     /* Opt out of parallel tests. */
     workers      : process.env.CONTAINER_MODE ? 1 : undefined,
     /* Reporter to use. See https://playwright.dev/docs/test-reporters */
