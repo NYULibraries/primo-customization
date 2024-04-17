@@ -1,0 +1,7 @@
+@import url('https://cdn.library.nyu.edu/chatwidget-embed/index.min.css');
+/*  Import the chatwidgetEmbed CSS stylesheet into the project. Should be at the top of this file!!
+Do not move or alter the import order   */
+
+@import url("../../00_common/css/nyu_common.css");
+@import url("../../00_common/css/global.css");
+@import url("../../00_common/css/menu.css");

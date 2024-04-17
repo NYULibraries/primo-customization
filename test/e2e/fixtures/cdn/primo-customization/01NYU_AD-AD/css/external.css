@@ -1,0 +1,53 @@
+@import url('https://cdn.library.nyu.edu/chatwidget-embed/index.min.css');
+/*  Import the chatwidgetEmbed CSS stylesheet into the project. Should be at the top of this file!!
+Do not move or alter the import order   */
+
+@import url("../../00_common/css/nyu_common.css");
+@import url("../../00_common/css/global.css");
+@import url("../../00_common/css/menu.css");
+
+
+/* Enlarge top bar to resize the NYUAD logo so it's readable */
+prm-topbar {
+    height: 150px;
+}
+
+
+/* Remove the underline on hover */
+prm-logo .product-logo .organization-logo:hover,
+a:hover {
+    box-shadow: none !important;
+}
+
+
+/* Align the logo horizontally and vertically */
+prm-logo .product-logo {
+    display: flex;
+}
+
+.product-logo {
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+
+
+
+
+/* ***************************** */
+/* Styles for user dropdown menu */
+/* ***************************** */
+
+
+/* Update text CSS hack */
+span[translate="eshelf.menu.savedItems"] {
+    font-size: 0 !important;
+    /* Hide existing text */
+}
+
+span[translate="eshelf.menu.savedItems"]::after {
+    content: 'Saved Items';
+    font-size: 16px;
+    /* Restore original font size */
+}
