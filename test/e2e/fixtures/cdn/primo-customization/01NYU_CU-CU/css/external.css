@@ -1,0 +1,135 @@
+@import url("../../00_common/css/global.css");
+@import url("../../00_common/css/menu.css");
+
+body {
+    background-color: #e9e9e9;
+}
+
+md-card {
+    background-color: white !important;
+}
+
+prm-search-bar {
+    color: #363639;
+}
+
+prm-topbar .top-nav-bar {
+    background-color: white;
+}
+
+
+/*sets default colors of header buttons */
+
+prm-topbar .md-button:not(.disable-hover):not(.close-btn-favorits-warning-message) {
+    color: #363639;
+}
+
+/* sets header button hover colors */
+
+prm-topbar span:hover {
+    color: unset !important;
+}
+
+prm-topbar .md-button:not(.disable-hover):hover:not([disabled]):hover:not([disabled]):not(.close-btn-favorits-warning-message) {
+    background-color: #363639;
+    color: #ffffff;
+}
+
+/*fixes weird color issue when selecting menu link that opens a new winow, which changes the selected's color*/
+.buttons-group div:first-child .md-button {
+    box-shadow: black;
+}
+
+/* Fixes Menu Caret hover color transition issue */
+prm-user-area-expandable .button-with-menu-arrow:hover .menu-arrow {
+    color: #ffffff;
+}
+
+prm-user-area-expandable .button-with-menu-arrow:hover .menu-arrow:hover:not([disabled]) {
+    background-color: rgba(0, 0, 0, 0);
+    color: inherit;
+}
+
+/*  sign-in alert bar */
+div.bar.alert-bar.layout-align-center.layout-row {
+    background-color: #FFCe00;
+}
+
+/*-------------------- Body and Results --------------------*/
+
+body {
+    background-color: #ececec;
+}
+
+md-card.default-card {
+    background-color: #ffffff;
+}
+
+/* sets the site's selection color, and results hover color to the correct yellows */
+
+::selection {
+    background-color: rgba(255, 207, 1, .9)
+}
+
+.text-highlight,
+mark {
+    box-shadow: rgb(255, 207, 1) 0px, -0.3em, 0px, 0px inset;
+}
+
+/*full result background color */
+
+.md-dialog-container.fixed-container {
+    background-color: rgba(54, 54, 57, .9)
+}
+
+/*remove the pesky out-of-the-box link hover underline*/
+
+a:hover {
+    box-shadow: inset 0 0px 0 0 #00942d !important;
+}
+
+/* sets the hover color for the "Advanced Search Link */
+
+.switch-to-advanced.zero-margin.button-with-icon.button-over-dark.md-button.button-over-dark:not(.disable-hover):hover:not([disabled]):hover:not([disabled]) {
+    color: #363639;
+}
+
+
+
+/*-------------------- Resource Type Filter Bar Fixes --------------------*/
+
+/*Sets the Color for 'current selection'*/
+
+prm-resource-type-filter-bar .selectedResourceTypeOption prm-icon,
+prm-resource-type-filter-bar .selectedResourceTypeOption {
+    color: #363639 !important;
+}
+
+
+/*sets the proper cursor for hovering over the filter links */
+
+button.md-button {
+    cursor: pointer;
+}
+
+/* Remove the underline on hover */
+prm-logo .product-logo .organization-logo:hover {
+    box-shadow: none !important;
+}
+
+a:hover {
+    box-shadow: none;
+}
+
+/* .logo-image {
+    width: 218px;
+} */
+
+.product-logo {
+    padding: 0 0 0 0.85em !important;
+}
+
+div#banner.product-logo {
+    padding-top: 0px;
+    padding-bottom: 0px;
+}

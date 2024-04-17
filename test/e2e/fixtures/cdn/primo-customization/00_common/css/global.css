@@ -1,0 +1,34 @@
+/* Global CSS across all views */
+
+/* Hide 'block+messages', 'personal details' */
+prm-account-overview md-tab-item [translate="nui.blocks.header"],
+prm-account-overview md-tab-item [translate="nui.details.header"] {
+    display: none !important;
+}
+
+prm-messages-and-blocks,
+prm-personal-info {
+    display: none !important;
+}
+
+prm-messages-and-blocks-overview {
+    display: none !important;
+}
+
+/* <------feedback & library hours--------> */
+
+/* https://nyu-lib.monday.com/boards/765008773/pulses/4845899493 */
+prm-no-search-result>md-card {
+    display: none;
+}
+
+/* Unhide facet checkboxes by default */
+.multiselect-facet-group.multiselect-inactive .md-chip md-checkbox {
+    transform: none;
+    transition: none;
+}
+
+/* Hide brief result snippets */
+div.result-item-text.layout-fill.layout-column.flex>prm-snippet {
+    display: none !important;
+}
