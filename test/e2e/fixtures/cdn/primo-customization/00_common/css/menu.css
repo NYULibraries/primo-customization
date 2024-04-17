@@ -1,0 +1,84 @@
+/* ***************************************** */
+/* Styles for full display */
+/* ***************************************** */
+
+/* Hide the side menu except for the invisible
+  'Prev', 'Close', and 'Next' options for accessibility.*/
+prm-full-view .services-index-under button:not(.accessible-close) {
+    display: none;
+}
+
+#full-view-container>*:first-child {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Reorder FullDisplay sections. */
+#searchWithinJournal {
+    order: 1;
+}
+
+/* "Search inside" */
+#getit_link1_0 {
+    order: 2;
+}
+
+/* "View Online" or "How to get it" */
+#getit_link1_1 {
+    order: 3;
+}
+
+/* "Get It" */
+#getit_link2 {
+    order: 4;
+}
+
+#details {
+    order: 5;
+}
+
+/* "Details" */
+#action_list {
+    order: 6;
+}
+
+/* "Send to" */
+#citationTrails {
+    order: 7;
+}
+
+/* "Citations" */
+#links {
+    order: 8;
+}
+
+/* "Links" */
+#virtualBrowse {
+    order: 9;
+}
+
+/* "Virtual Browse" */
+#tags {
+    order: 10;
+}
+
+/* ***************************** */
+/* Styles for user dropdown menu */
+/* ***************************** */
+
+/* Hide 'My Loans' */
+/* Hide 'My Requests' */
+.menu-item-indented.my-loans-ctm,
+.menu-item-indented.my-requests-ctm {
+    display: none !important;
+}
+
+
+/* Setting the order for `Saved Items` and `Search History` in user dropdown menu */
+.my-refworks-separator-ctm {
+    order: 3;
+}
+
+.my-refworks-ctm {
+    order: 4;
+}

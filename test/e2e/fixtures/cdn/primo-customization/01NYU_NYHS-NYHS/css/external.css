@@ -1,0 +1,117 @@
+@import url("../../00_common/css/global.css");
+
+/* Enlarge top bar to resize the NYHS logo so it's readable */
+prm-topbar {
+    height: 120px;
+}
+
+/* Hide navigation 'Side Links' in 'Full Display' page */
+prm-full-view .services-index-under #services-index {
+    display: none
+}
+
+/* make 'Virtual Browse' thumbnail images slightly smaller */
+prm-virtual-browse [md-virtual-repeat] {
+    width: 100px;
+    margin: 0.4em;
+}
+
+prm-topbar .md-button:not(.close-btn-favorits-warning-message):not(.md-icon-button) {
+    color: #3a3a3a;
+}
+
+prm-topbar .md-button:not(.disable-hover):not(.close-btn-favorits-warning-message),
+prm-topbar .md-button:not(.disable-hover):not(.close-btn-favorits-warning-message) {
+    color: #3a3a3a;
+}
+
+prm-topbar .top-nav-bar {
+    background-color: white;
+}
+
+prm-search-bar {
+    background-color: #f5f7fa
+}
+
+/* Style the magnifying glass in search bar */
+button.zero-margin.button-confirm.large-icon.md-button.md-primoExplore-theme.md-ink-ripple {
+    background-color: black !important;
+}
+
+button.zero-margin.button-confirm.large-icon.md-button.md-primoExplore-theme.md-ink-ripple:hover {
+    background-color: white !important;
+}
+
+button.button-confirm prm-icon[icon-definition="magnifying-glass"] {
+    color: white !important;
+}
+
+button.button-confirm prm-icon[icon-definition="magnifying-glass"]:hover {
+    color: black !important;
+}
+
+/* Style the Advanced Search button */
+.switch-to-advanced {
+    color: black !important;
+}
+
+
+/* Hide the Yellow "Sign in" message */
+prm-alert-bar {
+    display: none !important;
+}
+
+
+/* Remove "My Library Account" */
+.my-library-card-ctm {
+    display: none;
+}
+
+/* Hide "Pin" and "Sign-in" on top navigation menu bar */
+div#fixed-buttons-holder.layout-align-center-center.layout-row,
+button#signInBtn.user-button.sign-in-btn-ctm.md-button.md-primoExplore-theme.md-ink-ripple {
+    display: none !important;
+}
+
+/* ******************************************************* */
+/* Styles for search-bar-sub-menu feedback & library hours */
+/* ******************************************************* */
+
+
+prm-search-bar {
+    height: 140px;
+}
+
+.search-bar-sub-menu {
+    background-color: #CCD0D5;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 36px;
+}
+
+.search-bar-sub-menu ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.search-bar-sub-menu a:hover,
+.search-bar-sub-menu a:focus,
+.search-bar-sub-menu a:active {
+    box-shadow: none !important;
+    background-color: transparent;
+}
+
+span.search-bar-sub-menu-item.hide-xs {
+    font-size: 11.25px;
+    min-width: 42px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.search-bar-sub-menu ul {
+    list-style-type: none;
+    padding-left: 0;
+}
