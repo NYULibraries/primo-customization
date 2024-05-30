@@ -1,0 +1,485 @@
+/* Common CSS for AD, NYU, TEST, SH  */
+
+/* Importing color variables into common.css */
+@import "modules/colors-variables.css";
+
+
+/* Hover-state text color for all main menu labels */
+prm-topbar .md-button:not(.disable-hover):hover:not([disabled]):hover:not([disabled]):not(.close-btn-favorits-warning-message) {
+    color: var(--primary-black);
+}
+
+
+/*  Loading diamond color */
+prm-spinner.half-transparent .diamond {
+    background-color: var(--primary-black);
+}
+
+prm-spinner.dark-on-light .diamond {
+    background-color: var(--primary-black);
+}
+
+/*** A11y colors implementation ***/
+/* sidebar transparent background */
+.md-dialog-container.fixed-container {
+    background-color: transparent;
+}
+
+/* Override the existing hover color with var(--primary-purple) */
+prm-facet-exact .section-title:hover span,
+prm-facet-range .section-title:hover span,
+prm-facet-exact .section-title:focus span,
+prm-facet-range .section-title:focus span {
+    color: var(--primary-purple);
+}
+
+
+prm-citation-trails-indication .md-button.button-with-icon,
+prm-citation-trails-indication .md-button.md-icon-button {
+    color: var(--primary-purple);
+}
+
+
+.prm-positive,
+.status-available,
+[class*="available"],
+[class*="FT"],
+.not_restricted,
+.ext_not_restricted,
+.fulltext_multiple,
+.fulltext,
+.fulltext_linktorsrc,
+.fulltext_newspaper,
+.fulltext_linktorsrc_newspaper,
+.fulltext_linktorsrc_topic,
+.fulltext_topic,
+.esploro_status\.not_restricted {
+    color: var(--success-green);
+}
+
+.md-button.arrow-link-button prm-quick-link .button-content span,
+prm-quick-link .md-button.arrow-link-button .button-content span,
+prm-quick-link a span {
+    color: var(--success-green);
+}
+
+.prm-negative.prm-hue1,
+.status-unavailable,
+[class*="unavailable"],
+[class*="no_"],
+.restricted,
+.ext_restrictedNoLink,
+.ext_restrictedWithLink,
+.duedate,
+.esploro_status\.embargoed,
+.esploro_status\.restricted {
+    color: var(--restricted-unavailable);
+}
+
+.prm-open-access {
+    color: #b84d00;
+}
+
+.prm-peer-reviewed,
+.prm-course {
+    color: #5E34AF;
+}
+
+prm-citation-color.prm-hue2,
+prm-citation-trails-item .item-type,
+prm-chapters-and-reviews .prm-hue2.item-type {
+    color: var(--primary-purple);
+}
+
+.prm-primary-color.prm-hue2,
+.request-form md-input-container label.prm-hue2,
+.request-form md-input-container label.prm-hue2:not(.md-no-float):not(._md-container-ignore),
+.request-form md-input-container md-select .prm-hue2.md-select-value.md-select-placeholder,
+.request-form md-input-container .md-input-container-dummy>.md-select-dummy .prm-hue2.md-select-value.md-select-placeholder,
+.request-form md-input-container md-select .prm-hue2._md-select-value._md-select-placeholder,
+.request-form md-input-container .md-input-container-dummy>.md-select-dummy .prm-hue2._md-select-value._md-select-placeholder,
+.result-item-actions .md-icon-button,
+.result-item-actions .prm-hue2.more-options-button,
+prm-add-query-to-saved-searches .prm-hue2.custom-button,
+prm-pre-filters md-input-container.prm-hue2.is-active,
+.md-autocomplete-suggestions .prm-hue2.suggestion-scope,
+md-tab-content .tab-content-header md-input-container md-select-value .prm-hue2.md-text,
+prm-resource-type-filter-bar md-input-container.prm-hue2.is-active {
+    color: var(--primary-purple);
+}
+
+.md-button {
+    color: var(--background-color-black);
+}
+
+.md-button:hover:not([disabled]),
+.md-button:focus:not([disabled]),
+.md-button.hovered:not([disabled]),
+.md-button.md-focused:not([disabled]),
+.md-button._md-focused:not([disabled]) {
+    color: var(--white);
+    background-color: var(--background-color-black);
+}
+
+
+/* ***************************************** */
+/* Styles for browse search & journal search */
+/* ***************************************** */
+
+
+.prm-alert-bg,
+.bar.alert-bar,
+.classic-input .search-scope {
+    background-color: var(--background-border-white) !important;
+}
+
+.prm-alert-border,
+.bar.alert-bar,
+.classic-input .search-scope {
+    border-color: var(--background-border-white) !important;
+}
+
+prm-autocomplete input {
+    font-size: 1.3em !important;
+}
+
+prm-browse-search-bar {
+    padding-bottom: 60px;
+    background-image: url("../assets/img/banner-bg.png") !important;
+    background-color: var(--background-border-white) !important;
+    /* This will act as a fallback */
+}
+
+/* Styles for clear button */
+prm-browse-search-bar .clear-button.is-visible {
+    right: 62px !important;
+}
+
+button.md-button.md-icon-button.clear-button.md-primoExplore-theme.md-ink-ripple.is-visible {
+    padding: 0 !important;
+    margin: 15px 5px !important;
+    width: 30px !important;
+    height: 30px !important;
+    min-width: 30px !important;
+    min-height: 30px !important;
+}
+
+md-icon.md-primoExplore-theme {
+    display: inline-block !important;
+    height: 21.6px;
+    width: 21.6px;
+    min-height: 21.6px;
+    min-width: 21.6px;
+}
+
+prm-browse-search-bar .clear-button.is-visible:hover,
+prm-browse-search-bar .clear-button.is-visible:focus {
+    color: var(--text-white);
+    background-color: var(--primary-black);
+}
+
+prm-atoz-search-bar {
+    padding-bottom: 60px;
+    background-image: url("../assets/img/banner-bg.png") !important;
+    background-color: var(--background-border-white) !important;
+    /* This will act as a fallback */
+}
+
+@media (max-width: 959px) {
+
+    prm-browse-search-bar,
+    prm-atoz-search-bar {
+        padding-bottom: 3.8em !important;
+    }
+}
+
+@media (max-width: 600px) {
+
+    prm-browse-search-bar,
+    prm-atoz-search-bar {
+        padding-top: 1.2em !important;
+    }
+}
+
+
+/* ******************************************************* */
+/* Styles for search-bar-sub-menu feedback & library hours */
+/* ******************************************************* */
+
+.search-wrapper.dark-toolbar.prm-top-bar-container.main-header-row.layout-row {
+    padding-bottom: 35px;
+}
+
+search-bar-sub-menu div.search-bar-sub-menu {
+    background-color: #CCD0D5;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 36px;
+}
+
+.search-bar-sub-menu a:hover,
+.search-bar-sub-menu a:focus,
+.search-bar-sub-menu a:active {
+    box-shadow: none !important;
+    background-color: transparent;
+}
+
+search-bar-sub-menu ul {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+search-bar-sub-menu ul li {
+    display: inline;
+    list-style: none;
+    padding: 0;
+}
+
+search-bar-sub-menu .md-button.md-small {
+    font-size: 11.25px;
+    min-width: 42px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.zero-margin,
+prm-more-like-this-item md-card>.md-button,
+prm-topbar .md-button:not(.md-icon-button),
+prm-user-area .user-menu-button,
+prm-virtual-browse-item md-card>.md-button {
+    margin: 0 !important;
+}
+
+/* General styles for md-button */
+.md-button {
+    color: #333;
+    text-decoration: none;
+}
+
+/* Styles for buttons with icons */
+.md-button.button-with-icon>prm-icon {
+    display: inline-block;
+}
+
+.md-button.button-with-icon>prm-icon md-icon {
+    position: relative;
+    top: -2px;
+}
+
+.md-button.button-with-icon>prm-icon+span {
+    display: inline-block;
+    margin-left: 3px;
+    padding-right: 0.5em;
+}
+
+.md-button:hover:not([disabled]),
+.md-button:focus:not([disabled]),
+.md-button.hovered:not([disabled]),
+.md-button.md-focused:not([disabled]),
+.md-button._md-focused:not([disabled]) {
+    color: #1d1616;
+    background-color: rgba(51, 51, 51, 0.1);
+}
+
+/* Remove grey background on hover from "availability" links */
+.neutralized-button.arrow-link-button.md-button.md-primoExplore-theme.md-ink-ripple:hover {
+    background-color: transparent;
+}
+
+/* Update hover state style of "back to locations" button to purple background and white text */
+.back-button.button-with-icon.zero-margin.md-button.md-primoExplore-theme.md-ink-ripple:hover:not([disabled]) {
+    color: var(--text-white);
+    background-color: var(--primary-purple);
+}
+
+prm-action-list ._md-nav-button.md-accent.md-button.md-primoExplore-theme.md-ink-ripple.md-unselected:hover {
+    background-color: var(--light-grey);
+}
+
+button:focus,
+a:focus,
+a:focus-visible,
+.md-primoExplore-theme:focus {
+    box-shadow: inset 0 0 0 2px #3dbbdb !important;
+}
+
+
+prm-logo {
+    /* Override `prm-topbar prm-logo` from (Chrome Dev Tools link address):
+    https://sandbox02-na.primo.exlibrisgroup.com/discovery/components/search/topbar/_top-bar.scss */
+    max-width: 300px !important;
+}
+
+.logo-image {
+    display: block;
+    margin: auto;
+    width: 207px;
+}
+
+#banner>.md-primoExplore-theme {
+    width: 100%;
+}
+
+
+/* bold headers on landing page */
+.md-subhead {
+    font-weight: 600;
+    margin: 1em .25em auto auto;
+}
+
+/* ***************************************************** */
+/* EVERYTHING BELOW app-colors / look and feel overrides */
+/* ***************************************************** */
+
+/* search bar background image */
+prm-search-bar {
+    background-color: #f5f7fa;
+    background-image: url('../assets/img/banner-bg.png');
+}
+
+.prm-secondary-color,
+prm-search-bookmark-filter .md-button,
+prm-topbar .top-nav-bar {
+    color: var(--primary-purple);
+}
+
+/* Advanced and simple search buttons */
+.switch-to-simple,
+.switch-to-advanced {
+    background-color: var(--primary-purple) !important;
+    color: var(--text-white) !important;
+    font-weight: bold;
+    padding: 0 20px;
+}
+
+.switch-to-simple:hover,
+.switch-to-advanced:hover {
+    background-color: #791CB4 !important;
+}
+
+/* buttonVoiceSearch */
+#voiceSearchButton:hover {
+    background-color: #E8F1F8;
+    color: #05568a;
+}
+
+/* button-confirm (magnifying glass)  */
+button.button-confirm {
+    background-color: var(--black) !important;
+    color: var(--white) !important;
+}
+
+button.button-confirm svg {
+    fill: var(--white) !important;
+}
+
+button.button-confirm:hover {
+    background-color: var(--white) !important;
+    color: var(--black) !important;
+}
+
+button.button-confirm:hover svg {
+    fill: var(--black) !important;
+}
+
+
+/* color overrides */
+.prm-primary-bg.prm-hue1,
+prm-spinner.prm-hue1.overlay-cover.light-on-dark:after,
+prm-topbar .top-nav-bar,
+prm-search-bar.prm-hue1 {
+    background-color: var(--primary-purple);
+}
+
+.prm-primary-bg.prm-hue2,
+prm-spinner.prm-hue2.overlay-cover.light-on-dark:after,
+prm-search-bar.prm-hue2,
+md-backdrop.md-opaque {
+    background-color: var(--primary-purple);
+}
+
+.prm-primary-bg.prm-hue3,
+prm-spinner.prm-hue3.overlay-cover.light-on-dark:after,
+prm-search-bar.prm-hue3 {
+    background-color: var(--primary-purple);
+}
+
+.prm-primary-bg.prm-hue3-important,
+prm-spinner.prm-hue3-important.overlay-cover.light-on-dark:after,
+prm-user-area md-fab-toolbar.md-is-open md-fab-trigger .md-fab-toolbar-background,
+prm-user-area md-fab-toolbar.md-is-open md-fab-trigger ._md-fab-toolbar-background,
+prm-search-bar.prm-hue3-important {
+    background-color: var(--primary-purple) !important;
+}
+
+.prm-primary-bg.prm-hue4,
+prm-spinner.prm-hue4.overlay-cover.light-on-dark:after,
+prm-search-bar.prm-hue4 {
+    background-color: var(--primary-purple);
+}
+
+
+/* BEGIN "Add styled feedback link to Item Details pages"
+   monday.com: https://nyu-lib.monday.com/boards/765008773/pulses/5434069666 */
+
+/* Hide feedback button in search results */
+#searchResultsContainer .prm-save-to-favorites-button-after-feedback .md-button.md-small {
+    display: none;
+}
+
+.prm-save-to-favorites-button-after-feedback .md-button.md-small {
+    background-color: #F3F3F3;
+    color: var(--primary-purple);
+}
+
+.prm-save-to-favorites-button-after-feedback:hover .md-button.md-small {
+    background-color: var(--primary-purple);
+    color: var(--white);
+}
+
+/* END "Add styled feedback link to Item Details pages" */
+
+
+/* Change text color of "full chapter" field in digitization request form */
+prm-form-field .checkbox-warning-message {
+    color: var(--primary-black);
+}
+
+/* BEGIN CSS for "Choose top 50 results" button */
+prm-search-result-tool-bar #chooseTopMax.button-link.md-button.md-primoExplore-theme.md-ink-ripple {
+    color: var(--primary-black);
+    font-style: normal;
+}
+
+/* CSS for hover state "Choose top 50 results" button */
+prm-search-result-tool-bar #chooseTopMax.button-link.md-button.md-primoExplore-theme.md-ink-ripple:hover {
+    background-color: var(--primary-purple);
+    color: var(--text-white);
+}
+
+/* CSS for focus state "Choose top 50 results" button */
+prm-search-result-tool-bar #chooseTopMax.button-link.md-button.md-primoExplore-theme.md-ink-ripple:focus {
+    background-color: transparent;
+    color: var(--primary-black);
+}
+
+/* CSS for focus and hover state */
+prm-search-result-tool-bar #chooseTopMax.button-link.md-button.md-primoExplore-theme.md-ink-ripple:focus:hover {
+    background-color: var(--primary-purple);
+    color: var(--text-white);
+}
+/* END CSS for "Choose top 50 results" button */
+
+/* BEGIN CSS "Dismiss" button */
+prm-search-result-tool-bar .dismiss-link.md-button.md-primoExplore-theme.md-ink-ripple {
+    font-style: normal;
+}
+
+/* CSS for hover state "Dismiss button" button */
+prm-search-result-tool-bar .dismiss-link.md-button.md-primoExplore-theme.md-ink-ripple:hover {
+    background-color: var(--light-grey);
+}
+/* END CSS "Dismiss" button  */

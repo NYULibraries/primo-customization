@@ -1,0 +1,13 @@
+/* Define the custom variables */
+:root {
+    --background-border-white: rgba(255, 255, 255, 1);
+    --background-color-black: #1C2127;
+    --black: black;
+    --light-grey: #d6d6d6;
+    --primary-black: #3a3a3a;
+    --primary-purple: #57068c;
+    --restricted-unavailable: #035488;
+    --success-green: #0F6000;
+    --text-white: #fff;
+    --white: white;
+}
