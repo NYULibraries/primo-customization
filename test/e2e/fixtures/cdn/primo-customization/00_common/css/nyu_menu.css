@@ -33,31 +33,31 @@ prm-full-view .services-index-under button:not(.accessible-close) {
     order: 4;
 }
 
-#details {
+/* "Send to" */
+#action_list {
     order: 5;
 }
 
 /* "Details" */
-#action_list {
+#details {
     order: 6;
 }
 
-/* "Send to" */
+/* "Citations" */
 #citationTrails {
     order: 7;
 }
 
-/* "Citations" */
+/* "Links" */
 #links {
     order: 8;
 }
 
-/* "Links" */
+/* "Virtual Browse" */
 #virtualBrowse {
     order: 9;
 }
 
-/* "Virtual Browse" */
 #tags {
     order: 10;
 }

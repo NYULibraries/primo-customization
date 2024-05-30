@@ -4,7 +4,7 @@ Do not move or alter the import order   */
 
 @import url("../../00_common/css/nyu_common.css");
 @import url("../../00_common/css/global.css");
-@import url("../../00_common/css/menu.css");
+@import url("../../00_common/css/nyu_menu.css");
 
 
 /* Enlarge top bar to resize the NYHS logo so it's readable */
