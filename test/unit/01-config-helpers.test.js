@@ -65,6 +65,10 @@ const testCases = {
     'https://search.library.nyu.edu/discovery/search?vid=01NYU_INST:NYU_DEV&offset=0'  : 'https://cdn-dev.library.nyu.edu/primo-customization/01NYU_INST-NYU_DEV',
     'https://search.library.nyu.edu/discovery/search?vid=01NYU_INST:TESTWS01&offset=0' : 'https://cdn-dev.library.nyu.edu/primo-customization/01NYU_INST-TESTWS01',
 
+    'https://nyu-psb.primo.exlibrisgroup.com/discovery/search?vid=01NYU_INST:NYU'      : 'https://cdn.library.nyu.edu/primo-customization/01NYU_INST-NYU',
+    'https://nyu-psb.primo.exlibrisgroup.com/discovery/search?vid=01NYU_INST:NYU_DEV'  : 'https://cdn-dev.library.nyu.edu/primo-customization/01NYU_INST-NYU_DEV',
+    'https://nyu-psb.primo.exlibrisgroup.com/discovery/search?vid=01NYU_INST:TESTWS01' : 'https://cdn-dev.library.nyu.edu/primo-customization/01NYU_INST-TESTWS01',
+
     'https://search.shanghai.library.nyu.edu/discovery/search?vid=01NYU_US:US&offset=0'     : 'https://cdn.library.nyu.edu/primo-customization/01NYU_US-US',
     'https://search.shanghai.library.nyu.edu/discovery/search?vid=01NYU_US:US_DEV&offset=0' : 'https://cdn-dev.library.nyu.edu/primo-customization/01NYU_US-US_DEV',
 };
