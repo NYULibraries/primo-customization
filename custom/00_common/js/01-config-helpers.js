@@ -22,12 +22,12 @@ function getCdnUrl( vid ) {
 }
 
 function getBaseUrlForHostname( hostname ) {
-    const hostnameToBaseurlMap = {
+    const hostnameToBaseUrlMap = {
         'localhost'            : 'http://localhost:3000/primo-customization', // for local development
         'primo-explore-devenv' : 'http://cdn-server:3000/primo-customization', // for docker-compose
     };
 
-    return hostnameToBaseurlMap[hostname];
+    return hostnameToBaseUrlMap[hostname];
 }
 
 function getBaseUrlForVid( vid ) {
