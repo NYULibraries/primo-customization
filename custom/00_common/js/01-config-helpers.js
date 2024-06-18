@@ -27,8 +27,8 @@ function getCdnUrl( vid ) {
 function getBaseUrlForHostname( hostname ) {
     const hostnameToBaseurlMap = {
         //'sandbox02-na.primo.exlibrisgroup.com': 'https://d290kawcj1dea9.cloudfront.net/primo-customization', // retired sandbox hostname: superceded by nyu-psb subdomain (no special handling) in jan 2024
-        'localhost': 'http://localhost:3000/primo-customization', // for local development
-        'primo-explore-devenv': 'http://cdn-server:3000/primo-customization' // for docker-compose
+        'localhost'            : 'http://localhost:3000/primo-customization', // for local development
+        'primo-explore-devenv' : 'http://cdn-server:3000/primo-customization', // for docker-compose
     };
 
     return hostnameToBaseurlMap[hostname];
