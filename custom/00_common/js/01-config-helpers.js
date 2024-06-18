@@ -14,12 +14,9 @@ function getCdnUrl( vid ) {
     const hostname = window.location.hostname;
     const view = parseViewDirectoryName( vid );
 
-    let baseUrl;
-    // some hostname have special baseurls
-    baseUrl = getBaseUrlForHostname( hostname );
-    // otherwise, base on vid
-    if ( !baseUrl )
-        baseUrl = getBaseUrlForVid( vid );
+    // In some special cases it's possible to determine the baseUrl from the
+    // hostname.
+    const baseUrl = getBaseUrlForHostname( hostname ) || getBaseUrlForVid( vid );
 
     return `${ baseUrl }/${ view }`;
 }
