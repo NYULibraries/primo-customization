@@ -11,6 +11,26 @@ function getCdnUrl( vid ) {
     // and will not consider a vid like "01nyu_inst:nyu_dev" to be valid.
     vid = vid.toLocaleUpperCase();
 
+    const hostname = window.location.hostname;
+    const view = parseViewDirectoryName( vid );
+
+    // In some special cases it's possible to determine the baseUrl from the
+    // hostname.
+    const baseUrl = getBaseUrlForHostname( hostname ) || getBaseUrlForVid( vid );
+
+    return `${ baseUrl }/${ view }`;
+}
+
+function getBaseUrlForHostname( hostname ) {
+    const hostnameToBaseUrlMap = {
+        'localhost'            : 'http://localhost:3000/primo-customization', // for local development
+        'primo-explore-devenv' : 'http://cdn-server:3000/primo-customization', // for docker-compose
+    };
+
+    return hostnameToBaseUrlMap[hostname];
+}
+
+function getBaseUrlForVid( vid ) {
     const CDN_DEV = 'https://cdn-dev.library.nyu.edu/primo-customization';
     const CDN_PROD = 'https://cdn.library.nyu.edu/primo-customization';
 
@@ -21,27 +41,14 @@ function getCdnUrl( vid ) {
         '01NYU_INST:TESTWS01' : CDN_DEV,
     }
 
-    const hostname = window.location.hostname;
-    const view = parseViewDirectoryName( vid );
-
-    let baseUrl;
-    if ( hostname === 'localhost' ) {
-        baseUrl = 'http://localhost:3000/primo-customization';
-    } else if ( hostname === 'sandbox02-na.primo.exlibrisgroup.com' ) {
-        baseUrl = 'https://d290kawcj1dea9.cloudfront.net/primo-customization';
-    } else if ( hostname === 'primo-explore-devenv' ) {
-        // Running in the headless browser in the Docker Compose `e2e` service.
-        baseUrl = 'http://cdn-server:3000/primo-customization';
-    } else if ( vid.endsWith( VID_DEV_SUFFIX ) ) {
-        baseUrl = CDN_DEV
+    if ( vid.endsWith( VID_DEV_SUFFIX ) ) {
+        return CDN_DEV;
     } else {
         // Couldn't assign CDN based on hostname or vid name pattern.
         // Check vid -> CDN map, and if that doesn't return anything, default to
         // prod CDN.
-        baseUrl = vidToCdnUrlMap[ vid ] || CDN_PROD;
+        return vidToCdnUrlMap[ vid ] || CDN_PROD;
     }
-
-    return `${ baseUrl }/${ view }`;
 }
 
 function parseViewDirectoryName( vid ) {
