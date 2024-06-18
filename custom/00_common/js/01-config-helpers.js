@@ -14,24 +14,20 @@ function getCdnUrl( vid ) {
     const hostname = window.location.hostname;
     const view = parseViewDirectoryName( vid );
 
-    let baseUrl;
-    // some hostname have special baseurls
-    baseUrl = getBaseUrlForHostname( hostname );
-    // otherwise, base on vid
-    if ( !baseUrl )
-        baseUrl = getBaseUrlForVid( vid );
+    // In some special cases it's possible to determine the baseUrl from the
+    // hostname.
+    const baseUrl = getBaseUrlForHostname( hostname ) || getBaseUrlForVid( vid );
 
     return `${ baseUrl }/${ view }`;
 }
 
 function getBaseUrlForHostname( hostname ) {
-    const hostnameToBaseurlMap = {
-        //'sandbox02-na.primo.exlibrisgroup.com': 'https://d290kawcj1dea9.cloudfront.net/primo-customization', // retired sandbox hostname: superceded by nyu-psb subdomain (no special handling) in jan 2024
-        'localhost': 'http://localhost:3000/primo-customization', // for local development
-        'primo-explore-devenv': 'http://cdn-server:3000/primo-customization' // for docker-compose
+    const hostnameToBaseUrlMap = {
+        'localhost'            : 'http://localhost:3000/primo-customization', // for local development
+        'primo-explore-devenv' : 'http://cdn-server:3000/primo-customization', // for docker-compose
     };
 
-    return hostnameToBaseurlMap[hostname];
+    return hostnameToBaseUrlMap[hostname];
 }
 
 function getBaseUrlForVid( vid ) {
