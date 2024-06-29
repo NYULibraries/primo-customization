@@ -16,7 +16,7 @@ REQUIRED_BRANCH=script-create-packages-and-push-to-packages-repo
 #REQUIRED_BRANCH=main
 
 # TODO: change back to real repo
-PACKAGES_REPO_REMOTE=git@github.com:da70/primo-ve-customization-packagesx=.git
+PACKAGES_REPO_REMOTE=git@github.com:da70/primo-ve-customization-packages.git
 #PACKAGES_REPO_REMOTE=git@github.com:NYULibraries/primo-ve-customization-packages.git
 
 function abort() {
