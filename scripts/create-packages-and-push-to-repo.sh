@@ -6,7 +6,7 @@ ROOT=$(
     pwd -P
 )
 TMP=$ROOT/tmp
-PACKAGES_REPO_LOCAL=$TMP/primo-ve-customization-packages
+PACKAGES_REPO_LOCAL_DIR=$TMP/primo-ve-customization-packages
 
 # TODO: change back to real repo
 PACKAGES_REPO_REMOTE=git@github.com:da70/primo-ve-customization-packagesx=.git
@@ -21,14 +21,14 @@ function abort() {
 }
 
 function clean() {
-    rm -fr $PACKAGES_REPO_LOCAL
+    rm -fr $PACKAGES_REPO_LOCAL_DIR
     if [ $? -ne 0 ]; then
         abort "Error while cleaning."
     fi
 }
 
 function cloneRepo() {
-    git clone $PACKAGES_REPO_REMOTE $PACKAGES_REPO_LOCAL
+    git clone $PACKAGES_REPO_REMOTE $PACKAGES_REPO_LOCAL_DIR
     if [ $? -ne 0 ]; then
         abort "Error cloning packages repo."
     fi
