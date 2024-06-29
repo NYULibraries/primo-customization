@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-views=$@
+viewPaths=$@
 
 ROOT=$(
     cd "$(dirname "$0")"
@@ -58,22 +58,22 @@ function verifyUnmodifiedGitStatus() {
 }
 
 function verifyViews() {
-    local views=$@
+    local viewPaths=$@
 
     result=true
-    for view in $views; do
-        baseViewName=$( basename $view )
-        viewArgPath=$( realpath $view )
-        checkViewPath=$( realpath $CUSTOM_DIR/$baseViewName )
+    for viewPath in $viewPaths; do
+        baseViewName=$( basename $viewPath )
+        viewPathArgRealpath=$( realpath $viewPath )
+        checkViewRealpath=$( realpath $CUSTOM_DIR/$baseViewName )
 
-        if [ "$viewArgPath" != "$checkViewPath" ] || [ ! -d "$viewArgPath" ]; then
+        if [ "$viewPathArgRealpath" != "$checkViewRealpath" ] || [ ! -d "$viewPathArgRealpath" ]; then
             result=false
-            echo "$view is not a valid view"
+            echo "$viewPath is not a valid view path"
         fi
     done
 
     if [ "$result" == false ]; then
-        abort "Invalid views."
+        abort "Invalid view paths."
     fi
 }
 
@@ -81,7 +81,7 @@ verifyBranch
 
 verifyUnmodifiedGitStatus
 
-verifyViews $views
+verifyViews $viewPaths
 
 clean
 
