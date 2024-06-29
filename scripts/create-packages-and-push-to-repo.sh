@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+views=$@
+
 ROOT=$(
     cd "$(dirname "$0")"
     cd ..
@@ -7,6 +9,7 @@ ROOT=$(
 )
 
 # Directories
+CUSTOM_DIR=$ROOT/custom
 TMP=$ROOT/tmp
 BUILD_DIR=$ROOT/primo-explore-devenv/packages
 PACKAGES_REPO_LOCAL_DIR=$TMP/primo-ve-customization-packages
@@ -54,9 +57,31 @@ function verifyUnmodifiedGitStatus() {
     fi
 }
 
+function verifyViews() {
+    local views=$@
+
+    result=true
+    for view in $views; do
+        baseViewName=$( basename $view )
+        viewArgPath=$( realpath $view )
+        checkViewPath=$( realpath $CUSTOM_DIR/$baseViewName )
+
+        if [ "$viewArgPath" != "$checkViewPath" ] || [ ! -d "$viewArgPath" ]; then
+            result=false
+            echo "$view is not a valid view"
+        fi
+    done
+
+    if [ "$result" == false ]; then
+        abort "Invalid views."
+    fi
+}
+
 verifyBranch
 
 verifyUnmodifiedGitStatus
+
+verifyViews $views
 
 clean
 
