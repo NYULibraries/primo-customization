@@ -5,7 +5,10 @@ ROOT=$(
     cd ..
     pwd -P
 )
+
+# Directories
 TMP=$ROOT/tmp
+BUILD_DIR=$ROOT/primo-explore-devenv/packages
 PACKAGES_REPO_LOCAL_DIR=$TMP/primo-ve-customization-packages
 
 # TODO: change back to real repo
