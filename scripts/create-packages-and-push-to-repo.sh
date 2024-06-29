@@ -11,6 +11,10 @@ TMP=$ROOT/tmp
 BUILD_DIR=$ROOT/primo-explore-devenv/packages
 PACKAGES_REPO_LOCAL_DIR=$TMP/primo-ve-customization-packages
 
+# TODO: change back to real branch
+REQUIRED_BRANCH=script-create-packages-and-push-to-packages-repo
+#REQUIRED_BRANCH=main
+
 # TODO: change back to real repo
 PACKAGES_REPO_REMOTE=git@github.com:da70/primo-ve-customization-packagesx=.git
 #PACKAGES_REPO_REMOTE=git@github.com:NYULibraries/primo-ve-customization-packages.git
@@ -36,6 +40,23 @@ function cloneRepo() {
         abort "Error cloning packages repo."
     fi
 }
+
+function verifyBranch() {
+    if [ "$( git branch --show-current )" != "$REQUIRED_BRANCH" ]; then
+        abort "Must be on branch $REQUIRED_BRANCH to run this script."
+    fi
+}
+
+function verifyUnmodifiedGitStatus() {
+    if [ "$( git status --porcelain )" != '' ]; then
+        abort \
+'Must have a clean working directory before running this script.\n(`git status --porcelain` output must be empty)'
+    fi
+}
+
+verifyBranch
+
+verifyUnmodifiedGitStatus
 
 clean
 
