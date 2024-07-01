@@ -49,6 +49,18 @@ function cloneRepo() {
     fi
 }
 
+function createPackages() {
+    local viewPaths=( "$@" )
+
+    for viewPath in "${viewPaths[@]}"; do
+        view=$( basename $viewPath )
+        yarn primo-explore-devenv:create-package $view
+        if [ $? -ne 0 ]; then
+            abort "Error creating package for $view"
+        fi
+    done
+}
+
 function verifyBranch() {
     if [ "$( git branch --show-current )" != "$REQUIRED_BRANCH" ]; then
         abort "Must be on branch $REQUIRED_BRANCH to run this script."
@@ -92,4 +104,5 @@ clean
 
 cloneRepo
 
+createPackages "${viewPaths[@]}"
 
