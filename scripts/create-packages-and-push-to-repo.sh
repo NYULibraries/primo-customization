@@ -8,8 +8,11 @@ ROOT=$(
     pwd -P
 )
 
+# TODO: change this back to `main` after this script is reviewed on the feature
+#       branch and merged into `main` (if every).
 # Only allow running of this script on this branch
-REQUIRED_BRANCH=main
+# REQUIRED_BRANCH=main
+REQUIRED_BRANCH=prototype-script-to-create-primo-ve-view-packages
 
 # Package repo to add/commit/push to
 PACKAGES_REPO_REMOTE=git@github.com:NYULibraries/primo-ve-customization-packages.git
