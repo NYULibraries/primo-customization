@@ -26,7 +26,7 @@ PACKAGES_REPO_REMOTE=git@github.com:da70/primo-ve-customization-packages.git
 function abort() {
     local message="$1"
 
-    echo -e "\nFATAL: $message\nStopping...\n"
+    echo -e "\nFATAL: $message\nStopping...\n" >&2
 
     exit 1
 }
