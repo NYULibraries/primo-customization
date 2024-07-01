@@ -40,6 +40,9 @@ function addAndCommitToPackageRepo() {
             packageRepoFile="${PACKAGES_REPO_LOCAL_DIR}/${view%-*}/${view}.zip"
 
             cp -p $builtPackageFile $packageRepoFile
+            if [ $? -ne 0 ]; then
+                abort "Copy of package file failed."
+            fi
 
             git add $packageRepoFile
             if [ $? -ne 0 ]; then
