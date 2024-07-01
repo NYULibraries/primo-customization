@@ -134,8 +134,7 @@ function verifyViews() {
 
 verifyBranch
 
-# TODO: re-enable
-#verifyUnmodifiedGitStatus
+verifyUnmodifiedGitStatus
 
 verifyViews "${viewPaths[@]}"
 
