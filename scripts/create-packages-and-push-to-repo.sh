@@ -10,6 +10,7 @@ ROOT=$(
 
 # Directories
 CUSTOM_DIR=$ROOT/custom
+CUSTOM_COMMON_DIR=$CUSTOM_DIR/00_common
 TMP=$ROOT/tmp
 BUILD_DIR=$ROOT/primo-explore-devenv/packages
 PACKAGES_REPO_LOCAL_DIR=$TMP/primo-ve-customization-packages
@@ -83,7 +84,9 @@ function verifyViews() {
         viewPathArgRealpath=$( realpath $viewPath )
         checkViewRealpath=$( realpath $CUSTOM_DIR/$baseViewName )
 
-        if [ "$viewPathArgRealpath" != "$checkViewRealpath" ] || [ ! -d "$viewPathArgRealpath" ]; then
+        if [ "$viewPathArgRealpath" != "$checkViewRealpath" ] || \
+           [ "$viewPathArgRealpath" == "$CUSTOM_COMMON_DIR" ] || \
+           [ ! -d "$viewPathArgRealpath" ]; then
             result=false
             echo "$viewPath is not a valid view path"
         fi
