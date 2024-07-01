@@ -8,20 +8,18 @@ ROOT=$(
     pwd -P
 )
 
+# Only allow running of this script on this branch
+REQUIRED_BRANCH=main
+
+# Package repo to add/commit/push to
+PACKAGES_REPO_REMOTE=git@github.com:NYULibraries/primo-ve-customization-packages.git
+
 # Directories
 CUSTOM_DIR=$ROOT/custom
 CUSTOM_COMMON_DIR=$CUSTOM_DIR/00_common
 TMP=$ROOT/tmp
 BUILD_DIR=$ROOT/primo-explore-devenv/packages
 PACKAGES_REPO_LOCAL_DIR=$TMP/primo-ve-customization-packages
-
-# TODO: change back to real branch
-REQUIRED_BRANCH=script-create-packages-and-push-to-packages-repo
-#REQUIRED_BRANCH=main
-
-# TODO: change back to real repo
-PACKAGES_REPO_REMOTE=git@github.com:da70/primo-ve-customization-packages.git
-#PACKAGES_REPO_REMOTE=git@github.com:NYULibraries/primo-ve-customization-packages.git
 
 function abort() {
     local message="$1"
