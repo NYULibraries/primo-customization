@@ -103,7 +103,7 @@ verifyViews "${viewPaths[@]}"
 
 clean
 
-cloneRepo
-
 createPackages "${viewPaths[@]}"
+
+cloneRepo
 
