@@ -145,4 +145,3 @@ createPackages "${viewPaths[@]}"
 cloneRepo
 
 addAndCommitToPackageRepo "${viewPaths[@]}"
-
