@@ -31,6 +31,29 @@ function abort() {
     exit 1
 }
 
+function addAndCommitToPackageRepo() {
+        local viewPaths=( "$@" )
+
+        cd $PACKAGES_REPO_LOCAL_DIR || exit 1
+
+        for viewPath in "${viewPaths[@]}"; do
+            view=$( basename $viewPath )
+            builtPackageFile="$BUILD_DIR/${view}.zip"
+            packageRepoFile="${PACKAGES_REPO_LOCAL_DIR}/${view%-*}/${view}.zip"
+
+            cp -p $builtPackageFile $packageRepoFile
+
+            git add $packageRepoFile
+            if [ $? -ne 0 ]; then
+                abort "`git add` of package file failed."
+            fi
+        done
+
+        commitMessage=$( gitCommitMessage "${viewPaths[@]}" )
+
+        git commit -m "$commitMessage"
+}
+
 function clean() {
     rm -fr $PACKAGES_REPO_LOCAL_DIR
     if [ $? -ne 0 ]; then
@@ -60,6 +83,20 @@ function createPackages() {
             abort "Error creating package for $view"
         fi
     done
+}
+
+function gitCommitMessage() {
+    local viewPaths=( "$@" )
+
+    commitId=$( git rev-parse HEAD )
+
+    cat <<EOF
+New/modified packages:
+
+$( for view in "${viewPaths[@]}"; do echo "* $( basename $view )"; done )
+
+Builder version: [NYULibraries/primo\-customization@${commitId}](https://github.com/NYULibraries/primo-customization/tree/${commitId})
+EOF
 }
 
 function verifyBranch() {
@@ -109,4 +146,6 @@ clean
 createPackages "${viewPaths[@]}"
 
 cloneRepo
+
+addAndCommitToPackageRepo "${viewPaths[@]}"
 
