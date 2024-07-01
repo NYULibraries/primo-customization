@@ -36,7 +36,7 @@ function clean() {
         abort "Error while cleaning $PACKAGES_REPO_LOCAL_DIR."
     fi
 
-    rm -fr $BUILD_DIR/*
+    rm -fr "${BUILD_DIR:?}/"*
     if [ $? -ne 0 ]; then
         abort "Error while cleaning $BUILD_DIR."
     fi
