@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-viewPaths=$@
+viewPaths=( "$@" )
 
 ROOT=$(
     cd "$(dirname "$0")"
@@ -63,10 +63,10 @@ function verifyUnmodifiedGitStatus() {
 }
 
 function verifyViews() {
-    local viewPaths=$@
+    local viewPaths=( "$@" )
 
     result=true
-    for viewPath in $viewPaths; do
+    for viewPath in "${viewPaths[@]}"; do
         baseViewName=$( basename $viewPath )
         viewPathArgRealpath=$( realpath $viewPath )
         checkViewRealpath=$( realpath $CUSTOM_DIR/$baseViewName )
@@ -86,7 +86,7 @@ verifyBranch
 
 verifyUnmodifiedGitStatus
 
-verifyViews $viewPaths
+verifyViews "${viewPaths[@]}"
 
 clean
 
