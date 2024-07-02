@@ -1,7 +1,5 @@
 #!/usr/bin/env bash
 
-viewPaths=( "$@" )
-
 ROOT=$(
     cd "$(dirname "$0")" || exit 1
     cd ..
@@ -19,7 +17,6 @@ PACKAGES_REPO_REMOTE=git@github.com:NYULibraries/primo-ve-customization-packages
 
 # Directories
 CUSTOM_DIR=$ROOT/custom
-CUSTOM_COMMON_DIR=$CUSTOM_DIR/00_common
 TMP=$ROOT/tmp
 BUILD_DIR=$ROOT/primo-explore-devenv/packages
 PACKAGES_REPO_LOCAL_DIR=$TMP/primo-ve-customization-packages
@@ -37,8 +34,8 @@ function addAndCommitToPackageRepo() {
 
         cd $PACKAGES_REPO_LOCAL_DIR || exit 1
 
-        for viewPath in "${viewPaths[@]}"; do
-            view=$( basename $viewPath )
+        for viewPathArg in "${viewPaths[@]}"; do
+            view=$( basename $viewPathArg )
             builtPackageFile="$BUILD_DIR/${view}.zip"
             packageRepoFile="${PACKAGES_REPO_LOCAL_DIR}/${view%-*}/${view}.zip"
 
@@ -80,11 +77,25 @@ function cloneRepo() {
 function createPackages() {
     local viewPaths=( "$@" )
 
-    for viewPath in "${viewPaths[@]}"; do
-        view=$( basename $viewPath )
+    for viewPathArg in "${viewPaths[@]}"; do
+        view=$( basename $viewPathArg )
         yarn primo-explore-devenv:create-package $view
         if [ $? -ne 0 ]; then
             abort "Error creating package for $view"
+        fi
+    done
+}
+
+# For convenience, filter out the non-view directories in custom/, to allow $@
+# to be supplied by glob patterns like custom/* and command substitutions like
+# `$( find custom -depth 1 -not -name '*_DEV' -not -name '*-TESTWS01' )`.
+# Unfortunately, bash return values are very limited, so we have to reference
+# `viewPathsArgs` and `viewPaths` variables in outer scope.
+function filterViewPaths() {
+    nonViewDirectoryRegex='00_common/?$'
+    for viewPathArg in "${viewPathsArgs[@]}"; do
+        if [[ ! $viewPathArg =~ $nonViewDirectoryRegex ]]; then
+            viewPaths+=("$viewPathArg")
         fi
     done
 }
@@ -120,16 +131,15 @@ function verifyViews() {
     local viewPaths=( "$@" )
 
     result=true
-    for viewPath in "${viewPaths[@]}"; do
-        baseViewName=$( basename $viewPath )
-        viewPathArgRealpath=$( realpath $viewPath )
+    for viewPathArg in "${viewPaths[@]}"; do
+        baseViewName=$( basename $viewPathArg )
+        viewPathArgRealpath=$( realpath $viewPathArg )
         checkViewRealpath=$( realpath $CUSTOM_DIR/$baseViewName )
 
         if [ "$viewPathArgRealpath" != "$checkViewRealpath" ] || \
-           [ "$viewPathArgRealpath" == "$CUSTOM_COMMON_DIR" ] || \
            [ ! -d "$viewPathArgRealpath" ]; then
             result=false
-            echo "$viewPath is not a valid view path"
+            echo "$viewPathArg is not a valid view path"
         fi
     done
 
@@ -137,6 +147,12 @@ function verifyViews() {
         abort "Invalid view paths."
     fi
 }
+
+# See comment header for `filterViewPaths`, which filters args provided by user
+# into `viewPaths` array.
+viewPathsArgs=( "$@" )
+viewPaths=()
+filterViewPaths
 
 verifyBranch
 
