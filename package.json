@@ -37,7 +37,6 @@
     "primo-explore-devenv:app-css:nysid:prod": "yarn primo-explore-devenv:app-css 01NYU_NYSID-NYSID",
     "primo-explore-devenv:app-css:nyu:dev": "yarn primo-explore-devenv:app-css 01NYU_INST-NYU_DEV",
     "primo-explore-devenv:app-css:nyu:prod": "yarn primo-explore-devenv:app-css 01NYU_INST-NYU",
-    "primo-explore-devenv:app-css:nyu:testws01": "yarn primo-explore-devenv:app-css 01NYU_INST-TESTWS01",
     "primo-explore-devenv:app-css:sh:dev": "yarn primo-explore-devenv:app-css 01NYU_US-SH_DEV",
     "primo-explore-devenv:app-css:sh:prod": "yarn primo-explore-devenv:app-css 01NYU_US-SH",
 
@@ -52,7 +51,6 @@
     "primo-explore-devenv:create-package:nysid:prod": "yarn primo-explore-devenv:create-package 01NYU_NYSID-NYSID",
     "primo-explore-devenv:create-package:nyu:dev": "yarn primo-explore-devenv:create-package 01NYU_INST-NYU_DEV",
     "primo-explore-devenv:create-package:nyu:prod": "yarn primo-explore-devenv:create-package 01NYU_INST-NYU",
-    "primo-explore-devenv:create-package:nyu:testws01": "yarn primo-explore-devenv:create-package 01NYU_INST-TESTWS01",
     "primo-explore-devenv:create-package:sh:dev": "yarn primo-explore-devenv:create-package 01NYU_US-SH_DEV",
     "primo-explore-devenv:create-package:sh:prod": "yarn primo-explore-devenv:create-package 01NYU_US-SH",
 
@@ -67,7 +65,6 @@
     "primo-explore-devenv:run:nysid:prod": "yarn primo-explore-devenv:run 01NYU_NYSID-NYSID",
     "primo-explore-devenv:run:nyu:dev": "yarn primo-explore-devenv:run 01NYU_INST-NYU_DEV",
     "primo-explore-devenv:run:nyu:prod": "yarn primo-explore-devenv:run 01NYU_INST-NYU",
-    "primo-explore-devenv:run:nyu:testws01": "yarn primo-explore-devenv:run 01NYU_INST-TESTWS01",
     "primo-explore-devenv:run:sh:dev": "yarn primo-explore-devenv:run 01NYU_US-SH_DEV",
     "primo-explore-devenv:run:sh:prod": "yarn primo-explore-devenv:run 01NYU_US-SH",
 
