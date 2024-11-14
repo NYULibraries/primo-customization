@@ -93,11 +93,6 @@ jobs:
         environment:
             VIEW: 01NYU_INST-NYU
 
-    run-e2e-nyu-test:
-        <<: [*docker-defaults, *run-e2e]
-        environment:
-            VIEW: 01NYU_INST-TESTWS01
-
     run-e2e-sh-dev:
         <<: [*docker-defaults, *run-e2e]
         environment:
@@ -133,6 +128,5 @@ workflows:
             - run-e2e-nysid-prod
             - run-e2e-nyu-dev
             - run-e2e-nyu-prod
-            - run-e2e-nyu-test
             - run-e2e-sh-dev
             - run-e2e-sh-prod

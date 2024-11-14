@@ -110,8 +110,6 @@ Local Primo: http://localhost:8003/discovery/search?vid=[VIEW]
 yarn primo-explore-devenv:run:nyu:dev
 # http://localhost:8003/discovery/search?vid=01NYU_INST:NYU
 yarn primo-explore-devenv:run:nyu:prod
-# http://localhost:8003/discovery/search?vid=01NYU_INST:TESTWS01
-yarn primo-explore-devenv:run:nyu:testws01
 # http://localhost:8003/discovery/search?vid=[VID]
 yarn primo-explore-devenv:run [VIEW]
 ```
@@ -175,11 +173,6 @@ The fully qualified view names for NYU New York campus:
 * Prod: 01NYU_INST-NYU
 * Dev: 01NYU_INST-NYU_DEV
 
-NOTE: We have one view name "TESTWS01" which does not follow any particular
-current naming convention.  It was originally a view created in the sandbox domain for
-initial testing, prototyping, and experimentation.  We created the same view
-in real domain to provide developers with a playground view which is not being
-used by non-developer parties.
 
 View names are used for directory names in our various repositories, and are also
 used for customization package zipfile basenames.  For example, for the NYU New York
@@ -210,8 +203,6 @@ This command will create a new package in _primo-explore-devenv/packages/_:
 yarn primo-explore-devenv:create-package:nyu:dev
 # Creates ./primo-explore-devenv/packages/01NYU_INST-NYU.zip
 yarn primo-explore-devenv:create-package:nyu:prod
-# Creates ./primo-explore-devenv/packages/01NYU_INST-TESTWS01.zip
-yarn primo-explore-devenv:create-package:nyu:testws01
 # Creates ./primo-explore-devenv/packages/[VIEW].zip
 yarn primo-explore-devenv:create-package [VIEW]
 ```
@@ -437,8 +428,7 @@ websites and applications.
 ### Only generate components for HTML files listed in a manifest
 
 We originally thought we could limit the generation of customizable AngularJS
-components to only those which had corresponding template files in _cdn/primo-customization/01NYU_INST-TESTWS01/html/_,
-but unfortunately this proved to not be viable due to a race condition which
+components, but unfortunately this proved to not be viable due to a race condition which
 sometimes led to the fetching of the manifest to occur after the AngularJS
 application had already been bootstrapped.  There seemed to be no way to guarantee
 a proper execution sequence.  Both fetching a static file from the CDN and making
@@ -446,8 +436,6 @@ a request to a Lambda@Edge function that provided a realtime manifest were prone
 to the timing bug.  It's possible that any async calls made in the customization
 package create race conditions, even when using `async/await`.
 
-* Fetch list of HTML files from static file _cdn/primo-customization/01NYU_INST-TESTWS01/manifest.json_:
-[archived_fetch-cdn-html-files-list-via-manifest-json-file](https://github.com/NYULibraries/primo-customization/releases/tag/archived_fetch-cdn-html-files-list-via-manifest-json-file).
 * Fetch list of HTML files from Lambda@Edge function:
 [archived_fetch-cdn-html-files-list-via-lambda-at-edge](https://github.com/NYULibraries/primo-customization/releases/tag/archived_fetch-cdn-html-files-list-via-lambda-at-edge).
 
