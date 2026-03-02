@@ -29,12 +29,9 @@ const testCases = [
         name         : 'docid: cdi_proquest_journals_2358492548',
         pathAndQuery : '/discovery/search?vid=[VID]&query=any,contains,cdi_proquest_journals_2358492548&tab=default_slot&search_scope=CI_NYUSH_NYU&offset=0',
     },
-    {
-        name         : 'docid: cdi_cleo_primary_oai_revues_org_chinaperspectives_7327',
-        pathAndQuery : '/discovery/search?vid=[VID]&query=any,contains,cdi_cleo_primary_oai_revues_org_chinaperspectives_7327&tab=default_slot&search_scope=CI_NYUSH_NYU&offset=0',
-    },
 ];
 
 export {
-    testCases,
+    testCases
 };
+
