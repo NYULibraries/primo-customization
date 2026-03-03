@@ -29,10 +29,12 @@ const testCases = [
         name         : 'docid: cdi_proquest_journals_2358492548',
         pathAndQuery : '/discovery/search?vid=[VID]&query=any,contains,cdi_proquest_journals_2358492548&tab=default_slot&search_scope=CI_NYUSH_NYU&offset=0',
     },
-    {
-        name         : 'docid: cdi_cleo_primary_oai_revues_org_chinaperspectives_7327',
-        pathAndQuery : '/discovery/search?vid=[VID]&query=any,contains,cdi_cleo_primary_oai_revues_org_chinaperspectives_7327&tab=default_slot&search_scope=CI_NYUSH_NYU&offset=0',
-    },
+    // Temporarily disabling this failing "Download via Unpaywall" test case.
+    // We will be getting a replacement docid from KARMS DAI soon.
+    // {
+    //     name         : 'docid: cdi_cleo_primary_oai_revues_org_chinaperspectives_7327',
+    //     pathAndQuery : '/discovery/search?vid=[VID]&query=any,contains,cdi_cleo_primary_oai_revues_org_chinaperspectives_7327&tab=Unified_Slot&search_scope=DN_and_CI&offset=0',
+    // },
 ];
 
 export {
