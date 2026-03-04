@@ -38,6 +38,6 @@ const testCases = [
 ];
 
 export {
-    testCases
+    testCases,
 };
 

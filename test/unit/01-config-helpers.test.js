@@ -34,14 +34,14 @@ const testCases = {
     'https://hslcat.med.nyu.edu/discovery/search?vid=01NYU_HS:HSL&offset=0'     : 'https://cdn.library.nyu.edu/primo-customization/01NYU_HS-HSL',
     'https://hslcat.med.nyu.edu/discovery/search?vid=01NYU_HS:HSL_DEV&offset=0' : 'https://cdn-dev.library.nyu.edu/primo-customization/01NYU_HS-HSL_DEV',
 
-    'https://localhost:3000/discovery/search?vid=01NYU_INST:NYU&offset=0'      : 'http://localhost:3000/primo-customization/01NYU_INST-NYU',
-    'https://localhost:3000/discovery/search?vid=01NYU_INST:NYU_DEV&offset=0'  : 'http://localhost:3000/primo-customization/01NYU_INST-NYU_DEV',
+    'https://localhost:3000/discovery/search?vid=01NYU_INST:NYU&offset=0'     : 'http://localhost:3000/primo-customization/01NYU_INST-NYU',
+    'https://localhost:3000/discovery/search?vid=01NYU_INST:NYU_DEV&offset=0' : 'http://localhost:3000/primo-customization/01NYU_INST-NYU_DEV',
 
-    'https://nyu.primo.exlibrisgroup.com/discovery/search?vid=01NYU_INST:NYU&offset=0'      : 'https://cdn.library.nyu.edu/primo-customization/01NYU_INST-NYU',
-    'https://nyu.primo.exlibrisgroup.com/discovery/search?vid=01NYU_INST:NYU_DEV&offset=0'  : 'https://cdn-dev.library.nyu.edu/primo-customization/01NYU_INST-NYU_DEV',
+    'https://nyu.primo.exlibrisgroup.com/discovery/search?vid=01NYU_INST:NYU&offset=0'     : 'https://cdn.library.nyu.edu/primo-customization/01NYU_INST-NYU',
+    'https://nyu.primo.exlibrisgroup.com/discovery/search?vid=01NYU_INST:NYU_DEV&offset=0' : 'https://cdn-dev.library.nyu.edu/primo-customization/01NYU_INST-NYU_DEV',
 
-    'https://sandbox02-na.primo.exlibrisgroup.com/discovery/search?vid=01NYU_INST:NYU&offset=0'      : 'https://d290kawcj1dea9.cloudfront.net/primo-customization/01NYU_INST-NYU',
-    'https://sandbox02-na.primo.exlibrisgroup.com/discovery/search?vid=01NYU_INST:NYU_DEV&offset=0'  : 'https://d290kawcj1dea9.cloudfront.net/primo-customization/01NYU_INST-NYU_DEV',
+    'https://sandbox02-na.primo.exlibrisgroup.com/discovery/search?vid=01NYU_INST:NYU&offset=0'     : 'https://d290kawcj1dea9.cloudfront.net/primo-customization/01NYU_INST-NYU',
+    'https://sandbox02-na.primo.exlibrisgroup.com/discovery/search?vid=01NYU_INST:NYU_DEV&offset=0' : 'https://d290kawcj1dea9.cloudfront.net/primo-customization/01NYU_INST-NYU_DEV',
 
     'https://search.abudhabi.library.nyu.edu/discovery/search?vid=01NYU_AD:AD&offset=0'     : 'https://cdn.library.nyu.edu/primo-customization/01NYU_AD-AD',
     'https://search.abudhabi.library.nyu.edu/discovery/search?vid=01NYU_AD:AD_DEV&offset=0' : 'https://cdn-dev.library.nyu.edu/primo-customization/01NYU_AD-AD_DEV',
@@ -58,8 +58,8 @@ const testCases = {
     'https://search.library.nysid.edu/discovery/search?vid=01NYU_NYSID:NYSID&offset=0'     : 'https://cdn.library.nyu.edu/primo-customization/01NYU_NYSID-NYSID',
     'https://search.library.nysid.edu/discovery/search?vid=01NYU_NYSID:NYSID_DEV&offset=0' : 'https://cdn-dev.library.nyu.edu/primo-customization/01NYU_NYSID-NYSID_DEV',
 
-    'https://search.library.nyu.edu/discovery/search?vid=01NYU_INST:NYU&offset=0'      : 'https://cdn.library.nyu.edu/primo-customization/01NYU_INST-NYU',
-    'https://search.library.nyu.edu/discovery/search?vid=01NYU_INST:NYU_DEV&offset=0'  : 'https://cdn-dev.library.nyu.edu/primo-customization/01NYU_INST-NYU_DEV',
+    'https://search.library.nyu.edu/discovery/search?vid=01NYU_INST:NYU&offset=0'     : 'https://cdn.library.nyu.edu/primo-customization/01NYU_INST-NYU',
+    'https://search.library.nyu.edu/discovery/search?vid=01NYU_INST:NYU_DEV&offset=0' : 'https://cdn-dev.library.nyu.edu/primo-customization/01NYU_INST-NYU_DEV',
 
     'https://search.shanghai.library.nyu.edu/discovery/search?vid=01NYU_US:US&offset=0'     : 'https://cdn.library.nyu.edu/primo-customization/01NYU_US-US',
     'https://search.shanghai.library.nyu.edu/discovery/search?vid=01NYU_US:US_DEV&offset=0' : 'https://cdn-dev.library.nyu.edu/primo-customization/01NYU_US-US_DEV',
