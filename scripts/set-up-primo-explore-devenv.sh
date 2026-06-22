@@ -49,12 +49,20 @@ sed -i '' 's@http://your-server:your-port@https://nyu.primo.exlibrisgroup.com:44
 # [16:29:24] The following tasks did not complete: app-css, compile-scss
 # -----END ERROR-----
 #
-# NOTE: `sass` module would be preferable as it is pure JavaScript and `node-sass`
-# is deprecated, but gulp build fails due to obsolete/invalid code in ExLibris SASS,
-# which generate multiple errors: "Error: compound selectors may no longer be extended."
-sed -i '' 's@    "prompt": "1.0.0",@    "node-sass": "9.0.0",\
+# NOTE:
+# We always preferred the `sass` module (formerly `dart-sass` because it is
+# pure JavaScript and `node-sass` was deprecated, but when we originally tried
+# using it the gulp build failed due to obsolete/invalid code in ExLibris SASS,
+# which generated multiple errors: "Error: compound selectors may no longer be
+# extended."
+# When we tried to upgrade the Dockerfile from Node 20 to 26, the build with
+# `node-sass` failed (though it worked in MacOS).  The `node-sass` project was
+# archived on July 24, 2024.
+# We had to switch to `dart-sass`, which now seemed to be working for the `gulp`
+# build.
+sed -i '' 's@    "prompt": "1.0.0",@    "sass": "1.98.0",\
     "prompt": "1.0.0",@g' ./package.json
-sed -i '' "s@let sass = require('gulp-sass');@let sass = require('gulp-sass')(require('node-sass'));@g" ./gulp/tasks/03-scss.js
+sed -i '' "s@let sass = require('gulp-sass');@let sass = require('gulp-sass')(require('sass'));@g" ./gulp/tasks/03-scss.js
 
 # This package was causing install error for https://github.com/Automattic/node-canvas/:
 #
