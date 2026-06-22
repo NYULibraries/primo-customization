@@ -106,7 +106,7 @@ ln -s ../../custom/ .
 
 cd $PRIMO_EXPLORE_DEVENV_LOCAL || exit 1
 
-yarn install
+npm install
 
 
 
