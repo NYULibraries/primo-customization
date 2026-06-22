@@ -56,6 +56,33 @@ sed -i '' 's@    "prompt": "1.0.0",@    "node-sass": "9.0.0",\
     "prompt": "1.0.0",@g' ./package.json
 sed -i '' "s@let sass = require('gulp-sass');@let sass = require('gulp-sass')(require('node-sass'));@g" ./gulp/tasks/03-scss.js
 
+# This package was causing install error for https://github.com/Automattic/node-canvas/:
+#
+# ../src/Canvas.cc:429:46: error: no member named 'GetIsolate' in 'v8::Context'
+#   429 |     Isolate* iso = Nan::GetCurrentContext()->GetIsolate();
+#       |                    ~~~~~~~~~~~~~~~~~~~~~~~~~~^
+#
+# This was anticipated by this issue:
+# https://github.com/Automattic/node-canvas/issues/2338
+#
+# v8::Object::GetIsolate was deprecated years ago:
+# https://issues.chromium.org/issues/42210523
+#
+# `node-canvas` is required by `protractor-image-comparison`, which it doesn't
+# appear this project or any of the packages in `node_modules` are really using,
+# even as a plugin for `webdriver-image-comparison`, which also doesn't appear
+# to be in use.  Even if they are being used, it would almost certainly be in
+# tests, and we do not run the tests for `primo-explore-devenv`.
+#
+# `protractor-image-comparison` was archived on May 8, 2020:
+# https://github.com/wswebcreation/protractor-image-comparison
+#
+# It would be more trouble than it's worth to fix this install problem.  The
+# proxy seems to work fine without it, so let's remove it.
+# It's tricky to do with sed if we want to no have a blank line, so just use grep.
+grep -v '"protractor-image-comparison": "3.1.0"' ./package.json > ./package.json.new \
+    && mv ./package.json.new ./package.json
+
 # Babel error when running gulp `custom-js` task should end `run` task and prevent
 # local Primo server from starting/continuing to run.
 sed -i '' "s@buildByConcatination().on('end', cb);@buildByConcatination(cb).on('end', cb);@g" ./gulp/tasks/02-custom-js.js
