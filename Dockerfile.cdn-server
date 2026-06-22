@@ -1,4 +1,4 @@
-FROM node:20.11.0-bullseye
+FROM node:26.3.1-bullseye
 
 WORKDIR /app
 
@@ -8,4 +8,4 @@ COPY tools/cdn-server ./tools/cdn-server
 
 EXPOSE 3000
 
-CMD ["yarn", "cdn-server", "./cdn"]
+CMD ["npm", "run", "cdn-server", "./cdn"]
