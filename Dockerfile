@@ -1,23 +1,24 @@
-FROM node:20.11.0-bullseye
+FROM node:26.3.1-bullseye
 
 ENV TOP_LEVEL_NODE_MODULES_PATH /app/
 ENV PRIMO_EXPLORE_DEVENV_NODE_MODULES_PATH /app/primo-explore-devenv/
 
 WORKDIR /app
 
-COPY primo-explore-devenv/package.json primo-explore-devenv/yarn.lock /tmp/
-RUN cd /tmp/ && yarn install --frozen-lockfile \
+COPY primo-explore-devenv/package.json primo-explore-devenv/package-lock.json /tmp/
+
+RUN cd /tmp/ && npm clean-install \
   && mkdir -p ${PRIMO_EXPLORE_DEVENV_NODE_MODULES_PATH} \
   && cd ${PRIMO_EXPLORE_DEVENV_NODE_MODULES_PATH} \
   && cp -R /tmp/node_modules ${PRIMO_EXPLORE_DEVENV_NODE_MODULES_PATH} \
-  && rm -r /tmp/* && yarn cache clean
+  && rm -r /tmp/*
 
-COPY package.json yarn.lock /tmp/
-RUN cd /tmp/ && yarn install --frozen-lockfile \
+COPY package.json package-lock.json /tmp/
+RUN cd /tmp/ && npm clean-install \
   && mkdir -p ${TOP_LEVEL_NODE_MODULES_PATH} \
   && cd ${TOP_LEVEL_NODE_MODULES_PATH} \
   && cp -R /tmp/node_modules ${TOP_LEVEL_NODE_MODULES_PATH} \
-  && rm -r /tmp/* && yarn cache clean
+  && rm -r /tmp/*
 
 COPY bookmarklets ./bookmarklets
 COPY custom ./custom
@@ -44,4 +45,4 @@ COPY primo-explore-devenv/tests ./primo-explore-devenv/tests
 
 EXPOSE 8003
 
-CMD ["sh", "-c", "yarn primo-explore-devenv:run $VIEW"]
+CMD ["sh", "-c", "npm run primo-explore-devenv:run $VIEW"]

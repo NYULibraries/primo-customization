@@ -30,7 +30,12 @@ const testCases = [
         pathAndQuery : '/discovery/search?vid=[VID]&query=any,contains,cdi_proquest_journals_2358492548&tab=Unified_Slot&search_scope=DN_and_CI&offset=0',
     },
     // Temporarily disabling this failing "Download via Unpaywall" test case.
-    // We will be getting a replacement docid from KARMS DAI soon.
+    // KARMS DAI is investigating its disappearance.  It's possible that the
+    // docid is a casualty of a recent CDI "disruption" that resulted in mass
+    // data loss.  Ex Libris is still in the process of restoring all the data.
+    // For details, see Primo email list thread:
+    // "Update: CDI details"
+    // https://exlibrisusers.org/hyperkitty/list/primo@exlibrisusers.org/thread/5MU2TN37MQXBV3EE3GQLDJH5K7OTG5VR/
     // {
     //     name         : 'docid: cdi_cleo_primary_oai_revues_org_chinaperspectives_7327',
     //     pathAndQuery : '/discovery/search?vid=[VID]&query=any,contains,cdi_cleo_primary_oai_revues_org_chinaperspectives_7327&tab=Unified_Slot&search_scope=DN_and_CI&offset=0',
@@ -38,6 +43,6 @@ const testCases = [
 ];
 
 export {
-    testCases
+    testCases,
 };
 
