@@ -29,9 +29,6 @@ app.config( function ( $sceDelegateProvider ) {
     $sceDelegateProvider.trustedResourceUrlList(
         [
             'self',
-            // Keeping this here commented out as a reminder that "*" can
-            // be used in domain name for wildcarding.
-            // 'https://cdn*.library.nyu.edu/primo-customization/01NYU_INST-TESTWS01/**',
             `${ cdnUrl }/**`,
         ],
     );
