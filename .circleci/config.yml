@@ -116,7 +116,8 @@ jobs:
 workflows:
     build-and-test:
         jobs:
-            - build-all-services
+            - build-all-services:
+                  context: web-quay-publish
             - run-unit-tests
             - run-e2e-ad-dev
             - run-e2e-ad-prod
